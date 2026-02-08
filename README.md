@@ -1,0 +1,1 @@
+# shopify_studio_theme_dekor365
