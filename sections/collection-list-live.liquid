@@ -1,0 +1,129 @@
+<style>
+.collection-list-live {
+  padding: 60px 0;
+  background: var(--bg-color-main);
+}
+.cl-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.cl-title {
+  color: var(--color-primary-dekor);
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.cl-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.cl-item {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+.cl-item-img-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08); /* slight drop shadow */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  background: #fff;
+}
+.cl-item:hover .cl-item-img-wrapper {
+  transform: translateY(-5px);
+}
+.cl-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.cl-item-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  transition: color 0.3s;
+}
+.cl-item:hover .cl-item-title {
+  color: var(--color-primary-dekor);
+}
+@media (max-width: 900px) {
+  .cl-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .cl-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="collection-list-live">
+  <div class="page-width">
+    <div class="cl-header">
+      <h2 class="cl-title">{{ section.settings.title }}</h2>
+    </div>
+    <div class="cl-grid">
+      {% for block in section.blocks %}
+        {% assign collection = collections[block.settings.collection] %}
+        <a href="{{ collection.url | default: '#' }}" class="cl-item" {{ block.shopify_attributes }}>
+          <div class="cl-item-img-wrapper">
+            {% if collection.image != blank %}
+              <img src="{{ collection.image | img_url: '600x600', crop: 'center' }}" alt="{{ collection.title }}">
+            {% elsif collection.products.first and collection.products.first.featured_image != blank %}
+              <img src="{{ collection.products.first.featured_image | img_url: '600x600', crop: 'center' }}" alt="{{ collection.title }}">
+            {% else %}
+              {{ 'collection-' | append: forloop.index | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          </div>
+          <h3 class="cl-item-title">{{ collection.title | default: 'Tên bộ sưu tập' }}</h3>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Live Collection List",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Tiêu đề",
+      "default": "Shop by Product"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Bộ sưu tập (Collection)",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Chọn bộ sưu tập"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Live Collection List",
+      "blocks": [
+        { "type": "collection" },
+        { "type": "collection" },
+        { "type": "collection" }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,251 @@
+<style>
+.product-live-wrapper {
+  display: flex;
+  gap: 50px;
+  padding: 40px 0;
+}
+.product-live-media {
+  flex: 1;
+  max-width: 55%;
+}
+.product-live-info {
+  flex: 1;
+  max-width: 45%;
+}
+
+.pl-main-image {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #f5f5f5;
+}
+.pl-main-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pl-thumbs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+.pl-thumb-item {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.pl-thumb-item:first-child {
+  border-color: var(--color-primary-dekor);
+}
+.pl-thumb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pl-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.pl-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e53935;
+  margin-bottom: 20px;
+}
+
+/* Base Form */
+.pl-form-group {
+  margin-bottom: 20px;
+}
+.pl-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+.pl-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.pl-add-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--color-primary-dekor);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius-btn, 30px);
+  cursor: pointer;
+  transition: opacity 0.3s;
+  margin-top: 10px;
+}
+.pl-add-btn:hover {
+  opacity: 0.9;
+}
+
+/* Accordions */
+.pl-accordion {
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+}
+.pl-accordion-item {
+  border-bottom: 1px solid #eee;
+}
+.pl-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+.pl-accordion-content {
+  display: none;
+  padding-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .product-live-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .product-live-media, .product-live-info {
+    max-width: 100%;
+  }
+}
+</style>
+
+<div class="page-width">
+  <div class="product-live-wrapper">
+    <!-- Media Column -->
+    <div class="product-live-media">
+      <div class="pl-main-image">
+        {%- if product.featured_image -%}
+          <img src="{{ product.featured_image | img_url: '1000x' }}" alt="{{ product.title | escape }}" id="MainProductImage">
+        {%- else -%}
+          {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+      <div class="pl-thumbs">
+        {%- for img in product.images -%}
+          <div class="pl-thumb-item">
+            <img src="{{ img | img_url: '200x' }}" alt="{{ product.title | escape }}">
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <!-- Info Column -->
+    <div class="product-live-info">
+      <h1 class="pl-title">{{ product.title | default: 'Product Title Here' }}</h1>
+      <div class="pl-price">{{ product.price | default: 1999 | money }}</div>
+
+      <!-- Add to Cart Form -->
+      {%- form 'product', product, class: 'pl-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+        
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+        {%- unless product.has_only_default_variant -%}
+          <div class="pl-form-group">
+            <label class="pl-label">Tùy chọn (Variants)</label>
+            <select class="pl-select" onchange="document.querySelector('.pl-form input[name=\'id\']').value = this.value;">
+              {%- for variant in product.variants -%}
+                <option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>
+                  {{ variant.title }} - {{ variant.price | money }}
+                </option>
+              {%- endfor -%}
+            </select>
+          </div>
+        {%- endunless -%}
+
+        <div class="pl-form-group">
+          <label class="pl-label">Số lượng</label>
+          <input type="number" name="quantity" value="1" min="1" class="pl-select" style="width: 100px;">
+        </div>
+
+        <button type="submit" name="add" class="pl-add-btn">
+          <span>Add to cart</span>
+        </button>
+      {%- endform -%}
+
+      <!-- Accordions -->
+      <div class="pl-accordion">
+        <div class="pl-accordion-item">
+          <div class="pl-accordion-header" onclick="toggleAcc(this)">
+            Description
+            <span>+</span>
+          </div>
+          <div class="pl-accordion-content" style="display: block;"> <!-- Open by default -->
+            {{ product.description | default: 'Mô tả chi tiết sản phẩm. Nhập nội dung ở admin.' }}
+          </div>
+        </div>
+        <div class="pl-accordion-item">
+          <div class="pl-accordion-header" onclick="toggleAcc(this)">
+            Shipping & Return
+            <span>+</span>
+          </div>
+          <div class="pl-accordion-content">
+            <p>Free shipping on all orders over $100.</p>
+            <p>Returns accepted within 30 days of purchase.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleAcc(el) {
+    var content = el.nextElementSibling;
+    var style = window.getComputedStyle(content);
+    if(style.display === 'none') {
+      content.style.display = 'block';
+      el.querySelector('span').innerText = '-';
+    } else {
+      content.style.display = 'none';
+      el.querySelector('span').innerText = '+';
+    }
+  }
+
+  // Thumbnails click pseudo-logic
+  var thumbs = document.querySelectorAll('.pl-thumb-item');
+  var mainImg = document.getElementById('MainProductImage');
+  thumbs.forEach(function(tb) {
+    tb.addEventListener('click', function() {
+      // remove border
+      thumbs.forEach(t => t.style.borderColor = 'transparent');
+      this.style.borderColor = 'var(--color-primary-dekor)';
+      // change main img
+      if(mainImg) {
+        var src = this.querySelector('img').src;
+        mainImg.src = src.replace('_200x', '_1000x');
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Live Product Detail",
+  "settings": []
+}
+{% endschema %}

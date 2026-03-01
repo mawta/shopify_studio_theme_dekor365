@@ -1,0 +1,125 @@
+<style>
+.collection-live-header {
+  text-align: center;
+  margin: 40px 0;
+}
+.collection-live-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  color: #333;
+}
+.collection-live-wrap {
+  padding: 0 0 60px 0;
+  display: flex;
+  gap: 40px;
+}
+.collection-sidebar {
+  width: 250px;
+  flex-shrink: 0;
+}
+.collection-filter-group {
+  margin-bottom: 25px;
+}
+.collection-filter-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  color: #333;
+}
+.collection-grid-live {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.collection-product-card {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+.collection-product-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 8px; /* Requirement: Ảnh bo góc */
+  margin-bottom: 12px;
+  background-color: #f5f5f5;
+}
+.collection-product-title {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+  font-weight: 400;
+}
+.collection-product-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+@media (max-width: 1024px) {
+  .collection-grid-live { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .collection-sidebar { display: none; }
+  .collection-grid-live { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+
+<div class="page-width">
+  <div class="collection-live-header">
+    <h1 class="collection-live-title">{{ collection.title | default: 'All Products' }}</h1>
+  </div>
+  
+  <div class="collection-live-wrap">
+    <div class="collection-sidebar">
+      <div class="collection-filter-group">
+        <h3 class="collection-filter-title">Filters</h3>
+        <ul style="list-style:none; padding:0; margin:0; line-height:2;">
+           <li><label style="cursor:pointer;"><input type="checkbox" style="margin-right:8px;"> In Stock</label></li>
+           <li><label style="cursor:pointer;"><input type="checkbox" style="margin-right:8px;"> Best Sellers</label></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="collection-grid-live">
+      {% paginate collection.products by section.settings.products_per_page %}
+        {% for product in collection.products %}
+          <a href="{{ product.url }}" class="collection-product-card">
+            <img class="collection-product-img" src="{{ product.featured_image | img_url: '400x400', crop: 'center' }}" alt="{{ product.title | escape }}">
+            <h4 class="collection-product-title">{{ product.title }}</h4>
+            <div class="collection-product-price">{{ product.price | money }}</div>
+          </a>
+        {% else %}
+          <div style="grid-column: 1 / -1; text-align: center; padding: 40px 0;">
+            <h3>Chưa có sản phẩm nào. / No products found.</h3>
+          </div>
+        {% endfor %}
+        <div class="pagination-wrapper" style="grid-column: 1 / -1; text-align: center; margin-top: 40px;">
+          {{ paginate | default_pagination }}
+        </div>
+      {% endpaginate %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Live Collection Grid",
+  "settings": [
+    {
+      "type": "range",
+      "id": "products_per_page",
+      "min": 8,
+      "max": 48,
+      "step": 4,
+      "default": 16,
+      "label": "Số sản phẩm mỗi trang"
+    }
+  ]
+}
+{% endschema %}

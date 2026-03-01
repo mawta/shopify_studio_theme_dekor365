@@ -1,0 +1,119 @@
+{%- comment -%} Section: Newsletter / Subscribe {%- endcomment -%}
+
+<div class="newsletter-section {% unless section.settings.wide_display %}page-width{% endunless %} section-{{ section.id }}-padding" style="position: relative; padding: 6rem 2rem; text-align: {{ section.settings.newsletter_section_text_align }}; overflow: hidden; margin: 2rem 0;">
+  {%- if section.settings.image != blank -%}
+    <img src="{{ section.settings.image | image_url: width: 1600 }}" width="1600" height="600" alt="{{ section.settings.newsletter_title | escape }}" loading="lazy" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2;">
+    <div class="newsletter-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: -1;"></div>
+  {%- endif -%}
+
+  <div class="newsletter-content" style="position: relative; z-index: 1; max-width: 600px; margin: 0 auto; {% if section.settings.image != blank %}color: #fff;{% endif %}">
+    {%- if section.settings.newsletter_title != blank -%}
+      <h2 class="h1" {% if section.settings.image != blank %}style="color: #fff;"{% endif %}>{{ section.settings.newsletter_title }}</h2>
+    {%- endif -%}
+    
+    {%- if section.settings.newsletter_text != blank -%}
+      <div class="newsletter__subheading rte" style="margin-bottom: 2rem; font-size: 1.6rem;">
+        {{ section.settings.newsletter_text }}
+      </div>
+    {%- endif -%}
+
+    {% form 'customer', class: 'newsletter-form' %}
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <div class="newsletter-form__field-wrapper">
+        <div class="field-container" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: {{ section.settings.newsletter_section_text_align }};">
+          {%- if section.settings.display_first_name -%}
+            <div class="field" style="flex: 1; min-width: 150px;">
+              <input id="NewsletterForm--FirstName" type="text" name="contact[first_name]" class="field__input" value="{{ form.first_name }}" placeholder="First name">
+              <label class="field__label" for="NewsletterForm--FirstName">Tên</label>
+            </div>
+          {%- endif -%}
+          {%- if section.settings.display_last_name -%}
+            <div class="field" style="flex: 1; min-width: 150px;">
+              <input id="NewsletterForm--LastName" type="text" name="contact[last_name]" class="field__input" value="{{ form.last_name }}" placeholder="Last name">
+              <label class="field__label" for="NewsletterForm--LastName">Họ</label>
+            </div>
+          {%- endif -%}
+          
+          <div class="field" style="flex: 2; min-width: 250px;">
+            <input id="NewsletterForm--email" type="email" name="contact[email]" class="field__input" value="{{ form.email }}" aria-required="true" autocorrect="off" autocapitalize="off" autocomplete="email" {% if form.errors %} autofocus aria-invalid="true" aria-describedby="Newsletter-error--{{ section.id }}" {% elsif form.posted_successfully? %} aria-describedby="Newsletter-success--{{ section.id }}" {% endif %} placeholder="Email" required>
+            <label class="field__label" for="NewsletterForm--email">Email</label>
+          </div>
+          
+          <button type="submit" class="newsletter-form__button button button--primary" name="commit" id="Subscribe" aria-label="Subscribe" style="flex: 1; min-width: 120px;">
+            Đăng ký
+          </button>
+        </div>
+
+        {%- if form.errors -%}
+          <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}" style="color: red; margin-top: 1rem;">
+            {{ form.errors.translated_fields.email | capitalize }} {{ form.errors.messages.email }}
+          </small>
+        {%- endif -%}
+        {%- if form.posted_successfully? -%}
+          <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus style="color: green; margin-top: 1rem;">
+            Đăng ký bản tin thành công!
+          </h3>
+        {%- endif -%}
+      </div>
+    {% endform %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Bản tin",
+  "class": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "wide_display",
+      "label": "Hiển thị trải dài",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "display_first_name",
+      "label": "Hiển thị tên"
+    },
+    {
+      "type": "checkbox",
+      "id": "display_last_name",
+      "label": "Hiển thị họ"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_title",
+      "label": "Tiêu đề",
+      "default": "Subscribe"
+    },
+    {
+      "type": "richtext",
+      "id": "newsletter_text",
+      "label": "Phụ đề",
+      "default": "<p>Sign up to get the latest on sales, new releases and more …</p>"
+    },
+    {
+      "type": "select",
+      "id": "newsletter_section_text_align",
+      "label": "Căn lề chữ",
+      "options": [
+        { "value": "left", "label": "Trái" },
+        { "value": "center", "label": "Giữa" },
+        { "value": "right", "label": "Phải" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hình nền",
+      "info": "Khuyên dùng 1600 x 300px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bản tin"
+    }
+  ]
+}
+{% endschema %}

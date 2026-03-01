@@ -1,0 +1,43 @@
+{%- comment -%} Section: Style Structured Product - inject structured data cho product page {%- endcomment -%}
+
+{%- if template.name == 'product' -%}
+  {%- assign current_product = product -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": {{ current_product.title | json }},
+      "description": {{ current_product.description | strip_html | truncate: 500 | json }},
+      "url": "{{ shop.url }}{{ current_product.url }}",
+      {%- if current_product.featured_image -%}
+        "image": "{{ current_product.featured_image | image_url: width: 1024 }}",
+      {%- endif -%}
+      "brand": {
+        "@type": "Brand",
+        "name": {{ current_product.vendor | json }}
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": {{ cart.currency.iso_code | json }},
+        "lowPrice": {{ current_product.price_min | money_without_currency | json }},
+        "highPrice": {{ current_product.price_max | money_without_currency | json }},
+        "offerCount": {{ current_product.variants.size }},
+        "availability": "{% if current_product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}"
+      }
+    }
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Style Sttuctured product",
+  "class": "product-style",
+  "presets": [
+    {
+      "name": "Style Sttuctured product",
+      "category": "Product",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

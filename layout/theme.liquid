@@ -295,7 +295,8 @@
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
       }
-    </script>
+    </script>    <!-- Dekor365 Custom Global Styles -->
+    {{ 'custom-layout.css' | asset_url | stylesheet_tag }}
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
@@ -372,5 +373,8 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {%- comment -%} Nút cuộn lên đầu trang {%- endcomment -%}
+    {% render 'icon-scroll-top' %}
   </body>
 </html>

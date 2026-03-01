@@ -1,0 +1,18 @@
+{%- comment -%} Snippet: Scroll to top - nút cuộn lên đầu trang {%- endcomment -%}
+
+<button class="scroll-top" aria-label="Scroll to top" style="position:fixed;bottom:2rem;right:2rem;width:4rem;height:4rem;border-radius:50%;border:1px solid rgba(var(--color-foreground),0.15);background:rgb(var(--color-background));color:rgb(var(--color-foreground));cursor:pointer;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,0.1);transition:opacity 0.3s,transform 0.3s;">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script>
+  (function() {
+    var btn = document.querySelector('.scroll-top');
+    if (!btn) return;
+    window.addEventListener('scroll', function() {
+      btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+    });
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+</script>

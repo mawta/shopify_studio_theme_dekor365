@@ -1,0 +1,13 @@
+{%- comment -%} Snippet: Random People - hiển thị "X người đang xem sản phẩm" {%- endcomment -%}
+
+<div class="random-people" style="display:flex;align-items:center;gap:0.5rem;font-size:1.3rem;color:rgba(var(--color-foreground),0.7);padding:0.8rem 0;">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+  <span class="random-people__count"></span> people are viewing this right now
+</div>
+
+<script>
+  (function() {
+    var el = document.querySelector('.random-people__count');
+    if (el) el.textContent = Math.floor(Math.random() * 46) + 5;
+  })();
+</script>

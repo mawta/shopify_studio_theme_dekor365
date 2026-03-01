@@ -1,0 +1,17 @@
+/* Horizontal scroll carousel cho Slideshow Product */
+.slideshow-product__grid {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.slideshow-product__grid::-webkit-scrollbar { display: none; }
+.slideshow-product__item {
+  flex: 0 0 calc(25% - 0.75rem);
+  scroll-snap-align: start;
+}
+@media screen and (max-width: 749px) {
+  .slideshow-product__item { flex: 0 0 calc(50% - 0.5rem); }
+}

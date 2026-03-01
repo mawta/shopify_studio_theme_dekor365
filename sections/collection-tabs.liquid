@@ -1,0 +1,105 @@
+{%- comment -%} Section: Collection Tabs - hiển thị sản phẩm theo tab collection {%- endcomment -%}
+{{ 'section-collection-tabs.css' | asset_url | stylesheet_tag }}
+
+<div class="collection-tabs page-width section-{{ section.id }}-padding" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  {%- if section.settings.image_preview != blank -%}
+    <a href="{{ section.settings.url_collection }}" class="collection-tabs__banner">
+      <picture>
+        {%- if section.settings.image_preview_mb != blank -%}
+          <source media="(max-width: 749px)" srcset="{{ section.settings.image_preview_mb | image_url: width: 750 }}">
+        {%- endif -%}
+        <img src="{{ section.settings.image_preview | image_url: width: 1400 }}" alt="{{ section.settings.title }}" loading="lazy" width="1400" height="{{ 1400 | divided_by: section.settings.image_preview.aspect_ratio | round }}">
+      </picture>
+    </a>
+  {%- endif -%}
+
+  {%- if section.settings.title != blank -%}
+    <h2 class="collection-tabs__heading h2">{{ section.settings.title }}</h2>
+  {%- endif -%}
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="collection-tabs__nav" role="tablist">
+      {%- for block in section.blocks -%}
+        <button class="collection-tabs__tab{% if forloop.first %} active{% endif %}"
+                role="tab"
+                aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+                data-index="{{ forloop.index0 }}"
+                {{ block.shopify_attributes }}>
+          {{ block.settings.name_collection }}
+        </button>
+      {%- endfor -%}
+    </div>
+
+    {%- for block in section.blocks -%}
+      {%- assign tab_collection = collections[block.settings.collection] -%}
+      <div class="collection-tabs__panel{% if forloop.first %} active{% endif %}" role="tabpanel" data-index="{{ forloop.index0 }}">
+        {%- if tab_collection != blank -%}
+          <ul class="grid grid--2-col-tablet grid--4-col-desktop" role="list">
+            {%- for product in tab_collection.products limit: 8 -%}
+              <li class="grid__item">
+                {% render 'card-product', card_product: product, show_secondary_image: true %}
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- else -%}
+          <p>No collections found.</p>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  {%- endif -%}
+</div>
+
+<script>
+  {%- comment -%} JS vanilla cho tab switching {%- endcomment -%}
+  (function() {
+    const section = document.querySelector('.collection-tabs');
+    if (!section) return;
+    section.querySelectorAll('.collection-tabs__tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const idx = tab.dataset.index;
+        section.querySelectorAll('.collection-tabs__tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+        section.querySelectorAll('.collection-tabs__panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        const panel = section.querySelector(`.collection-tabs__panel[data-index="${idx}"]`);
+        if (panel) panel.classList.add('active');
+      });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Collection Tabs",
+  "class": "collection-tabs",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Heading", "default": "Featured collection product" },
+    { "type": "image_picker", "id": "image_preview", "label": "Image banner desktop" },
+    { "type": "image_picker", "id": "image_preview_mb", "label": "Image banner mb" },
+    { "type": "url", "id": "url_collection", "label": "Url banner" },
+    { "type": "select", "id": "sort_by", "label": "Sort by", "options": [
+      { "value": "manual", "label": "Manual" },
+      { "value": "best-selling", "label": "Best selling" },
+      { "value": "title-ascending", "label": "Title, A-Z" },
+      { "value": "title-descending", "label": "Title, Z-A" },
+      { "value": "price-ascending", "label": "Price, low to high" },
+      { "value": "price-descending", "label": "Price, high to low" },
+      { "value": "created-ascending", "label": "Date, old to new" },
+      { "value": "created-descending", "label": "Date, new to old" }
+    ], "default": "manual" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "t:sections.all.padding.padding_top", "default": 36 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "t:sections.all.padding.padding_bottom", "default": 36 }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Collection",
+      "settings": [
+        { "id": "collection", "type": "collection", "label": "Select a collection" },
+        { "id": "name_collection", "type": "text", "label": "Name collection" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Collection Tabs", "category": "Product" }]
+}
+{% endschema %}

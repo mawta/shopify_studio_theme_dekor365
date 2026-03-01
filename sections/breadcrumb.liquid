@@ -1,0 +1,75 @@
+{%- comment -%} Section: Breadcrumb Navigation - Hiển thị đường dẫn {%- endcomment -%}
+
+<nav class="breadcrumb page-width section-{{ section.id }}-padding" aria-label="breadcrumbs" style="background-color: {{ section.settings.breadcrumb_bg_color }};">
+  <ol style="display: flex; list-style: none; padding: 1rem 0; margin: 0; align-items: center; font-size: 1.4rem;">
+    <li>
+      <a href="{{ routes.root_url }}" title="Home">
+        {%- if section.settings.breadcrumbs_home_icon_bool -%}
+          Trang chủ
+        {%- else -%}
+          Home
+        {%- endif -%}
+      </a>
+    </li>
+    {%- if template contains 'page' -%}
+      <li style="margin: 0 1rem;">/</li>
+      <li>{{ page.title }}</li>
+    {%- elsif template contains 'product' -%}
+      <li style="margin: 0 1rem;">/</li>
+      {%- if collection.url -%}
+        <li>{{ collection.title | link_to: collection.url }}</li>
+        <li style="margin: 0 1rem;">/</li>
+      {%- endif -%}
+      <li>{{ product.title }}</li>
+    {%- elsif template contains 'collection' and collection.handle -%}
+      <li style="margin: 0 1rem;">/</li>
+      <li>{{ collection.title }}</li>
+    {%- elsif template == 'blog' -%}
+      <li style="margin: 0 1rem;">/</li>
+      <li>{{ blog.title }}</li>
+    {%- elsif template == 'article' -%}
+      <li style="margin: 0 1rem;">/</li>
+      <li>{{ blog.title | link_to: blog.url }}</li>
+      <li style="margin: 0 1rem;">/</li>
+      <li>{{ article.title }}</li>
+    {%- endif -%}
+  </ol>
+</nav>
+
+{% schema %}
+{
+  "name": "Thanh điều hướng",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "breadcrumbs_home_icon_bool",
+      "label": "Hiển thị biểu tượng trang chủ",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "breadcrumb_delimeter",
+      "label": "Biểu tượng phân cách",
+      "options": [
+        { "value": "angle_right", "label": "Góc phải" },
+        { "value": "slash", "label": "Dấu xuyệt" },
+        { "value": "arrow_right", "label": "Mũi tên phải" }
+      ],
+      "default": "angle_right"
+    },
+    {
+      "type": "color_background",
+      "id": "breadcrumb_bg_color",
+      "label": "Màu nền",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Thanh điều hướng"
+    }
+  ]
+}
+{% endschema %}

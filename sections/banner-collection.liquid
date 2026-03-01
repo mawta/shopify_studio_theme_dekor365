@@ -1,0 +1,109 @@
+{%- comment -%} Section: Banner Collection - Banner hình ảnh cho collection {%- endcomment -%}
+<style>
+  .banner-collection__image-wrapper img {
+    border-radius: var(--buttons-radius);
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+<div class="banner-collection page-width section-{{ section.id }}-padding" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <a href="{{ section.settings.url_collection }}" class="banner-collection__link" style="display: block; position: relative;">
+    {%- if section.settings.image_collection != blank -%}
+      <div class="banner-collection__image-wrapper {% if section.settings.image_collection_mb != blank %}small-hide{% endif %}">
+        <img src="{{ section.settings.image_collection | image_url: width: 1400 }}" alt="{{ section.settings.title | escape }}" loading="lazy" width="100%" height="auto">
+      </div>
+    {%- endif -%}
+    {%- if section.settings.image_collection_mb != blank -%}
+      <div class="banner-collection__image-wrapper medium-up-hide">
+        <img src="{{ section.settings.image_collection_mb | image_url: width: 750 }}" alt="{{ section.settings.title | escape }}" loading="lazy" width="100%" height="auto">
+      </div>
+    {%- endif -%}
+    
+    <div class="banner-collection__content" style="position: absolute; bottom: 2rem; left: 2rem; z-index: 2;">
+      {%- if section.settings.title != blank -%}
+        <h2 class="banner-collection__title h1" style="color: #fff; margin-bottom: 1rem;">{{ section.settings.title }}</h2>
+      {%- endif -%}
+      {%- if section.settings.btn_link != blank -%}
+        <span class="button button--primary">{{ section.settings.btn_link }}</span>
+      {%- endif -%}
+    </div>
+  </a>
+</div>
+
+{% schema %}
+{
+  "name": "Banner bộ sưu tập",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_collection",
+      "label": "Hình ảnh"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_collection_mb",
+      "label": "Hình ảnh trên Mobile"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Tiêu đề",
+      "default": "Featured collection product"
+    },
+    {
+      "type": "url",
+      "id": "url_collection",
+      "label": "URL liên kết"
+    },
+    {
+      "type": "text",
+      "id": "btn_link",
+      "label": "Nhãn nút bấm"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Khoảng đệm trên",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Khoảng đệm dưới",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Cột",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title_col",
+          "label": "Tiêu đề"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner bộ sưu tập"
+    }
+  ]
+}
+{% endschema %}

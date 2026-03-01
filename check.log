@@ -1,0 +1,170 @@
+╭─ info ───────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  layout/password.liquid                                                      │
+│                                                                              │
+│                                                                              │
+│  [warning]: UndefinedObject                                                  │
+│  Unknown object 'scheme_classes' used.                                       │
+│                                                                              │
+│  40  {% assign scheme_classes = scheme_classes | append: ', .color-' |       │
+│  append: scheme.id %}                                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ info ───────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  layout/theme.liquid                                                         │
+│                                                                              │
+│                                                                              │
+│  [warning]: UndefinedObject                                                  │
+│  Unknown object 'scheme_classes' used.                                       │
+│                                                                              │
+│  58  {% assign scheme_classes = scheme_classes | append: ', .color-' |       │
+│  append: scheme.id %}                                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ info ───────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  sections/collection-tabs.liquid                                             │
+│                                                                              │
+│                                                                              │
+│  [error]: TranslationKeyExists                                               │
+│  'sections.collection_list.no_collections' does not have a matching entry    │
+│  in 'locales/en.default.json'                                                │
+│                                                                              │
+│  45  <p>{{ 'sections.collection_list.no_collections' | t }}</p>              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ info ───────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  sections/featured-product.liquid                                            │
+│                                                                              │
+│                                                                              │
+│  [warning]: UnusedAssign                                                     │
+│  The variable 'seo_media' is assigned but not used                           │
+│                                                                              │
+│  490  assign seo_media = product.featured_media                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ info ───────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  sections/main-article.liquid                                                │
+│                                                                              │
+│                                                                              │
+│  [warning]: VariableName                                                     │
+│  The variable 'anchorId' uses wrong naming format                            │
+│                                                                              │
+│  102  {%- assign anchorId = '#Comments-' | append: article.id -%}            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ info ───────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  sections/main-list-collections.liquid                                       │
+│                                                                              │
+│                                                                              │
+│  [warning]: VariableName                                                     │
+│  The variable 'moduloResult' uses wrong naming format                        │
+│                                                                              │
+│  20  assign moduloResult = 28 | modulo: section.settings.columns_desktop     │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ info ───────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  sections/main-product-none-personalized.liquid                              │
+│                                                                              │
+│                                                                              │
+│  [warning]: UnusedAssign                                                     │
+│  The variable 'seo_media' is assigned but not used                           │
+│                                                                              │
+│  731  assign seo_media = product.featured_media                              │
+│                                                                              │
+│                                                                              │
+│  [warning]: UndefinedObject                                                  │
+│  Unknown object 'continue' used.                                             │
+│                                                                              │
+│  587  offset: continue                                                       │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ info ───────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  sections/main-product.liquid                                                │
+│                                                                              │
+│                                                                              │
+│  [warning]: UnusedAssign                                                     │
+│  The variable 'seo_media' is assigned but not used                           │
+│                                                                              │
+│  731  assign seo_media = product.featured_media                              │
+│                                                                              │
+│                                                                              │
+│  [warning]: UndefinedObject                                                  │
+│  Unknown object 'continue' used.                                             │
+│                                                                              │
+│  587  offset: continue                                                       │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ info ───────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  sections/main-search.liquid                                                 │
+│                                                                              │
+│                                                                              │
+│  [warning]: UnusedAssign                                                     │
+│  The variable 'product_settings' is assigned but not used                    │
+│                                                                              │
+│  274  {%- capture product_settings -%}{%- if                                 │
+│  section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%-  │
+│   endcapture -%}                                                             │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ info ───────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  templates/collection.product.liquid                                         │
+│                                                                              │
+│                                                                              │
+│  [warning]: DeprecatedFilter                                                 │
+│  Deprecated filter 'img_url', consider using 'image_url'.                    │
+│                                                                              │
+│  9  "preview_image": {{ product.featured_media.preview_image | img_url:      │
+│  '300x' | json }},                                                           │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ info ───────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  templates/customers/account.list_orders.liquid                              │
+│                                                                              │
+│                                                                              │
+│  [error]: LiquidHTMLSyntaxError                                              │
+│  Attempting to close LiquidTag 'for' before HtmlElement 'div' was closed     │
+│                                                                              │
+│  68                      <div class="re-order">                              │
+│  69                        <div class="data-order"                           │
+│  70                          data-variant-ids="{{ line_item.variant_id }}"   │
+│  71                          data-quantities={{ line_item.quantity }}        │
+│  72                          data-product-id={{ line_item.product_id }}      │
+│  73                          data-price={{ line_item.original_price }}>      │
+│  74                          <div class="text-custom hidden">                │
+│  75                            {{ line_item.properties | json }}             │
+│  76                          </div>                                          │
+│  77                        </div>                                            │
+│  78                        {% endfor %}                                      │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭─ info ───────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  Theme Check Summary.                                                        │
+│                                                                              │
+│  195 files inspected with 13 total offenses found across 11 files.           │
+│  2 errors.                                                                   │
+│  11 warnings.                                                                │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+

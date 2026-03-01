@@ -1,0 +1,127 @@
+<style>
+.contact-live-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.contact-live-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+.contact-live-desc {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+.contact-form-live .form-group {
+  margin-bottom: 20px;
+}
+.contact-form-live label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+.contact-form-live input,
+.contact-form-live textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius-input, 5px);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.contact-form-live input:focus,
+.contact-form-live textarea:focus {
+  border-color: var(--color-primary-dekor);
+}
+.contact-form-live .btn-submit {
+  background-color: var(--color-primary-dekor);
+  color: #fff;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: var(--border-radius-btn, 30px);
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  transition: opacity 0.3s;
+}
+.contact-form-live .btn-submit:hover {
+  opacity: 0.9;
+}
+</style>
+
+<div class="contact-live-wrap">
+  <h1 class="contact-live-title">{{ section.settings.title | default: page.title }}</h1>
+  
+  {% if section.settings.description != blank %}
+    <div class="contact-live-desc">
+      {{ section.settings.description }}
+    </div>
+  {% else %}
+    <p class="contact-live-desc">We'd love to hear from you. Please fill out the form below.</p>
+  {% endif %}
+
+  {%- form 'contact', id: 'ContactForm', class: 'contact-form-live' -%}
+    {%- if form.posted_successfully? -%}
+      <div class="form-status form-status-list form__message" tabindex="-1" autofocus style="color: green; margin-bottom:20px; text-align:center;">
+        Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi sớm nhất có thể. (Thanks for contacting us. We'll get back to you as soon as possible.)
+      </div>
+    {%- elsif form.errors -%}
+      <div class="form__message" style="color: red; margin-bottom:20px; text-align:center;">
+        Có lỗi xảy ra. Hãy kiểm tra lại thông tin. (Please adjust the following)
+        {{ form.errors | default_errors }}
+      </div>
+    {%- endif -%}
+
+    <div class="form-group">
+      <label for="ContactForm-name">Name</label>
+      <input type="text" id="ContactForm-name" name="contact[Name]" value="{{ form.name }}" placeholder="Your Name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="ContactForm-email">Email</label>
+      <input type="email" id="ContactForm-email" name="contact[email]" value="{{ form.email }}" placeholder="your@email.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="ContactForm-phone">Phone Number</label>
+      <input type="tel" id="ContactForm-phone" name="contact[Phone]" value="{{ form.phone }}" placeholder="(optional)">
+    </div>
+
+    <div class="form-group">
+      <label for="ContactForm-body">Message</label>
+      <textarea id="ContactForm-body" name="contact[Message]" rows="6" placeholder="How can we help?" required>{{ form.body }}</textarea>
+    </div>
+
+    <button type="submit" class="btn-submit">
+      Submit
+    </button>
+  {%- endform -%}
+</div>
+
+{% schema %}
+{
+  "name": "Live Contact Page",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Tiêu đề trang"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Nội dung mô tả ngắn"
+    }
+  ]
+}
+{% endschema %}

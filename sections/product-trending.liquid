@@ -1,0 +1,44 @@
+{%- comment -%} Section: Product Trending - hiển thị sản phẩm trending từ collection {%- endcomment -%}
+
+<div class="product-trending page-width section-{{ section.id }}-padding" style="padding-top: 36px; padding-bottom: 36px;">
+  {%- if section.settings.title != blank -%}
+    <h2 class="product-trending__heading h2 center">{{ section.settings.title }}</h2>
+  {%- endif -%}
+
+  {%- if section.settings.collection != blank -%}
+    {%- assign trending_collection = collections[section.settings.collection] -%}
+    <ul class="grid grid--2-col-tablet grid--4-col-desktop" role="list">
+      {%- for product in trending_collection.products limit: 8 -%}
+        <li class="grid__item">
+          {% render 'card-product', card_product: product, show_secondary_image: true %}
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</div>
+
+<style>
+  .product-trending__heading { text-align: center; margin-bottom: 2.5rem; }
+</style>
+
+{% schema %}
+{
+  "name": "Product Trending",
+  "class": "product-trending",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Heading", "default": "Featured collection product" },
+    { "type": "collection", "id": "collection", "label": "Select a collection" },
+    { "type": "select", "id": "sort_by", "label": "Sort by", "options": [
+      { "value": "manual", "label": "Manual" },
+      { "value": "best-selling", "label": "Best selling" },
+      { "value": "title-ascending", "label": "Title, A-Z" },
+      { "value": "title-descending", "label": "Title, Z-A" },
+      { "value": "price-ascending", "label": "Price, low to high" },
+      { "value": "price-descending", "label": "Price, high to low" },
+      { "value": "created-ascending", "label": "Date, old to new" },
+      { "value": "created-descending", "label": "Date, new to old" }
+    ], "default": "manual" }
+  ],
+  "presets": [{ "name": "Product Trending", "category": "Product" }]
+}
+{% endschema %}

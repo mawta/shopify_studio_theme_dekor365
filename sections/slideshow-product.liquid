@@ -1,0 +1,54 @@
+{%- comment -%} Section: Slideshow Product - carousel sản phẩm từ collection {%- endcomment -%}
+
+<div class="slideshow-product page-width section-{{ section.id }}-padding" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="slideshow-product__header">
+    {%- if section.settings.title != blank -%}
+      <h2 class="slideshow-product__heading h2">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    {%- if section.settings.lable_button != blank and section.settings.url_collection != blank -%}
+      <a href="{{ section.settings.url_collection }}" class="slideshow-product__link link">
+        {{ section.settings.lable_button }} →
+      </a>
+    {%- endif -%}
+  </div>
+
+  {%- if section.settings.collection != blank -%}
+    {%- assign slide_collection = collections[section.settings.collection] -%}
+    <div class="slideshow-product__grid">
+      {%- for product in slide_collection.products limit: section.settings.products_to_show -%}
+        <div class="slideshow-product__item">
+          {% render 'card-product', card_product: product, show_secondary_image: true %}
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>
+
+<style>
+  .slideshow-product__header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+  .slideshow-product__link { font-size: 1.4rem; text-decoration: none; color: rgb(var(--color-link)); }
+  .slideshow-product__link:hover { text-decoration: underline; }
+  .slideshow-product__grid { display: flex; gap: 1.5rem; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 0.5rem; }
+  .slideshow-product__grid::-webkit-scrollbar { display: none; }
+  .slideshow-product__item { flex: 0 0 calc(25% - 1.125rem); scroll-snap-align: start; min-width: 0; }
+  @media screen and (max-width: 989px) { .slideshow-product__item { flex: 0 0 calc(33.333% - 1rem); } }
+  @media screen and (max-width: 749px) { .slideshow-product__item { flex: 0 0 calc(50% - 0.75rem); } }
+</style>
+
+{% schema %}
+{
+  "name": "Slideshow product",
+  "class": "slideshow-product",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Heading", "default": "Featured collection product" },
+    { "type": "url", "id": "url_collection", "label": "Url Collection" },
+    { "type": "text", "id": "lable_button", "label": "Label button" },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "t:sections.all.padding.padding_top", "default": 36 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "t:sections.all.padding.padding_bottom", "default": 36 },
+    { "type": "collection", "id": "collection", "label": "t:sections.featured-collection.settings.collection.label" },
+    { "type": "range", "id": "products_to_show", "min": 2, "max": 25, "step": 1, "default": 4, "label": "t:sections.featured-collection.settings.products_to_show.label" }
+  ],
+  "presets": [{ "name": "Slideshow product" }]
+}
+{% endschema %}

@@ -1,0 +1,100 @@
+{%- comment -%} Section: Collection header {%- endcomment -%}
+<div class="collection-header-top page-width" style="padding-top: 2rem; padding-bottom: 2rem; text-align: center;">
+  {%- if section.settings.title != blank -%}
+    <h2 class="h1">{{ section.settings.title }}</h2>
+  {%- endif -%}
+  {%- if section.settings.subtitle != blank -%}
+    <p class="collection-header__subtitle">{{ section.settings.subtitle }}</p>
+  {%- endif -%}
+  
+  {%- if section.blocks.size > 0 -%}
+    <div class="collection-header__grid" style="display: grid; grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr); gap: 2rem; margin-top: 2rem;">
+      {%- for block in section.blocks -%}
+        <a href="{{ block.settings.link_collection }}" class="collection-header__item" {{ block.shopify_attributes }} style="text-decoration: none; color: inherit;">
+          {%- if block.settings.image != blank -%}
+            <div class="collection-header__image-wrapper" style="border-radius: var(--buttons-radius); overflow: hidden; margin-bottom: 1rem;">
+              <img src="{{ block.settings.image | image_url: width: 400 }}" width="400" height="400" alt="{{ block.settings.name_collection }}" loading="lazy" style="width: 100%; height: {% if section.settings.align_height %}{{ section.settings.collection_height }}px{% else %}auto{% endif %}; object-fit: cover;">
+            </div>
+          {%- endif -%}
+          {%- if block.settings.name_collection != blank -%}
+            <h3 class="h4">{{ block.settings.name_collection }}</h3>
+          {%- endif -%}
+        </a>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Tiêu đề bộ sưu tập",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Tiêu đề",
+      "default": "Shop by Category"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Phụ đề",
+      "default": "Subheading"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 4,
+      "label": "Số cột"
+    },
+    {
+      "type": "checkbox",
+      "id": "align_height",
+      "label": "Căn bằng chiều cao ảnh",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "collection_height",
+      "label": "Chiều cao ảnh",
+      "min": 150,
+      "max": 400,
+      "step": 10,
+      "default": 200,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Cột",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Hình ảnh"
+        },
+        {
+          "type": "text",
+          "id": "name_collection",
+          "label": "Tên bộ sưu tập"
+        },
+        {
+          "type": "url",
+          "id": "link_collection",
+          "label": "URL liên kết"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tiêu đề bộ sưu tập"
+    }
+  ]
+}
+{% endschema %}

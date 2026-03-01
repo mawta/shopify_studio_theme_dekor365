@@ -1,0 +1,24 @@
+/* Section: Collection Tabs - tab navigation và responsive grid */
+.collection-tabs__banner { display: block; margin-bottom: 2rem; }
+.collection-tabs__banner img { width: 100%; height: auto; border-radius: var(--media-radius); }
+.collection-tabs__heading { text-align: center; margin-bottom: 2rem; }
+.collection-tabs__nav { display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2.5rem; }
+.collection-tabs__tab {
+  padding: 0.8rem 1.8rem;
+  border: 1px solid rgba(var(--color-foreground), 0.15);
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-body-family);
+  font-size: 1.4rem;
+  border-radius: var(--buttons-radius);
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  color: rgb(var(--color-foreground));
+}
+.collection-tabs__tab.active,
+.collection-tabs__tab:hover {
+  background: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+  border-color: rgb(var(--color-button));
+}
+.collection-tabs__panel { display: none; }
+.collection-tabs__panel.active { display: block; }

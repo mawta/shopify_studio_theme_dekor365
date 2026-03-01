@@ -1,0 +1,29 @@
+{%- comment -%} Section: Trust Badge - Hiển thị biểu tượng thanh toán an toàn {%- endcomment -%}
+
+<div class="trust-badge page-width section-{{ section.id }}-padding" style="text-align: center; padding: 2rem 0;">
+  {%- if section.settings.title != blank -%}
+    <h3 class="trust-badge__title" style="margin-bottom: 1.5rem;">{{ section.settings.title }}</h3>
+  {%- endif -%}
+  {% render 'trust-img' %}
+</div>
+
+{% schema %}
+{
+  "name": "Biểu tượng tin cậy",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Tiêu đề",
+      "default": "Thanh toán an toàn bảo mật"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Biểu tượng tin cậy"
+    }
+  ]
+}
+{% endschema %}

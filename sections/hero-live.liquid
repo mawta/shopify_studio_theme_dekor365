@@ -1,0 +1,142 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+<style>
+.hero-live {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f7f7f7; /* Fallback */
+}
+
+/* Aspect ratio for the hero */
+.hero-live-bg {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-live-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  max-width: 500px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.85); /* Slight transparency if needed, or none if bg is light */
+  border-radius: 8px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #222;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 1.6rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: var(--color-primary-dekor);
+  color: #fff;
+  padding: 15px 40px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--border-radius-btn);
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: var(--color-primary-dekor-hover);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero-live-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    max-width: 100%;
+    margin: 20px;
+    text-align: center;
+  }
+  .hero-title { font-size: 2.5rem; }
+  .hero-subtitle { font-size: 1.4rem; }
+}
+</style>
+
+<div class="hero-live">
+  {%- if section.settings.image != blank -%}
+    <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.title | escape }}" class="hero-live-bg">
+  {%- else -%}
+    {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg hero-live-bg' }}
+  {%- endif -%}
+
+  <div class="hero-live-content">
+    {%- if section.settings.title != blank -%}
+      <h2 class="hero-title">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subtitle != blank -%}
+      <p class="hero-subtitle">{{ section.settings.subtitle }}</p>
+    {%- endif -%}
+    {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+      <a href="{{ section.settings.button_link }}" class="hero-btn">{{ section.settings.button_label }}</a>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Live Hero Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Ảnh nền"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "default": "PERSONALISED PRODUCTS WITH SO MUCH LOVE",
+      "label": "Tiêu đề"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "default": "Create unique gifts for your loved ones",
+      "label": "Mô tả phụ"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "SHOP NOW",
+      "label": "Tên Nút"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link Nút"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Live Hero Banner"
+    }
+  ]
+}
+{% endschema %}

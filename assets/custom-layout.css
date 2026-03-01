@@ -1,0 +1,56 @@
+/* Custom CSS for Dekor365 Clone */
+
+:root {
+  --color-primary-dekor: #ea972d;
+  --color-primary-dekor-hover: #cf8424;
+  --border-radius-btn: 30px;
+  --border-radius-input: 5px;
+  --bg-color-main: #fafafa;
+}
+
+/* Global Base */
+body {
+  background-color: var(--bg-color-main);
+}
+
+/* Global Buttons */
+.button, 
+.btn, 
+.shopify-payment-button__button--unbranded {
+  background-color: var(--color-primary-dekor) !important;
+  color: #ffffff !important;
+  border-radius: var(--border-radius-btn) !important;
+  border: none !important;
+  transition: all 0.2s ease-in-out;
+  padding: 10px 20px;
+  box-shadow: none !important;
+}
+
+.button:hover, 
+.btn:hover,
+.shopify-payment-button__button--unbranded:hover {
+  background-color: var(--color-primary-dekor-hover) !important;
+}
+
+.button::after, .button::before {
+  display: none !important;
+}
+
+/* Secondary Button / Outline */
+.button--secondary,
+.btn-outline {
+  background-color: transparent !important;
+  color: var(--color-primary-dekor) !important;
+  border: 2px solid var(--color-primary-dekor) !important;
+}
+
+.button--secondary:hover,
+.btn-outline:hover {
+  background-color: var(--color-primary-dekor) !important;
+  color: #ffffff !important;
+}
+
+/* Cards & Images */
+.card__media, .media, .global-media-settings {
+  border-radius: 8px !important;
+}

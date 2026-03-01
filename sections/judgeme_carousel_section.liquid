@@ -1,0 +1,20 @@
+{%- comment -%} Section: JudgeMe Carousel - hiển thị review carousel từ JudgeMe app {%- endcomment -%}
+
+<div class="judgeme-carousel page-width" style="max-width: {{ section.settings.maxwidth }}px; margin: 0 auto; padding: 2rem 0;">
+  <div id="judgeme_carousel_widget"></div>
+</div>
+
+{% schema %}
+{
+  "name": "Judge.me Carousel",
+  "settings": [
+    {
+      "type": "number",
+      "id": "maxwidth",
+      "label": "Max width",
+      "default": 1440
+    }
+  ],
+  "presets": [{ "name": "Judge.me Carousel" }]
+}
+{% endschema %}

@@ -1,0 +1,80 @@
+{%- comment -%} Section: BFCM Split Banner - banner chia đôi cho sale events {%- endcomment -%}
+
+<div class="bfcm-banner" style="margin-top: {{ section.settings.margin_top }}px; margin-bottom: {{ section.settings.margin_bottom }}px;">
+  {%- comment -%} Cột trái: nội dung text + nút {%- endcomment -%}
+  <div class="bfcm-banner__left" style="background-color: {{ section.settings.bg_left }};">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="bfcm-banner__heading" style="color: {{ section.settings.heading_color }};">
+        {{ section.settings.heading }}
+      </h2>
+    {%- endif -%}
+    {%- if section.settings.description != blank -%}
+      <p class="bfcm-banner__desc" style="color: {{ section.settings.text_color }};">
+        {{ section.settings.description | newline_to_br }}
+      </p>
+    {%- endif -%}
+    {%- if section.settings.btn_label != blank -%}
+      <a href="{{ section.settings.btn_link }}" class="bfcm-banner__btn"
+         style="background-color: {{ section.settings.btn_bg }}; color: {{ section.settings.btn_text }};">
+        {{ section.settings.btn_label }}
+      </a>
+    {%- endif -%}
+  </div>
+
+  {%- comment -%} Cột phải: ảnh {%- endcomment -%}
+  <div class="bfcm-banner__right" style="background-color: {{ section.settings.bg_right }};">
+    {%- if section.settings.image_right != blank -%}
+      {%- if section.settings.link_right != blank -%}<a href="{{ section.settings.link_right }}">{%- endif -%}
+        <img src="{{ section.settings.image_right | image_url: width: 800 }}"
+             alt="{{ section.settings.heading | escape }}"
+             loading="lazy"
+             width="800"
+             height="{{ 800 | divided_by: section.settings.image_right.aspect_ratio | round }}">
+      {%- if section.settings.link_right != blank -%}</a>{%- endif -%}
+    {%- endif -%}
+  </div>
+</div>
+
+<style>
+  .bfcm-banner { display: grid; grid-template-columns: 1fr 1fr; min-height: 280px; overflow: hidden; }
+  .bfcm-banner__left { display: flex; flex-direction: column; justify-content: center; padding: 3rem 4rem; }
+  .bfcm-banner__heading { font-family: var(--font-heading-family); font-size: 3.2rem; font-weight: bold; margin: 0 0 1rem; line-height: 1.2; }
+  .bfcm-banner__desc { font-size: 1.6rem; line-height: 1.6; margin: 0 0 1.5rem; }
+  .bfcm-banner__btn { display: inline-block; padding: 1.2rem 2.8rem; text-decoration: none; font-weight: 700; font-size: 1.4rem; letter-spacing: 0.1em; border-radius: var(--buttons-radius); transition: opacity 0.2s; align-self: flex-start; }
+  .bfcm-banner__btn:hover { opacity: 0.85; }
+  .bfcm-banner__right { display: flex; align-items: center; justify-content: center; }
+  .bfcm-banner__right img { width: 100%; height: 100%; object-fit: cover; }
+  @media screen and (max-width: 749px) {
+    .bfcm-banner { grid-template-columns: 1fr; }
+    .bfcm-banner__left { padding: 2rem; text-align: center; align-items: center; }
+    .bfcm-banner__heading { font-size: 2.4rem; }
+    .bfcm-banner__right { min-height: 200px; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "BFCM Split Banner",
+  "settings": [
+    { "type": "header", "content": "Màu nền & Bố cục" },
+    { "type": "color", "id": "bg_left", "label": "Màu nền bên trái", "default": "#FFF6EB" },
+    { "type": "color", "id": "bg_right", "label": "Màu nền bên phải", "default": "#8C231B" },
+    { "type": "header", "content": "Căn chỉnh lề (Margin)" },
+    { "type": "range", "id": "margin_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Lề trên", "default": 0 },
+    { "type": "range", "id": "margin_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Lề dưới", "default": 0 },
+    { "type": "header", "content": "Nội dung bên trái" },
+    { "type": "text", "id": "heading", "label": "Tiêu đề", "default": "BFCM Sale Is On" },
+    { "type": "color", "id": "heading_color", "label": "Màu tiêu đề", "default": "#8C231B" },
+    { "type": "textarea", "id": "description", "label": "Mô tả", "default": "Your moment to save big and love big is right now!" },
+    { "type": "color", "id": "text_color", "label": "Màu mô tả", "default": "#000000" },
+    { "type": "text", "id": "btn_label", "label": "Chữ trên nút", "default": "SHOP NOW" },
+    { "type": "url", "id": "btn_link", "label": "Link nút (Cột trái)" },
+    { "type": "color", "id": "btn_bg", "label": "Màu nền nút", "default": "#EA972D" },
+    { "type": "color", "id": "btn_text", "label": "Màu chữ nút", "default": "#FFFFFF" },
+    { "type": "header", "content": "Ảnh bên phải" },
+    { "type": "image_picker", "id": "image_right", "label": "Chọn ảnh banner phải" },
+    { "type": "url", "id": "link_right", "label": "Link cho ảnh bên phải" }
+  ],
+  "presets": [{ "name": "BFCM Split Banner", "category": "Image" }]
+}
+{% endschema %}

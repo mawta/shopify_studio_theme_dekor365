@@ -1,0 +1,122 @@
+{%- comment -%} Section: Slideshow width text {%- endcomment -%}
+
+<div class="slideshow-width-text page-width section-{{ section.id }}-padding" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="grid grid--2-col-tablet grid--1-col">
+    <div class="grid__item slideshow-text-col" style="align-self: center; padding-right: 2rem;">
+      {%- if section.settings.title != blank -%}
+        <h2 class="h1" style="margin-bottom: 2rem;">{{ section.settings.title }}</h2>
+      {%- endif -%}
+      <div class="slideshow-width-text__links" style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+        {%- if section.settings.title_sub_collection_1 != blank -%}
+          <a href="{{ section.settings.url_sub_collection_1 }}" class="button button--secondary">{{ section.settings.title_sub_collection_1 }}</a>
+        {%- endif -%}
+        {%- if section.settings.title_sub_collection != blank -%}
+          <a href="{{ section.settings.url_sub_collection }}" class="button button--secondary">{{ section.settings.title_sub_collection }}</a>
+        {%- endif -%}
+      </div>
+      {%- if section.settings.sub_review != blank -%}
+        <p class="slideshow-width-text__review">{{ section.settings.sub_review }}</p>
+      {%- endif -%}
+    </div>
+    <div class="grid__item slideshow-product-col" style="overflow-x: auto;">
+      <div class="slideshow-width-text__carousel" style="display: flex; gap: 1.5rem; padding-bottom: 1rem; scroll-snap-type: x mandatory;">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'product' -%}
+            <div class="slideshow-width-text__item" style="flex: 0 0 70%; min-width: 250px; scroll-snap-align: start;" {{ block.shopify_attributes }}>
+               {% assign product = block.settings.product %}
+               {%- if product != blank -%}
+                 {% render 'card-product', card_product: product, show_rating: true %}
+               {%- else -%}
+                 <div class="placeholder-card" style="background: #f4f4f4; padding: 2rem; text-align: center; border-radius: var(--buttons-radius);">
+                   Product {{ forloop.index }}
+                 </div>
+               {%- endif -%}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Trình chiếu kèm chữ",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Tiêu đề",
+      "default": "Featured collection product"
+    },
+    {
+      "type": "url",
+      "id": "url_sub_collection_1",
+      "label": "URL mục phụ 1"
+    },
+    {
+      "type": "text",
+      "id": "title_sub_collection_1",
+      "label": "Tên mục phụ 1"
+    },
+    {
+      "type": "url",
+      "id": "url_sub_collection",
+      "label": "URL mục phụ 2"
+    },
+    {
+      "type": "text",
+      "id": "title_sub_collection",
+      "label": "Tên mục phụ 2"
+    },
+    {
+      "type": "text",
+      "id": "sub_review",
+      "label": "Tiêu đề đánh giá phụ"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Khoảng đệm trên",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Khoảng đệm dưới",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Sản phẩm",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Sản phẩm"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trình chiếu kèm chữ"
+    }
+  ]
+}
+{% endschema %}
