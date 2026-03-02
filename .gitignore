@@ -1,13 +1,6 @@
 # Shopify Theme - Git Ignore
 
 # =============================================================================
-# CONFIG - Dữ liệu cấu hình cụ thể của từng store
-# =============================================================================
-# File này chứa cấu hình riêng của từng store (colors, fonts, content)
-# Không nên commit vì mỗi store có settings khác nhau
-config/settings_data.json
-
-# =============================================================================
 # SYSTEM FILES
 # =============================================================================
 .DS_Store
