@@ -43,6 +43,7 @@
           </ul>
         {%- else -%}
           <p>No collections found.</p>
+          {%- comment -%} Note: Không dùng translation key để tránh lỗi khi key chưa có trong locales {%- endcomment -%}
         {%- endif -%}
       </div>
     {%- endfor -%}
