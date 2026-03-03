@@ -1,44 +1,62 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "name": "Live Homepage",
   "sections": {
     "hero": {
       "type": "hero-live",
       "settings": {
+        "image": "shopify://shop_images/BannerNewShop1k6x1k-1606-0334.png",
         "title": "PERSONALISED PRODUCTS WITH SO MUCH LOVE",
         "subtitle": "Create unique gifts for your loved ones",
         "button_label": "SHOP NOW",
-        "button_link": "shopify:\/\/collections\/all"
+        "button_link": "shopify://collections/all"
       }
     },
     "collection_grid": {
       "type": "collection-list-live",
-      "settings": {
-        "title": "Shop by Product"
-      },
       "blocks": {
         "block_1": {
           "type": "collection",
-          "settings": {}
+          "settings": {
+            "collection": ""
+          }
         },
         "block_2": {
           "type": "collection",
-          "settings": {}
+          "settings": {
+            "collection": ""
+          }
         },
         "block_3": {
           "type": "collection",
-          "settings": {}
+          "settings": {
+            "collection": ""
+          }
         },
         "block_4": {
           "type": "collection",
-          "settings": {}
+          "settings": {
+            "collection": ""
+          }
         },
         "block_5": {
           "type": "collection",
-          "settings": {}
+          "settings": {
+            "collection": ""
+          }
         },
         "block_6": {
           "type": "collection",
-          "settings": {}
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
@@ -48,7 +66,10 @@
         "block_4",
         "block_5",
         "block_6"
-      ]
+      ],
+      "settings": {
+        "title": "Shop by Product"
+      }
     }
   },
   "order": [
