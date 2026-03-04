@@ -3600,3 +3600,37 @@ input[type="text"]:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
+.input-wrapper {
+  position: relative; /* Establish a positioning context for the label */
+  /* Add padding to ensure the input text doesn't overlap the label when it moves up */
+  padding-top: 15px; /* Adjust as needed based on your design */
+}
+
+.search-label {
+  position: absolute;
+  left: 0;
+  top: 50%; /* Start in the middle */
+  transform: translateY(-50%); /* Vertically center it initially */
+  color: #888; /* Placeholder-like color */
+  pointer-events: none; /* Make sure clicks pass through to the input */
+  transition: all 0.2s ease-out; /* Smooth transition for the label */
+}
+
+.search-form input[type="text"] {
+  /* Basic input styling */
+  width: 100%;
+  padding: 10px 0; /* Adjust padding as needed */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  /* Ensure the input is visible */
+}
+
+/* When the input is focused OR has content, move the label up and shrink it */
+.search-form input[type="text"]:focus + .search-label,
+.search-form input[type="text"]:not(:placeholder-shown) + .search-label {
+  top: 0; /* Move to the top */
+  font-size: 0.8em; /* Make it smaller */
+  color: #333; /* Change color */
+  transform: translateY(0%); /* Reset vertical centering */
+}
