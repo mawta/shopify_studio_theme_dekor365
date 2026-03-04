@@ -51,6 +51,7 @@
         "col_tumbler": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/BannercollectionTB.jpg",
             "title": "Tumbler",
             "text": "",
             "link_label": "",
@@ -60,6 +61,7 @@
         "col_canvas": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Bannercollection.jpg",
             "title": "Canvas & Poster",
             "text": "",
             "link_label": "",
@@ -69,6 +71,7 @@
         "col_apparel": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/BannercollectionShirt.jpg",
             "title": "Apparel",
             "text": "",
             "link_label": "",
@@ -78,6 +81,7 @@
         "col_wood_sign": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/3WoodCircleSign.jpg",
             "title": "Wood Sign",
             "text": "",
             "link_label": "",
@@ -87,6 +91,7 @@
         "col_pallet_sign": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/4WoodRectangleSign.jpg",
             "title": "Pallet Sign",
             "text": "",
             "link_label": "",
@@ -96,6 +101,7 @@
         "col_metal_sign": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/1MetalSign.jpg",
             "title": "Metal Sign",
             "text": "",
             "link_label": "",
