@@ -3595,3 +3595,8 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+input[type="text"]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
