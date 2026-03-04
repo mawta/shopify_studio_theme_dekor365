@@ -50,27 +50,58 @@
 
   .header-dekor-search form {
     display: flex;
-    background: #fafafa;
+    background: #fff;
     border-radius: 30px;
     padding: 2px 20px;
     align-items: center;
-    border: 1px solid #ddd;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+    position: relative;
   }
 
   .header-dekor-search form:focus-within {
-    border-color: var(--color-primary-dekor, #ea972d);
-    box-shadow: 0 0 0 2px rgba(234, 151, 45, 0.2);
+    border-color: #999;
+  }
+
+  /* Floating label wrapper */
+  .search-field-wrapper {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
 
   .header-dekor-search input {
     border: none;
     background: transparent;
-    flex: 1;
-    padding: 12px 0;
+    width: 100%;
+    padding: 18px 0 6px 0;
     outline: none;
     font-size: 15px;
     color: #333;
+    box-shadow: none !important;
+  }
+
+  /* Floating label */
+  .search-floating-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    transform-origin: left top;
+  }
+
+  /* Khi input được focus hoặc đã có value → label bay lên trên */
+  .header-dekor-search input:focus ~ .search-floating-label,
+  .header-dekor-search input:not(:placeholder-shown) ~ .search-floating-label {
+    top: 6px;
+    transform: translateY(0);
+    font-size: 11px;
+    color: #888;
   }
 
   .header-dekor-search button[type="submit"] {
@@ -387,7 +418,10 @@
       <!-- Search Bar (Desktop only) -->
       <div class="header-dekor-search">
         <form action="{{ routes.search_url }}" method="get" role="search">
-          <input type="text" name="q" placeholder="Search" value="{{ search.terms | escape }}" autocomplete="off">
+          <div class="search-field-wrapper">
+            <input type="text" name="q" placeholder=" " value="{{ search.terms | escape }}" autocomplete="off" id="header-search-input">
+            <label class="search-floating-label" for="header-search-input">Search</label>
+          </div>
           <button type="submit">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
           </button>
