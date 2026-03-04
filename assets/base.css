@@ -3596,7 +3596,7 @@ details-disclosure > details {
   }
 }
 
-input[type="text"]:focus {
+.header-dekor-search input[type="text"]:focus {
   outline: none !important;
   box-shadow: none !important;
 }
@@ -3617,7 +3617,7 @@ input[type="text"]:focus {
   transition: all 0.2s ease-out; /* Smooth transition for the label */
 }
 
-.search-form input[type="text"] {
+.header-dekor-search input[type="text"] {
   /* Basic input styling */
   width: 100%;
   padding: 10px 0; /* Adjust padding as needed */
@@ -3627,8 +3627,8 @@ input[type="text"]:focus {
 }
 
 /* When the input is focused OR has content, move the label up and shrink it */
-.search-form input[type="text"]:focus + .search-label,
-.search-form input[type="text"]:not(:placeholder-shown) + .search-label {
+.header-dekor-search input[type="text"]:focus + .search-label,
+.header-dekor-search input[type="text"]:not(:placeholder-shown) + .search-label {
   top: 0; /* Move to the top */
   font-size: 0.8em; /* Make it smaller */
   color: #333; /* Change color */
