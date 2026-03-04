@@ -20,12 +20,10 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
   <product-recommendations
     class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-    data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
-    data-section-id="{{ section.id }}"
-    data-product-id="{{ product.id }}"
+    data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
       <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
@@ -35,7 +33,6 @@
         class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
         role="list"
       >
-        {% assign skip_card_product_styles = false %}
         {% for recommendation in recommendations.products %}
           <li class="grid__item">
             {% render 'card-product',
@@ -44,35 +41,33 @@
               image_shape: section.settings.image_shape,
               show_secondary_image: section.settings.show_secondary_image,
               show_vendor: section.settings.show_vendor,
-              show_rating: section.settings.show_rating,
-              skip_styles: skip_card_product_styles
+              show_rating: section.settings.show_rating
             %}
           </li>
-          {%- assign skip_card_product_styles = true -%}
         {% endfor %}
       </ul>
     {% endif %}
   </product-recommendations>
   {% if section.settings.image_shape == 'arch' %}
-    {{ 'mask-arch.svg' | inline_asset_content }}
+    {% render 'mask-arch' %}
   {%- endif -%}
 </div>
 
 {% schema %}
 {
-  "name": "Related products",
+  "name": "t:sections.related-products.name",
   "tag": "section",
   "class": "section",
   "settings": [
     {
       "type": "paragraph",
-      "content": "Related products can be managed in the [Search & Discovery app](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
+      "content": "t:sections.related-products.settings.paragraph__1.content"
     },
     {
       "type": "inline_richtext",
       "id": "heading",
       "default": "You may also like",
-      "label": "Tiêu đề"
+      "label": "t:sections.related-products.settings.heading.label"
     },
     {
       "type": "select",
@@ -80,27 +75,19 @@
       "options": [
         {
           "value": "h2",
-          "label": "Nhỏ"
+          "label": "t:sections.all.heading_size.options__1.label"
         },
         {
           "value": "h1",
-          "label": "Trung bình"
+          "label": "t:sections.all.heading_size.options__2.label"
         },
         {
           "value": "h0",
-          "label": "Lớn"
-        },
-        {
-          "value": "hxl",
-          "label": "Rất lớn"
-        },
-        {
-          "value": "hxxl",
-          "label": "Extra extra large"
+          "label": "t:sections.all.heading_size.options__3.label"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "t:sections.all.heading_size.label"
     },
     {
       "type": "range",
@@ -109,43 +96,27 @@
       "max": 10,
       "step": 1,
       "default": 4,
-      "label": "Product count"
+      "label": "t:sections.related-products.settings.products_to_show.label"
     },
     {
       "type": "range",
       "id": "columns_desktop",
       "min": 1,
-      "max": 6,
+      "max": 5,
       "step": 1,
       "default": 4,
-      "label": "Columns"
-    },
-    {
-      "type": "select",
-      "id": "columns_mobile",
-      "default": "2",
-      "label": "Cột trên di động",
-      "options": [
-        {
-          "value": "1",
-          "label": "1"
-        },
-        {
-          "value": "2",
-          "label": "2"
-        }
-      ]    
+      "label": "t:sections.related-products.settings.columns_desktop.label"
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Phối màu",
-      "info": "To change the card color scheme, update your theme settings.",
-      "default": "scheme-1"
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "background-1"
     },
     {
       "type": "header",
-      "content": "Thẻ sản phẩm"
+      "content": "t:sections.related-products.settings.header__2.content"
     },
     {
       "type": "select",
@@ -153,19 +124,19 @@
       "options": [
         {
           "value": "adapt",
-          "label": "Adapt to image"
+          "label": "t:sections.related-products.settings.image_ratio.options__1.label"
         },
         {
           "value": "portrait",
-          "label": "Chân dung"
+          "label": "t:sections.related-products.settings.image_ratio.options__2.label"
         },
         {
           "value": "square",
-          "label": "Vuông"
+          "label": "t:sections.related-products.settings.image_ratio.options__3.label"
         }
       ],
       "default": "adapt",
-      "label": "Tỉ lệ khung hình"
+      "label": "t:sections.related-products.settings.image_ratio.label"
     },
     {
       "type": "select",
@@ -173,62 +144,83 @@
       "options": [
         {
           "value": "default",
-          "label": "Default"
+          "label": "t:sections.all.image_shape.options__1.label"
         },
         {
           "value": "arch",
-          "label": "Arch"
+          "label": "t:sections.all.image_shape.options__2.label"
         },
         {
           "value": "blob",
-          "label": "Blob"
+          "label": "t:sections.all.image_shape.options__3.label"
         },
         {
           "value": "chevronleft",
-          "label": "Chevron left"
+          "label": "t:sections.all.image_shape.options__4.label"
         },
         {
           "value": "chevronright",
-          "label": "Chevron right"
+          "label": "t:sections.all.image_shape.options__5.label"
         },
         {
           "value": "diamond",
-          "label": "Diamond"
+          "label": "t:sections.all.image_shape.options__6.label"
         },
         {
           "value": "parallelogram",
-          "label": "Parallelogram"
+          "label": "t:sections.all.image_shape.options__7.label"
         },
         {
           "value": "round",
-          "label": "Round"
+          "label": "t:sections.all.image_shape.options__8.label"
         }
       ],
       "default": "default",
-      "label": "Image shape"
+      "label": "t:sections.all.image_shape.label",
+      "info": "t:sections.all.image_shape.info"
     },
     {
       "type": "checkbox",
       "id": "show_secondary_image",
       "default": false,
-      "label": "Hiển thị second image on hover"
+      "label": "t:sections.related-products.settings.show_secondary_image.label"
     },
     {
       "type": "checkbox",
       "id": "show_vendor",
       "default": false,
-      "label": "Nhà cung cấp"
+      "label": "t:sections.related-products.settings.show_vendor.label"
     },
     {
       "type": "checkbox",
       "id": "show_rating",
       "default": false,
-      "label": "Product rating",
-      "info": "An app is required for product ratings. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-product-recommendations)"
+      "label": "t:sections.related-products.settings.show_rating.label",
+      "info": "t:sections.related-products.settings.show_rating.info"
     },
     {
       "type": "header",
-      "content": "Khoảng cách đệm"
+      "content": "t:sections.related-products.settings.header_mobile.content"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "default": "2",
+      "label": "t:sections.related-products.settings.columns_mobile.label",
+      "options": [
+        {
+          "value": "1",
+          "label": "t:sections.related-products.settings.columns_mobile.options__1.label"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.related-products.settings.columns_mobile.options__2.label"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
     },
     {
       "type": "range",
@@ -237,7 +229,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Trên",
+      "label": "t:sections.all.padding.padding_top",
       "default": 36
     },
     {
@@ -247,7 +239,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Dưới",
+      "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     }
   ]
