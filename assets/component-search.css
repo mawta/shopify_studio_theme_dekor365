@@ -72,3 +72,20 @@ input::-webkit-search-decoration {
 .template-search__results {
   position: relative;
 }
+
+.search__input.field__input:focus-visible,
+.search__input.field__input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.search-modal__form .field__input:focus-visible,
+.search-modal__form .field__input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.search-modal__form .field:hover:after,
+.search .field:hover:after {
+  box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity)) !important;
+}
