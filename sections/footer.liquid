@@ -82,34 +82,6 @@
   height: 25px;
   width: auto;
 }
-.scroll-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 45px;
-  height: 45px;
-  background-color: var(--color-primary-dekor);
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-  z-index: 999;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-.scroll-to-top.visible {
-  opacity: 1;
-  visibility: visible;
-}
-.scroll-to-top:hover {
-  background-color: var(--color-primary-dekor-hover);
-  color: white;
-}
 
 @media (max-width: 990px) {
   .footer-dekor-grid {
@@ -124,10 +96,6 @@
   }
   .footer-socials {
     justify-content: center;
-  }
-  .scroll-to-top {
-    bottom: 20px;
-    right: 20px;
   }
 }
 </style>
@@ -220,7 +188,7 @@
   </div>
 </footer>
 
-<!-- Scroll to Top Button -->
+{% comment %} <!-- Scroll to Top Button -->
 <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top" title="Scroll to top">
   <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
 </button>
@@ -242,7 +210,7 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
-</script>
+</script> {% endcomment %}
 
 {% schema %}
 {
