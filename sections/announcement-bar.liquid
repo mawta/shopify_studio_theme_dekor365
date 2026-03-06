@@ -1,12 +1,20 @@
+{%- comment -%} Section: Announcement Bar - Thanh thông báo phong cách Macorner {%- endcomment -%}
+
 <style>
 .announcement-bar-live {
-  background: linear-gradient(90deg, #f0f4f8 0%, #e8edf3 50%, #f0f4f8 100%);
+  background: {{ section.settings.bg_color | default: '#F36621' }};
   text-align: center;
   padding: 10px 0;
   font-size: 15px;
-  color: #333;
+  font-weight: 600;
+  color: {{ section.settings.text_color | default: '#ffffff' }};
   margin: 0;
-  border-bottom: 1px solid #e1e7ec;
+  border-bottom: none;
+  letter-spacing: 0.02em;
+}
+.announcement-bar-live a {
+  color: {{ section.settings.text_color | default: '#ffffff' }};
+  text-decoration: underline;
 }
 </style>
 
@@ -22,7 +30,19 @@
       "type": "text",
       "id": "text",
       "label": "Văn bản thông báo",
-      "default": "⭐Free Shipping for all orders over $100⭐"
+      "default": "Buy 2+, Save 10% | Code: MSW2"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Màu nền",
+      "default": "#F36621"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Màu chữ",
+      "default": "#ffffff"
     }
   ],
   "presets": [
@@ -32,3 +52,4 @@
   ]
 }
 {% endschema %}
+

@@ -7,7 +7,9 @@
       "blocks": {},
       "block_order": [],
       "settings": {
-        "text": "⭐Free Shipping for all orders over $100⭐"
+        "text": "Buy 2+, Save 10% | Code: MSW2",
+        "bg_color": "#F36621",
+        "text_color": "#ffffff"
       }
     },
     "header": {

@@ -1,0 +1,143 @@
+/* ============================================
+   Macorner Style Product - Custom CSS
+   Màu sắc và phong cách giống macorner.co
+   ============================================ */
+
+/* --- Tiêu đề sản phẩm: Navy Blue --- */
+.product__title h1,
+.product__title .h1 {
+  color: #0B2A4A !important;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* --- Giá sale: Cam Macorner --- */
+.price--large .price-item--sale {
+  color: #F36621 !important;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.price--large .price-item--regular {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 1.6rem;
+}
+
+/* Badge giảm giá */
+.badge.price__badge-sale {
+  background-color: #F36621;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 2px 8px;
+}
+
+/* --- Nút ADD TO CART: Cam Macorner --- */
+.product-form__submit,
+.product-form__submit.button--primary {
+  background-color: #F36621 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 14px 24px;
+  transition: background-color 0.3s ease;
+}
+.product-form__submit:hover {
+  background-color: #e05a1a !important;
+}
+
+/* --- Variant picker: Button style --- */
+.product-form__input--pill .product-form__input {
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+.product-form__input--pill .product-form__input:hover,
+.product-form__input--pill .product-form__input.active {
+  border-color: #F36621;
+  color: #F36621;
+}
+
+/* --- Collapsible tabs: Icon và style --- */
+.product__accordion .summary__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.product__accordion .accordion__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0B2A4A;
+}
+.product__accordion .icon-accordion {
+  color: #0B2A4A;
+}
+
+/* --- Breadcrumb style --- */
+.breadcrumb {
+  font-size: 1.3rem;
+  color: #888;
+  padding: 1rem 0;
+}
+.breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  color: #F36621;
+}
+
+/* --- Footer: Navy Blue background --- */
+.footer {
+  background-color: #0B2A4A !important;
+  color: #ffffff !important;
+}
+.footer .footer-block__heading,
+.footer h2,
+.footer h3,
+.footer h4 {
+  color: #ffffff !important;
+}
+.footer a {
+  color: #cccccc !important;
+}
+.footer a:hover {
+  color: #F36621 !important;
+}
+
+/* --- Newsletter banner: Kem background --- */
+.newsletter-section {
+  background-color: #F5EDE3;
+}
+.newsletter-form__button {
+  background-color: #F36621 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.newsletter-form__button:hover {
+  background-color: #e05a1a !important;
+}
+
+/* --- Quantity selector: Macorner style --- */
+.quantity__button {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f9f9f9;
+}
+.quantity__input {
+  border: 1px solid #ddd;
+  text-align: center;
+}
