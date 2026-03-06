@@ -234,9 +234,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   z-index: 2;
 }
 
-::selection {
+/* ::selection {
   background-color: rgba(var(--color-foreground), 0.2);
-}
+} */
 
 .text-body {
   font-size: 1.5rem;
@@ -3594,4 +3594,9 @@ details-disclosure > details {
   100% {
     transform: translateX(100%) scaleX(0);
   }
+}
+
+.header-dekor-search input[type="text"]:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }

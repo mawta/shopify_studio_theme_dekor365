@@ -1,9 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "logo": "shopify://shop_images/LogoDekor365chuan.png",
     "logo_width": 120,
     "favicon": "shopify://shop_images/ava32x32px2.png",
-    "type_header_font": "cormorant_n5",
+    "type_header_font": "nunito_n4",
     "heading_scale": 120,
     "type_body_font": "cormorant_n5",
     "body_scale": 110,
@@ -134,7 +143,6 @@
       }
     },
     "content_for_index": [],
-    "blocks": {},
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -171,23 +179,34 @@
       },
       "scheme-4": {
         "settings": {
-          "background": "#F36621",
+          "background": "#bc5631",
           "background_gradient": "",
           "text": "#fcfcfc",
           "button": "#fcfcfc",
-          "button_label": "#F36621",
+          "button_label": "#bc5631",
           "secondary_button_label": "#fcfcfc",
           "shadow": "#0B2A4A"
         }
       },
       "scheme-5": {
         "settings": {
-          "background": "#18566C",
+          "background": "#18566c",
           "background_gradient": "",
           "text": "#fcfcfc",
           "button": "#fcfcfc",
-          "button_label": "#18566C",
+          "button_label": "#18566c",
           "secondary_button_label": "#fcfcfc",
+          "shadow": "#103948"
+        }
+      },
+      "scheme-f229f38b-4379-4216-8714-7deb16d5a4b6": {
+        "settings": {
+          "background": "rgba(0,0,0,0)",
+          "background_gradient": "",
+          "text": "#103948",
+          "button": "#103948",
+          "button_label": "#fcfcfc",
+          "secondary_button_label": "#052c46",
           "shadow": "#103948"
         }
       }

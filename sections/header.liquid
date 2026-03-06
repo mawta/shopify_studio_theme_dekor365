@@ -1,140 +1,410 @@
+{{ 'section-header.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
+{{ 'component-search.css' | asset_url | stylesheet_tag }}
+{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}
+
+{%- if settings.predictive_search_enabled -%}
+  <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+  {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
 <style>
-.header-dekor {
-  background: #ffffff;
-}
+  /* ========================================
+     Dekor365 Custom Header Styles
+     Giữ layout giống theme gốc (365dekor.com)
+     ======================================== */
 
-.header-dekor-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
+  .header-dekor {
+    background: #ffffff;
+  }
 
-.header-dekor-logo img {
-  max-height: 45px;
-  width: auto;
-  display: block;
-}
+  /* === Top Row: Logo | Search | Icons === */
+  .header-dekor-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+  }
 
-.header-dekor-logo a {
-  text-decoration: none;
-  color: #333;
-}
+  .header-dekor-logo img {
+    max-height: 45px;
+    width: auto;
+    display: block;
+  }
 
-.header-dekor-search {
-  flex: 1;
-  max-width: 600px;
-  margin: 0 40px;
-}
+  .header-dekor-logo a {
+    text-decoration: none;
+    color: #333;
+  }
 
-.header-dekor-search form {
-  display: flex;
-  background: #fafafa;
-  border-radius: 30px;
-  padding: 2px 20px;
-  align-items: center;
-  border: 1px solid #ddd;
-}
+  /* === Search Bar === */
+  .header-dekor-search {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 40px;
+    position: relative;
+  }
 
-.header-dekor-search input {
-  border: none;
-  background: transparent;
-  flex: 1;
-  padding: 12px 0;
-  outline: none;
-  font-size: 15px;
-  color: #333;
-}
+  .header-dekor-search form {
+    display: flex;
+    background: #fff;
+    border-radius: 30px;
+    padding: 2px 20px;
+    align-items: center;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+    position: relative;
+  }
 
-.header-dekor-icons {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  font-size: 14px;
-}
+  .header-dekor-search form:focus-within {
+    border-color: #999;
+  }
 
-.header-dekor-icons a, .header-dekor-icons .utility-item {
-  color: #333;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
+  /* Floating label wrapper */
+  .search-field-wrapper {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
 
-.header-icon-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 13px;
-}
+  .header-dekor-search input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 18px 0 6px 0;
+    outline: none;
+    font-size: 15px;
+    color: #333;
+    box-shadow: none !important;
+  }
 
-.header-icon-item svg {
-  width: 20px;
-  height: 20px;
-  margin-bottom: 3px;
-  stroke: #333;
-}
+  /* Floating label */
+  .search-floating-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    transform-origin: left top;
+  }
 
-/* Bottom Menu */
-.header-dekor-bottom {
-  display: flex;
-  justify-content: center;
-  padding: 15px 0;
-}
+  /* Khi input được focus hoặc đã có value → label bay lên trên */
+  .header-dekor-search input:focus ~ .search-floating-label,
+  .header-dekor-search input:not(:placeholder-shown) ~ .search-floating-label {
+    top: 6px;
+    transform: translateY(0);
+    font-size: 11px;
+    color: #888;
+  }
 
-.header-dekor-border-wrap {
-  border-bottom: 1px solid #333; /* Live site has a thin dark border separating header and content */
-  padding-bottom: 15px;
-}
+  .header-dekor-search button[type="submit"] {
+    background: transparent !important;
+    color: #333 !important;
+    border: none !important;
+    padding: 0 !important;
+    cursor: pointer;
+    box-shadow: none !important;
+    display: flex;
+    align-items: center;
+  }
 
-.header-dekor-menu {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+  /* === Utility Icons === */
+  .header-dekor-icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
 
-.header-dekor-menu a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
+  .header-dekor-icons a,
+  .header-dekor-icons .utility-item {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+  }
 
-.header-dekor-menu a:hover {
-  color: var(--color-primary-dekor);
-}
+  .header-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+  }
 
-@media (max-width: 768px) {
-  .header-dekor-top { 
-    flex-direction: column; 
-    gap: 15px; 
+  .header-icon-item svg {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 3px;
+    stroke: #333;
+  }
+
+  /* === Bottom Menu === */
+  .header-dekor-bottom {
+    display: flex;
+    justify-content: center;
     padding: 15px 0;
   }
-  .header-dekor-search { 
-    max-width: 100%; 
-    margin: 0; 
-    width: 100%; 
+
+  .header-dekor-border-wrap {
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
   }
-  .header-dekor-icons {
-    justify-content: space-between;
-    width: 100%;
-  }
+
   .header-dekor-menu {
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-}
+
+  .header-dekor-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+  }
+
+  .header-dekor-menu li a.active,
+  .header-dekor-menu a:hover {
+    color: var(--color-primary-dekor, #ea972d);
+  }
+
+  /* === Hamburger Button (Mobile) === */
+  .header-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .header-hamburger svg {
+    width: 24px;
+    height: 24px;
+    stroke: #333;
+  }
+
+  /* === Mobile Search Overlay === */
+  .mobile-search-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1000;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: slideDown 0.3s ease;
+  }
+
+  .mobile-search-overlay.active {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .mobile-search-overlay form {
+    flex: 1;
+    display: flex;
+    background: #fafafa;
+    border-radius: 30px;
+    padding: 2px 15px;
+    align-items: center;
+    border: 2px solid var(--color-primary-dekor, #ea972d);
+  }
+
+  .mobile-search-overlay input {
+    border: none;
+    background: transparent;
+    flex: 1;
+    padding: 12px 0;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .mobile-search-close {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    flex-shrink: 0;
+  }
+
+  /* === Mobile Drawer Menu === */
+  .mobile-drawer-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+
+  .mobile-drawer-overlay.active {
+    display: block;
+  }
+
+  .mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    z-index: 1001;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    padding: 20px;
+  }
+
+  .mobile-drawer.active {
+    left: 0;
+  }
+
+  .mobile-drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+  }
+
+  .mobile-drawer-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    padding: 5px;
+  }
+
+  .mobile-drawer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-drawer-menu li {
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .mobile-drawer-menu a {
+    display: block;
+    padding: 15px 0;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .mobile-drawer-menu a:hover {
+    color: var(--color-primary-dekor, #ea972d);
+  }
+
+  /* === Animations === */
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* === RESPONSIVE === */
+
+  /* Ẩn desktop elements trên mobile */
+  @media (max-width: 768px) {
+    /* Ẩn search bar, menu ngang, và các utility text items */
+    .header-dekor-search,
+    .header-dekor-border-wrap,
+    .utility-item-text {
+      display: none !important;
+    }
+
+    /* Hiện hamburger */
+    .header-hamburger {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Top row: Hamburger | Logo | Icons (search icon, cart) */
+    .header-dekor-top {
+      padding: 12px 0;
+      gap: 10px;
+    }
+
+    .header-dekor-icons {
+      gap: 15px;
+    }
+
+    /* Ẩn login text, chỉ hiện icon */
+    .header-icon-item span {
+      display: none;
+    }
+
+    .header-icon-item svg {
+      margin-bottom: 0;
+    }
+
+    /* Hiện search icon cho mobile */
+    .mobile-search-trigger {
+      display: flex !important;
+    }
+  }
+
+  /* Desktop: ẩn hamburger và mobile search trigger */
+  @media (min-width: 769px) {
+    .header-hamburger,
+    .mobile-search-trigger,
+    .mobile-search-overlay,
+    .mobile-drawer,
+    .mobile-drawer-overlay {
+      display: none !important;
+    }
+  }
 </style>
 
 <div class="header-dekor">
   <div class="page-width">
     <!-- Top Row -->
     <div class="header-dekor-top">
+      <!-- Hamburger (Mobile only) -->
+      <button class="header-hamburger" aria-label="Menu" onclick="document.querySelector('.mobile-drawer').classList.add('active'); document.querySelector('.mobile-drawer-overlay').classList.add('active');">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Logo -->
       <div class="header-dekor-logo">
         <a href="{{ routes.root_url }}">
           {%- if settings.logo != blank -%}
@@ -145,41 +415,58 @@
         </a>
       </div>
 
+      <!-- Search Bar (Desktop only) -->
       <div class="header-dekor-search">
         <form action="{{ routes.search_url }}" method="get" role="search">
-          <input type="text" name="q" placeholder="Search" value="{{ search.terms | escape }}">
-          <button type="submit" style="background:transparent!important; color:#333!important; border:none!important; padding:0!important; cursor:pointer; box-shadow:none!important;">
-            <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="7"></circle><line x1="21" y1="21" x2="15" y2="15"></line></svg>
+          <div class="search-field-wrapper">
+            <input type="text" name="q" placeholder=" " value="{{ search.terms | escape }}" autocomplete="off" id="header-search-input">
+            <label class="search-floating-label" for="header-search-input">Search</label>
+          </div>
+          <button type="submit">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
           </button>
         </form>
       </div>
 
+      <!-- Utility Icons -->
       <div class="header-dekor-icons">
-        <a href="/pages/track-order" class="utility-item">Track Order</a>
-        <div class="utility-item" style="cursor: pointer;">
-           <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" width="20" height="14" alt="VN" style="border-radius:2px;"> | USD ($)
+        <!-- Mobile Search Icon -->
+        <button class="header-icon-item mobile-search-trigger" style="display:none; background:none; border:none; cursor:pointer;" aria-label="Search" onclick="document.querySelector('.mobile-search-overlay').classList.add('active'); document.querySelector('.mobile-search-overlay input').focus();">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+
+        <a href="/pages/track-order" class="utility-item utility-item-text">Track Order</a>
+
+        <div class="utility-item utility-item-text" style="cursor: pointer;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" width="20" height="14" alt="VN" style="border-radius:2px;"> | USD ($)
         </div>
+
         <a href="{{ routes.account_login_url }}" class="header-icon-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
           <span>Login</span>
         </a>
+
         <a href="{{ routes.cart_url }}" class="header-icon-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1.5"></circle><circle cx="20" cy="21" r="1.5"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
           <span>Cart</span>
         </a>
       </div>
     </div>
-    
-    <!-- Bottom Row (Menu) -->
+
+    <!-- Bottom Row (Menu) - Desktop only -->
     <div class="header-dekor-border-wrap">
       <div class="header-dekor-bottom">
         <ul class="header-dekor-menu">
           {%- if section.settings.menu != blank -%}
             {% for link in linklists[section.settings.menu].links %}
-              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+              <li>
+                <a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>
+                  {{ link.title }}
+                </a>
+              </li>
             {% endfor %}
           {%- else -%}
-            <li><a href="/">HOME</a></li>
+            <li><a href="/"{% if request.path == '/' %} class="active"{% endif %}>HOME</a></li>
             <li><a href="/collections/all">PRODUCT</a></li>
             <li><a href="/pages/track-order">TRACK ORDER</a></li>
           {%- endif -%}
@@ -187,6 +474,51 @@
       </div>
     </div>
   </div>
+</div>
+
+<!-- Mobile Search Overlay -->
+<div class="mobile-search-overlay">
+  <form action="{{ routes.search_url }}" method="get" role="search">
+    <input type="text" name="q" placeholder="Search" autocomplete="off">
+    <button type="submit" style="background:transparent; border:none; cursor:pointer;">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#333" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    </button>
+  </form>
+  <button class="mobile-search-close" aria-label="Close search" onclick="document.querySelector('.mobile-search-overlay').classList.remove('active');">
+    ✕
+  </button>
+</div>
+
+<!-- Mobile Drawer Menu -->
+<div class="mobile-drawer-overlay" onclick="document.querySelector('.mobile-drawer').classList.remove('active'); this.classList.remove('active');"></div>
+<div class="mobile-drawer">
+  <div class="mobile-drawer-header">
+    <div class="header-dekor-logo">
+      <a href="{{ routes.root_url }}">
+        {%- if settings.logo != blank -%}
+          <img src="{{ settings.logo | image_url: width: 200 }}" alt="{{ shop.name }}" style="max-height:35px;">
+        {%- else -%}
+          <img src="https://cdn.shopify.com/s/files/1/0617/6325/6561/files/d5_fcfc668b-b8fe-4eeb-b684-2ca9991ca9fd_225x.png" alt="Dekor365" style="max-height:35px;">
+        {%- endif -%}
+      </a>
+    </div>
+    <button class="mobile-drawer-close" aria-label="Close menu" onclick="document.querySelector('.mobile-drawer').classList.remove('active'); document.querySelector('.mobile-drawer-overlay').classList.remove('active');">
+      ✕
+    </button>
+  </div>
+  <ul class="mobile-drawer-menu">
+    {%- if section.settings.menu != blank -%}
+      {% for link in linklists[section.settings.menu].links %}
+        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    {%- else -%}
+      <li><a href="/">HOME</a></li>
+      <li><a href="/collections/all">PRODUCT</a></li>
+      <li><a href="/pages/track-order">TRACK ORDER</a></li>
+    {%- endif -%}
+    <li><a href="/pages/track-order">TRACK ORDER</a></li>
+    <li><a href="{{ routes.account_login_url }}">LOGIN</a></li>
+  </ul>
 </div>
 
 {% schema %}
