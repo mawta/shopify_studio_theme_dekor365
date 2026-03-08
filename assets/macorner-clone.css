@@ -1,4 +1,28 @@
 /* Macorner Clone Styles */
+.mac-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: var(--font-body-family), inherit;
+}
+.mac-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  .mac-product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.mac-product-media {
+  width: 100%;
+}
+
+/* Right Info */
+.mac-product-info {
+  width: 100%;
+}
 .mac-product-title {
   color: #0f3559;
   font-weight: 900;
@@ -6,12 +30,13 @@
   font-size: 32px;
   line-height: 1.2;
   margin-bottom: 15px;
+  margin-top: 0;
   font-family: var(--font-heading-family);
 }
 .mac-review-summary {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 5px;
 }
 .mac-stars {
@@ -68,15 +93,15 @@
   color: #0070ba;
   text-decoration: underline;
 }
-.mac-deliver-item strong {
-  font-weight: 700;
-}
+
+/* Personalized Box */
 .mac-personalized-box {
   background: #f8f9fa;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .mac-pers-title {
   color: #0f3559;
@@ -106,6 +131,7 @@
   border-radius: 5px;
   font-family: inherit;
   font-size: 14px;
+  background: #fff;
 }
 .mac-input-wrapper {
   position: relative;
@@ -123,6 +149,8 @@
   color: #777;
   margin-top: 5px;
 }
+
+/* Buttons */
 .mac-btn-preview {
   background: transparent !important;
   color: #eb6022 !important;
@@ -134,9 +162,8 @@
   margin-bottom: 15px;
   padding: 15px !important;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  display: block;
 }
 .mac-btn-add {
   background: #eb6022 !important;
@@ -149,9 +176,27 @@
   padding: 15px !important;
   cursor: pointer;
   border: none !important;
+  display: block;
+}
+.mac-btn-add:disabled {
+  background: #ccc !important;
+  cursor: not-allowed;
 }
 
 /* Variant Pill overriding */
+product-variant-picker {
+  display: block;
+}
+fieldset.product-form__input {
+  margin-bottom: 15px;
+}
+fieldset.product-form__input legend {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #0f3559;
+}
 .product-form__input input[type=radio] + label {
   border-radius: 6px !important;
   border: 1px solid #ccc !important;
@@ -159,6 +204,7 @@
   font-size: 14px !important;
   background: #fff !important;
   color: #333 !important;
+  margin-bottom: 5px;
 }
 .product-form__input input[type=radio]:checked + label {
   border-color: #eb6022 !important;
