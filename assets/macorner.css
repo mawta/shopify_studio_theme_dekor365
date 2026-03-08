@@ -1,0 +1,288 @@
+/* Macorner Clone Styles */
+.mac-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: inherit;
+}
+.mac-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  .mac-product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.mac-product-media {
+  width: 100%;
+}
+.mac-main-image img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
+}
+.mac-thumbnails {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+.mac-thumbnail-item {
+  width: 80px;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+.mac-thumbnail-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right Info */
+.mac-product-info {
+  width: 100%;
+}
+.mac-title {
+  color: #0f3559;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.mac-reviews {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.mac-stars {
+  display: flex;
+  gap: 2px;
+}
+.mac-review-link {
+  color: #0070ba;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.mac-bought-past-month {
+  color: #d1121d;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.mac-price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.mac-price-regular {
+  color: #eb6022;
+  font-weight: 800;
+  font-size: 26px;
+}
+.mac-price-compare {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 16px;
+}
+.mac-price-save-badge {
+  background: #eb6022;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.mac-delivery-block {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.mac-deliver-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.mac-deliver-item a {
+  color: #0070ba;
+  text-decoration: underline;
+}
+
+/* Variants */
+.mac-variants {
+  margin-bottom: 20px;
+}
+.mac-option {
+  margin-bottom: 15px;
+}
+.mac-option label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #0f3559;
+}
+.mac-option-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.mac-radio-hide {
+  display: none;
+}
+.mac-pill {
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s;
+  background: transparent;
+}
+.mac-radio-hide:checked + .mac-pill {
+  border-color: #eb6022;
+  color: #eb6022;
+  font-weight: 700;
+  box-shadow: 0 0 0 1px #eb6022;
+}
+
+/* Personalized Box */
+.mac-personalized-box {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.mac-pers-title {
+  color: #0f3559;
+  font-weight: 800;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.mac-form-group {
+  margin-bottom: 15px;
+}
+.mac-form-group label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+.mac-req {
+  color: #d1121d;
+}
+.mac-select, .mac-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  background: #fff;
+}
+.mac-input-wrapper {
+  position: relative;
+}
+.mac-char-count {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 12px;
+}
+.mac-help-text {
+  font-size: 11px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Quantity & Buttons */
+.mac-quantity-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.mac-quantity-label {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f3559;
+}
+.mac-quantity-selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 40px;
+}
+.mac-qty-btn {
+  background: #f8f9fa;
+  border: none;
+  width: 35px;
+  height: 100%;
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+}
+.mac-qty-input {
+  width: 50px;
+  height: 100%;
+  border: none;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  font-size: 16px;
+  font-family: inherit;
+}
+.mac-qty-input::-webkit-outer-spin-button,
+.mac-qty-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.mac-btn-preview {
+  background: transparent !important;
+  color: #eb6022 !important;
+  border: 2px solid #eb6022 !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px !important;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+}
+.mac-btn-add {
+  background: #eb6022 !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 15px !important;
+  cursor: pointer;
+  border: none !important;
+  display: block;
+}
+.mac-btn-add:disabled {
+  background: #ccc !important;
+  cursor: not-allowed;
+}

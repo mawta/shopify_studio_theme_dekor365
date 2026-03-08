@@ -1,0 +1,187 @@
+{{ 'macorner.css' | asset_url | stylesheet_tag }}
+
+<div class="mac-container">
+  <div class="mac-product-grid">
+    <!-- Image Gallery -->
+    <div class="mac-product-media">
+      {%- assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
+      {% if featured_media %}
+        <div class="mac-main-image">
+          <img src="{{ featured_media | image_url: width: 800 }}" alt="{{ featured_media.alt | escape }}" loading="lazy" width="100%" height="auto">
+        </div>
+      {% endif %}
+      <div class="mac-thumbnails">
+        {%- for media in product.media -%}
+          <div class="mac-thumbnail-item">
+            <img src="{{ media | image_url: width: 200 }}" alt="{{ media.alt | escape }}" loading="lazy" width="100%" height="auto">
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="mac-product-info">
+      <h1 class="mac-title">{{ product.title | escape }}</h1>
+      
+      <div class="mac-reviews">
+        <div class="mac-stars">
+          <svg viewBox="0 0 24 24" fill="#ed5b24" width="20" height="20"><path d="M12 17.27l-5.18 3.73 1.64-7.03L3 9.24l7.19-.61L12 2l1.81 6.63 7.19.61-5.46 4.73 1.64 7.03z"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ed5b24" width="20" height="20"><path d="M12 17.27l-5.18 3.73 1.64-7.03L3 9.24l7.19-.61L12 2l1.81 6.63 7.19.61-5.46 4.73 1.64 7.03z"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ed5b24" width="20" height="20"><path d="M12 17.27l-5.18 3.73 1.64-7.03L3 9.24l7.19-.61L12 2l1.81 6.63 7.19.61-5.46 4.73 1.64 7.03z"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ed5b24" width="20" height="20"><path d="M12 17.27l-5.18 3.73 1.64-7.03L3 9.24l7.19-.61L12 2l1.81 6.63 7.19.61-5.46 4.73 1.64 7.03z"/></svg>
+          <svg viewBox="0 0 24 24" fill="#ed5b24" width="20" height="20"><path d="M12 17.27l-5.18 3.73 1.64-7.03L3 9.24l7.19-.61L12 2l1.81 6.63 7.19.61-5.46 4.73 1.64 7.03z"/></svg>
+        </div>
+        <a href="#reviews" class="mac-review-link">11 reviews</a>
+      </div>
+      
+      <div class="mac-bought-past-month">6K+ bought in past month</div>
+
+      <div class="mac-price-wrapper">
+        <span class="mac-price-regular">{{ product.selected_or_first_available_variant.price | money_with_currency }}</span>
+        {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+          <span class="mac-price-compare">{{ product.selected_or_first_available_variant.compare_at_price | money_with_currency }}</span>
+          {%- assign saving = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | times: 100.0 | divided_by: product.selected_or_first_available_variant.compare_at_price | round -%}
+          <span class="mac-price-save-badge">Save {{ saving }}%</span>
+        {%- endif -%}
+      </div>
+
+      <div class="mac-delivery-block">
+         <div class="mac-deliver-item">
+           <span>🇺🇸 Deliver to <a href="#">United States</a></span>
+         </div>
+         <div class="mac-deliver-item">
+           <span>🚚 Get it by: <strong>March 17-23</strong></span>
+         </div>
+      </div>
+
+      {%- form 'product', product, id: 'macorner-product-form', class: 'mac-product-form' -%}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        
+        <!-- Options -->
+        {%- unless product.has_only_default_variant -%}
+          <div class="mac-variants">
+            {%- for option in product.options_with_values -%}
+              <div class="mac-option">
+                <label>{{ option.name }}</label>
+                <div class="mac-option-values">
+                  {%- for value in option.values -%}
+                    <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" name="options[{{ option.name | escape }}]" value="{{ value | escape }}" {% if option.selected_value == value %}checked{% endif %} class="mac-radio-hide">
+                    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="mac-pill">{{ value }}</label>
+                  {%- endfor -%}
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
+        {%- endunless -%}
+
+        <!-- Personalized Box -->
+        <div class="mac-personalized-box">
+          <div class="mac-pers-title">PERSONALIZED</div>
+          <div class="mac-form-group">
+            <label>Choose Quote <span class="mac-req">*</span></label>
+            <select class="mac-select" name="properties[Quote]">
+              <option>--Select an option--</option>
+              <option value="Happy 250th Birthday">Happy 250th Birthday</option>
+              <option value="Home Sweet Home">Home Sweet Home</option>
+            </select>
+          </div>
+          <div class="mac-form-group">
+            <label>Family's Name <span class="mac-req">*</span></label>
+            <div class="mac-input-wrapper">
+              <input type="text" name="properties[Family Name]" class="mac-input" placeholder="Example: The Smith Family" maxlength="25" oninput="this.nextElementSibling.innerText = this.value.length + '/25'">
+              <span class="mac-char-count">0/25</span>
+            </div>
+            <p class="mac-help-text">Press Space On The Keyboard If You Don't Want To Include Name</p>
+          </div>
+        </div>
+
+        <div class="mac-actions">
+          <div class="mac-quantity-wrapper">
+            <label class="mac-quantity-label">Quantity</label>
+            <div class="mac-quantity-selector">
+              <button type="button" class="mac-qty-btn mac-qty-minus" onclick="const input = this.nextElementSibling; if(input.value > 1) input.value = parseInt(input.value) - 1;">-</button>
+              <input type="number" name="quantity" value="1" min="1" class="mac-qty-input">
+              <button type="button" class="mac-qty-btn mac-qty-plus" onclick="const input = this.previousElementSibling; input.value = parseInt(input.value) + 1;">+</button>
+            </div>
+          </div>
+
+          <button type="button" class="mac-btn-preview">Preview Your Personalization</button>
+          
+          <button type="submit" name="add" class="mac-btn-add" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+            {% if product.selected_or_first_available_variant.available %}
+              ADD TO CART
+            {% else %}
+              SOLD OUT
+            {% endif %}
+          </button>
+        </div>
+      {%- endform -%}
+    </div>
+  </div>
+</div>
+
+<script>
+  // Simple JS to update price/ID when variants are clicked
+  document.addEventListener('DOMContentLoaded', () => {
+    const variantRadios = document.querySelectorAll('.mac-radio-hide');
+    const formIdInput = document.querySelector('input[name="id"]');
+    const productVariants = {{ product.variants | json }};
+    
+    variantRadios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        // Build an array of the currently selected options
+        const selectedOptions = [];
+        const optionsBlocks = document.querySelectorAll('.mac-option');
+        
+        optionsBlocks.forEach(block => {
+          const checked = block.querySelector('.mac-radio-hide:checked');
+          if (checked) {
+            selectedOptions.push(checked.value);
+          }
+        });
+        
+        // Find the variant that matches all selected options
+        const matchingVariant = productVariants.find(variant => {
+          return selectedOptions.every((optionValue, index) => {
+            return variant.options[index] === optionValue;
+          });
+        });
+        
+        // If we found a matching variant, update the hidden ID input
+        if (matchingVariant) {
+          formIdInput.value = matchingVariant.id;
+          
+          // Optionally update price UI here if needed
+          const priceRegular = document.querySelector('.mac-price-regular');
+          if(priceRegular) {
+            // Format price: simple formatting assuming cents
+            const priceStr = "$" + (matchingVariant.price / 100).toFixed(2) + " USD";
+            priceRegular.textContent = priceStr;
+          }
+          
+          // Update Add to Cart button state
+          const btnAdd = document.querySelector('.mac-btn-add');
+          if (matchingVariant.available) {
+            btnAdd.disabled = false;
+            btnAdd.textContent = 'ADD TO CART';
+          } else {
+            btnAdd.disabled = true;
+            btnAdd.textContent = 'SOLD OUT';
+          }
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Macorner Product",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Macorner Product"
+    }
+  ]
+}
+{% endschema %}
