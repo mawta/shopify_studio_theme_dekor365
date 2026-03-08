@@ -1,16 +1,20 @@
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 {{ 'macorner-clone.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
 
 <div class="mac-container">
   <section
     id="MainProduct-{{ section.id }}"
     data-section="{{ section.id }}"
-    class="product-info-macorner"
+    class="product-info-macorner product product--large product--left product--thumbnail_slider product--mobile-show"
   >
     <div class="mac-product-grid">
       <!-- Cột Trái: Ảnh sản phẩm (Gallery) -->
-      <div class="mac-product-media grid__item">
+      <div class="mac-product-media product__media-wrapper">
         {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
         {% render 'product-media-gallery', variant_images: variant_images %}
       </div>
@@ -64,8 +68,8 @@
 
           <!-- Hiển thị Variants động từ Shopify dạng Radio Button (Pill) -->
           {%- unless product.has_only_default_variant -%}
-            <variant-radios
-              id="variant-radios-{{ section.id }}"
+            <variant-selects
+              id="variant-selects-{{ section.id }}"
               data-section="{{ section.id }}"
               data-url="{{ product.url }}"
             >
@@ -83,13 +87,21 @@
               <script type="application/json" data-selected-variant>
                 {{ product.selected_or_first_available_variant | json }}
               </script>
-            </variant-radios>
+            </variant-selects>
           {%- endunless -%}
 
           <!-- Box chứa nút Add to Cart -->
           <div class="mac-buy-buttons" style="margin-top: 20px;">
             {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+              <input 
+                type="hidden" 
+                name="id" 
+                value="{{ product.selected_or_first_available_variant.id }}"
+                {%- if product.selected_or_first_available_variant.available == false -%}
+                  disabled
+                {%- endif -%}
+                class="product-variant-id"
+              >
 
               <button type="submit" name="add" class="mac-btn-add" id="ProductSubmitButton-{{ section.id }}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                 <span class="text">

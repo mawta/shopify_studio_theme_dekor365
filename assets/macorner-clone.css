@@ -1,27 +1,33 @@
 /* Macorner Clone Styles */
 .mac-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 40px 20px;
   font-family: var(--font-body-family), inherit;
 }
 .mac-product-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 989px) {
   .mac-product-grid {
     grid-template-columns: 1fr;
   }
 }
 .mac-product-media {
-  width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.mac-product-media .product__media-item {
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 /* Right Info */
 .mac-product-info {
-  width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 .mac-product-title {
   color: #0f3559;
