@@ -54,3 +54,64 @@ body {
 .card__media, .media, .global-media-settings {
   border-radius: 8px !important;
 }
+
+/* === Khoảng cách giữa Header Menu và Slideshow === */
+/* Giảm border menu cho nhẹ giống shop gốc */
+.header-dekor-border-wrap {
+  border-bottom-color: #e5e7eb !important;
+}
+
+/* Thêm khoảng cách phía dưới header group tới slideshow */
+/* Section slideshow đầu tiên trong main content cần có margin-top */
+#MainContent > .shopify-section:first-child {
+  margin-top: 20px;
+}
+
+/* === HR nét đứt giữa Slideshow và Shop by Product === */
+/* Dùng pseudo-element giống theme gốc */
+.multicolumn .page-width {
+  position: relative;
+}
+
+.multicolumn .page-width::after {
+  content: "";
+  position: absolute;
+  width: 1340px;
+  max-width: 100%;
+  border: 1px dashed #999998;
+  height: 1px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Ẩn HR nét đứt trên mobile */
+@media screen and (max-width: 769px) {
+  .multicolumn .page-width::after {
+    display: none;
+  }
+}
+
+/* === Tiêu đề "Shop by Product" giống shop gốc === */
+.multicolumn .title {
+  margin: 0;
+  color: #ea972d;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.multicolumn .title-wrapper-with-link {
+  margin-top: 0;
+  justify-content: center;
+}
+
+.multicolumn-list h3 {
+  font-size: 27px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.multicolumn-card:hover h3.inline-richtext {
+  color: #ea972d;
+}
