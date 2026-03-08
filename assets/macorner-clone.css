@@ -1,0 +1,168 @@
+/* Macorner Clone Styles */
+.mac-product-title {
+  color: #0f3559;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-family: var(--font-heading-family);
+}
+.mac-review-summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.mac-stars {
+  display: flex;
+  gap: 2px;
+}
+.mac-review-link {
+  color: #0070ba;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.mac-bought-past-month {
+  color: #d1121d;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.mac-price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.mac-price-regular {
+  color: #eb6022;
+  font-weight: 800;
+  font-size: 26px;
+}
+.mac-price-compare {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 16px;
+}
+.mac-price-save-badge {
+  background: #eb6022;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.mac-delivery-block {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.mac-deliver-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.mac-deliver-item a {
+  color: #0070ba;
+  text-decoration: underline;
+}
+.mac-deliver-item strong {
+  font-weight: 700;
+}
+.mac-personalized-box {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.mac-pers-title {
+  color: #0f3559;
+  font-weight: 800;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.mac-form-group {
+  margin-bottom: 15px;
+}
+.mac-form-group label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+.mac-req {
+  color: #d1121d;
+}
+.mac-select, .mac-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+}
+.mac-input-wrapper {
+  position: relative;
+}
+.mac-char-count {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 12px;
+}
+.mac-help-text {
+  font-size: 11px;
+  color: #777;
+  margin-top: 5px;
+}
+.mac-btn-preview {
+  background: transparent !important;
+  color: #eb6022 !important;
+  border: 2px solid #eb6022 !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mac-btn-add {
+  background: #eb6022 !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 15px !important;
+  cursor: pointer;
+  border: none !important;
+}
+
+/* Variant Pill overriding */
+.product-form__input input[type=radio] + label {
+  border-radius: 6px !important;
+  border: 1px solid #ccc !important;
+  padding: 8px 15px !important;
+  font-size: 14px !important;
+  background: #fff !important;
+  color: #333 !important;
+}
+.product-form__input input[type=radio]:checked + label {
+  border-color: #eb6022 !important;
+  color: #eb6022 !important;
+  font-weight: 700 !important;
+  background: #fff !important;
+}
