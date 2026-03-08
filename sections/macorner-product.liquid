@@ -62,8 +62,29 @@
              </div>
           </div>
 
-          <!-- Lấy Variants động từ Shopify, truyền section vào làm block để dùng schema -->
-          {% render 'product-variant-picker', product: product, block: section, product_form_id: product_form_id %}
+          <!-- Hiển thị Variants động từ Shopify dạng Radio Button (Pill) -->
+          {%- unless product.has_only_default_variant -%}
+            <variant-radios
+              id="variant-radios-{{ section.id }}"
+              data-section="{{ section.id }}"
+              data-url="{{ product.url }}"
+            >
+              {%- for option in product.options_with_values -%}
+                <fieldset class="js product-form__input product-form__input--pill">
+                  <legend class="form__label">{{ option.name }}</legend>
+                  {% render 'product-variant-options',
+                    product: product,
+                    option: option,
+                    block: section,
+                    picker_type: 'button'
+                  %}
+                </fieldset>
+              {%- endfor -%}
+              <script type="application/json" data-selected-variant>
+                {{ product.selected_or_first_available_variant | json }}
+              </script>
+            </variant-radios>
+          {%- endunless -%}
 
           <!-- Box chứa nút Add to Cart -->
           <div class="mac-buy-buttons" style="margin-top: 20px;">
