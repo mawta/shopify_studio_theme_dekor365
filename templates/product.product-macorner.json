@@ -11,10 +11,23 @@
   "sections": {
     "main": {
       "type": "main-product-live",
+      "disabled": true,
       "settings": {}
+    },
+    "macorner_product_WE9rhb": {
+      "type": "macorner-product",
+      "name": "Macorner Clean Product",
+      "settings": {
+        "picker_type": "button",
+        "gallery_layout": "stacked",
+        "media_size": "medium",
+        "media_position": "right",
+        "mobile_thumbnails": "show"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "macorner_product_WE9rhb"
   ]
 }
