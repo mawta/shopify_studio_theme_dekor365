@@ -1,21 +1,22 @@
-{%- comment -%} Section: Announcement Bar - Thanh thông báo phong cách Macorner {%- endcomment -%}
-
 <style>
-.announcement-bar-live {
-  background: {{ section.settings.bg_color | default: '#F36621' }};
-  text-align: center;
-  padding: 10px 0;
-  font-size: 15px;
-  font-weight: 600;
-  color: {{ section.settings.text_color | default: '#ffffff' }};
-  margin: 0;
-  border-bottom: none;
-  letter-spacing: 0.02em;
-}
-.announcement-bar-live a {
-  color: {{ section.settings.text_color | default: '#ffffff' }};
-  text-decoration: underline;
-}
+  #shopify-section-{{ section.id }} .announcement-bar-live {
+    background: {{ section.settings.bg_color }};
+    color: {{ section.settings.text_color }};
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: none;
+    font-family: var(--mac-font-family, "Poppins", sans-serif);
+    font-size: {{ section.settings.font_size }}px;
+    font-weight: {{ section.settings.font_weight }};
+    line-height: 1.5;
+    text-transform: {{ section.settings.text_transform }};
+  }
+
+  #shopify-section-{{ section.id }} .announcement-bar-live a {
+    color: {{ section.settings.text_color }};
+    text-decoration: underline;
+  }
 </style>
 
 <div class="announcement-bar-live">
@@ -24,32 +25,81 @@
 
 {% schema %}
 {
-  "name": "Thanh thông báo",
+  "name": "Announcement Bar",
   "settings": [
     {
       "type": "text",
       "id": "text",
-      "label": "Văn bản thông báo",
+      "label": "Text",
       "default": "Buy 2+, Save 10% | Code: MSW2"
     },
     {
       "type": "color",
       "id": "bg_color",
-      "label": "Màu nền",
+      "label": "Background color",
       "default": "#F36621"
     },
     {
       "type": "color",
       "id": "text_color",
-      "label": "Màu chữ",
-      "default": "#ffffff"
+      "label": "Text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 15
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font weight",
+      "default": "600",
+      "options": [
+        {
+          "value": "400",
+          "label": "400"
+        },
+        {
+          "value": "500",
+          "label": "500"
+        },
+        {
+          "value": "600",
+          "label": "600"
+        },
+        {
+          "value": "700",
+          "label": "700"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_transform",
+      "label": "Text transform",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Thanh thông báo"
+      "name": "Announcement Bar"
     }
   ]
 }
 {% endschema %}
-

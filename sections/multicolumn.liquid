@@ -15,6 +15,45 @@
   }
 {%- endstyle -%}
 
+{%- style -%}
+  #shopify-section-{{ section.id }} .multicolumn .title {
+    color: {{ section.settings.section_title_color }};
+    font-family: var(--mac-font-family, "Poppins", sans-serif);
+    font-size: {{ section.settings.section_title_size_mobile }}px;
+    font-weight: {{ section.settings.section_title_weight }};
+  }
+
+  #shopify-section-{{ section.id }} .multicolumn-card__info h3 {
+    color: {{ section.settings.card_title_color }};
+    font-family: var(--mac-font-family, "Poppins", sans-serif);
+    font-size: {{ section.settings.card_title_size_mobile }}px;
+    font-weight: {{ section.settings.card_title_weight }};
+  }
+
+  #shopify-section-{{ section.id }} .multicolumn-card__info .rte,
+  #shopify-section-{{ section.id }} .multicolumn-card__info p {
+    color: {{ section.settings.card_body_color }};
+    font-family: var(--mac-font-family, "Poppins", sans-serif);
+    font-size: {{ section.settings.card_body_size }}px;
+    font-weight: {{ section.settings.card_body_weight }};
+  }
+
+  #shopify-section-{{ section.id }} .multicolumn-card:hover h3.inline-richtext,
+  #shopify-section-{{ section.id }} .multicolumn-card:focus-within h3.inline-richtext {
+    color: {{ section.settings.card_title_hover_color }};
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .multicolumn .title {
+      font-size: {{ section.settings.section_title_size_desktop }}px;
+    }
+
+    #shopify-section-{{ section.id }} .multicolumn-card__info h3 {
+      font-size: {{ section.settings.card_title_size_desktop }}px;
+    }
+  }
+{%- endstyle -%}
+
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
@@ -232,6 +271,152 @@
       ],
       "default": "h1",
       "label": "Heading size"
+    },
+    {
+      "type": "header",
+      "content": "Macorner Typography"
+    },
+    {
+      "type": "color",
+      "id": "section_title_color",
+      "label": "Section title color",
+      "default": "#F7921F"
+    },
+    {
+      "type": "range",
+      "id": "section_title_size_desktop",
+      "min": 18,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Section title size desktop",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "section_title_size_mobile",
+      "min": 16,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Section title size mobile",
+      "default": 24
+    },
+    {
+      "type": "select",
+      "id": "section_title_weight",
+      "label": "Section title weight",
+      "default": "600",
+      "options": [
+        {
+          "value": "400",
+          "label": "400"
+        },
+        {
+          "value": "500",
+          "label": "500"
+        },
+        {
+          "value": "600",
+          "label": "600"
+        },
+        {
+          "value": "700",
+          "label": "700"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "card_title_color",
+      "label": "Card title color",
+      "default": "#0B2A4A"
+    },
+    {
+      "type": "color",
+      "id": "card_title_hover_color",
+      "label": "Card title hover color",
+      "default": "#FC6514"
+    },
+    {
+      "type": "range",
+      "id": "card_title_size_desktop",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Card title size desktop",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "card_title_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Card title size mobile",
+      "default": 15
+    },
+    {
+      "type": "select",
+      "id": "card_title_weight",
+      "label": "Card title weight",
+      "default": "500",
+      "options": [
+        {
+          "value": "400",
+          "label": "400"
+        },
+        {
+          "value": "500",
+          "label": "500"
+        },
+        {
+          "value": "600",
+          "label": "600"
+        },
+        {
+          "value": "700",
+          "label": "700"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "card_body_color",
+      "label": "Card body color",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "card_body_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Card body size",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "card_body_weight",
+      "label": "Card body weight",
+      "default": "400",
+      "options": [
+        {
+          "value": "400",
+          "label": "400"
+        },
+        {
+          "value": "500",
+          "label": "500"
+        },
+        {
+          "value": "600",
+          "label": "600"
+        }
+      ]
     },
     {
       "type": "header",

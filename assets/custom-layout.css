@@ -1,117 +1,33 @@
-/* Custom CSS for Dekor365 Clone */
+/* Global typography overrides for the Macorner-inspired defaults. */
 
 :root {
-  --color-primary-dekor: #ea972d;
-  --color-primary-dekor-hover: #cf8424;
-  --border-radius-btn: 30px;
-  --border-radius-input: 5px;
-  --bg-color-main: #fafafa;
+  --mac-font-family: "Poppins", sans-serif;
+  --font-body-family: var(--mac-font-family);
+  --font-heading-family: var(--mac-font-family);
 }
 
-/* Global Base */
-body {
-  background-color: var(--bg-color-main);
+body,
+button,
+input,
+textarea,
+select,
+.button,
+.rte,
+.full-unstyled-link {
+  font-family: var(--mac-font-family);
 }
 
-/* Global Buttons */
-.button, 
-.btn, 
-.shopify-payment-button__button--unbranded {
-  background-color: var(--color-primary-dekor) !important;
-  color: #ffffff !important;
-  border-radius: var(--border-radius-btn) !important;
-  border: none !important;
-  transition: all 0.2s ease-in-out;
-  padding: 10px 20px;
-  box-shadow: none !important;
-}
-
-.button:hover, 
-.btn:hover,
-.shopify-payment-button__button--unbranded:hover {
-  background-color: var(--color-primary-dekor-hover) !important;
-}
-
-.button::after, .button::before {
-  display: none !important;
-}
-
-/* Secondary Button / Outline */
-.button--secondary,
-.btn-outline {
-  background-color: transparent !important;
-  color: var(--color-primary-dekor) !important;
-  border: 2px solid var(--color-primary-dekor) !important;
-}
-
-.button--secondary:hover,
-.btn-outline:hover {
-  background-color: var(--color-primary-dekor) !important;
-  color: #ffffff !important;
-}
-
-/* Cards & Images */
-.card__media, .media, .global-media-settings {
-  border-radius: 8px !important;
-}
-
-/* === Khoảng cách giữa Header Menu và Slideshow === */
-/* Giảm border menu cho nhẹ giống shop gốc */
-.header-dekor-border-wrap {
-  border-bottom-color: #e5e7eb !important;
-}
-
-/* Thêm khoảng cách phía dưới header group tới slideshow */
-/* Section slideshow đầu tiên trong main content cần có margin-top */
-#MainContent > .shopify-section:first-child {
-  margin-top: 20px;
-}
-
-/* === HR nét đứt giữa Slideshow và Shop by Product === */
-/* Dùng pseudo-element giống theme gốc */
-.multicolumn .page-width {
-  position: relative;
-}
-
-.multicolumn .page-width::after {
-  content: "";
-  position: absolute;
-  width: 1340px;
-  max-width: 100%;
-  border: 1px dashed #999998;
-  height: 1px;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-/* Ẩn HR nét đứt trên mobile */
-@media screen and (max-width: 769px) {
-  .multicolumn .page-width::after {
-    display: none;
-  }
-}
-
-/* === Tiêu đề "Shop by Product" giống shop gốc === */
-.multicolumn .title {
-  margin: 0;
-  color: #ea972d;
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.multicolumn .title-wrapper-with-link {
-  margin-top: 0;
-  justify-content: center;
-}
-
-.multicolumn-list h3 {
-  font-size: 27px;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.multicolumn-card:hover h3.inline-richtext {
-  color: #ea972d;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h0,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: var(--mac-font-family);
 }

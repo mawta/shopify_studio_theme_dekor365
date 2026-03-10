@@ -25,6 +25,46 @@
   {%- endstyle -%}
 {%- endif -%}
 
+{%- style -%}
+  #shopify-section-{{ section.id }} .banner__heading {
+    color: {{ section.settings.hero_heading_color }};
+    font-family: var(--mac-font-family, "Poppins", sans-serif);
+    font-size: {{ section.settings.hero_heading_size_mobile }}px;
+    font-weight: {{ section.settings.hero_heading_weight }};
+  }
+
+  #shopify-section-{{ section.id }} .banner__text,
+  #shopify-section-{{ section.id }} .banner__text p {
+    color: {{ section.settings.hero_subheading_color }};
+    font-family: var(--mac-font-family, "Poppins", sans-serif);
+    font-size: {{ section.settings.hero_subheading_size_mobile }}px;
+    font-weight: {{ section.settings.hero_subheading_weight }};
+  }
+
+  #shopify-section-{{ section.id }} .banner__buttons .button {
+    color: {{ section.settings.hero_button_text_color }} !important;
+    font-family: var(--mac-font-family, "Poppins", sans-serif) !important;
+    font-size: {{ section.settings.hero_button_text_size_mobile }}px !important;
+    font-weight: {{ section.settings.hero_button_text_weight }} !important;
+    text-transform: {{ section.settings.hero_button_text_transform }};
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .banner__heading {
+      font-size: {{ section.settings.hero_heading_size_desktop }}px;
+    }
+
+    #shopify-section-{{ section.id }} .banner__text,
+    #shopify-section-{{ section.id }} .banner__text p {
+      font-size: {{ section.settings.hero_subheading_size_desktop }}px;
+    }
+
+    #shopify-section-{{ section.id }} .banner__buttons .button {
+      font-size: {{ section.settings.hero_button_text_size_desktop }}px !important;
+    }
+  }
+{%- endstyle -%}
+
 <slideshow-component
   class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
   role="region"
@@ -382,6 +422,172 @@
       "label": "Slideshow description",
       "info": "Describe the slideshow for those using screen readers",
       "default": "Slideshow about our brand"
+    },
+    {
+      "type": "header",
+      "content": "Macorner Typography"
+    },
+    {
+      "type": "color",
+      "id": "hero_heading_color",
+      "label": "Heading color",
+      "default": "#BB0707"
+    },
+    {
+      "type": "range",
+      "id": "hero_heading_size_desktop",
+      "min": 20,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "label": "Heading size desktop",
+      "default": 45
+    },
+    {
+      "type": "range",
+      "id": "hero_heading_size_mobile",
+      "min": 18,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Heading size mobile",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "hero_heading_weight",
+      "label": "Heading weight",
+      "default": "700",
+      "options": [
+        {
+          "value": "400",
+          "label": "400"
+        },
+        {
+          "value": "500",
+          "label": "500"
+        },
+        {
+          "value": "600",
+          "label": "600"
+        },
+        {
+          "value": "700",
+          "label": "700"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "hero_subheading_color",
+      "label": "Subheading color",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "hero_subheading_size_desktop",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheading size desktop",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "hero_subheading_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheading size mobile",
+      "default": 15
+    },
+    {
+      "type": "select",
+      "id": "hero_subheading_weight",
+      "label": "Subheading weight",
+      "default": "400",
+      "options": [
+        {
+          "value": "400",
+          "label": "400"
+        },
+        {
+          "value": "500",
+          "label": "500"
+        },
+        {
+          "value": "600",
+          "label": "600"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "hero_button_text_color",
+      "label": "Button text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "hero_button_text_size_desktop",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Button text size desktop",
+      "default": 21
+    },
+    {
+      "type": "range",
+      "id": "hero_button_text_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Button text size mobile",
+      "default": 18
+    },
+    {
+      "type": "select",
+      "id": "hero_button_text_weight",
+      "label": "Button text weight",
+      "default": "600",
+      "options": [
+        {
+          "value": "400",
+          "label": "400"
+        },
+        {
+          "value": "500",
+          "label": "500"
+        },
+        {
+          "value": "600",
+          "label": "600"
+        },
+        {
+          "value": "700",
+          "label": "700"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "hero_button_text_transform",
+      "label": "Button text transform",
+      "default": "uppercase",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        }
+      ]
     }
   ],
   "blocks": [

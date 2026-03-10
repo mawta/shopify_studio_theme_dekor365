@@ -11,16 +11,10 @@
 {%- endif -%}
 
 <style>
-  /* ========================================
-     Dekor365 Custom Header Styles
-     Giữ layout giống theme gốc (365dekor.com)
-     ======================================== */
-
   .header-dekor {
     background: #ffffff;
   }
 
-  /* === Top Row: Logo | Search | Icons === */
   .header-dekor-top {
     display: flex;
     justify-content: space-between;
@@ -37,10 +31,9 @@
 
   .header-dekor-logo a {
     text-decoration: none;
-    color: #333;
+    color: #333333;
   }
 
-  /* === Search Bar === */
   .header-dekor-search {
     flex: 1;
     max-width: 600px;
@@ -50,20 +43,19 @@
 
   .header-dekor-search form {
     display: flex;
-    background: #fff;
+    background: #ffffff;
     border-radius: 30px;
     padding: 2px 20px;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     transition: border-color 0.3s ease;
     position: relative;
   }
 
   .header-dekor-search form:focus-within {
-    border-color: #999;
+    border-color: #999999;
   }
 
-  /* Floating label wrapper */
   .search-field-wrapper {
     position: relative;
     flex: 1;
@@ -75,38 +67,36 @@
     border: none;
     background: transparent;
     width: 100%;
-    padding: 18px 0 6px 0;
+    padding: 18px 0 6px;
     outline: none;
     font-size: 15px;
-    color: #333;
+    color: #333333;
     box-shadow: none !important;
   }
 
-  /* Floating label */
   .search-floating-label {
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
     font-size: 15px;
-    color: #999;
+    color: #999999;
     pointer-events: none;
     transition: all 0.2s ease;
     transform-origin: left top;
   }
 
-  /* Khi input được focus hoặc đã có value → label bay lên trên */
   .header-dekor-search input:focus ~ .search-floating-label,
   .header-dekor-search input:not(:placeholder-shown) ~ .search-floating-label {
     top: 6px;
     transform: translateY(0);
     font-size: 11px;
-    color: #888;
+    color: #888888;
   }
 
-  .header-dekor-search button[type="submit"] {
+  .header-dekor-search button[type='submit'] {
     background: transparent !important;
-    color: #333 !important;
+    color: #333333 !important;
     border: none !important;
     padding: 0 !important;
     cursor: pointer;
@@ -115,7 +105,6 @@
     align-items: center;
   }
 
-  /* === Utility Icons === */
   .header-dekor-icons {
     display: flex;
     align-items: center;
@@ -126,7 +115,7 @@
 
   .header-dekor-icons a,
   .header-dekor-icons .utility-item {
-    color: #333;
+    color: #333333;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -145,10 +134,9 @@
     width: 20px;
     height: 20px;
     margin-bottom: 3px;
-    stroke: #333;
+    stroke: #333333;
   }
 
-  /* === Bottom Menu === */
   .header-dekor-bottom {
     display: flex;
     justify-content: center;
@@ -170,7 +158,7 @@
 
   .header-dekor-menu a {
     text-decoration: none;
-    color: #333;
+    color: #333333;
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
@@ -180,10 +168,9 @@
 
   .header-dekor-menu li a.active,
   .header-dekor-menu a:hover {
-    color: var(--color-primary-dekor, #ea972d);
+    color: #ea972d;
   }
 
-  /* === Hamburger Button (Mobile) === */
   .header-hamburger {
     display: none;
     background: none;
@@ -196,20 +183,19 @@
   .header-hamburger svg {
     width: 24px;
     height: 24px;
-    stroke: #333;
+    stroke: #333333;
   }
 
-  /* === Mobile Search Overlay === */
   .mobile-search-overlay {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #ffffff;
     z-index: 1000;
     padding: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     animation: slideDown 0.3s ease;
   }
 
@@ -226,7 +212,7 @@
     border-radius: 30px;
     padding: 2px 15px;
     align-items: center;
-    border: 2px solid var(--color-primary-dekor, #ea972d);
+    border: 2px solid #ea972d;
   }
 
   .mobile-search-overlay input {
@@ -236,7 +222,7 @@
     padding: 12px 0;
     outline: none;
     font-size: 16px;
-    color: #333;
+    color: #333333;
   }
 
   .mobile-search-close {
@@ -245,19 +231,15 @@
     padding: 8px;
     cursor: pointer;
     font-size: 24px;
-    color: #333;
+    color: #333333;
     flex-shrink: 0;
   }
 
-  /* === Mobile Drawer Menu === */
   .mobile-drawer-overlay {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.5);
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 999;
   }
 
@@ -271,7 +253,7 @@
     left: -300px;
     width: 280px;
     height: 100%;
-    background: #fff;
+    background: #ffffff;
     z-index: 1001;
     transition: left 0.3s ease;
     overflow-y: auto;
@@ -287,7 +269,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eeeeee;
     margin-bottom: 20px;
   }
 
@@ -296,7 +278,7 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #333;
+    color: #333333;
     padding: 5px;
   }
 
@@ -313,7 +295,7 @@
   .mobile-drawer-menu a {
     display: block;
     padding: 15px 0;
-    color: #333;
+    color: #333333;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -322,39 +304,33 @@
   }
 
   .mobile-drawer-menu a:hover {
-    color: var(--color-primary-dekor, #ea972d);
+    color: #ea972d;
   }
 
-  /* === Animations === */
   @keyframes slideDown {
     from {
       transform: translateY(-100%);
       opacity: 0;
     }
+
     to {
       transform: translateY(0);
       opacity: 1;
     }
   }
 
-  /* === RESPONSIVE === */
-
-  /* Ẩn desktop elements trên mobile */
   @media (max-width: 768px) {
-    /* Ẩn search bar, menu ngang, và các utility text items */
     .header-dekor-search,
     .header-dekor-border-wrap,
     .utility-item-text {
       display: none !important;
     }
 
-    /* Hiện hamburger */
     .header-hamburger {
       display: flex;
       align-items: center;
     }
 
-    /* Top row: Hamburger | Logo | Icons (search icon, cart) */
     .header-dekor-top {
       padding: 12px 0;
       gap: 10px;
@@ -364,7 +340,6 @@
       gap: 15px;
     }
 
-    /* Ẩn login text, chỉ hiện icon */
     .header-icon-item span {
       display: none;
     }
@@ -373,13 +348,11 @@
       margin-bottom: 0;
     }
 
-    /* Hiện search icon cho mobile */
     .mobile-search-trigger {
       display: flex !important;
     }
   }
 
-  /* Desktop: ẩn hamburger và mobile search trigger */
   @media (min-width: 769px) {
     .header-hamburger,
     .mobile-search-trigger,
@@ -391,12 +364,73 @@
   }
 </style>
 
+{%- style -%}
+  #shopify-section-{{ section.id }} .header-dekor,
+  #shopify-section-{{ section.id }} .header-dekor input,
+  #shopify-section-{{ section.id }} .header-dekor button,
+  #shopify-section-{{ section.id }} .header-dekor a,
+  #shopify-section-{{ section.id }} .header-dekor span {
+    font-family: var(--mac-font-family, "Poppins", sans-serif);
+  }
+
+  #shopify-section-{{ section.id }} .header-dekor-menu a,
+  #shopify-section-{{ section.id }} .mobile-drawer-menu a {
+    color: {{ section.settings.menu_text_color }};
+    font-size: {{ section.settings.menu_font_size }}px;
+    font-weight: {{ section.settings.menu_font_weight }};
+    text-transform: {{ section.settings.menu_text_transform }};
+  }
+
+  #shopify-section-{{ section.id }} .header-dekor-menu li a.active,
+  #shopify-section-{{ section.id }} .header-dekor-menu a:hover,
+  #shopify-section-{{ section.id }} .mobile-drawer-menu a:hover {
+    color: {{ section.settings.menu_hover_color }};
+  }
+
+  #shopify-section-{{ section.id }} .header-dekor-icons a,
+  #shopify-section-{{ section.id }} .header-dekor-icons .utility-item,
+  #shopify-section-{{ section.id }} .header-icon-item,
+  #shopify-section-{{ section.id }} .mobile-search-close,
+  #shopify-section-{{ section.id }} .mobile-drawer-close {
+    color: {{ section.settings.utility_text_color }};
+    font-size: {{ section.settings.utility_font_size }}px;
+    font-weight: {{ section.settings.utility_font_weight }};
+    text-transform: {{ section.settings.utility_text_transform }};
+  }
+
+  #shopify-section-{{ section.id }} .header-icon-item svg,
+  #shopify-section-{{ section.id }} .header-hamburger svg,
+  #shopify-section-{{ section.id }} .mobile-search-overlay svg {
+    stroke: currentColor;
+  }
+
+  #shopify-section-{{ section.id }} .header-dekor-search input,
+  #shopify-section-{{ section.id }} .mobile-search-overlay input {
+    color: {{ section.settings.search_text_color }};
+    font-size: {{ section.settings.search_font_size }}px;
+    font-weight: {{ section.settings.search_font_weight }};
+  }
+
+  #shopify-section-{{ section.id }} .header-dekor-search input::placeholder,
+  #shopify-section-{{ section.id }} .mobile-search-overlay input::placeholder,
+  #shopify-section-{{ section.id }} .search-floating-label {
+    color: {{ section.settings.search_label_color }};
+  }
+
+  #shopify-section-{{ section.id }} .header-dekor-search button[type='submit'],
+  #shopify-section-{{ section.id }} .mobile-search-overlay button[type='submit'] {
+    color: {{ section.settings.search_text_color }} !important;
+  }
+{%- endstyle -%}
+
 <div class="header-dekor">
   <div class="page-width">
-    <!-- Top Row -->
     <div class="header-dekor-top">
-      <!-- Hamburger (Mobile only) -->
-      <button class="header-hamburger" aria-label="Menu" onclick="document.querySelector('.mobile-drawer').classList.add('active'); document.querySelector('.mobile-drawer-overlay').classList.add('active');">
+      <button
+        class="header-hamburger"
+        aria-label="Menu"
+        onclick="document.querySelector('.mobile-drawer').classList.add('active'); document.querySelector('.mobile-drawer-overlay').classList.add('active');"
+      >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -404,35 +438,59 @@
         </svg>
       </button>
 
-      <!-- Logo -->
       <div class="header-dekor-logo">
         <a href="{{ routes.root_url }}">
           {%- if settings.logo != blank -%}
-            <img src="{{ settings.logo | image_url: width: 400 }}" alt="{{ shop.name }}">
+            <img
+              src="{{ settings.logo | image_url: width: 400 }}"
+              alt="{{ shop.name }}"
+              width="{{ settings.logo.width }}"
+              height="{{ settings.logo.height }}"
+            >
           {%- else -%}
-            <img src="https://cdn.shopify.com/s/files/1/0617/6325/6561/files/d5_fcfc668b-b8fe-4eeb-b684-2ca9991ca9fd_225x.png" alt="Dekor365">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0617/6325/6561/files/d5_fcfc668b-b8fe-4eeb-b684-2ca9991ca9fd_225x.png"
+              alt="Dekor365"
+              width="225"
+              height="45"
+            >
           {%- endif -%}
         </a>
       </div>
 
-      <!-- Search Bar (Desktop only) -->
       <div class="header-dekor-search">
         <form action="{{ routes.search_url }}" method="get" role="search">
           <div class="search-field-wrapper">
-            <input type="text" name="q" placeholder=" " value="{{ search.terms | escape }}" autocomplete="off" id="header-search-input">
+            <input
+              type="text"
+              name="q"
+              placeholder=" "
+              value="{{ search.terms | escape }}"
+              autocomplete="off"
+              id="header-search-input"
+            >
             <label class="search-floating-label" for="header-search-input">Search</label>
           </div>
-          <button type="submit">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <button type="submit" aria-label="Search">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
           </button>
         </form>
       </div>
 
-      <!-- Utility Icons -->
       <div class="header-dekor-icons">
-        <!-- Mobile Search Icon -->
-        <button class="header-icon-item mobile-search-trigger" style="display:none; background:none; border:none; cursor:pointer;" aria-label="Search" onclick="document.querySelector('.mobile-search-overlay').classList.add('active'); document.querySelector('.mobile-search-overlay input').focus();">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <button
+          class="header-icon-item mobile-search-trigger"
+          style="display:none; background:none; border:none; cursor:pointer;"
+          aria-label="Search"
+          onclick="document.querySelector('.mobile-search-overlay').classList.add('active'); document.querySelector('.mobile-search-overlay input').focus();"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
         </button>
 
         <a href="/pages/track-order" class="utility-item utility-item-text">Track Order</a>
@@ -442,18 +500,24 @@
         </div>
 
         <a href="{{ routes.account_login_url }}" class="header-icon-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
           <span>Login</span>
         </a>
 
         <a href="{{ routes.cart_url }}" class="header-icon-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1.5"></circle><circle cx="20" cy="21" r="1.5"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1.5"></circle>
+            <circle cx="20" cy="21" r="1.5"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
           <span>Cart</span>
         </a>
       </div>
     </div>
 
-    <!-- Bottom Row (Menu) - Desktop only -->
     <div class="header-dekor-border-wrap">
       <div class="header-dekor-bottom">
         <ul class="header-dekor-menu">
@@ -466,9 +530,9 @@
               </li>
             {% endfor %}
           {%- else -%}
-            <li><a href="/"{% if request.path == '/' %} class="active"{% endif %}>HOME</a></li>
-            <li><a href="/collections/all">PRODUCT</a></li>
-            <li><a href="/pages/track-order">TRACK ORDER</a></li>
+            <li><a href="/"{% if request.path == '/' %} class="active"{% endif %}>Home</a></li>
+            <li><a href="/collections/all">Product</a></li>
+            <li><a href="/pages/track-order">Track Order</a></li>
           {%- endif -%}
         </ul>
       </div>
@@ -476,34 +540,55 @@
   </div>
 </div>
 
-<!-- Mobile Search Overlay -->
 <div class="mobile-search-overlay">
   <form action="{{ routes.search_url }}" method="get" role="search">
     <input type="text" name="q" placeholder="Search" autocomplete="off">
-    <button type="submit" style="background:transparent; border:none; cursor:pointer;">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#333" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    <button type="submit" aria-label="Search" style="background:transparent; border:none; cursor:pointer;">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
     </button>
   </form>
-  <button class="mobile-search-close" aria-label="Close search" onclick="document.querySelector('.mobile-search-overlay').classList.remove('active');">
-    ✕
+  <button
+    class="mobile-search-close"
+    aria-label="Close search"
+    onclick="document.querySelector('.mobile-search-overlay').classList.remove('active');"
+  >
+    x
   </button>
 </div>
 
-<!-- Mobile Drawer Menu -->
 <div class="mobile-drawer-overlay" onclick="document.querySelector('.mobile-drawer').classList.remove('active'); this.classList.remove('active');"></div>
 <div class="mobile-drawer">
   <div class="mobile-drawer-header">
     <div class="header-dekor-logo">
       <a href="{{ routes.root_url }}">
         {%- if settings.logo != blank -%}
-          <img src="{{ settings.logo | image_url: width: 200 }}" alt="{{ shop.name }}" style="max-height:35px;">
+          <img
+            src="{{ settings.logo | image_url: width: 200 }}"
+            alt="{{ shop.name }}"
+            width="{{ settings.logo.width }}"
+            height="{{ settings.logo.height }}"
+            style="max-height:35px;"
+          >
         {%- else -%}
-          <img src="https://cdn.shopify.com/s/files/1/0617/6325/6561/files/d5_fcfc668b-b8fe-4eeb-b684-2ca9991ca9fd_225x.png" alt="Dekor365" style="max-height:35px;">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0617/6325/6561/files/d5_fcfc668b-b8fe-4eeb-b684-2ca9991ca9fd_225x.png"
+            alt="Dekor365"
+            width="225"
+            height="35"
+            style="max-height:35px;"
+          >
         {%- endif -%}
       </a>
     </div>
-    <button class="mobile-drawer-close" aria-label="Close menu" onclick="document.querySelector('.mobile-drawer').classList.remove('active'); document.querySelector('.mobile-drawer-overlay').classList.remove('active');">
-      ✕
+    <button
+      class="mobile-drawer-close"
+      aria-label="Close menu"
+      onclick="document.querySelector('.mobile-drawer').classList.remove('active'); document.querySelector('.mobile-drawer-overlay').classList.remove('active');"
+    >
+      x
     </button>
   </div>
   <ul class="mobile-drawer-menu">
@@ -512,25 +597,189 @@
         <li><a href="{{ link.url }}">{{ link.title }}</a></li>
       {% endfor %}
     {%- else -%}
-      <li><a href="/">HOME</a></li>
-      <li><a href="/collections/all">PRODUCT</a></li>
-      <li><a href="/pages/track-order">TRACK ORDER</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/collections/all">Product</a></li>
+      <li><a href="/pages/track-order">Track Order</a></li>
     {%- endif -%}
-    <li><a href="/pages/track-order">TRACK ORDER</a></li>
-    <li><a href="{{ routes.account_login_url }}">LOGIN</a></li>
+    <li><a href="/pages/track-order">Track Order</a></li>
+    <li><a href="{{ routes.account_login_url }}">Login</a></li>
   </ul>
 </div>
 
 {% schema %}
 {
-  "name": "Đầu trang (Header)",
+  "name": "Header",
   "class": "section-header",
   "settings": [
     {
       "type": "link_list",
       "id": "menu",
       "default": "main-menu",
-      "label": "Menu (Trình đơn)"
+      "label": "Menu"
+    },
+    {
+      "type": "header",
+      "content": "Macorner Typography"
+    },
+    {
+      "type": "color",
+      "id": "menu_text_color",
+      "label": "Menu text color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "menu_hover_color",
+      "label": "Menu hover color",
+      "default": "#FC6514"
+    },
+    {
+      "type": "range",
+      "id": "menu_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Menu font size",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "menu_font_weight",
+      "label": "Menu font weight",
+      "default": "600",
+      "options": [
+        {
+          "value": "400",
+          "label": "400"
+        },
+        {
+          "value": "500",
+          "label": "500"
+        },
+        {
+          "value": "600",
+          "label": "600"
+        },
+        {
+          "value": "700",
+          "label": "700"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "menu_text_transform",
+      "label": "Menu text transform",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "utility_text_color",
+      "label": "Utility text color",
+      "default": "#353535"
+    },
+    {
+      "type": "range",
+      "id": "utility_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Utility font size",
+      "default": 15
+    },
+    {
+      "type": "select",
+      "id": "utility_font_weight",
+      "label": "Utility font weight",
+      "default": "500",
+      "options": [
+        {
+          "value": "400",
+          "label": "400"
+        },
+        {
+          "value": "500",
+          "label": "500"
+        },
+        {
+          "value": "600",
+          "label": "600"
+        },
+        {
+          "value": "700",
+          "label": "700"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "utility_text_transform",
+      "label": "Utility text transform",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "search_text_color",
+      "label": "Search text color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "search_label_color",
+      "label": "Search label color",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "search_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Search font size",
+      "default": 15
+    },
+    {
+      "type": "select",
+      "id": "search_font_weight",
+      "label": "Search font weight",
+      "default": "400",
+      "options": [
+        {
+          "value": "400",
+          "label": "400"
+        },
+        {
+          "value": "500",
+          "label": "500"
+        },
+        {
+          "value": "600",
+          "label": "600"
+        }
+      ]
     }
   ]
 }
