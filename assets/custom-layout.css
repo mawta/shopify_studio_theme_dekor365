@@ -4,6 +4,8 @@
   --mac-font-family: "Poppins", sans-serif;
   --font-body-family: var(--mac-font-family);
   --font-heading-family: var(--mac-font-family);
+  --mac-header-rule-color: #d3d3d3;
+  --mac-divider-color: #999998;
 }
 
 body,
@@ -30,4 +32,41 @@ h6,
 .h4,
 .h5 {
   font-family: var(--mac-font-family);
+}
+
+/* Restore the homepage separators and spacing that were removed during the revert. */
+.header-dekor-border-wrap {
+  border-bottom: 1px solid var(--mac-header-rule-color) !important;
+  padding-bottom: 1.5rem;
+}
+
+#shopify-section-slideshow_hero .slideshow__text-wrapper.banner__content {
+  padding: 0 !important;
+}
+
+#shopify-section-slideshow_hero .slideshow__text.banner__box {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#shopify-section-multicolumn_shop_by_product .page-width {
+  border-top: 1px dashed var(--mac-divider-color);
+}
+
+#shopify-section-multicolumn_shop_by_product .title-wrapper-with-link,
+#shopify-section-multicolumn_shop_by_product .multicolumn__title {
+  justify-content: center;
+  text-align: center;
+}
+
+#shopify-section-multicolumn_shop_by_product .title {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  #shopify-section-slideshow_hero .slideshow__text.banner__box {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
