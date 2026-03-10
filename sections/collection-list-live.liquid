@@ -77,9 +77,9 @@
         <a href="{{ collection.url | default: '#' }}" class="cl-item" {{ block.shopify_attributes }}>
           <div class="cl-item-img-wrapper">
             {% if collection.image != blank %}
-              <img src="{{ collection.image | img_url: '600x600', crop: 'center' }}" alt="{{ collection.title }}">
+              <img src="{{ collection.image | img_url: '600x600', crop: 'center' }}" alt="{{ collection.title }}" width="600" height="600">
             {% elsif collection.products.first and collection.products.first.featured_image != blank %}
-              <img src="{{ collection.products.first.featured_image | img_url: '600x600', crop: 'center' }}" alt="{{ collection.title }}">
+              <img src="{{ collection.products.first.featured_image | img_url: '600x600', crop: 'center' }}" alt="{{ collection.title }}" width="600" height="600">
             {% else %}
               {{ 'collection-' | append: forloop.index | placeholder_svg_tag: 'placeholder-svg' }}
             {% endif %}

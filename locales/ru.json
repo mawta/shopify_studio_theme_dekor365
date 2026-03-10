@@ -1,554 +1,561 @@
 {
-  "general": {
-    "password_page": {
-      "login_form_heading": "Вход в магазин с помощью пароля:",
-      "login_password_button": "Войти с помощью пароля",
-      "login_form_password_label": "Пароль",
-      "login_form_password_placeholder": "Ваш пароль",
-      "login_form_error": "Неправильный пароль.",
-      "login_form_submit": "Ввести",
-      "admin_link_html": "Вы владелец магазина? <a href=\"/admin\" class=\"link underlined-link\">Войдите здесь</a>",
-      "powered_by_shopify_html": "Этот магазин работает на платформе {{ shopify }}"
-    },
-    "social": {
-      "alt_text": {
-        "share_on_facebook": "Поделиться в Facebook",
-        "share_on_twitter": "Поделиться в X",
-        "share_on_pinterest": "Сохранить в Pinterest"
-      },
-      "links": {
-        "twitter": "X (Твиттер)",
-        "facebook": "Facebook",
-        "pinterest": "Pinterest",
-        "instagram": "Instagram",
-        "tumblr": "Tumblr",
-        "snapchat": "Snapchat",
-        "youtube": "YouTube",
-        "vimeo": "Vimeo",
-        "tiktok": "TikTok"
-      }
-    },
-    "continue_shopping": "Продолжить покупки",
-    "pagination": {
-      "label": "Разбивка на страницы",
-      "page": "Страница {{ number }}",
-      "next": "Следующая страница",
-      "previous": "Предыдущая страница"
-    },
-    "search": {
-      "search": "Поиск",
-      "reset": "Удалить поисковый запрос"
-    },
-    "cart": {
-      "view": "Просмотреть корзину ({{ count }})",
-      "item_added": "Товар добавлен в корзину.",
-      "view_empty_cart": "Просмотреть корзину"
-    },
-    "share": {
-      "copy_to_clipboard": "Копировать ссылку",
-      "share_url": "Ссылка",
-      "success_message": "Ссылка скопирована в буфер обмена.",
-      "close": "Свернуть функцию \"Поделиться\""
-    },
-    "slider": {
-      "of": "из",
-      "next_slide": "Листать вперед",
-      "previous_slide": "Листать назад",
-      "name": "Ползунок"
-    }
-  },
-  "newsletter": {
-    "label": "Адрес электронной почты",
-    "success": "Спасибо, что подписались!",
-    "button_label": "Подписаться"
-  },
-  "accessibility": {
-    "skip_to_text": "Перейти к контенту",
-    "close": "Закрыть",
-    "unit_price_separator": "за",
-    "vendor": "Продавец:",
-    "error": "Ошибка",
-    "refresh_page": "Выбор выделенного элемента приводит к полному обновлению страницы.",
-    "loading": "Загрузка…",
-    "link_messages": {
-      "new_window": "Открывается в новом окне.",
-      "external": "Открывает внешний сайт."
-    },
-    "skip_to_product_info": "Перейти к информации о продукте",
-    "total_reviews": "всего отзывов",
-    "star_reviews_info": "{{ rating_value }} из {{ rating_max }} звезд",
-    "collapsible_content_title": "Контент, который можно свернуть",
-    "complementary_products": "Дополнительные товары"
-  },
-  "blogs": {
-    "article": {
-      "blog": "Блог",
-      "read_more_title": "Узнать больше: {{ title }}",
-      "moderated": "Обратите внимание, что комментарии проходят одобрение перед публикацией.",
-      "comment_form_title": "Комментировать",
-      "name": "Имя",
-      "email": "Адрес электронной почты",
-      "message": "Комментарий",
-      "post": "Добавить комментарий",
-      "back_to_blog": "Вернуться к блогу",
-      "share": "Поделиться статьей",
-      "success": "Ваш комментарий отправлен. Спасибо!",
-      "success_moderated": "Ваш комментарий отправлен. Мы опубликуем его через некоторое время, так как наш блог модерируется.",
-      "comments": {
-        "one": "Комментарии: {{ count }}",
-        "other": "Комментариев: {{ count }}",
-        "few": "Комментариев: {{ count }}",
-        "many": "Комментариев: {{ count }}"
-      }
-    }
-  },
-  "onboarding": {
-    "product_title": "Пример названия товара",
-    "collection_title": "Название коллекции"
-  },
-  "products": {
-    "product": {
-      "add_to_cart": "Добавить в корзину",
-      "description": "Описание",
-      "on_sale": "Распродажа",
-      "share": "Поделиться этим продуктом",
-      "sold_out": "Продано",
-      "unavailable": "Недоступно",
-      "vendor": "Продавец",
-      "video_exit_message": "{{ title }} – в том же окне открывается полноэкранное видео.",
-      "xr_button": "Просматривайте в реальных условиях",
-      "xr_button_label": "При просмотре в реальных условиях элемент загружается в окне дополненной реальности",
-      "quantity": {
-        "label": "Количество",
-        "input_label": "Количество: {{ product }}",
-        "increase": "Увеличить количество {{ product }}",
-        "decrease": "Уменьшить количество {{ product }}",
-        "minimum_of": "Минимум {{ quantity }}",
-        "maximum_of": "Максимум {{ quantity }}",
-        "multiples_of": "Прирост: {{ quantity }}",
-        "in_cart_html": "В корзине: <span class=\"quantity-cart\">{{ quantity }}</span>",
-        "note": "Просмотреть правила количества позиций",
-        "min_of": "Мин. {{ quantity }}",
-        "max_of": "Макс. {{ quantity }}",
-        "in_cart_aria_label": "Количество ({{ quantity }} в корзине)"
-      },
-      "price": {
-        "from_price_html": "От {{ price }}",
-        "regular_price": "Обычная цена",
-        "sale_price": "Цена со скидкой",
-        "unit_price": "Цена за единицу"
-      },
-      "pickup_availability": {
-        "view_store_info": "Сведения о магазине",
-        "check_other_stores": "Проверить наличие в других магазинах",
-        "pick_up_available": "Самовывоз доступен",
-        "pick_up_available_at_html": "Самовывоз доступен: <span class=\"color-foreground\">{{ location_name }}</span>",
-        "pick_up_unavailable_at_html": "Самовывоз сейчас недоступен: <span class=\"color-foreground\">{{ location_name }}</span>",
-        "unavailable": "Не удалось загрузить сведения о доступности самовывоза",
-        "refresh": "Обновить"
-      },
-      "media": {
-        "open_media": "Открыть медиа-файлы {{ index }} в модальном окне",
-        "play_model": "Открыть объемную модель",
-        "play_video": "Воспроизвести видео",
-        "gallery_viewer": "Средство просмотра галереи",
-        "load_image": "Загрузить изображение {{ index }} в средство просмотра галереи",
-        "load_model": "Загрузить трехмерную модель {{ index }} в средство просмотра галереи",
-        "load_video": "Загрузить видео {{ index }} в средство просмотра галереи",
-        "image_available": "Изображение {{ index }} доступно в средстве просмотра галереи"
-      },
-      "nested_label": "{{ title }} для товара \"{{ parent_title }}\"",
-      "view_full_details": "Просмотреть всю информацию",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Стоимость доставки</a> рассчитывается при оформлении заказа.",
-      "choose_options": "Выберите варианты",
-      "choose_product_options": "Выберите варианты для {{ product_name }}",
-      "value_unavailable": "{{ option_value }} — Недоступно",
-      "variant_sold_out_or_unavailable": "Вариант распродан или недоступен",
-      "inventory_in_stock": "В наличии",
-      "inventory_in_stock_show_count": "В наличии: {{ quantity }}",
-      "inventory_low_stock": "Заканчивается",
-      "inventory_low_stock_show_count": "Заканчивается. Осталось: {{ quantity }}",
-      "inventory_out_of_stock": "Нет в наличии",
-      "inventory_out_of_stock_continue_selling": "В наличии",
-      "sku": "Артикул",
-      "volume_pricing": {
-        "title": "Оптовая цена",
-        "note": "Доступны оптовые цены",
-        "minimum": "{{ quantity }}+",
-        "price_range": "{{ minimum }} — {{ maximum }}",
-        "price_at_each_html": "по цене {{ price }} за штуку"
-      },
-      "product_variants": "Варианты товара",
-      "taxes_included": "Налоги включены.",
-      "duties_included": "Пошлины включены.",
-      "duties_and_taxes_included": "Пошлины и налоги включены."
-    },
-    "modal": {
-      "label": "Галерея мультимедиа"
-    },
-    "facets": {
-      "apply": "Добавить",
-      "clear": "Удалить",
-      "clear_all": "Удалить все",
-      "from": "От",
-      "filter_and_sort": "Фильтр и сортировка",
-      "filter_by_label": "Фильтр:",
-      "filter_button": "Фильтровать",
-      "max_price": "Максимальная цена: {{ price }}",
-      "reset": "Сбросить",
-      "sort_button": "Сортировка",
-      "sort_by_label": "Сортировка:",
-      "to": "Для",
-      "filters_selected": {
-        "one": "Выбрано: {{ count }}",
-        "other": "Выбрано: {{ count }}",
-        "few": "Выбрано: {{ count }}",
-        "many": "Выбрано: {{ count }}"
-      },
-      "product_count": {
-        "one": "{{ product_count }} из {{ count }} прод.",
-        "other": "{{ product_count }} из {{ count }} прод.",
-        "few": "{{ product_count }} из {{ count }} прод.",
-        "many": "{{ product_count }} из {{ count }} прод."
-      },
-      "product_count_simple": {
-        "one": "{{ count }} прод.",
-        "other": "Продуктов: {{ count }}",
-        "few": "Продуктов: {{ count }}",
-        "many": "Продуктов: {{ count }}"
-      },
-      "clear_filter": "Снять фильтр",
-      "filter_selected_accessibility": "{{ type }} (установлены фильтры: {{ count }})",
-      "show_more": "Показать больше",
-      "show_less": "Показать меньше",
-      "filter_and_operator_subtitle": "Выбрать все"
-    }
-  },
-  "templates": {
-    "search": {
-      "no_results": "По запросу «{{ terms }}» ничего не найдено. Проверьте правописание или выберите другие слова либо фразу.",
-      "title": "Результаты поиска",
-      "results_with_count": {
-        "one": "Результаты: {{ count }}",
-        "other": "Результаты: {{ count }}",
-        "few": "Результаты: {{ count }}",
-        "many": "Результаты: {{ count }}"
-      },
-      "page": "Страница",
-      "products": "Товары",
-      "search_for": "Поиск \"{{ terms }}\"",
-      "results_with_count_and_term": {
-        "one": "{{ count }} рез. по запросу «{{ terms }}»",
-        "other": "{{ count }} рез. по запросу «{{ terms }}»",
-        "few": "{{ count }} рез. по запросу «{{ terms }}»",
-        "many": "{{ count }} рез. по запросу «{{ terms }}»"
-      },
-      "results_pages_with_count": {
-        "one": "Количество страниц: {{ count }}",
-        "other": "Количество страниц: {{ count }}",
-        "few": "Количество страниц: {{ count }}",
-        "many": "Количество страниц: {{ count }}"
-      },
-      "results_suggestions_with_count": {
-        "one": "Рекомендации: {{ count }}",
-        "other": "Рекомендации: {{ count }}",
-        "few": "Рекомендации: {{ count }}",
-        "many": "Рекомендации: {{ count }}"
-      },
-      "results_products_with_count": {
-        "one": "Продукты: {{ count }}",
-        "other": "Продукты: {{ count }}",
-        "few": "Продукты: {{ count }}",
-        "many": "Продукты: {{ count }}"
-      },
-      "suggestions": "Рекомендации",
-      "pages": "Страницы"
-    },
-    "cart": {
-      "cart": "Корзина"
-    },
-    "contact": {
-      "form": {
-        "name": "Имя",
-        "email": "Адрес электронной почты",
-        "phone": "Номер телефона",
-        "comment": "Комментарий",
-        "send": "Отправить",
-        "post_success": "Спасибо за обращение. Мы свяжемся с вами как можно скорее.",
-        "error_heading": "Измените следующие элементы:",
-        "title": "Форма для связи"
-      }
-    },
-    "404": {
-      "title": "Страница не найдена",
-      "subtext": "404"
-    }
-  },
-  "sections": {
-    "header": {
-      "announcement": "Объявление",
-      "menu": "Меню",
-      "cart_count": {
-        "one": "Элементы: {{ count }}",
-        "other": "Элементов: {{ count }}",
-        "few": "Элементов: {{ count }}",
-        "many": "Элементов: {{ count }}"
-      }
-    },
-    "cart": {
-      "title": "Корзина",
-      "caption": "Товары в корзине",
-      "remove_title": "Удалить «{{ title }}»",
-      "note": "Получить специальные инструкции",
-      "checkout": "Оформить заказ",
-      "empty": "Корзина пуста.",
-      "cart_error": "Не удалось обновить корзину. Повторите попытку.",
-      "cart_quantity_error_html": "Максимально допустимое количество единиц этого товара в корзине: {{ quantity }}.",
-      "update": "Обновить",
-      "headings": {
-        "product": "Товар",
-        "price": "Цена",
-        "total": "Всего",
-        "quantity": "Количество",
-        "image": "Изображение продукта"
-      },
-      "login": {
-        "title": "Уже есть учетная запись?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Войти</a>, чтобы оформить заказ быстрее."
-      },
-      "estimated_total": "Ориентировочная общая сумма",
-      "new_estimated_total": "Новая ориентировочная общая сумма",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Пошлины и налоги включены. Скидки и <a href=\"{{ link }}\">стоимость доставки</a> рассчитываются при оформлении заказа.",
-      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Пошлины и налоги включены. Скидки и стоимость доставки рассчитываются при оформлении заказа.",
-      "taxes_included_shipping_at_checkout_with_policy_html": "Налоги включены. Скидки и <a href=\"{{ link }}\">стоимость доставки</a> рассчитываются при оформлении заказа.",
-      "taxes_included_shipping_at_checkout_without_policy": "Налоги включены. Скидки и стоимость доставки рассчитываются при оформлении заказа.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Пошлины включены. Налоги, скидки и <a href=\"{{ link }}\">стоимость доставки</a> рассчитываются при оформлении заказа.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Пошлины включены. Налоги, скидки и стоимость доставки рассчитываются при оформлении заказа.",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Налоги, скидки и <a href=\"{{ link }}\">стоимость доставки</a> рассчитываются при оформлении заказа.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Налоги, скидки и стоимость доставки рассчитываются при оформлении заказа."
-    },
-    "footer": {
-      "payment": "Способы оплаты"
-    },
-    "featured_blog": {
-      "view_all": "Посмотреть все",
-      "onboarding_title": "Статья в блоге",
-      "onboarding_content": "Напишите краткое содержание вашего статьи в блоге."
-    },
-    "featured_collection": {
-      "view_all": "Посмотреть все",
-      "view_all_label": "Посмотреть все продукты в коллекции \"{{ collection_name }}\""
-    },
-    "collection_list": {
-      "view_all": "Посмотреть все"
-    },
-    "collection_template": {
-      "title": "Коллекция",
-      "empty": "Продукты не найдены",
-      "use_fewer_filters_html": "Используйте меньше фильтров или <a class=\"{{ class }}\" href=\"{{ link }}\">удалите все</a>"
-    },
-    "video": {
-      "load_video": "Загрузить видео: {{ description }}"
-    },
-    "slideshow": {
-      "load_slide": "Загрузить слайд",
-      "previous_slideshow": "Предыдущий слайд",
-      "next_slideshow": "Следующий слайд",
-      "pause_slideshow": "Приостановить показ слайд-шоу",
-      "play_slideshow": "Воспроизвести слайд-шоу",
-      "carousel": "Карусель",
-      "slide": "Слайд"
-    },
-    "page": {
-      "title": "Название страницы"
-    },
-    "announcements": {
-      "previous_announcement": "Предыдущее объявление",
-      "next_announcement": "Следующее объявление",
-      "carousel": "Карусель",
-      "announcement": "Объявление",
-      "announcement_bar": "Строка объявления"
-    },
-    "quick_order_list": {
-      "product_total": "Промежуточный итог по товару",
-      "view_cart": "Просмотреть корзину",
-      "each": "{{ money }}/кажд.",
-      "product": "Товар",
-      "variant": "Вариант",
-      "variant_total": "Всего вариантов",
-      "items_added": {
-        "one": "Добавлен товар: {{ quantity }}",
-        "other": "Добавлены товары: {{ quantity }}",
-        "few": "Добавлены товары: {{ quantity }}",
-        "many": "Добавлены товары: {{ quantity }}"
-      },
-      "items_removed": {
-        "one": "Удален товар: {{ quantity }}",
-        "other": "Удалены товары: {{ quantity }}",
-        "few": "Удалены товары: {{ quantity }}",
-        "many": "Удалены товары: {{ quantity }}"
-      },
-      "product_variants": "Варианты товара",
-      "total_items": "Общее количество товаров",
-      "remove_all_items_confirmation": "Удалить все товары ({{ quantity }}) из корзины?",
-      "remove_all": "Удалить все",
-      "cancel": "Отменить",
-      "remove_all_single_item_confirmation": "Удалить 1 товар из корзины?",
-      "min_error": "Минимальное количество этого товара — {{ min }}",
-      "max_error": "Максимальное количество этого товара — {{ max }}",
-      "step_error": "Вы можете добавить этот товар только в количестве, кратном {{ step }}"
-    }
-  },
-  "localization": {
-    "country_label": "Страна/регион",
-    "language_label": "Язык",
-    "update_language": "Изменить язык",
-    "update_country": "Изменить данные о стране/регионе",
-    "search": "Поиск",
-    "popular_countries_regions": "Популярные страны / регионы",
-    "country_results_count": "Найдены страны / регионы: {{ count }}"
-  },
-  "customer": {
-    "account": {
-      "title": "Учетная запись",
-      "details": "Сведения учетной записи",
-      "view_addresses": "Посмотреть адреса",
-      "return": "Вернуться к сведениям учетной записи"
-    },
-    "account_fallback": "Учетная запись",
-    "log_in": "Войти",
-    "log_out": "Выйти",
-    "activate_account": {
-      "title": "Активировать учетную запись",
-      "subtext": "Создайте пароль для активации учетной записи.",
-      "password": "Пароль",
-      "password_confirm": "Подтвердить пароль",
-      "submit": "Активировать учетную запись",
-      "cancel": "Отклонить приглашение"
-    },
-    "addresses": {
-      "title": "Адреса",
-      "default": "По умолчанию",
-      "add_new": "Добавить новый адрес",
-      "edit_address": "Изменить адрес",
-      "first_name": "Имя",
-      "last_name": "Фамилия",
-      "company": "Компания",
-      "address1": "Адрес 1",
-      "address2": "Адрес 2",
-      "city": "Город",
-      "country": "Страна/регион",
-      "province": "Область",
-      "zip": "Почтовый индекс",
-      "phone": "Телефон",
-      "set_default": "Задать в качестве адреса по умолчанию",
-      "add": "Добавить адрес",
-      "update": "Обновить адрес",
-      "cancel": "Отменить",
-      "edit": "Редактировать",
-      "delete": "Удалить",
-      "delete_confirm": "Удалить этот адрес?"
-    },
-    "login_page": {
-      "cancel": "Отменить",
-      "create_account": "Создать учетную запись",
-      "email": "Адрес электронной почты",
-      "forgot_password": "Забыли пароль?",
-      "guest_continue": "Продолжить",
-      "guest_title": "Продолжите в качестве гостя",
-      "password": "Пароль",
-      "title": "Вход",
-      "sign_in": "Войти в систему",
-      "submit": "Отправить",
-      "alternate_provider_separator": "или"
-    },
-    "orders": {
-      "title": "История заказов",
-      "order_number": "Заказ",
-      "order_number_link": "Номер заказа: {{ number }}",
-      "date": "Дата",
-      "payment_status": "Статус оплаты",
-      "fulfillment_status": "Статус выполнения",
-      "total": "Всего",
-      "none": "У вас еще нет заказов."
-    },
-    "recover_password": {
-      "title": "Сбросьте пароль",
-      "subtext": "Мы отправим вам письмо со ссылкой для сброса пароля.",
-      "success": "Мы отправили вам письмо со ссылкой для обновления пароля."
-    },
-    "register": {
-      "title": "Создать учетную запись",
-      "first_name": "Имя",
-      "last_name": "Фамилия",
-      "email": "Адрес электронной почты",
-      "password": "Пароль",
-      "submit": "Создать"
-    },
-    "reset_password": {
-      "title": "Сбросьте пароль учетной записи",
-      "subtext": "Введите новый пароль",
-      "password": "Пароль",
-      "password_confirm": "Подтвердить пароль",
-      "submit": "Сбросить пароль"
-    },
-    "order": {
-      "title": "Заказ: {{ name }}",
-      "date_html": "Размещен: {{ date }}",
-      "cancelled_html": "Заказ отменен: {{ date }}",
-      "cancelled_reason": "Причина: {{ reason }}",
-      "billing_address": "Адрес выставления счета",
-      "payment_status": "Статус оплаты",
-      "shipping_address": "Адрес доставки",
-      "fulfillment_status": "Статус выполнения",
-      "discount": "Скидка",
-      "shipping": "Доставка",
-      "tax": "Налог",
-      "product": "Товар",
-      "sku": "Артикул",
-      "price": "Цена",
-      "quantity": "Количество",
-      "total": "Всего",
-      "fulfilled_at_html": "Выполнен: {{ date }}",
-      "track_shipment": "Отследить доставку",
-      "tracking_url": "Ссылка для отслеживания",
-      "tracking_company": "Перевозчик",
-      "tracking_number": "Номер для отслеживания",
-      "subtotal": "Промежуточный итог",
-      "total_duties": "Пошлины",
-      "total_refunded": "Средства возвращены"
-    }
-  },
-  "gift_cards": {
-    "issued": {
-      "title": "Вот ваша подарочная карта с номиналом {{ value }} для магазина {{ shop }}!",
-      "subtext": "Ваша подарочная карта",
-      "gift_card_code": "Код подарочной карты",
-      "shop_link": "Посетить онлайн-магазин",
-      "add_to_apple_wallet": "Добавить в Apple Wallet",
-      "qr_image_alt": "Отсканируйте QR-код, чтобы использовать подарочную карту",
-      "copy_code": "Скопировать код подарочной карты",
-      "expired": "Срок действия истек",
-      "copy_code_success": "Код скопирован",
-      "how_to_use_gift_card": "Используйте код подарочной карты онлайн или отсканируйте QR-код в магазине",
-      "expiration_date": "Срок действия истекает {{ expires_on }}"
-    }
-  },
-  "recipient": {
-    "form": {
-      "checkbox": "Я хочу отправить это в качестве подарка",
-      "email_label": "Электронный адрес получателя",
-      "email": "Электронный адрес",
-      "name_label": "Имя получателя (необязательно)",
-      "name": "Имя",
-      "message_label": "Сообщение (необязательно)",
-      "message": "Сообщение",
-      "max_characters": "Не больше {{ max_chars }} симв.",
-      "email_label_optional_for_no_js_behavior": "Электронный адрес получателя (необязательно)",
-      "send_on": "ГГГГ-ММ-ДД",
-      "send_on_label": "Дата отправки (необязательно)",
-      "expanded": "Форма с данными получателя подарочной карты развернута",
-      "collapsed": "Форма с данными получателя подарочной карты свернута"
-    }
-  }
+    "general":  {
+                    "password_page":  {
+                                          "login_form_heading":  "Ð’Ñ…Ð¾Ð´ Ð² Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½ Ñ Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒÑŽ Ð¿Ð°Ñ€Ð¾Ð»Ñ:",
+                                          "login_password_button":  "Ð’Ð¾Ð¹Ñ‚Ð¸ Ñ Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒÑŽ Ð¿Ð°Ñ€Ð¾Ð»Ñ",
+                                          "login_form_password_label":  "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ",
+                                          "login_form_password_placeholder":  "Ð’Ð°Ñˆ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ",
+                                          "login_form_error":  "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ.",
+                                          "login_form_submit":  "Ð’Ð²ÐµÑÑ‚Ð¸",
+                                          "admin_link_html":  "Ð’Ñ‹ Ð²Ð»Ð°Ð´ÐµÐ»ÐµÑ† Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°? \u003ca href=\"/admin\" class=\"link underlined-link\"\u003eÐ’Ð¾Ð¹Ð´Ð¸Ñ‚Ðµ Ð·Ð´ÐµÑÑŒ\u003c/a\u003e",
+                                          "powered_by_shopify_html":  "Ð­Ñ‚Ð¾Ñ‚ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½ Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚ Ð½Ð° Ð¿Ð»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼Ðµ {{ shopify }}"
+                                      },
+                    "social":  {
+                                   "alt_text":  {
+                                                    "share_on_facebook":  "ÐŸÐ¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ Ð² Facebook",
+                                                    "share_on_twitter":  "ÐŸÐ¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ Ð² X",
+                                                    "share_on_pinterest":  "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ Ð² Pinterest"
+                                                },
+                                   "links":  {
+                                                 "twitter":  "X (Ð¢Ð²Ð¸Ñ‚Ñ‚ÐµÑ€)",
+                                                 "facebook":  "Facebook",
+                                                 "pinterest":  "Pinterest",
+                                                 "instagram":  "Instagram",
+                                                 "tumblr":  "Tumblr",
+                                                 "snapchat":  "Snapchat",
+                                                 "youtube":  "YouTube",
+                                                 "vimeo":  "Vimeo",
+                                                 "tiktok":  "TikTok"
+                                             }
+                               },
+                    "continue_shopping":  "ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ Ð¿Ð¾ÐºÑƒÐ¿ÐºÐ¸",
+                    "pagination":  {
+                                       "label":  "Ð Ð°Ð·Ð±Ð¸Ð²ÐºÐ° Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹",
+                                       "page":  "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° {{ number }}",
+                                       "next":  "Ð¡Ð»ÐµÐ´ÑƒÑŽÑ‰Ð°Ñ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°",
+                                       "previous":  "ÐŸÑ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰Ð°Ñ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°"
+                                   },
+                    "search":  {
+                                   "search":  "ÐŸÐ¾Ð¸ÑÐº",
+                                   "reset":  "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ñ‹Ð¹ Ð·Ð°Ð¿Ñ€Ð¾Ñ"
+                               },
+                    "cart":  {
+                                 "view":  "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ ({{ count }})",
+                                 "item_added":  "Ð¢Ð¾Ð²Ð°Ñ€ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½ Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ.",
+                                 "view_empty_cart":  "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ"
+                             },
+                    "share":  {
+                                  "copy_to_clipboard":  "ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÑÑÑ‹Ð»ÐºÑƒ",
+                                  "share_url":  "Ð¡ÑÑ‹Ð»ÐºÐ°",
+                                  "success_message":  "Ð¡ÑÑ‹Ð»ÐºÐ° ÑÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð° Ð² Ð±ÑƒÑ„ÐµÑ€ Ð¾Ð±Ð¼ÐµÐ½Ð°.",
+                                  "close":  "Ð¡Ð²ÐµÑ€Ð½ÑƒÑ‚ÑŒ Ñ„ÑƒÐ½ÐºÑ†Ð¸ÑŽ \"ÐŸÐ¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ\""
+                              },
+                    "slider":  {
+                                   "of":  "Ð¸Ð·",
+                                   "next_slide":  "Ð›Ð¸ÑÑ‚Ð°Ñ‚ÑŒ Ð²Ð¿ÐµÑ€ÐµÐ´",
+                                   "previous_slide":  "Ð›Ð¸ÑÑ‚Ð°Ñ‚ÑŒ Ð½Ð°Ð·Ð°Ð´",
+                                   "name":  "ÐŸÐ¾Ð»Ð·ÑƒÐ½Ð¾Ðº"
+                               },
+                    "breadcrumbs":  {
+                                        "home":  "Home"
+                                    }
+                },
+    "newsletter":  {
+                       "label":  "ÐÐ´Ñ€ÐµÑ ÑÐ»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð¾Ð¹ Ð¿Ð¾Ñ‡Ñ‚Ñ‹",
+                       "success":  "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾, Ñ‡Ñ‚Ð¾ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐ°Ð»Ð¸ÑÑŒ!",
+                       "button_label":  "ÐŸÐ¾Ð´Ð¿Ð¸ÑÐ°Ñ‚ÑŒÑÑ"
+                   },
+    "accessibility":  {
+                          "skip_to_text":  "ÐŸÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ðº ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ñƒ",
+                          "close":  "Ð—Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ",
+                          "unit_price_separator":  "Ð·Ð°",
+                          "vendor":  "ÐŸÑ€Ð¾Ð´Ð°Ð²ÐµÑ†:",
+                          "error":  "ÐžÑˆÐ¸Ð±ÐºÐ°",
+                          "refresh_page":  "Ð’Ñ‹Ð±Ð¾Ñ€ Ð²Ñ‹Ð´ÐµÐ»ÐµÐ½Ð½Ð¾Ð³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ð¿Ñ€Ð¸Ð²Ð¾Ð´Ð¸Ñ‚ Ðº Ð¿Ð¾Ð»Ð½Ð¾Ð¼Ñƒ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸ÑŽ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹.",
+                          "loading":  "Ð—Ð°Ð³Ñ€ÑƒÐ·ÐºÐ°â€¦",
+                          "link_messages":  {
+                                                "new_window":  "ÐžÑ‚ÐºÑ€Ñ‹Ð²Ð°ÐµÑ‚ÑÑ Ð² Ð½Ð¾Ð²Ð¾Ð¼ Ð¾ÐºÐ½Ðµ.",
+                                                "external":  "ÐžÑ‚ÐºÑ€Ñ‹Ð²Ð°ÐµÑ‚ Ð²Ð½ÐµÑˆÐ½Ð¸Ð¹ ÑÐ°Ð¹Ñ‚."
+                                            },
+                          "skip_to_product_info":  "ÐŸÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ðº Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸ Ð¾ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ðµ",
+                          "total_reviews":  "Ð²ÑÐµÐ³Ð¾ Ð¾Ñ‚Ð·Ñ‹Ð²Ð¾Ð²",
+                          "star_reviews_info":  "{{ rating_value }} Ð¸Ð· {{ rating_max }} Ð·Ð²ÐµÐ·Ð´",
+                          "collapsible_content_title":  "ÐšÐ¾Ð½Ñ‚ÐµÐ½Ñ‚, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð¼Ð¾Ð¶Ð½Ð¾ ÑÐ²ÐµÑ€Ð½ÑƒÑ‚ÑŒ",
+                          "complementary_products":  "Ð”Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹"
+                      },
+    "blogs":  {
+                  "article":  {
+                                  "blog":  "Ð‘Ð»Ð¾Ð³",
+                                  "read_more_title":  "Ð£Ð·Ð½Ð°Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ: {{ title }}",
+                                  "moderated":  "ÐžÐ±Ñ€Ð°Ñ‚Ð¸Ñ‚Ðµ Ð²Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ, Ñ‡Ñ‚Ð¾ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸ Ð¿Ñ€Ð¾Ñ…Ð¾Ð´ÑÑ‚ Ð¾Ð´Ð¾Ð±Ñ€ÐµÐ½Ð¸Ðµ Ð¿ÐµÑ€ÐµÐ´ Ð¿ÑƒÐ±Ð»Ð¸ÐºÐ°Ñ†Ð¸ÐµÐ¹.",
+                                  "comment_form_title":  "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ",
+                                  "name":  "Ð˜Ð¼Ñ",
+                                  "email":  "ÐÐ´Ñ€ÐµÑ ÑÐ»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð¾Ð¹ Ð¿Ð¾Ñ‡Ñ‚Ñ‹",
+                                  "message":  "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹",
+                                  "post":  "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹",
+                                  "back_to_blog":  "Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ðº Ð±Ð»Ð¾Ð³Ñƒ",
+                                  "share":  "ÐŸÐ¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ ÑÑ‚Ð°Ñ‚ÑŒÐµÐ¹",
+                                  "success":  "Ð’Ð°Ñˆ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½. Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾!",
+                                  "success_moderated":  "Ð’Ð°Ñˆ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½. ÐœÑ‹ Ð¾Ð¿ÑƒÐ±Ð»Ð¸ÐºÑƒÐµÐ¼ ÐµÐ³Ð¾ Ñ‡ÐµÑ€ÐµÐ· Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ðµ Ð²Ñ€ÐµÐ¼Ñ, Ñ‚Ð°Ðº ÐºÐ°Ðº Ð½Ð°Ñˆ Ð±Ð»Ð¾Ð³ Ð¼Ð¾Ð´ÐµÑ€Ð¸Ñ€ÑƒÐµÑ‚ÑÑ.",
+                                  "comments":  {
+                                                   "one":  "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸: {{ count }}",
+                                                   "other":  "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²: {{ count }}",
+                                                   "few":  "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²: {{ count }}",
+                                                   "many":  "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²: {{ count }}"
+                                               }
+                              }
+              },
+    "onboarding":  {
+                       "product_title":  "ÐŸÑ€Ð¸Ð¼ÐµÑ€ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ñ Ñ‚Ð¾Ð²Ð°Ñ€Ð°",
+                       "collection_title":  "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ¾Ð»Ð»ÐµÐºÑ†Ð¸Ð¸"
+                   },
+    "products":  {
+                     "product":  {
+                                     "add_to_cart":  "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ",
+                                     "description":  "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ",
+                                     "on_sale":  "Ð Ð°ÑÐ¿Ñ€Ð¾Ð´Ð°Ð¶Ð°",
+                                     "share":  "ÐŸÐ¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ ÑÑ‚Ð¸Ð¼ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¾Ð¼",
+                                     "sold_out":  "ÐŸÑ€Ð¾Ð´Ð°Ð½Ð¾",
+                                     "unavailable":  "ÐÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¾",
+                                     "vendor":  "ÐŸÑ€Ð¾Ð´Ð°Ð²ÐµÑ†",
+                                     "video_exit_message":  "{{ title }}Â â€“ Ð² Ñ‚Ð¾Ð¼ Ð¶Ðµ Ð¾ÐºÐ½Ðµ Ð¾Ñ‚ÐºÑ€Ñ‹Ð²Ð°ÐµÑ‚ÑÑ Ð¿Ð¾Ð»Ð½Ð¾ÑÐºÑ€Ð°Ð½Ð½Ð¾Ðµ Ð²Ð¸Ð´ÐµÐ¾.",
+                                     "xr_button":  "ÐŸÑ€Ð¾ÑÐ¼Ð°Ñ‚Ñ€Ð¸Ð²Ð°Ð¹Ñ‚Ðµ Ð² Ñ€ÐµÐ°Ð»ÑŒÐ½Ñ‹Ñ… ÑƒÑÐ»Ð¾Ð²Ð¸ÑÑ…",
+                                     "xr_button_label":  "ÐŸÑ€Ð¸ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ðµ Ð² Ñ€ÐµÐ°Ð»ÑŒÐ½Ñ‹Ñ… ÑƒÑÐ»Ð¾Ð²Ð¸ÑÑ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð·Ð°Ð³Ñ€ÑƒÐ¶Ð°ÐµÑ‚ÑÑ Ð² Ð¾ÐºÐ½Ðµ Ð´Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ð¾Ð¹ Ñ€ÐµÐ°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸",
+                                     "quantity":  {
+                                                      "label":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾",
+                                                      "input_label":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾: {{ product }}",
+                                                      "increase":  "Ð£Ð²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ {{ product }}",
+                                                      "decrease":  "Ð£Ð¼ÐµÐ½ÑŒÑˆÐ¸Ñ‚ÑŒ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ {{ product }}",
+                                                      "minimum_of":  "ÐœÐ¸Ð½Ð¸Ð¼ÑƒÐ¼ {{ quantity }}",
+                                                      "maximum_of":  "ÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼ {{ quantity }}",
+                                                      "multiples_of":  "ÐŸÑ€Ð¸Ñ€Ð¾ÑÑ‚: {{ quantity }}",
+                                                      "in_cart_html":  "Ð’ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ðµ: \u003cspan class=\"quantity-cart\"\u003e{{ quantity }}\u003c/span\u003e",
+                                                      "note":  "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð° ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð° Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹",
+                                                      "min_of":  "ÐœÐ¸Ð½. {{ quantity }}",
+                                                      "max_of":  "ÐœÐ°ÐºÑ. {{ quantity }}",
+                                                      "in_cart_aria_label":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ({{ quantity }} Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ðµ)"
+                                                  },
+                                     "price":  {
+                                                   "from_price_html":  "ÐžÑ‚ {{ price }}",
+                                                   "regular_price":  "ÐžÐ±Ñ‹Ñ‡Ð½Ð°Ñ Ñ†ÐµÐ½Ð°",
+                                                   "sale_price":  "Ð¦ÐµÐ½Ð° ÑÐ¾ ÑÐºÐ¸Ð´ÐºÐ¾Ð¹",
+                                                   "unit_price":  "Ð¦ÐµÐ½Ð° Ð·Ð° ÐµÐ´Ð¸Ð½Ð¸Ñ†Ñƒ"
+                                               },
+                                     "pickup_availability":  {
+                                                                 "view_store_info":  "Ð¡Ð²ÐµÐ´ÐµÐ½Ð¸Ñ Ð¾ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ðµ",
+                                                                 "check_other_stores":  "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ðµ Ð² Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°Ñ…",
+                                                                 "pick_up_available":  "Ð¡Ð°Ð¼Ð¾Ð²Ñ‹Ð²Ð¾Ð· Ð´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½",
+                                                                 "pick_up_available_at_html":  "Ð¡Ð°Ð¼Ð¾Ð²Ñ‹Ð²Ð¾Ð· Ð´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½: \u003cspan class=\"color-foreground\"\u003e{{ location_name }}\u003c/span\u003e",
+                                                                 "pick_up_unavailable_at_html":  "Ð¡Ð°Ð¼Ð¾Ð²Ñ‹Ð²Ð¾Ð· ÑÐµÐ¹Ñ‡Ð°Ñ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½: \u003cspan class=\"color-foreground\"\u003e{{ location_name }}\u003c/span\u003e",
+                                                                 "unavailable":  "ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð·Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ ÑÐ²ÐµÐ´ÐµÐ½Ð¸Ñ Ð¾ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¾ÑÑ‚Ð¸ ÑÐ°Ð¼Ð¾Ð²Ñ‹Ð²Ð¾Ð·Ð°",
+                                                                 "refresh":  "ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ"
+                                                             },
+                                     "media":  {
+                                                   "open_media":  "ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ð¼ÐµÐ´Ð¸Ð°-Ñ„Ð°Ð¹Ð»Ñ‹ {{ index }} Ð² Ð¼Ð¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ð¼ Ð¾ÐºÐ½Ðµ",
+                                                   "play_model":  "ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ð¾Ð±ÑŠÐµÐ¼Ð½ÑƒÑŽ Ð¼Ð¾Ð´ÐµÐ»ÑŒ",
+                                                   "play_video":  "Ð’Ð¾ÑÐ¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÑÑ‚Ð¸ Ð²Ð¸Ð´ÐµÐ¾",
+                                                   "gallery_viewer":  "Ð¡Ñ€ÐµÐ´ÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð° Ð³Ð°Ð»ÐµÑ€ÐµÐ¸",
+                                                   "load_image":  "Ð—Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ {{ index }} Ð² ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð° Ð³Ð°Ð»ÐµÑ€ÐµÐ¸",
+                                                   "load_model":  "Ð—Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ Ñ‚Ñ€ÐµÑ…Ð¼ÐµÑ€Ð½ÑƒÑŽ Ð¼Ð¾Ð´ÐµÐ»ÑŒ {{ index }} Ð² ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð° Ð³Ð°Ð»ÐµÑ€ÐµÐ¸",
+                                                   "load_video":  "Ð—Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ Ð²Ð¸Ð´ÐµÐ¾ {{ index }} Ð² ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð° Ð³Ð°Ð»ÐµÑ€ÐµÐ¸",
+                                                   "image_available":  "Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ {{ index }} Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¾ Ð² ÑÑ€ÐµÐ´ÑÑ‚Ð²Ðµ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð° Ð³Ð°Ð»ÐµÑ€ÐµÐ¸"
+                                               },
+                                     "nested_label":  "{{ title }} Ð´Ð»Ñ Ñ‚Ð¾Ð²Ð°Ñ€Ð° \"{{ parent_title }}\"",
+                                     "view_full_details":  "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð²ÑÑŽ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ",
+                                     "shipping_policy_html":  "\u003ca href=\"{{ link }}\"\u003eÐ¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸\u003c/a\u003e Ñ€Ð°ÑÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÐµÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°.",
+                                     "choose_options":  "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ñ‹",
+                                     "choose_product_options":  "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ñ‹ Ð´Ð»Ñ {{ product_name }}",
+                                     "value_unavailable":  "{{ option_value }} â€” ÐÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¾",
+                                     "variant_sold_out_or_unavailable":  "Ð’Ð°Ñ€Ð¸Ð°Ð½Ñ‚ Ñ€Ð°ÑÐ¿Ñ€Ð¾Ð´Ð°Ð½ Ð¸Ð»Ð¸ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½",
+                                     "inventory_in_stock":  "Ð’ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸",
+                                     "inventory_in_stock_show_count":  "Ð’ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸: {{ quantity }}",
+                                     "inventory_low_stock":  "Ð—Ð°ÐºÐ°Ð½Ñ‡Ð¸Ð²Ð°ÐµÑ‚ÑÑ",
+                                     "inventory_low_stock_show_count":  "Ð—Ð°ÐºÐ°Ð½Ñ‡Ð¸Ð²Ð°ÐµÑ‚ÑÑ. ÐžÑÑ‚Ð°Ð»Ð¾ÑÑŒ: {{ quantity }}",
+                                     "inventory_out_of_stock":  "ÐÐµÑ‚ Ð² Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸",
+                                     "inventory_out_of_stock_continue_selling":  "Ð’ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸",
+                                     "sku":  "ÐÑ€Ñ‚Ð¸ÐºÑƒÐ»",
+                                     "volume_pricing":  {
+                                                            "title":  "ÐžÐ¿Ñ‚Ð¾Ð²Ð°Ñ Ñ†ÐµÐ½Ð°",
+                                                            "note":  "Ð”Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹ Ð¾Ð¿Ñ‚Ð¾Ð²Ñ‹Ðµ Ñ†ÐµÐ½Ñ‹",
+                                                            "minimum":  "{{ quantity }}+",
+                                                            "price_range":  "{{ minimum }}Â â€” {{ maximum }}",
+                                                            "price_at_each_html":  "Ð¿Ð¾ Ñ†ÐµÐ½Ðµ {{ price }} Ð·Ð° ÑˆÑ‚ÑƒÐºÑƒ"
+                                                        },
+                                     "product_variants":  "Ð’Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ñ‹ Ñ‚Ð¾Ð²Ð°Ñ€Ð°",
+                                     "taxes_included":  "ÐÐ°Ð»Ð¾Ð³Ð¸ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ñ‹.",
+                                     "duties_included":  "ÐŸÐ¾ÑˆÐ»Ð¸Ð½Ñ‹ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ñ‹.",
+                                     "duties_and_taxes_included":  "ÐŸÐ¾ÑˆÐ»Ð¸Ð½Ñ‹ Ð¸ Ð½Ð°Ð»Ð¾Ð³Ð¸ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ñ‹.",
+                                     "product_types":  "Product type",
+                                     "tags":  "Tags",
+                                     "products_tagged":  "Products tagged {{ tag }}"
+                                 },
+                     "modal":  {
+                                   "label":  "Ð“Ð°Ð»ÐµÑ€ÐµÑ Ð¼ÑƒÐ»ÑŒÑ‚Ð¸Ð¼ÐµÐ´Ð¸Ð°"
+                               },
+                     "facets":  {
+                                    "apply":  "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ",
+                                    "clear":  "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ",
+                                    "clear_all":  "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð²ÑÐµ",
+                                    "from":  "ÐžÑ‚",
+                                    "filter_and_sort":  "Ð¤Ð¸Ð»ÑŒÑ‚Ñ€ Ð¸ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°",
+                                    "filter_by_label":  "Ð¤Ð¸Ð»ÑŒÑ‚Ñ€:",
+                                    "filter_button":  "Ð¤Ð¸Ð»ÑŒÑ‚Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ",
+                                    "max_price":  "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ñ†ÐµÐ½Ð°: {{ price }}",
+                                    "reset":  "Ð¡Ð±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ",
+                                    "sort_button":  "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°",
+                                    "sort_by_label":  "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°:",
+                                    "to":  "Ð”Ð»Ñ",
+                                    "filters_selected":  {
+                                                             "one":  "Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð¾: {{ count }}",
+                                                             "other":  "Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð¾: {{ count }}",
+                                                             "few":  "Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð¾: {{ count }}",
+                                                             "many":  "Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð¾: {{ count }}"
+                                                         },
+                                    "product_count":  {
+                                                          "one":  "{{ product_count }} Ð¸Ð· {{ count }}Â Ð¿Ñ€Ð¾Ð´.",
+                                                          "other":  "{{ product_count }} Ð¸Ð· {{ count }}Â Ð¿Ñ€Ð¾Ð´.",
+                                                          "few":  "{{ product_count }} Ð¸Ð· {{ count }}Â Ð¿Ñ€Ð¾Ð´.",
+                                                          "many":  "{{ product_count }} Ð¸Ð· {{ count }}Â Ð¿Ñ€Ð¾Ð´."
+                                                      },
+                                    "product_count_simple":  {
+                                                                 "one":  "{{ count }}Â Ð¿Ñ€Ð¾Ð´.",
+                                                                 "other":  "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ‚Ð¾Ð²: {{ count }}",
+                                                                 "few":  "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ‚Ð¾Ð²: {{ count }}",
+                                                                 "many":  "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ‚Ð¾Ð²: {{ count }}"
+                                                             },
+                                    "clear_filter":  "Ð¡Ð½ÑÑ‚ÑŒ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€",
+                                    "filter_selected_accessibility":  "{{ type }} (ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ñ‹ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ñ‹: {{ count }})",
+                                    "show_more":  "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ",
+                                    "show_less":  "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¼ÐµÐ½ÑŒÑˆÐµ",
+                                    "filter_and_operator_subtitle":  "Ð’Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ Ð²ÑÐµ"
+                                }
+                 },
+    "templates":  {
+                      "search":  {
+                                     "no_results":  "ÐŸÐ¾ Ð·Ð°Ð¿Ñ€Ð¾ÑÑƒ Â«{{ terms }}Â» Ð½Ð¸Ñ‡ÐµÐ³Ð¾ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾. ÐŸÑ€Ð¾Ð²ÐµÑ€ÑŒÑ‚Ðµ Ð¿Ñ€Ð°Ð²Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð¸Ð»Ð¸ Ð²Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð´Ñ€ÑƒÐ³Ð¸Ðµ ÑÐ»Ð¾Ð²Ð° Ð»Ð¸Ð±Ð¾ Ñ„Ñ€Ð°Ð·Ñƒ.",
+                                     "title":  "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ð¿Ð¾Ð¸ÑÐºÐ°",
+                                     "results_with_count":  {
+                                                                "one":  "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹: {{ count }}",
+                                                                "other":  "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹: {{ count }}",
+                                                                "few":  "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹: {{ count }}",
+                                                                "many":  "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹: {{ count }}"
+                                                            },
+                                     "page":  "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°",
+                                     "products":  "Ð¢Ð¾Ð²Ð°Ñ€Ñ‹",
+                                     "search_for":  "ÐŸÐ¾Ð¸ÑÐº \"{{ terms }}\"",
+                                     "results_with_count_and_term":  {
+                                                                         "one":  "{{ count }} Ñ€ÐµÐ·. Ð¿Ð¾ Ð·Ð°Ð¿Ñ€Ð¾ÑÑƒ Â«{{ terms }}Â»",
+                                                                         "other":  "{{ count }} Ñ€ÐµÐ·. Ð¿Ð¾ Ð·Ð°Ð¿Ñ€Ð¾ÑÑƒ Â«{{ terms }}Â»",
+                                                                         "few":  "{{ count }} Ñ€ÐµÐ·. Ð¿Ð¾ Ð·Ð°Ð¿Ñ€Ð¾ÑÑƒ Â«{{ terms }}Â»",
+                                                                         "many":  "{{ count }} Ñ€ÐµÐ·. Ð¿Ð¾ Ð·Ð°Ð¿Ñ€Ð¾ÑÑƒ Â«{{ terms }}Â»"
+                                                                     },
+                                     "results_pages_with_count":  {
+                                                                      "one":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†: {{ count }}",
+                                                                      "other":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†: {{ count }}",
+                                                                      "few":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†: {{ count }}",
+                                                                      "many":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†: {{ count }}"
+                                                                  },
+                                     "results_suggestions_with_count":  {
+                                                                            "one":  "Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð°Ñ†Ð¸Ð¸: {{ count }}",
+                                                                            "other":  "Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð°Ñ†Ð¸Ð¸: {{ count }}",
+                                                                            "few":  "Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð°Ñ†Ð¸Ð¸: {{ count }}",
+                                                                            "many":  "Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð°Ñ†Ð¸Ð¸: {{ count }}"
+                                                                        },
+                                     "results_products_with_count":  {
+                                                                         "one":  "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ‚Ñ‹: {{ count }}",
+                                                                         "other":  "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ‚Ñ‹: {{ count }}",
+                                                                         "few":  "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ‚Ñ‹: {{ count }}",
+                                                                         "many":  "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ‚Ñ‹: {{ count }}"
+                                                                     },
+                                     "suggestions":  "Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð°Ñ†Ð¸Ð¸",
+                                     "pages":  "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹"
+                                 },
+                      "cart":  {
+                                   "cart":  "ÐšÐ¾Ñ€Ð·Ð¸Ð½Ð°"
+                               },
+                      "contact":  {
+                                      "form":  {
+                                                   "name":  "Ð˜Ð¼Ñ",
+                                                   "email":  "ÐÐ´Ñ€ÐµÑ ÑÐ»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð¾Ð¹ Ð¿Ð¾Ñ‡Ñ‚Ñ‹",
+                                                   "phone":  "ÐÐ¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð°",
+                                                   "comment":  "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹",
+                                                   "send":  "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ",
+                                                   "post_success":  "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾ Ð·Ð° Ð¾Ð±Ñ€Ð°Ñ‰ÐµÐ½Ð¸Ðµ. ÐœÑ‹ ÑÐ²ÑÐ¶ÐµÐ¼ÑÑ Ñ Ð²Ð°Ð¼Ð¸ ÐºÐ°Ðº Ð¼Ð¾Ð¶Ð½Ð¾ ÑÐºÐ¾Ñ€ÐµÐµ.",
+                                                   "error_heading":  "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹:",
+                                                   "title":  "Ð¤Ð¾Ñ€Ð¼Ð° Ð´Ð»Ñ ÑÐ²ÑÐ·Ð¸"
+                                               }
+                                  },
+                      "404":  {
+                                  "title":  "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°",
+                                  "subtext":  "404"
+                              }
+                  },
+    "sections":  {
+                     "header":  {
+                                    "announcement":  "ÐžÐ±ÑŠÑÐ²Ð»ÐµÐ½Ð¸Ðµ",
+                                    "menu":  "ÐœÐµÐ½ÑŽ",
+                                    "cart_count":  {
+                                                       "one":  "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹: {{ count }}",
+                                                       "other":  "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: {{ count }}",
+                                                       "few":  "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: {{ count }}",
+                                                       "many":  "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: {{ count }}"
+                                                   }
+                                },
+                     "cart":  {
+                                  "title":  "ÐšÐ¾Ñ€Ð·Ð¸Ð½Ð°",
+                                  "caption":  "Ð¢Ð¾Ð²Ð°Ñ€Ñ‹ Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ðµ",
+                                  "remove_title":  "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Â«{{ title }}Â»",
+                                  "note":  "ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ðµ Ð¸Ð½ÑÑ‚Ñ€ÑƒÐºÑ†Ð¸Ð¸",
+                                  "checkout":  "ÐžÑ„Ð¾Ñ€Ð¼Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·",
+                                  "empty":  "ÐšÐ¾Ñ€Ð·Ð¸Ð½Ð° Ð¿ÑƒÑÑ‚Ð°.",
+                                  "cart_error":  "ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¾Ð±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ. ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¿Ñ‹Ñ‚ÐºÑƒ.",
+                                  "cart_quantity_error_html":  "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾ Ð´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐµÐ´Ð¸Ð½Ð¸Ñ† ÑÑ‚Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð° Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ðµ: {{ quantity }}.",
+                                  "update":  "ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ",
+                                  "headings":  {
+                                                   "product":  "Ð¢Ð¾Ð²Ð°Ñ€",
+                                                   "price":  "Ð¦ÐµÐ½Ð°",
+                                                   "total":  "Ð’ÑÐµÐ³Ð¾",
+                                                   "quantity":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾",
+                                                   "image":  "Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð°"
+                                               },
+                                  "login":  {
+                                                "title":  "Ð£Ð¶Ðµ ÐµÑÑ‚ÑŒ ÑƒÑ‡ÐµÑ‚Ð½Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ?",
+                                                "paragraph_html":  "\u003ca href=\"{{ link }}\" class=\"link underlined-link\"\u003eÐ’Ð¾Ð¹Ñ‚Ð¸\u003c/a\u003e, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¾Ñ„Ð¾Ñ€Ð¼Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð· Ð±Ñ‹ÑÑ‚Ñ€ÐµÐµ."
+                                            },
+                                  "estimated_total":  "ÐžÑ€Ð¸ÐµÐ½Ñ‚Ð¸Ñ€Ð¾Ð²Ð¾Ñ‡Ð½Ð°Ñ Ð¾Ð±Ñ‰Ð°Ñ ÑÑƒÐ¼Ð¼Ð°",
+                                  "new_estimated_total":  "ÐÐ¾Ð²Ð°Ñ Ð¾Ñ€Ð¸ÐµÐ½Ñ‚Ð¸Ñ€Ð¾Ð²Ð¾Ñ‡Ð½Ð°Ñ Ð¾Ð±Ñ‰Ð°Ñ ÑÑƒÐ¼Ð¼Ð°",
+                                  "duties_and_taxes_included_shipping_at_checkout_with_policy_html":  "ÐŸÐ¾ÑˆÐ»Ð¸Ð½Ñ‹ Ð¸ Ð½Ð°Ð»Ð¾Ð³Ð¸ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ñ‹. Ð¡ÐºÐ¸Ð´ÐºÐ¸ Ð¸ \u003ca href=\"{{ link }}\"\u003eÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸\u003c/a\u003e Ñ€Ð°ÑÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÑŽÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°.",
+                                  "duties_and_taxes_included_shipping_at_checkout_without_policy":  "ÐŸÐ¾ÑˆÐ»Ð¸Ð½Ñ‹ Ð¸ Ð½Ð°Ð»Ð¾Ð³Ð¸ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ñ‹. Ð¡ÐºÐ¸Ð´ÐºÐ¸ Ð¸ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ Ñ€Ð°ÑÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÑŽÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°.",
+                                  "taxes_included_shipping_at_checkout_with_policy_html":  "ÐÐ°Ð»Ð¾Ð³Ð¸ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ñ‹. Ð¡ÐºÐ¸Ð´ÐºÐ¸ Ð¸ \u003ca href=\"{{ link }}\"\u003eÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸\u003c/a\u003e Ñ€Ð°ÑÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÑŽÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°.",
+                                  "taxes_included_shipping_at_checkout_without_policy":  "ÐÐ°Ð»Ð¾Ð³Ð¸ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ñ‹. Ð¡ÐºÐ¸Ð´ÐºÐ¸ Ð¸ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ Ñ€Ð°ÑÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÑŽÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°.",
+                                  "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html":  "ÐŸÐ¾ÑˆÐ»Ð¸Ð½Ñ‹ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ñ‹. ÐÐ°Ð»Ð¾Ð³Ð¸, ÑÐºÐ¸Ð´ÐºÐ¸ Ð¸ \u003ca href=\"{{ link }}\"\u003eÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸\u003c/a\u003e Ñ€Ð°ÑÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÑŽÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°.",
+                                  "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy":  "ÐŸÐ¾ÑˆÐ»Ð¸Ð½Ñ‹ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ñ‹. ÐÐ°Ð»Ð¾Ð³Ð¸, ÑÐºÐ¸Ð´ÐºÐ¸ Ð¸ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ Ñ€Ð°ÑÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÑŽÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°.",
+                                  "taxes_at_checkout_shipping_at_checkout_with_policy_html":  "ÐÐ°Ð»Ð¾Ð³Ð¸, ÑÐºÐ¸Ð´ÐºÐ¸ Ð¸ \u003ca href=\"{{ link }}\"\u003eÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸\u003c/a\u003e Ñ€Ð°ÑÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÑŽÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°.",
+                                  "taxes_at_checkout_shipping_at_checkout_without_policy":  "ÐÐ°Ð»Ð¾Ð³Ð¸, ÑÐºÐ¸Ð´ÐºÐ¸ Ð¸ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ Ñ€Ð°ÑÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÑŽÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°."
+                              },
+                     "footer":  {
+                                    "payment":  "Ð¡Ð¿Ð¾ÑÐ¾Ð±Ñ‹ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹"
+                                },
+                     "featured_blog":  {
+                                           "view_all":  "ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð²ÑÐµ",
+                                           "onboarding_title":  "Ð¡Ñ‚Ð°Ñ‚ÑŒÑ Ð² Ð±Ð»Ð¾Ð³Ðµ",
+                                           "onboarding_content":  "ÐÐ°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ ÐºÑ€Ð°Ñ‚ÐºÐ¾Ðµ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ð½Ð¸Ðµ Ð²Ð°ÑˆÐµÐ³Ð¾ ÑÑ‚Ð°Ñ‚ÑŒÐ¸ Ð² Ð±Ð»Ð¾Ð³Ðµ."
+                                       },
+                     "featured_collection":  {
+                                                 "view_all":  "ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð²ÑÐµ",
+                                                 "view_all_label":  "ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð²ÑÐµ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ñ‹ Ð² ÐºÐ¾Ð»Ð»ÐµÐºÑ†Ð¸Ð¸ \"{{ collection_name }}\""
+                                             },
+                     "collection_list":  {
+                                             "view_all":  "ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð²ÑÐµ"
+                                         },
+                     "collection_template":  {
+                                                 "title":  "ÐšÐ¾Ð»Ð»ÐµÐºÑ†Ð¸Ñ",
+                                                 "empty":  "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ‚Ñ‹ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹",
+                                                 "use_fewer_filters_html":  "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ð¼ÐµÐ½ÑŒÑˆÐµ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð¾Ð² Ð¸Ð»Ð¸ \u003ca class=\"{{ class }}\" href=\"{{ link }}\"\u003eÑƒÐ´Ð°Ð»Ð¸Ñ‚Ðµ Ð²ÑÐµ\u003c/a\u003e"
+                                             },
+                     "video":  {
+                                   "load_video":  "Ð—Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ Ð²Ð¸Ð´ÐµÐ¾: {{ description }}"
+                               },
+                     "slideshow":  {
+                                       "load_slide":  "Ð—Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ ÑÐ»Ð°Ð¹Ð´",
+                                       "previous_slideshow":  "ÐŸÑ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰Ð¸Ð¹ ÑÐ»Ð°Ð¹Ð´",
+                                       "next_slideshow":  "Ð¡Ð»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹ ÑÐ»Ð°Ð¹Ð´",
+                                       "pause_slideshow":  "ÐŸÑ€Ð¸Ð¾ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð¿Ð¾ÐºÐ°Ð· ÑÐ»Ð°Ð¹Ð´-ÑˆÐ¾Ñƒ",
+                                       "play_slideshow":  "Ð’Ð¾ÑÐ¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÑÑ‚Ð¸ ÑÐ»Ð°Ð¹Ð´-ÑˆÐ¾Ñƒ",
+                                       "carousel":  "ÐšÐ°Ñ€ÑƒÑÐµÐ»ÑŒ",
+                                       "slide":  "Ð¡Ð»Ð°Ð¹Ð´"
+                                   },
+                     "page":  {
+                                  "title":  "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹"
+                              },
+                     "announcements":  {
+                                           "previous_announcement":  "ÐŸÑ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰ÐµÐµ Ð¾Ð±ÑŠÑÐ²Ð»ÐµÐ½Ð¸Ðµ",
+                                           "next_announcement":  "Ð¡Ð»ÐµÐ´ÑƒÑŽÑ‰ÐµÐµ Ð¾Ð±ÑŠÑÐ²Ð»ÐµÐ½Ð¸Ðµ",
+                                           "carousel":  "ÐšÐ°Ñ€ÑƒÑÐµÐ»ÑŒ",
+                                           "announcement":  "ÐžÐ±ÑŠÑÐ²Ð»ÐµÐ½Ð¸Ðµ",
+                                           "announcement_bar":  "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° Ð¾Ð±ÑŠÑÐ²Ð»ÐµÐ½Ð¸Ñ"
+                                       },
+                     "quick_order_list":  {
+                                              "product_total":  "ÐŸÑ€Ð¾Ð¼ÐµÐ¶ÑƒÑ‚Ð¾Ñ‡Ð½Ñ‹Ð¹ Ð¸Ñ‚Ð¾Ð³ Ð¿Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ñƒ",
+                                              "view_cart":  "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ",
+                                              "each":  "{{ money }}/ÐºÐ°Ð¶Ð´.",
+                                              "product":  "Ð¢Ð¾Ð²Ð°Ñ€",
+                                              "variant":  "Ð’Ð°Ñ€Ð¸Ð°Ð½Ñ‚",
+                                              "variant_total":  "Ð’ÑÐµÐ³Ð¾ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ð¾Ð²",
+                                              "items_added":  {
+                                                                  "one":  "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½ Ñ‚Ð¾Ð²Ð°Ñ€: {{ quantity }}",
+                                                                  "other":  "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ñ‹ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹: {{ quantity }}",
+                                                                  "few":  "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ñ‹ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹: {{ quantity }}",
+                                                                  "many":  "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ñ‹ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹: {{ quantity }}"
+                                                              },
+                                              "items_removed":  {
+                                                                    "one":  "Ð£Ð´Ð°Ð»ÐµÐ½ Ñ‚Ð¾Ð²Ð°Ñ€: {{ quantity }}",
+                                                                    "other":  "Ð£Ð´Ð°Ð»ÐµÐ½Ñ‹ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹: {{ quantity }}",
+                                                                    "few":  "Ð£Ð´Ð°Ð»ÐµÐ½Ñ‹ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹: {{ quantity }}",
+                                                                    "many":  "Ð£Ð´Ð°Ð»ÐµÐ½Ñ‹ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹: {{ quantity }}"
+                                                                },
+                                              "product_variants":  "Ð’Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ñ‹ Ñ‚Ð¾Ð²Ð°Ñ€Ð°",
+                                              "total_items":  "ÐžÐ±Ñ‰ÐµÐµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²",
+                                              "remove_all_items_confirmation":  "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð²ÑÐµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹ ({{ quantity }}) Ð¸Ð· ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñ‹?",
+                                              "remove_all":  "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð²ÑÐµ",
+                                              "cancel":  "ÐžÑ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ",
+                                              "remove_all_single_item_confirmation":  "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ 1 Ñ‚Ð¾Ð²Ð°Ñ€ Ð¸Ð· ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñ‹?",
+                                              "min_error":  "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°Â â€” {{ min }}",
+                                              "max_error":  "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°Â â€” {{ max }}",
+                                              "step_error":  "Ð’Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÑ‚Ð¾Ñ‚ Ñ‚Ð¾Ð²Ð°Ñ€ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð² ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ðµ, ÐºÑ€Ð°Ñ‚Ð½Ð¾Ð¼ {{ step }}"
+                                          }
+                 },
+    "localization":  {
+                         "country_label":  "Ð¡Ñ‚Ñ€Ð°Ð½Ð°/Ñ€ÐµÐ³Ð¸Ð¾Ð½",
+                         "language_label":  "Ð¯Ð·Ñ‹Ðº",
+                         "update_language":  "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ ÑÐ·Ñ‹Ðº",
+                         "update_country":  "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¾ ÑÑ‚Ñ€Ð°Ð½Ðµ/Ñ€ÐµÐ³Ð¸Ð¾Ð½Ðµ",
+                         "search":  "ÐŸÐ¾Ð¸ÑÐº",
+                         "popular_countries_regions":  "ÐŸÐ¾Ð¿ÑƒÐ»ÑÑ€Ð½Ñ‹Ðµ ÑÑ‚Ñ€Ð°Ð½Ñ‹ / Ñ€ÐµÐ³Ð¸Ð¾Ð½Ñ‹",
+                         "country_results_count":  "ÐÐ°Ð¹Ð´ÐµÐ½Ñ‹ ÑÑ‚Ñ€Ð°Ð½Ñ‹ / Ñ€ÐµÐ³Ð¸Ð¾Ð½Ñ‹: {{ count }}"
+                     },
+    "customer":  {
+                     "account":  {
+                                     "title":  "Ð£Ñ‡ÐµÑ‚Ð½Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ",
+                                     "details":  "Ð¡Ð²ÐµÐ´ÐµÐ½Ð¸Ñ ÑƒÑ‡ÐµÑ‚Ð½Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÐ¸",
+                                     "view_addresses":  "ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð°Ð´Ñ€ÐµÑÐ°",
+                                     "return":  "Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ðº ÑÐ²ÐµÐ´ÐµÐ½Ð¸ÑÐ¼ ÑƒÑ‡ÐµÑ‚Ð½Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÐ¸",
+                                     "action_orders":  "View order"
+                                 },
+                     "account_fallback":  "Ð£Ñ‡ÐµÑ‚Ð½Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ",
+                     "log_in":  "Ð’Ð¾Ð¹Ñ‚Ð¸",
+                     "log_out":  "Ð’Ñ‹Ð¹Ñ‚Ð¸",
+                     "activate_account":  {
+                                              "title":  "ÐÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÑƒÑ‡ÐµÑ‚Ð½ÑƒÑŽ Ð·Ð°Ð¿Ð¸ÑÑŒ",
+                                              "subtext":  "Ð¡Ð¾Ð·Ð´Ð°Ð¹Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ Ð´Ð»Ñ Ð°ÐºÑ‚Ð¸Ð²Ð°Ñ†Ð¸Ð¸ ÑƒÑ‡ÐµÑ‚Ð½Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÐ¸.",
+                                              "password":  "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ",
+                                              "password_confirm":  "ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚ÑŒ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ",
+                                              "submit":  "ÐÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÑƒÑ‡ÐµÑ‚Ð½ÑƒÑŽ Ð·Ð°Ð¿Ð¸ÑÑŒ",
+                                              "cancel":  "ÐžÑ‚ÐºÐ»Ð¾Ð½Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð¸Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ðµ"
+                                          },
+                     "addresses":  {
+                                       "title":  "ÐÐ´Ñ€ÐµÑÐ°",
+                                       "default":  "ÐŸÐ¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ",
+                                       "add_new":  "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð½Ð¾Ð²Ñ‹Ð¹ Ð°Ð´Ñ€ÐµÑ",
+                                       "edit_address":  "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð°Ð´Ñ€ÐµÑ",
+                                       "first_name":  "Ð˜Ð¼Ñ",
+                                       "last_name":  "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ",
+                                       "company":  "ÐšÐ¾Ð¼Ð¿Ð°Ð½Ð¸Ñ",
+                                       "address1":  "ÐÐ´Ñ€ÐµÑ 1",
+                                       "address2":  "ÐÐ´Ñ€ÐµÑ 2",
+                                       "city":  "Ð“Ð¾Ñ€Ð¾Ð´",
+                                       "country":  "Ð¡Ñ‚Ñ€Ð°Ð½Ð°/Ñ€ÐµÐ³Ð¸Ð¾Ð½",
+                                       "province":  "ÐžÐ±Ð»Ð°ÑÑ‚ÑŒ",
+                                       "zip":  "ÐŸÐ¾Ñ‡Ñ‚Ð¾Ð²Ñ‹Ð¹ Ð¸Ð½Ð´ÐµÐºÑ",
+                                       "phone":  "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½",
+                                       "set_default":  "Ð—Ð°Ð´Ð°Ñ‚ÑŒ Ð² ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ðµ Ð°Ð´Ñ€ÐµÑÐ° Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ",
+                                       "add":  "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð°Ð´Ñ€ÐµÑ",
+                                       "update":  "ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð°Ð´Ñ€ÐµÑ",
+                                       "cancel":  "ÐžÑ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ",
+                                       "edit":  "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ",
+                                       "delete":  "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ",
+                                       "delete_confirm":  "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÑÑ‚Ð¾Ñ‚ Ð°Ð´Ñ€ÐµÑ?"
+                                   },
+                     "login_page":  {
+                                        "cancel":  "ÐžÑ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ",
+                                        "create_account":  "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ ÑƒÑ‡ÐµÑ‚Ð½ÑƒÑŽ Ð·Ð°Ð¿Ð¸ÑÑŒ",
+                                        "email":  "ÐÐ´Ñ€ÐµÑ ÑÐ»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð¾Ð¹ Ð¿Ð¾Ñ‡Ñ‚Ñ‹",
+                                        "forgot_password":  "Ð—Ð°Ð±Ñ‹Ð»Ð¸ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ?",
+                                        "guest_continue":  "ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ",
+                                        "guest_title":  "ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚Ðµ Ð² ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ðµ Ð³Ð¾ÑÑ‚Ñ",
+                                        "password":  "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ",
+                                        "title":  "Ð’Ñ…Ð¾Ð´",
+                                        "sign_in":  "Ð’Ð¾Ð¹Ñ‚Ð¸ Ð² ÑÐ¸ÑÑ‚ÐµÐ¼Ñƒ",
+                                        "submit":  "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ",
+                                        "alternate_provider_separator":  "Ð¸Ð»Ð¸"
+                                    },
+                     "orders":  {
+                                    "title":  "Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ñ Ð·Ð°ÐºÐ°Ð·Ð¾Ð²",
+                                    "order_number":  "Ð—Ð°ÐºÐ°Ð·",
+                                    "order_number_link":  "ÐÐ¾Ð¼ÐµÑ€ Ð·Ð°ÐºÐ°Ð·Ð°: {{ number }}",
+                                    "date":  "Ð”Ð°Ñ‚Ð°",
+                                    "payment_status":  "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹",
+                                    "fulfillment_status":  "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ",
+                                    "total":  "Ð’ÑÐµÐ³Ð¾",
+                                    "none":  "Ð£ Ð²Ð°Ñ ÐµÑ‰Ðµ Ð½ÐµÑ‚ Ð·Ð°ÐºÐ°Ð·Ð¾Ð²."
+                                },
+                     "recover_password":  {
+                                              "title":  "Ð¡Ð±Ñ€Ð¾ÑÑŒÑ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ",
+                                              "subtext":  "ÐœÑ‹ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ð¼ Ð²Ð°Ð¼ Ð¿Ð¸ÑÑŒÐ¼Ð¾ ÑÐ¾ ÑÑÑ‹Ð»ÐºÐ¾Ð¹ Ð´Ð»Ñ ÑÐ±Ñ€Ð¾ÑÐ° Ð¿Ð°Ñ€Ð¾Ð»Ñ.",
+                                              "success":  "ÐœÑ‹ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð¸ Ð²Ð°Ð¼ Ð¿Ð¸ÑÑŒÐ¼Ð¾ ÑÐ¾ ÑÑÑ‹Ð»ÐºÐ¾Ð¹ Ð´Ð»Ñ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ Ð¿Ð°Ñ€Ð¾Ð»Ñ."
+                                          },
+                     "register":  {
+                                      "title":  "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ ÑƒÑ‡ÐµÑ‚Ð½ÑƒÑŽ Ð·Ð°Ð¿Ð¸ÑÑŒ",
+                                      "first_name":  "Ð˜Ð¼Ñ",
+                                      "last_name":  "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ",
+                                      "email":  "ÐÐ´Ñ€ÐµÑ ÑÐ»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð¾Ð¹ Ð¿Ð¾Ñ‡Ñ‚Ñ‹",
+                                      "password":  "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ",
+                                      "submit":  "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ"
+                                  },
+                     "reset_password":  {
+                                            "title":  "Ð¡Ð±Ñ€Ð¾ÑÑŒÑ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ ÑƒÑ‡ÐµÑ‚Ð½Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÐ¸",
+                                            "subtext":  "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ",
+                                            "password":  "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ",
+                                            "password_confirm":  "ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚ÑŒ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ",
+                                            "submit":  "Ð¡Ð±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ"
+                                        },
+                     "order":  {
+                                   "title":  "Ð—Ð°ÐºÐ°Ð·: {{ name }}",
+                                   "date_html":  "Ð Ð°Ð·Ð¼ÐµÑ‰ÐµÐ½: {{ date }}",
+                                   "cancelled_html":  "Ð—Ð°ÐºÐ°Ð· Ð¾Ñ‚Ð¼ÐµÐ½ÐµÐ½: {{ date }}",
+                                   "cancelled_reason":  "ÐŸÑ€Ð¸Ñ‡Ð¸Ð½Ð°: {{ reason }}",
+                                   "billing_address":  "ÐÐ´Ñ€ÐµÑ Ð²Ñ‹ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¸Ñ ÑÑ‡ÐµÑ‚Ð°",
+                                   "payment_status":  "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹",
+                                   "shipping_address":  "ÐÐ´Ñ€ÐµÑ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸",
+                                   "fulfillment_status":  "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ",
+                                   "discount":  "Ð¡ÐºÐ¸Ð´ÐºÐ°",
+                                   "shipping":  "Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ°",
+                                   "tax":  "ÐÐ°Ð»Ð¾Ð³",
+                                   "product":  "Ð¢Ð¾Ð²Ð°Ñ€",
+                                   "sku":  "ÐÑ€Ñ‚Ð¸ÐºÑƒÐ»",
+                                   "price":  "Ð¦ÐµÐ½Ð°",
+                                   "quantity":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾",
+                                   "total":  "Ð’ÑÐµÐ³Ð¾",
+                                   "fulfilled_at_html":  "Ð’Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½: {{ date }}",
+                                   "track_shipment":  "ÐžÑ‚ÑÐ»ÐµÐ´Ð¸Ñ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÑƒ",
+                                   "tracking_url":  "Ð¡ÑÑ‹Ð»ÐºÐ° Ð´Ð»Ñ Ð¾Ñ‚ÑÐ»ÐµÐ¶Ð¸Ð²Ð°Ð½Ð¸Ñ",
+                                   "tracking_company":  "ÐŸÐµÑ€ÐµÐ²Ð¾Ð·Ñ‡Ð¸Ðº",
+                                   "tracking_number":  "ÐÐ¾Ð¼ÐµÑ€ Ð´Ð»Ñ Ð¾Ñ‚ÑÐ»ÐµÐ¶Ð¸Ð²Ð°Ð½Ð¸Ñ",
+                                   "subtotal":  "ÐŸÑ€Ð¾Ð¼ÐµÐ¶ÑƒÑ‚Ð¾Ñ‡Ð½Ñ‹Ð¹ Ð¸Ñ‚Ð¾Ð³",
+                                   "total_duties":  "ÐŸÐ¾ÑˆÐ»Ð¸Ð½Ñ‹",
+                                   "total_refunded":  "Ð¡Ñ€ÐµÐ´ÑÑ‚Ð²Ð° Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰ÐµÐ½Ñ‹"
+                               }
+                 },
+    "gift_cards":  {
+                       "issued":  {
+                                      "title":  "Ð’Ð¾Ñ‚ Ð²Ð°ÑˆÐ° Ð¿Ð¾Ð´Ð°Ñ€Ð¾Ñ‡Ð½Ð°Ñ ÐºÐ°Ñ€Ñ‚Ð° Ñ Ð½Ð¾Ð¼Ð¸Ð½Ð°Ð»Ð¾Ð¼ {{ value }} Ð´Ð»Ñ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð° {{ shop }}!",
+                                      "subtext":  "Ð’Ð°ÑˆÐ° Ð¿Ð¾Ð´Ð°Ñ€Ð¾Ñ‡Ð½Ð°Ñ ÐºÐ°Ñ€Ñ‚Ð°",
+                                      "gift_card_code":  "ÐšÐ¾Ð´ Ð¿Ð¾Ð´Ð°Ñ€Ð¾Ñ‡Ð½Ð¾Ð¹ ÐºÐ°Ñ€Ñ‚Ñ‹",
+                                      "shop_link":  "ÐŸÐ¾ÑÐµÑ‚Ð¸Ñ‚ÑŒ Ð¾Ð½Ð»Ð°Ð¹Ð½-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½",
+                                      "add_to_apple_wallet":  "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð² Apple Wallet",
+                                      "qr_image_alt":  "ÐžÑ‚ÑÐºÐ°Ð½Ð¸Ñ€ÑƒÐ¹Ñ‚Ðµ QR-ÐºÐ¾Ð´, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð´Ð°Ñ€Ð¾Ñ‡Ð½ÑƒÑŽ ÐºÐ°Ñ€Ñ‚Ñƒ",
+                                      "copy_code":  "Ð¡ÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÐºÐ¾Ð´ Ð¿Ð¾Ð´Ð°Ñ€Ð¾Ñ‡Ð½Ð¾Ð¹ ÐºÐ°Ñ€Ñ‚Ñ‹",
+                                      "expired":  "Ð¡Ñ€Ð¾Ðº Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ Ð¸ÑÑ‚ÐµÐº",
+                                      "copy_code_success":  "ÐšÐ¾Ð´ ÑÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½",
+                                      "how_to_use_gift_card":  "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ ÐºÐ¾Ð´ Ð¿Ð¾Ð´Ð°Ñ€Ð¾Ñ‡Ð½Ð¾Ð¹ ÐºÐ°Ñ€Ñ‚Ñ‹ Ð¾Ð½Ð»Ð°Ð¹Ð½ Ð¸Ð»Ð¸ Ð¾Ñ‚ÑÐºÐ°Ð½Ð¸Ñ€ÑƒÐ¹Ñ‚Ðµ QR-ÐºÐ¾Ð´ Ð² Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ðµ",
+                                      "expiration_date":  "Ð¡Ñ€Ð¾Ðº Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ Ð¸ÑÑ‚ÐµÐºÐ°ÐµÑ‚ {{ expires_on }}"
+                                  }
+                   },
+    "recipient":  {
+                      "form":  {
+                                   "checkbox":  "Ð¯ Ñ…Ð¾Ñ‡Ñƒ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ ÑÑ‚Ð¾ Ð² ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ðµ Ð¿Ð¾Ð´Ð°Ñ€ÐºÐ°",
+                                   "email_label":  "Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ñ‹Ð¹ Ð°Ð´Ñ€ÐµÑ Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»Ñ",
+                                   "email":  "Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ñ‹Ð¹ Ð°Ð´Ñ€ÐµÑ",
+                                   "name_label":  "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»Ñ (Ð½ÐµÐ¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾)",
+                                   "name":  "Ð˜Ð¼Ñ",
+                                   "message_label":  "Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ (Ð½ÐµÐ¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾)",
+                                   "message":  "Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ",
+                                   "max_characters":  "ÐÐµ Ð±Ð¾Ð»ÑŒÑˆÐµ {{ max_chars }}Â ÑÐ¸Ð¼Ð².",
+                                   "email_label_optional_for_no_js_behavior":  "Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ñ‹Ð¹ Ð°Ð´Ñ€ÐµÑ Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»Ñ (Ð½ÐµÐ¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾)",
+                                   "send_on":  "Ð“Ð“Ð“Ð“-ÐœÐœ-Ð”Ð”",
+                                   "send_on_label":  "Ð”Ð°Ñ‚Ð° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ (Ð½ÐµÐ¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾)",
+                                   "expanded":  "Ð¤Ð¾Ñ€Ð¼Ð° Ñ Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸ Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»Ñ Ð¿Ð¾Ð´Ð°Ñ€Ð¾Ñ‡Ð½Ð¾Ð¹ ÐºÐ°Ñ€Ñ‚Ñ‹ Ñ€Ð°Ð·Ð²ÐµÑ€Ð½ÑƒÑ‚Ð°",
+                                   "collapsed":  "Ð¤Ð¾Ñ€Ð¼Ð° Ñ Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸ Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»Ñ Ð¿Ð¾Ð´Ð°Ñ€Ð¾Ñ‡Ð½Ð¾Ð¹ ÐºÐ°Ñ€Ñ‚Ñ‹ ÑÐ²ÐµÑ€Ð½ÑƒÑ‚Ð°"
+                               }
+                  }
 }

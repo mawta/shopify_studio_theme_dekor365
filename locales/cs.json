@@ -1,554 +1,561 @@
 {
-  "general": {
-    "password_page": {
-      "login_form_heading": "Zadejte heslo, abyste mohli vstoupit do obchodu:",
-      "login_password_button": "Vstoupit pomocí hesla",
-      "login_form_password_label": "Heslo",
-      "login_form_password_placeholder": "Vaše heslo",
-      "login_form_error": "Heslo není správné!",
-      "login_form_submit": "Zadat",
-      "admin_link_html": "Jste majitelem obchodu? <a href=\"/admin\" class=\"link underlined-link\">Přihlaste se zde</a>",
-      "powered_by_shopify_html": "Obchod bude využívat platformu {{ shopify }}"
-    },
-    "social": {
-      "alt_text": {
-        "share_on_facebook": "Sdílet na Facebooku",
-        "share_on_twitter": "Sdílení přes X",
-        "share_on_pinterest": "Připnout na Pinterestu"
-      },
-      "links": {
-        "twitter": "X (Twitter)",
-        "facebook": "Facebook",
-        "pinterest": "Pinterest",
-        "instagram": "Instagram",
-        "tumblr": "Tumblr",
-        "snapchat": "Snapchat",
-        "youtube": "YouTube",
-        "vimeo": "Vimeo",
-        "tiktok": "TikTok"
-      }
-    },
-    "continue_shopping": "Pokračovat v nákupu",
-    "pagination": {
-      "label": "Stránkování",
-      "page": "Strana {{ number }}",
-      "next": "Další stránka",
-      "previous": "Předchozí stránka"
-    },
-    "search": {
-      "search": "Hledání",
-      "reset": "Vymazat hledaný termín"
-    },
-    "cart": {
-      "view": "Zobrazit košík ({{ count }})",
-      "item_added": "Položka byla přidána do košíku",
-      "view_empty_cart": "Zobrazit košík"
-    },
-    "share": {
-      "copy_to_clipboard": "Kopírovat odkaz",
-      "share_url": "Odkaz",
-      "success_message": "Odkaz byl zkopírován do schránky",
-      "close": "Zavřít okno pro sdílení"
-    },
-    "slider": {
-      "of": "z",
-      "next_slide": "Snímek vpravo",
-      "previous_slide": "Snímek vlevo",
-      "name": "Posuvník"
-    }
-  },
-  "newsletter": {
-    "label": "E-mail",
-    "success": "Děkujeme za přihlášení k odběru",
-    "button_label": "Přihlásit k odběru"
-  },
-  "accessibility": {
-    "skip_to_text": "Přejít k obsahu",
-    "close": "Zavřít",
-    "unit_price_separator": "za",
-    "vendor": "Vendor:",
-    "error": "Chyba",
-    "refresh_page": "Po volbě výběru se obnoví celá stránka.",
-    "loading": "Načítání...",
-    "link_messages": {
-      "new_window": "Otevře se v novém okně.",
-      "external": "Otevře externí webovou stránku."
-    },
-    "skip_to_product_info": "Přejít na informace o produktu",
-    "total_reviews": "celkový počet recenzí",
-    "star_reviews_info": "{{ rating_value }} z {{ rating_max }} hvězdiček",
-    "collapsible_content_title": "Sbalitelný obsah",
-    "complementary_products": "Doplňkové produkty"
-  },
-  "blogs": {
-    "article": {
-      "blog": "Blog",
-      "read_more_title": "Přečtěte si více: {{ title }}",
-      "moderated": "Upozorňujeme, že komentáře musí být před zveřejněním schváleny.",
-      "comment_form_title": "Napište komentář",
-      "name": "Název",
-      "email": "E-mail",
-      "message": "Komentář",
-      "post": "Zveřejnit komentář",
-      "back_to_blog": "Zpět na blog",
-      "share": "Nasdílet tento článek",
-      "success": "Váš komentář byl úspěšně publikován! Děkujeme!",
-      "success_moderated": "Váš komentář byl úspěšně publikován. Zveřejníme jej až za chvíli, protože náš blog je moderován.",
-      "comments": {
-        "one": "{{ count }} komentář",
-        "other": "Počet komentářů: {{ count }}",
-        "few": "Počet komentářů: {{ count }}",
-        "many": "Počet komentářů: {{ count }}"
-      }
-    }
-  },
-  "onboarding": {
-    "product_title": "Vzorový název produktu",
-    "collection_title": "Název vaší kolekce"
-  },
-  "products": {
-    "product": {
-      "add_to_cart": "Přidat do košíku",
-      "description": "Popis",
-      "on_sale": "Sleva",
-      "share": "Sdílet tento produkt",
-      "sold_out": "Vyprodáno",
-      "unavailable": "Není k dispozici",
-      "vendor": "Vendor",
-      "video_exit_message": "{{ title }} otevře ve stejném okně video na celé obrazovce.",
-      "xr_button": "Zobrazit ve vašem prostoru",
-      "xr_button_label": "Zobrazit ve vašem prostoru: Umožňuje načíst položku v okně rozšířené reality",
-      "quantity": {
-        "label": "Množství",
-        "input_label": "Množství produktu {{ product }}",
-        "increase": "Zvýšit množství produktu {{ product }}",
-        "decrease": "Snížit množství produktu {{ product }}",
-        "minimum_of": "Minimum: {{ quantity }}",
-        "maximum_of": "Maximum: {{ quantity }}",
-        "multiples_of": "Přírůstky: {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> v košíku",
-        "note": "Zobrazit pravidla množství",
-        "min_of": "Minimum {{ quantity }}",
-        "max_of": "Maximum {{ quantity }}",
-        "in_cart_aria_label": "Množství ({{ quantity }} v košíku)"
-      },
-      "price": {
-        "from_price_html": "Od {{ price }}",
-        "regular_price": "Běžná cena",
-        "sale_price": "Výprodejová cena",
-        "unit_price": "Jednotková cena"
-      },
-      "pickup_availability": {
-        "view_store_info": "Zobrazit informace o obchodě",
-        "check_other_stores": "Zkontrolovat dostupnost v ostatních obchodech",
-        "pick_up_available": "Vyzvednutí k dispozici",
-        "pick_up_available_at_html": "Vyzvednutí je k dispozici v lokalitě <span class=\"color-foreground\">{{ location_name }}</span>",
-        "pick_up_unavailable_at_html": "Vyzvednutí není momentálně v lokalitě <span class=\"color-foreground\">{{ location_name }}</span> k dispozici",
-        "unavailable": "Dostupnost vyzvednutí nebylo možné načíst",
-        "refresh": "Aktualizovat"
-      },
-      "media": {
-        "open_media": "Otevřít multimédia {{ index }} v modálním okně",
-        "play_model": "Přehrát v 3D prohlížeči",
-        "play_video": "Přehrát video",
-        "gallery_viewer": "Prohlížeč galerie",
-        "load_image": "Načíst obrázek {{ index }} do zobrazení galerie",
-        "load_model": "Načíst 3D model {{ index }} do zobrazení galerie",
-        "load_video": "Přehrát video {{ index }} v zobrazení galerie",
-        "image_available": "Obrázek {{ index }} je nyní k dispozici v zobrazení galerie"
-      },
-      "nested_label": "{{ title }} pro {{ parent_title }}",
-      "view_full_details": "Zobrazit veškeré podrobnosti",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Poštovné</a> se vypočítá na pokladně.",
-      "choose_options": "Výběr možností",
-      "choose_product_options": "Zvolte možnosti pro: {{ product_name }}",
-      "value_unavailable": "{{ option_value }} – není k dispozici",
-      "variant_sold_out_or_unavailable": "Vyprodaná nebo nedostupná varianta",
-      "inventory_in_stock": "Skladem",
-      "inventory_in_stock_show_count": "{{ quantity }} skladem",
-      "inventory_low_stock": "Skladové zásoby docházejí",
-      "inventory_low_stock_show_count": "Skladové zásoby docházejí, zbývající množství: {{ quantity }}",
-      "inventory_out_of_stock": "Není skladem",
-      "sku": "SKU",
-      "inventory_out_of_stock_continue_selling": "Skladem",
-      "volume_pricing": {
-        "title": "Ceny s objemovou slevou",
-        "note": "Ceny s objemovou slevou k dispozici",
-        "minimum": "{{ quantity }} a více",
-        "price_range": "{{ minimum }}–{{ maximum }}",
-        "price_at_each_html": "{{ price }} / ks"
-      },
-      "product_variants": "Varianty produktu",
-      "taxes_included": "Včetně daní.",
-      "duties_included": "Včetně cla.",
-      "duties_and_taxes_included": "Včetně cla a daní."
-    },
-    "modal": {
-      "label": "Galerie multimédií"
-    },
-    "facets": {
-      "apply": "Použít",
-      "clear": "Vymazat",
-      "clear_all": "Odebrat vše",
-      "from": "Od",
-      "filter_and_sort": "Filtrování a řazení",
-      "filter_by_label": "Filtrovat:",
-      "filter_button": "Filtr",
-      "max_price": "Nejvyšší cena je {{ price }}",
-      "reset": "Resetovat",
-      "sort_button": "Seřadit",
-      "sort_by_label": "Seřadit podle:",
-      "to": "Do",
-      "filters_selected": {
-        "one": "Vybráno: {{ count }}",
-        "other": "Vybráno: {{ count }}",
-        "few": "Vybráno: {{ count }}",
-        "many": "Vybráno: {{ count }}"
-      },
-      "product_count": {
-        "one": "{{ product_count }} z {{ count }} produktu",
-        "other": "{{ product_count }} z {{ count }} produktů",
-        "few": "{{ product_count }} z {{ count }} produktů",
-        "many": "{{ product_count }} z {{ count }} produktů"
-      },
-      "product_count_simple": {
-        "one": "Počet produktů: {{ count }}",
-        "other": "Počet produktů: {{ count }}",
-        "few": "Počet produktů: {{ count }}",
-        "many": "Počet produktů: {{ count }}"
-      },
-      "clear_filter": "Odebrat filtr",
-      "filter_selected_accessibility": "{{ type }} (počet vybraných filtrů: {{ count }})",
-      "show_more": "Zobrazit více",
-      "show_less": "Zobrazit méně",
-      "filter_and_operator_subtitle": "Shoda se všemi kritérii"
-    }
-  },
-  "templates": {
-    "search": {
-      "no_results": "Nebyly nalezeny žádné výsledky pro {{ terms }}. Zkontrolujte pravopis nebo zadejte jiné slovo či slovní spojení.",
-      "title": "Výsledky hledání",
-      "results_with_count": {
-        "one": "{{ count }} výsledek",
-        "other": "Výsledky: {{ count }}",
-        "few": "Výsledky: {{ count }}",
-        "many": "Výsledky: {{ count }}"
-      },
-      "page": "Stránka",
-      "products": "Produkty",
-      "search_for": "Vyhledat: {{ terms }}",
-      "results_with_count_and_term": {
-        "one": "Pro dotaz {{ terms }} byl nalezen {{ count }} výsledek",
-        "other": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}",
-        "few": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}",
-        "many": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}"
-      },
-      "results_pages_with_count": {
-        "one": "{{ count }} stránka",
-        "other": "{{ count }} str.",
-        "few": "{{ count }} str.",
-        "many": "{{ count }} str."
-      },
-      "results_products_with_count": {
-        "one": "{{ count }} produkt",
-        "other": "{{ count }} prod.",
-        "few": "{{ count }} prod.",
-        "many": "{{ count }} prod."
-      },
-      "suggestions": "Návrhy",
-      "pages": "Stránky",
-      "results_suggestions_with_count": {
-        "one": "Počet návrhů: {{ count }}",
-        "other": "Počet návrhů: {{ count }}",
-        "few": "Počet návrhů: {{ count }}",
-        "many": "Počet návrhů: {{ count }}"
-      }
-    },
-    "cart": {
-      "cart": "Košík"
-    },
-    "contact": {
-      "form": {
-        "name": "Jméno",
-        "email": "E-mail",
-        "phone": "Telefonní číslo",
-        "comment": "Komentář",
-        "send": "Odeslat",
-        "post_success": "Děkujeme, že jste nás kontaktovali. Ozveme se vám co možná nejdříve.",
-        "error_heading": "Upravte prosím následující informace:",
-        "title": "Kontaktní formulář"
-      }
-    },
-    "404": {
-      "title": "Stránka nebyla nalezena",
-      "subtext": "404"
-    }
-  },
-  "sections": {
-    "header": {
-      "announcement": "Oznámení",
-      "menu": "Nabídka",
-      "cart_count": {
-        "one": "{{ count }} položka",
-        "other": "{{ count }} polož.",
-        "few": "{{ count }} polož.",
-        "many": "{{ count }} polož."
-      }
-    },
-    "cart": {
-      "title": "Váš košík",
-      "caption": "Položky košíku",
-      "remove_title": "Odebrat: {{ title }}",
-      "note": "Zvláštní pokyny k objednávce",
-      "checkout": "Pokladna",
-      "empty": "Košík je prázdný",
-      "cart_error": "Při aktualizaci vašeho košíku došlo k chybě. Zkuste to prosím znovu.",
-      "cart_quantity_error_html": "Do košíku můžete přidat jen následující množství dané položky: {{ quantity }}.",
-      "update": "Aktualizovat",
-      "headings": {
-        "product": "Produkt",
-        "price": "Cena",
-        "total": "Celkem",
-        "quantity": "Množství",
-        "image": "Obrázek produktu"
-      },
-      "login": {
-        "title": "Máte účet?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Přihlaste se</a>, abyste si urychlili proces pokladny."
-      },
-      "estimated_total": "Odhadovaný součet",
-      "new_estimated_total": "Nový odhadovaný součet",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Včetně cla a daní. Slevy a <a href=\"{{ link }}\">poštovné</a> se vypočítají na pokladně.",
-      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Včetně cla a daní. Slevy a poštovné se vypočítají na pokladně.",
-      "taxes_included_shipping_at_checkout_with_policy_html": "Včetně daní. Slevy a <a href=\"{{ link }}\">poštovné</a> se vypočítají na pokladně.",
-      "taxes_included_shipping_at_checkout_without_policy": "Včetně daní. Slevy a poštovné se vypočítají na pokladně.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Včetně cla. Daně, slevy a <a href=\"{{ link }}\">poštovné</a> se vypočítají na pokladně.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Včetně cla. Daně, slevy a poštovné se vypočítají na pokladně.",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Daně, slevy a <a href=\"{{ link }}\">poštovné</a> se vypočítají na pokladně.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Daně, slevy a poštovné se vypočítají na pokladně."
-    },
-    "footer": {
-      "payment": "Platební metody"
-    },
-    "featured_blog": {
-      "view_all": "Zobrazit vše",
-      "onboarding_title": "Blogový příspěvek",
-      "onboarding_content": "Shrňte pro zákazníky obsah svého blogového příspěvku"
-    },
-    "featured_collection": {
-      "view_all": "Zobrazit vše",
-      "view_all_label": "Zobrazit všechny produkty v kolekci {{ collection_name }}"
-    },
-    "collection_list": {
-      "view_all": "Zobrazit vše"
-    },
-    "collection_template": {
-      "title": "Kolekce",
-      "empty": "Nenalezeny žádné produkty",
-      "use_fewer_filters_html": "Můžete použít méně filtrů nebo <a class=\"{{ class }}\" href=\"{{ link }}\">všechny odebrat</a>"
-    },
-    "video": {
-      "load_video": "Načíst video: {{ description }}"
-    },
-    "slideshow": {
-      "load_slide": "Načíst snímek",
-      "previous_slideshow": "Předchozí snímek",
-      "next_slideshow": "Další snímek",
-      "pause_slideshow": "Pozastavit prezentaci",
-      "play_slideshow": "Přehrát prezentaci",
-      "carousel": "Karusel",
-      "slide": "Snímek"
-    },
-    "page": {
-      "title": "Název stránky"
-    },
-    "announcements": {
-      "previous_announcement": "Předchozí oznámení",
-      "next_announcement": "Další oznámení",
-      "carousel": "Karusel",
-      "announcement": "Oznámení",
-      "announcement_bar": "Panel oznámení"
-    },
-    "quick_order_list": {
-      "product_total": "Mezisoučet produktu",
-      "view_cart": "Zobrazit košík",
-      "each": "{{ money }} / ks",
-      "product": "Produkt",
-      "variant": "Varianta",
-      "variant_total": "Varianta celkem",
-      "items_added": {
-        "one": "Byla přidána {{ quantity }} položka",
-        "other": "Byl přidán tento počet položek: {{ quantity }}",
-        "few": "Byl přidán tento počet položek: {{ quantity }}",
-        "many": "Byl přidán tento počet položek: {{ quantity }}"
-      },
-      "items_removed": {
-        "one": "Byla odebrána {{ quantity }} položka",
-        "other": "Byla odebrán tento počet položek: {{ quantity }}",
-        "few": "Byla odebrán tento počet položek: {{ quantity }}",
-        "many": "Byla odebrán tento počet položek: {{ quantity }}"
-      },
-      "product_variants": "Varianty produktu",
-      "total_items": "Celkový počet položek",
-      "remove_all_items_confirmation": "Chcete z košíku odebrat všechny položky ({{ quantity }})?",
-      "remove_all": "Odebrat vše",
-      "cancel": "Zrušit",
-      "remove_all_single_item_confirmation": "Chcete odebrat 1 položku z košíku?",
-      "min_error": "Tato položka vyžaduje minimum: {{ min }}",
-      "max_error": "Tato položka vyžaduje maximum: {{ max }}",
-      "step_error": "Tuto položku můžete přidat jen v přírůstcích hodnoty: {{ step }}"
-    }
-  },
-  "localization": {
-    "country_label": "Země/oblast",
-    "language_label": "Jazyk",
-    "update_language": "Aktualizovat jazyk",
-    "update_country": "Aktualizovat zemi/oblast",
-    "search": "Začněte hledat",
-    "popular_countries_regions": "Oblíbené země/oblasti",
-    "country_results_count": "Byl nalezen tento počet zemí/oblastí: {{ count }}"
-  },
-  "customer": {
-    "account": {
-      "title": "Účet",
-      "details": "Podrobnosti účtu",
-      "view_addresses": "Zobrazit adresy",
-      "return": "Vrátit se k podrobnostem účtu"
-    },
-    "account_fallback": "Účet",
-    "log_in": "Přihlásit se",
-    "log_out": "Odhlásit se",
-    "activate_account": {
-      "title": "Aktivovat účet",
-      "subtext": "Vytvořte heslo pro aktivaci účtu.",
-      "password": "Heslo",
-      "password_confirm": "Potvrdit heslo",
-      "submit": "Aktivovat účet",
-      "cancel": "Odmítnout pozvánku"
-    },
-    "addresses": {
-      "title": "Adresy",
-      "default": "Výchozí",
-      "add_new": "Přidat novou adresu",
-      "edit_address": "Upravit adresu",
-      "first_name": "Jméno",
-      "last_name": "Příjmení",
-      "company": "Společnost",
-      "address1": "Adresa 1",
-      "address2": "Adresa 2",
-      "city": "Město",
-      "country": "Země/oblast",
-      "province": "Provincie",
-      "zip": "PSČ",
-      "phone": "Telefon",
-      "set_default": "Nastavit jako výchozí adresu",
-      "add": "Přidat adresu",
-      "update": "Aktualizovat adresu",
-      "cancel": "Zrušit",
-      "edit": "Upravit",
-      "delete": "Odstranit",
-      "delete_confirm": "Opravdu chcete tuto adresu odstranit?"
-    },
-    "login_page": {
-      "cancel": "Zrušit",
-      "create_account": "Vytvořit účet",
-      "email": "E-mail",
-      "forgot_password": "Zapomněli jste heslo?",
-      "guest_continue": "Pokračovat",
-      "guest_title": "Pokračovat jako host",
-      "password": "Heslo",
-      "title": "Přihlášení",
-      "sign_in": "Přihlásit se",
-      "submit": "Odeslat",
-      "alternate_provider_separator": "nebo"
-    },
-    "orders": {
-      "title": "Historie objednávek",
-      "order_number": "Objednávka",
-      "order_number_link": "Číslo objednávky: {{ number }}",
-      "date": "Datum",
-      "payment_status": "Stav platby",
-      "fulfillment_status": "Stav plnění",
-      "total": "Celkem",
-      "none": "Zatím jste nezadali žádné objednávky."
-    },
-    "recover_password": {
-      "title": "Resetujte si heslo",
-      "subtext": "Pošleme vám e-mail, abyste si mohli resetovat heslo",
-      "success": "Poslali jsme vám e-mail s odkazem na aktualizaci hesla."
-    },
-    "register": {
-      "title": "Vytvořit účet",
-      "first_name": "Jméno",
-      "last_name": "Příjmení",
-      "email": "E-mail",
-      "password": "Heslo",
-      "submit": "Vytvořit"
-    },
-    "reset_password": {
-      "title": "Resetujte heslo účtu",
-      "subtext": "Zadejte nové heslo",
-      "password": "Heslo",
-      "password_confirm": "Potvrdit heslo",
-      "submit": "Resetovat heslo"
-    },
-    "order": {
-      "title": "Objednávka {{ name }}",
-      "date_html": "Datum vytvoření: {{ date }}",
-      "cancelled_html": "Datum zrušení objednávky: {{ date }}",
-      "cancelled_reason": "Důvod: {{ reason }}",
-      "billing_address": "Fakturační adresa",
-      "payment_status": "Stav platby",
-      "shipping_address": "Dodací adresa",
-      "fulfillment_status": "Stav plnění",
-      "discount": "Sleva",
-      "shipping": "Doprava",
-      "tax": "Daň",
-      "product": "Produkt",
-      "sku": "SKU",
-      "price": "Cena",
-      "quantity": "Množství",
-      "total": "Celkem",
-      "fulfilled_at_html": "Splněno: {{ date }}",
-      "track_shipment": "Sledovat zásilku",
-      "tracking_url": "Odkaz pro sledování",
-      "tracking_company": "Dopravce",
-      "tracking_number": "Číslo pro sledování",
-      "subtotal": "Mezisoučet",
-      "total_duties": "Cla",
-      "total_refunded": "Vrácená částka"
-    }
-  },
-  "gift_cards": {
-    "issued": {
-      "title": "Zůstatek vaší dárkové karty pro obchod {{ shop }} je: {{ value }}!",
-      "subtext": "Vaše dárková karta",
-      "gift_card_code": "Kód dárkové karty",
-      "shop_link": "Navštívit online obchod",
-      "add_to_apple_wallet": "Přidat do Apple Peněženky",
-      "qr_image_alt": "QR kód: po naskenování můžete uplatnit svou dárkovou kartu",
-      "copy_code": "Zkopírovat kód dárkové karty",
-      "expired": "Platnost vypršela",
-      "copy_code_success": "Kód byl úspěšně zkopírován",
-      "how_to_use_gift_card": "Použijte kód dárkové karty online nebo QR kód na prodejně",
-      "expiration_date": "Platnost skončí {{ expires_on }}"
-    }
-  },
-  "recipient": {
-    "form": {
-      "checkbox": "Chci zboží poslat jako dárek",
-      "email_label": "E-mail příjemce",
-      "email": "E-mail",
-      "name_label": "Jméno příjemce (volitelné)",
-      "name": "Jméno",
-      "message_label": "Zpráva (volitelné)",
-      "message": "Zpráva",
-      "max_characters": "Maximální počet znaků: {{ max_chars }}",
-      "email_label_optional_for_no_js_behavior": "E-mail příjemce (volitelné)",
-      "send_on": "RRRR-MM-DD",
-      "send_on_label": "Datum odeslání (volitelné)",
-      "expanded": "Formulář pro příjemce dárkové karty se rozbalil.",
-      "collapsed": "Formulář pro příjemce dárkové karty se sbalil."
-    }
-  }
+    "general":  {
+                    "password_page":  {
+                                          "login_form_heading":  "Zadejte heslo, abyste mohli vstoupit do obchodu:",
+                                          "login_password_button":  "Vstoupit pomocÃ­ hesla",
+                                          "login_form_password_label":  "Heslo",
+                                          "login_form_password_placeholder":  "VaÅ¡e heslo",
+                                          "login_form_error":  "Heslo nenÃ­ sprÃ¡vnÃ©!",
+                                          "login_form_submit":  "Zadat",
+                                          "admin_link_html":  "Jste majitelem obchodu? \u003ca href=\"/admin\" class=\"link underlined-link\"\u003ePÅ™ihlaste se zde\u003c/a\u003e",
+                                          "powered_by_shopify_html":  "Obchod bude vyuÅ¾Ã­vat platformu {{ shopify }}"
+                                      },
+                    "social":  {
+                                   "alt_text":  {
+                                                    "share_on_facebook":  "SdÃ­let na Facebooku",
+                                                    "share_on_twitter":  "SdÃ­lenÃ­ pÅ™es X",
+                                                    "share_on_pinterest":  "PÅ™ipnout na Pinterestu"
+                                                },
+                                   "links":  {
+                                                 "twitter":  "X (Twitter)",
+                                                 "facebook":  "Facebook",
+                                                 "pinterest":  "Pinterest",
+                                                 "instagram":  "Instagram",
+                                                 "tumblr":  "Tumblr",
+                                                 "snapchat":  "Snapchat",
+                                                 "youtube":  "YouTube",
+                                                 "vimeo":  "Vimeo",
+                                                 "tiktok":  "TikTok"
+                                             }
+                               },
+                    "continue_shopping":  "PokraÄovat v nÃ¡kupu",
+                    "pagination":  {
+                                       "label":  "StrÃ¡nkovÃ¡nÃ­",
+                                       "page":  "Strana {{ number }}",
+                                       "next":  "DalÅ¡Ã­ strÃ¡nka",
+                                       "previous":  "PÅ™edchozÃ­ strÃ¡nka"
+                                   },
+                    "search":  {
+                                   "search":  "HledÃ¡nÃ­",
+                                   "reset":  "Vymazat hledanÃ½ termÃ­n"
+                               },
+                    "cart":  {
+                                 "view":  "Zobrazit koÅ¡Ã­k ({{ count }})",
+                                 "item_added":  "PoloÅ¾ka byla pÅ™idÃ¡na do koÅ¡Ã­ku",
+                                 "view_empty_cart":  "Zobrazit koÅ¡Ã­k"
+                             },
+                    "share":  {
+                                  "copy_to_clipboard":  "KopÃ­rovat odkaz",
+                                  "share_url":  "Odkaz",
+                                  "success_message":  "Odkaz byl zkopÃ­rovÃ¡n do schrÃ¡nky",
+                                  "close":  "ZavÅ™Ã­t okno pro sdÃ­lenÃ­"
+                              },
+                    "slider":  {
+                                   "of":  "z",
+                                   "next_slide":  "SnÃ­mek vpravo",
+                                   "previous_slide":  "SnÃ­mek vlevo",
+                                   "name":  "PosuvnÃ­k"
+                               },
+                    "breadcrumbs":  {
+                                        "home":  "Home"
+                                    }
+                },
+    "newsletter":  {
+                       "label":  "E-mail",
+                       "success":  "DÄ›kujeme za pÅ™ihlÃ¡Å¡enÃ­ k odbÄ›ru",
+                       "button_label":  "PÅ™ihlÃ¡sit k odbÄ›ru"
+                   },
+    "accessibility":  {
+                          "skip_to_text":  "PÅ™ejÃ­t k obsahu",
+                          "close":  "ZavÅ™Ã­t",
+                          "unit_price_separator":  "za",
+                          "vendor":  "Vendor:",
+                          "error":  "Chyba",
+                          "refresh_page":  "Po volbÄ› vÃ½bÄ›ru se obnovÃ­ celÃ¡ strÃ¡nka.",
+                          "loading":  "NaÄÃ­tÃ¡nÃ­...",
+                          "link_messages":  {
+                                                "new_window":  "OtevÅ™e se v novÃ©m oknÄ›.",
+                                                "external":  "OtevÅ™e externÃ­ webovou strÃ¡nku."
+                                            },
+                          "skip_to_product_info":  "PÅ™ejÃ­t na informace o produktu",
+                          "total_reviews":  "celkovÃ½ poÄet recenzÃ­",
+                          "star_reviews_info":  "{{ rating_value }} z {{ rating_max }} hvÄ›zdiÄek",
+                          "collapsible_content_title":  "SbalitelnÃ½ obsah",
+                          "complementary_products":  "DoplÅˆkovÃ© produkty"
+                      },
+    "blogs":  {
+                  "article":  {
+                                  "blog":  "Blog",
+                                  "read_more_title":  "PÅ™eÄtÄ›te si vÃ­ce: {{ title }}",
+                                  "moderated":  "UpozorÅˆujeme, Å¾e komentÃ¡Å™e musÃ­ bÃ½t pÅ™ed zveÅ™ejnÄ›nÃ­m schvÃ¡leny.",
+                                  "comment_form_title":  "NapiÅ¡te komentÃ¡Å™",
+                                  "name":  "NÃ¡zev",
+                                  "email":  "E-mail",
+                                  "message":  "KomentÃ¡Å™",
+                                  "post":  "ZveÅ™ejnit komentÃ¡Å™",
+                                  "back_to_blog":  "ZpÄ›t na blog",
+                                  "share":  "NasdÃ­let tento ÄlÃ¡nek",
+                                  "success":  "VÃ¡Å¡ komentÃ¡Å™ byl ÃºspÄ›Å¡nÄ› publikovÃ¡n! DÄ›kujeme!",
+                                  "success_moderated":  "VÃ¡Å¡ komentÃ¡Å™ byl ÃºspÄ›Å¡nÄ› publikovÃ¡n. ZveÅ™ejnÃ­me jej aÅ¾ za chvÃ­li, protoÅ¾e nÃ¡Å¡ blog je moderovÃ¡n.",
+                                  "comments":  {
+                                                   "one":  "{{ count }} komentÃ¡Å™",
+                                                   "other":  "PoÄet komentÃ¡Å™Å¯: {{ count }}",
+                                                   "few":  "PoÄet komentÃ¡Å™Å¯: {{ count }}",
+                                                   "many":  "PoÄet komentÃ¡Å™Å¯: {{ count }}"
+                                               }
+                              }
+              },
+    "onboarding":  {
+                       "product_title":  "VzorovÃ½ nÃ¡zev produktu",
+                       "collection_title":  "NÃ¡zev vaÅ¡Ã­ kolekce"
+                   },
+    "products":  {
+                     "product":  {
+                                     "add_to_cart":  "PÅ™idat do koÅ¡Ã­ku",
+                                     "description":  "Popis",
+                                     "on_sale":  "Sleva",
+                                     "share":  "SdÃ­let tento produkt",
+                                     "sold_out":  "VyprodÃ¡no",
+                                     "unavailable":  "NenÃ­ k dispozici",
+                                     "vendor":  "Vendor",
+                                     "video_exit_message":  "{{ title }} otevÅ™e ve stejnÃ©m oknÄ› video na celÃ© obrazovce.",
+                                     "xr_button":  "Zobrazit ve vaÅ¡em prostoru",
+                                     "xr_button_label":  "Zobrazit ve vaÅ¡em prostoru: UmoÅ¾Åˆuje naÄÃ­st poloÅ¾ku v oknÄ› rozÅ¡Ã­Å™enÃ© reality",
+                                     "quantity":  {
+                                                      "label":  "MnoÅ¾stvÃ­",
+                                                      "input_label":  "MnoÅ¾stvÃ­ produktu {{ product }}",
+                                                      "increase":  "ZvÃ½Å¡it mnoÅ¾stvÃ­ produktu {{ product }}",
+                                                      "decrease":  "SnÃ­Å¾it mnoÅ¾stvÃ­ produktu {{ product }}",
+                                                      "minimum_of":  "Minimum: {{ quantity }}",
+                                                      "maximum_of":  "Maximum: {{ quantity }}",
+                                                      "multiples_of":  "PÅ™Ã­rÅ¯stky: {{ quantity }}",
+                                                      "in_cart_html":  "\u003cspan class=\"quantity-cart\"\u003e{{ quantity }}\u003c/span\u003e v koÅ¡Ã­ku",
+                                                      "note":  "Zobrazit pravidla mnoÅ¾stvÃ­",
+                                                      "min_of":  "Minimum {{ quantity }}",
+                                                      "max_of":  "Maximum {{ quantity }}",
+                                                      "in_cart_aria_label":  "MnoÅ¾stvÃ­ ({{ quantity }} vÂ koÅ¡Ã­ku)"
+                                                  },
+                                     "price":  {
+                                                   "from_price_html":  "Od {{ price }}",
+                                                   "regular_price":  "BÄ›Å¾nÃ¡ cena",
+                                                   "sale_price":  "VÃ½prodejovÃ¡ cena",
+                                                   "unit_price":  "JednotkovÃ¡ cena"
+                                               },
+                                     "pickup_availability":  {
+                                                                 "view_store_info":  "Zobrazit informace o obchodÄ›",
+                                                                 "check_other_stores":  "Zkontrolovat dostupnost v ostatnÃ­ch obchodech",
+                                                                 "pick_up_available":  "VyzvednutÃ­ k dispozici",
+                                                                 "pick_up_available_at_html":  "VyzvednutÃ­ je k dispozici v lokalitÄ› \u003cspan class=\"color-foreground\"\u003e{{ location_name }}\u003c/span\u003e",
+                                                                 "pick_up_unavailable_at_html":  "VyzvednutÃ­ nenÃ­ momentÃ¡lnÄ› v lokalitÄ› \u003cspan class=\"color-foreground\"\u003e{{ location_name }}\u003c/span\u003e k dispozici",
+                                                                 "unavailable":  "Dostupnost vyzvednutÃ­ nebylo moÅ¾nÃ© naÄÃ­st",
+                                                                 "refresh":  "Aktualizovat"
+                                                             },
+                                     "media":  {
+                                                   "open_media":  "OtevÅ™Ã­t multimÃ©dia {{ index }} v modÃ¡lnÃ­m oknÄ›",
+                                                   "play_model":  "PÅ™ehrÃ¡t v 3D prohlÃ­Å¾eÄi",
+                                                   "play_video":  "PÅ™ehrÃ¡t video",
+                                                   "gallery_viewer":  "ProhlÃ­Å¾eÄ galerie",
+                                                   "load_image":  "NaÄÃ­st obrÃ¡zek {{ index }} do zobrazenÃ­ galerie",
+                                                   "load_model":  "NaÄÃ­st 3D model {{ index }} do zobrazenÃ­ galerie",
+                                                   "load_video":  "PÅ™ehrÃ¡t video {{ index }} v zobrazenÃ­ galerie",
+                                                   "image_available":  "ObrÃ¡zek {{ index }} je nynÃ­ k dispozici v zobrazenÃ­ galerie"
+                                               },
+                                     "nested_label":  "{{ title }} pro {{ parent_title }}",
+                                     "view_full_details":  "Zobrazit veÅ¡kerÃ© podrobnosti",
+                                     "shipping_policy_html":  "\u003ca href=\"{{ link }}\"\u003ePoÅ¡tovnÃ©\u003c/a\u003e se vypoÄÃ­tÃ¡ na pokladnÄ›.",
+                                     "choose_options":  "VÃ½bÄ›r moÅ¾nostÃ­",
+                                     "choose_product_options":  "Zvolte moÅ¾nosti pro: {{ product_name }}",
+                                     "value_unavailable":  "{{ option_value }} â€“ nenÃ­ k dispozici",
+                                     "variant_sold_out_or_unavailable":  "VyprodanÃ¡ nebo nedostupnÃ¡ varianta",
+                                     "inventory_in_stock":  "Skladem",
+                                     "inventory_in_stock_show_count":  "{{ quantity }} skladem",
+                                     "inventory_low_stock":  "SkladovÃ© zÃ¡soby dochÃ¡zejÃ­",
+                                     "inventory_low_stock_show_count":  "SkladovÃ© zÃ¡soby dochÃ¡zejÃ­, zbÃ½vajÃ­cÃ­ mnoÅ¾stvÃ­: {{ quantity }}",
+                                     "inventory_out_of_stock":  "NenÃ­ skladem",
+                                     "sku":  "SKU",
+                                     "inventory_out_of_stock_continue_selling":  "Skladem",
+                                     "volume_pricing":  {
+                                                            "title":  "Ceny s objemovou slevou",
+                                                            "note":  "Ceny s objemovou slevou k dispozici",
+                                                            "minimum":  "{{ quantity }} a vÃ­ce",
+                                                            "price_range":  "{{ minimum }}â€“{{ maximum }}",
+                                                            "price_at_each_html":  "{{ price }} / ks"
+                                                        },
+                                     "product_variants":  "Varianty produktu",
+                                     "taxes_included":  "VÄetnÄ› danÃ­.",
+                                     "duties_included":  "VÄetnÄ› cla.",
+                                     "duties_and_taxes_included":  "VÄetnÄ› cla aÂ danÃ­.",
+                                     "product_types":  "Product type",
+                                     "tags":  "Tags",
+                                     "products_tagged":  "Products tagged {{ tag }}"
+                                 },
+                     "modal":  {
+                                   "label":  "Galerie multimÃ©diÃ­"
+                               },
+                     "facets":  {
+                                    "apply":  "PouÅ¾Ã­t",
+                                    "clear":  "Vymazat",
+                                    "clear_all":  "Odebrat vÅ¡e",
+                                    "from":  "Od",
+                                    "filter_and_sort":  "FiltrovÃ¡nÃ­ a Å™azenÃ­",
+                                    "filter_by_label":  "Filtrovat:",
+                                    "filter_button":  "Filtr",
+                                    "max_price":  "NejvyÅ¡Å¡Ã­ cena je {{ price }}",
+                                    "reset":  "Resetovat",
+                                    "sort_button":  "SeÅ™adit",
+                                    "sort_by_label":  "SeÅ™adit podle:",
+                                    "to":  "Do",
+                                    "filters_selected":  {
+                                                             "one":  "VybrÃ¡no: {{ count }}",
+                                                             "other":  "VybrÃ¡no: {{ count }}",
+                                                             "few":  "VybrÃ¡no: {{ count }}",
+                                                             "many":  "VybrÃ¡no: {{ count }}"
+                                                         },
+                                    "product_count":  {
+                                                          "one":  "{{ product_count }} z {{ count }} produktu",
+                                                          "other":  "{{ product_count }} z {{ count }} produktÅ¯",
+                                                          "few":  "{{ product_count }} z {{ count }} produktÅ¯",
+                                                          "many":  "{{ product_count }} z {{ count }} produktÅ¯"
+                                                      },
+                                    "product_count_simple":  {
+                                                                 "one":  "PoÄet produktÅ¯: {{ count }}",
+                                                                 "other":  "PoÄet produktÅ¯: {{ count }}",
+                                                                 "few":  "PoÄet produktÅ¯: {{ count }}",
+                                                                 "many":  "PoÄet produktÅ¯: {{ count }}"
+                                                             },
+                                    "clear_filter":  "Odebrat filtr",
+                                    "filter_selected_accessibility":  "{{ type }} (poÄet vybranÃ½ch filtrÅ¯: {{ count }})",
+                                    "show_more":  "Zobrazit vÃ­ce",
+                                    "show_less":  "Zobrazit mÃ©nÄ›",
+                                    "filter_and_operator_subtitle":  "Shoda se vÅ¡emi kritÃ©rii"
+                                }
+                 },
+    "templates":  {
+                      "search":  {
+                                     "no_results":  "Nebyly nalezeny Å¾Ã¡dnÃ© vÃ½sledky pro {{ terms }}. Zkontrolujte pravopis nebo zadejte jinÃ© slovo Äi slovnÃ­ spojenÃ­.",
+                                     "title":  "VÃ½sledky hledÃ¡nÃ­",
+                                     "results_with_count":  {
+                                                                "one":  "{{ count }} vÃ½sledek",
+                                                                "other":  "VÃ½sledky: {{ count }}",
+                                                                "few":  "VÃ½sledky: {{ count }}",
+                                                                "many":  "VÃ½sledky: {{ count }}"
+                                                            },
+                                     "page":  "StrÃ¡nka",
+                                     "products":  "Produkty",
+                                     "search_for":  "Vyhledat: {{ terms }}",
+                                     "results_with_count_and_term":  {
+                                                                         "one":  "Pro dotaz {{ terms }} byl nalezen {{ count }} vÃ½sledek",
+                                                                         "other":  "Pro dotaz {{ terms }} byl nalezen tento poÄet vÃ½sledkÅ¯: {{ count }}",
+                                                                         "few":  "Pro dotaz {{ terms }} byl nalezen tento poÄet vÃ½sledkÅ¯: {{ count }}",
+                                                                         "many":  "Pro dotaz {{ terms }} byl nalezen tento poÄet vÃ½sledkÅ¯: {{ count }}"
+                                                                     },
+                                     "results_pages_with_count":  {
+                                                                      "one":  "{{ count }} strÃ¡nka",
+                                                                      "other":  "{{ count }} str.",
+                                                                      "few":  "{{ count }} str.",
+                                                                      "many":  "{{ count }} str."
+                                                                  },
+                                     "results_products_with_count":  {
+                                                                         "one":  "{{ count }} produkt",
+                                                                         "other":  "{{ count }} prod.",
+                                                                         "few":  "{{ count }} prod.",
+                                                                         "many":  "{{ count }} prod."
+                                                                     },
+                                     "suggestions":  "NÃ¡vrhy",
+                                     "pages":  "StrÃ¡nky",
+                                     "results_suggestions_with_count":  {
+                                                                            "one":  "PoÄet nÃ¡vrhÅ¯: {{ count }}",
+                                                                            "other":  "PoÄet nÃ¡vrhÅ¯: {{ count }}",
+                                                                            "few":  "PoÄet nÃ¡vrhÅ¯: {{ count }}",
+                                                                            "many":  "PoÄet nÃ¡vrhÅ¯: {{ count }}"
+                                                                        }
+                                 },
+                      "cart":  {
+                                   "cart":  "KoÅ¡Ã­k"
+                               },
+                      "contact":  {
+                                      "form":  {
+                                                   "name":  "JmÃ©no",
+                                                   "email":  "E-mail",
+                                                   "phone":  "TelefonnÃ­ ÄÃ­slo",
+                                                   "comment":  "KomentÃ¡Å™",
+                                                   "send":  "Odeslat",
+                                                   "post_success":  "DÄ›kujeme, Å¾e jste nÃ¡s kontaktovali. Ozveme se vÃ¡m co moÅ¾nÃ¡ nejdÅ™Ã­ve.",
+                                                   "error_heading":  "Upravte prosÃ­m nÃ¡sledujÃ­cÃ­ informace:",
+                                                   "title":  "KontaktnÃ­ formulÃ¡Å™"
+                                               }
+                                  },
+                      "404":  {
+                                  "title":  "StrÃ¡nka nebyla nalezena",
+                                  "subtext":  "404"
+                              }
+                  },
+    "sections":  {
+                     "header":  {
+                                    "announcement":  "OznÃ¡menÃ­",
+                                    "menu":  "NabÃ­dka",
+                                    "cart_count":  {
+                                                       "one":  "{{ count }} poloÅ¾ka",
+                                                       "other":  "{{ count }} poloÅ¾.",
+                                                       "few":  "{{ count }} poloÅ¾.",
+                                                       "many":  "{{ count }} poloÅ¾."
+                                                   }
+                                },
+                     "cart":  {
+                                  "title":  "VÃ¡Å¡ koÅ¡Ã­k",
+                                  "caption":  "PoloÅ¾ky koÅ¡Ã­ku",
+                                  "remove_title":  "Odebrat: {{ title }}",
+                                  "note":  "ZvlÃ¡Å¡tnÃ­ pokyny k objednÃ¡vce",
+                                  "checkout":  "Pokladna",
+                                  "empty":  "KoÅ¡Ã­k je prÃ¡zdnÃ½",
+                                  "cart_error":  "PÅ™i aktualizaci vaÅ¡eho koÅ¡Ã­ku doÅ¡lo k chybÄ›. Zkuste to prosÃ­m znovu.",
+                                  "cart_quantity_error_html":  "Do koÅ¡Ã­ku mÅ¯Å¾ete pÅ™idat jen nÃ¡sledujÃ­cÃ­ mnoÅ¾stvÃ­ danÃ© poloÅ¾ky: {{ quantity }}.",
+                                  "update":  "Aktualizovat",
+                                  "headings":  {
+                                                   "product":  "Produkt",
+                                                   "price":  "Cena",
+                                                   "total":  "Celkem",
+                                                   "quantity":  "MnoÅ¾stvÃ­",
+                                                   "image":  "ObrÃ¡zek produktu"
+                                               },
+                                  "login":  {
+                                                "title":  "MÃ¡te ÃºÄet?",
+                                                "paragraph_html":  "\u003ca href=\"{{ link }}\" class=\"link underlined-link\"\u003ePÅ™ihlaste se\u003c/a\u003e, abyste si urychlili proces pokladny."
+                                            },
+                                  "estimated_total":  "OdhadovanÃ½ souÄet",
+                                  "new_estimated_total":  "NovÃ½ odhadovanÃ½ souÄet",
+                                  "duties_and_taxes_included_shipping_at_checkout_with_policy_html":  "VÄetnÄ› cla aÂ danÃ­. Slevy aÂ \u003ca href=\"{{ link }}\"\u003epoÅ¡tovnÃ©\u003c/a\u003e se vypoÄÃ­tajÃ­ na pokladnÄ›.",
+                                  "duties_and_taxes_included_shipping_at_checkout_without_policy":  "VÄetnÄ› cla aÂ danÃ­. Slevy aÂ poÅ¡tovnÃ© se vypoÄÃ­tajÃ­ na pokladnÄ›.",
+                                  "taxes_included_shipping_at_checkout_with_policy_html":  "VÄetnÄ› danÃ­. Slevy aÂ \u003ca href=\"{{ link }}\"\u003epoÅ¡tovnÃ©\u003c/a\u003e se vypoÄÃ­tajÃ­ na pokladnÄ›.",
+                                  "taxes_included_shipping_at_checkout_without_policy":  "VÄetnÄ› danÃ­. Slevy aÂ poÅ¡tovnÃ© se vypoÄÃ­tajÃ­ na pokladnÄ›.",
+                                  "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html":  "VÄetnÄ› cla. DanÄ›, slevy aÂ \u003ca href=\"{{ link }}\"\u003epoÅ¡tovnÃ©\u003c/a\u003e se vypoÄÃ­tajÃ­ na pokladnÄ›.",
+                                  "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy":  "VÄetnÄ› cla. DanÄ›, slevy aÂ poÅ¡tovnÃ© se vypoÄÃ­tajÃ­ na pokladnÄ›.",
+                                  "taxes_at_checkout_shipping_at_checkout_with_policy_html":  "DanÄ›, slevy aÂ \u003ca href=\"{{ link }}\"\u003epoÅ¡tovnÃ©\u003c/a\u003e se vypoÄÃ­tajÃ­ na pokladnÄ›.",
+                                  "taxes_at_checkout_shipping_at_checkout_without_policy":  "DanÄ›, slevy aÂ poÅ¡tovnÃ© se vypoÄÃ­tajÃ­ na pokladnÄ›."
+                              },
+                     "footer":  {
+                                    "payment":  "PlatebnÃ­ metody"
+                                },
+                     "featured_blog":  {
+                                           "view_all":  "Zobrazit vÅ¡e",
+                                           "onboarding_title":  "BlogovÃ½ pÅ™Ã­spÄ›vek",
+                                           "onboarding_content":  "ShrÅˆte pro zÃ¡kaznÃ­ky obsah svÃ©ho blogovÃ©ho pÅ™Ã­spÄ›vku"
+                                       },
+                     "featured_collection":  {
+                                                 "view_all":  "Zobrazit vÅ¡e",
+                                                 "view_all_label":  "Zobrazit vÅ¡echny produkty v kolekci {{ collection_name }}"
+                                             },
+                     "collection_list":  {
+                                             "view_all":  "Zobrazit vÅ¡e"
+                                         },
+                     "collection_template":  {
+                                                 "title":  "Kolekce",
+                                                 "empty":  "Nenalezeny Å¾Ã¡dnÃ© produkty",
+                                                 "use_fewer_filters_html":  "MÅ¯Å¾ete pouÅ¾Ã­t mÃ©nÄ› filtrÅ¯ nebo \u003ca class=\"{{ class }}\" href=\"{{ link }}\"\u003evÅ¡echny odebrat\u003c/a\u003e"
+                                             },
+                     "video":  {
+                                   "load_video":  "NaÄÃ­st video: {{ description }}"
+                               },
+                     "slideshow":  {
+                                       "load_slide":  "NaÄÃ­st snÃ­mek",
+                                       "previous_slideshow":  "PÅ™edchozÃ­ snÃ­mek",
+                                       "next_slideshow":  "DalÅ¡Ã­ snÃ­mek",
+                                       "pause_slideshow":  "Pozastavit prezentaci",
+                                       "play_slideshow":  "PÅ™ehrÃ¡t prezentaci",
+                                       "carousel":  "Karusel",
+                                       "slide":  "SnÃ­mek"
+                                   },
+                     "page":  {
+                                  "title":  "NÃ¡zev strÃ¡nky"
+                              },
+                     "announcements":  {
+                                           "previous_announcement":  "PÅ™edchozÃ­ oznÃ¡menÃ­",
+                                           "next_announcement":  "DalÅ¡Ã­ oznÃ¡menÃ­",
+                                           "carousel":  "Karusel",
+                                           "announcement":  "OznÃ¡menÃ­",
+                                           "announcement_bar":  "Panel oznÃ¡menÃ­"
+                                       },
+                     "quick_order_list":  {
+                                              "product_total":  "MezisouÄet produktu",
+                                              "view_cart":  "Zobrazit koÅ¡Ã­k",
+                                              "each":  "{{ money }} / ks",
+                                              "product":  "Produkt",
+                                              "variant":  "Varianta",
+                                              "variant_total":  "Varianta celkem",
+                                              "items_added":  {
+                                                                  "one":  "Byla pÅ™idÃ¡na {{ quantity }} poloÅ¾ka",
+                                                                  "other":  "Byl pÅ™idÃ¡n tento poÄet poloÅ¾ek: {{ quantity }}",
+                                                                  "few":  "Byl pÅ™idÃ¡n tento poÄet poloÅ¾ek: {{ quantity }}",
+                                                                  "many":  "Byl pÅ™idÃ¡n tento poÄet poloÅ¾ek: {{ quantity }}"
+                                                              },
+                                              "items_removed":  {
+                                                                    "one":  "Byla odebrÃ¡na {{ quantity }} poloÅ¾ka",
+                                                                    "other":  "Byla odebrÃ¡n tento poÄet poloÅ¾ek: {{ quantity }}",
+                                                                    "few":  "Byla odebrÃ¡n tento poÄet poloÅ¾ek: {{ quantity }}",
+                                                                    "many":  "Byla odebrÃ¡n tento poÄet poloÅ¾ek: {{ quantity }}"
+                                                                },
+                                              "product_variants":  "Varianty produktu",
+                                              "total_items":  "CelkovÃ½ poÄet poloÅ¾ek",
+                                              "remove_all_items_confirmation":  "Chcete z koÅ¡Ã­ku odebrat vÅ¡echny poloÅ¾ky ({{ quantity }})?",
+                                              "remove_all":  "Odebrat vÅ¡e",
+                                              "cancel":  "ZruÅ¡it",
+                                              "remove_all_single_item_confirmation":  "Chcete odebrat 1 poloÅ¾ku z koÅ¡Ã­ku?",
+                                              "min_error":  "Tato poloÅ¾ka vyÅ¾aduje minimum: {{ min }}",
+                                              "max_error":  "Tato poloÅ¾ka vyÅ¾aduje maximum: {{ max }}",
+                                              "step_error":  "Tuto poloÅ¾ku mÅ¯Å¾ete pÅ™idat jen v pÅ™Ã­rÅ¯stcÃ­ch hodnoty: {{ step }}"
+                                          }
+                 },
+    "localization":  {
+                         "country_label":  "ZemÄ›/oblast",
+                         "language_label":  "Jazyk",
+                         "update_language":  "Aktualizovat jazyk",
+                         "update_country":  "Aktualizovat zemi/oblast",
+                         "search":  "ZaÄnÄ›te hledat",
+                         "popular_countries_regions":  "OblÃ­benÃ© zemÄ›/oblasti",
+                         "country_results_count":  "Byl nalezen tento poÄet zemÃ­/oblastÃ­: {{ count }}"
+                     },
+    "customer":  {
+                     "account":  {
+                                     "title":  "ÃšÄet",
+                                     "details":  "Podrobnosti ÃºÄtu",
+                                     "view_addresses":  "Zobrazit adresy",
+                                     "return":  "VrÃ¡tit se k podrobnostem ÃºÄtu",
+                                     "action_orders":  "View order"
+                                 },
+                     "account_fallback":  "ÃšÄet",
+                     "log_in":  "PÅ™ihlÃ¡sit se",
+                     "log_out":  "OdhlÃ¡sit se",
+                     "activate_account":  {
+                                              "title":  "Aktivovat ÃºÄet",
+                                              "subtext":  "VytvoÅ™te heslo pro aktivaci ÃºÄtu.",
+                                              "password":  "Heslo",
+                                              "password_confirm":  "Potvrdit heslo",
+                                              "submit":  "Aktivovat ÃºÄet",
+                                              "cancel":  "OdmÃ­tnout pozvÃ¡nku"
+                                          },
+                     "addresses":  {
+                                       "title":  "Adresy",
+                                       "default":  "VÃ½chozÃ­",
+                                       "add_new":  "PÅ™idat novou adresu",
+                                       "edit_address":  "Upravit adresu",
+                                       "first_name":  "JmÃ©no",
+                                       "last_name":  "PÅ™Ã­jmenÃ­",
+                                       "company":  "SpoleÄnost",
+                                       "address1":  "Adresa 1",
+                                       "address2":  "Adresa 2",
+                                       "city":  "MÄ›sto",
+                                       "country":  "ZemÄ›/oblast",
+                                       "province":  "Provincie",
+                                       "zip":  "PSÄŒ",
+                                       "phone":  "Telefon",
+                                       "set_default":  "Nastavit jako vÃ½chozÃ­ adresu",
+                                       "add":  "PÅ™idat adresu",
+                                       "update":  "Aktualizovat adresu",
+                                       "cancel":  "ZruÅ¡it",
+                                       "edit":  "Upravit",
+                                       "delete":  "Odstranit",
+                                       "delete_confirm":  "Opravdu chcete tuto adresu odstranit?"
+                                   },
+                     "login_page":  {
+                                        "cancel":  "ZruÅ¡it",
+                                        "create_account":  "VytvoÅ™it ÃºÄet",
+                                        "email":  "E-mail",
+                                        "forgot_password":  "ZapomnÄ›li jste heslo?",
+                                        "guest_continue":  "PokraÄovat",
+                                        "guest_title":  "PokraÄovat jako host",
+                                        "password":  "Heslo",
+                                        "title":  "PÅ™ihlÃ¡Å¡enÃ­",
+                                        "sign_in":  "PÅ™ihlÃ¡sit se",
+                                        "submit":  "Odeslat",
+                                        "alternate_provider_separator":  "nebo"
+                                    },
+                     "orders":  {
+                                    "title":  "Historie objednÃ¡vek",
+                                    "order_number":  "ObjednÃ¡vka",
+                                    "order_number_link":  "ÄŒÃ­slo objednÃ¡vky: {{ number }}",
+                                    "date":  "Datum",
+                                    "payment_status":  "Stav platby",
+                                    "fulfillment_status":  "Stav plnÄ›nÃ­",
+                                    "total":  "Celkem",
+                                    "none":  "ZatÃ­m jste nezadali Å¾Ã¡dnÃ© objednÃ¡vky."
+                                },
+                     "recover_password":  {
+                                              "title":  "Resetujte si heslo",
+                                              "subtext":  "PoÅ¡leme vÃ¡m e-mail, abyste si mohli resetovat heslo",
+                                              "success":  "Poslali jsme vÃ¡m e-mail s odkazem na aktualizaci hesla."
+                                          },
+                     "register":  {
+                                      "title":  "VytvoÅ™it ÃºÄet",
+                                      "first_name":  "JmÃ©no",
+                                      "last_name":  "PÅ™Ã­jmenÃ­",
+                                      "email":  "E-mail",
+                                      "password":  "Heslo",
+                                      "submit":  "VytvoÅ™it"
+                                  },
+                     "reset_password":  {
+                                            "title":  "Resetujte heslo ÃºÄtu",
+                                            "subtext":  "Zadejte novÃ© heslo",
+                                            "password":  "Heslo",
+                                            "password_confirm":  "Potvrdit heslo",
+                                            "submit":  "Resetovat heslo"
+                                        },
+                     "order":  {
+                                   "title":  "ObjednÃ¡vka {{ name }}",
+                                   "date_html":  "Datum vytvoÅ™enÃ­: {{ date }}",
+                                   "cancelled_html":  "Datum zruÅ¡enÃ­ objednÃ¡vky: {{ date }}",
+                                   "cancelled_reason":  "DÅ¯vod: {{ reason }}",
+                                   "billing_address":  "FakturaÄnÃ­ adresa",
+                                   "payment_status":  "Stav platby",
+                                   "shipping_address":  "DodacÃ­ adresa",
+                                   "fulfillment_status":  "Stav plnÄ›nÃ­",
+                                   "discount":  "Sleva",
+                                   "shipping":  "Doprava",
+                                   "tax":  "DaÅˆ",
+                                   "product":  "Produkt",
+                                   "sku":  "SKU",
+                                   "price":  "Cena",
+                                   "quantity":  "MnoÅ¾stvÃ­",
+                                   "total":  "Celkem",
+                                   "fulfilled_at_html":  "SplnÄ›no: {{ date }}",
+                                   "track_shipment":  "Sledovat zÃ¡silku",
+                                   "tracking_url":  "Odkaz pro sledovÃ¡nÃ­",
+                                   "tracking_company":  "Dopravce",
+                                   "tracking_number":  "ÄŒÃ­slo pro sledovÃ¡nÃ­",
+                                   "subtotal":  "MezisouÄet",
+                                   "total_duties":  "Cla",
+                                   "total_refunded":  "VrÃ¡cenÃ¡ ÄÃ¡stka"
+                               }
+                 },
+    "gift_cards":  {
+                       "issued":  {
+                                      "title":  "ZÅ¯statek vaÅ¡Ã­ dÃ¡rkovÃ© karty pro obchod {{ shop }} je: {{ value }}!",
+                                      "subtext":  "VaÅ¡e dÃ¡rkovÃ¡ karta",
+                                      "gift_card_code":  "KÃ³d dÃ¡rkovÃ© karty",
+                                      "shop_link":  "NavÅ¡tÃ­vit online obchod",
+                                      "add_to_apple_wallet":  "PÅ™idat do Apple PenÄ›Å¾enky",
+                                      "qr_image_alt":  "QR kÃ³d: po naskenovÃ¡nÃ­ mÅ¯Å¾ete uplatnit svou dÃ¡rkovou kartu",
+                                      "copy_code":  "ZkopÃ­rovat kÃ³d dÃ¡rkovÃ© karty",
+                                      "expired":  "Platnost vyprÅ¡ela",
+                                      "copy_code_success":  "KÃ³d byl ÃºspÄ›Å¡nÄ› zkopÃ­rovÃ¡n",
+                                      "how_to_use_gift_card":  "PouÅ¾ijte kÃ³d dÃ¡rkovÃ© karty online nebo QR kÃ³d na prodejnÄ›",
+                                      "expiration_date":  "Platnost skonÄÃ­ {{ expires_on }}"
+                                  }
+                   },
+    "recipient":  {
+                      "form":  {
+                                   "checkbox":  "Chci zboÅ¾Ã­ poslat jako dÃ¡rek",
+                                   "email_label":  "E-mail pÅ™Ã­jemce",
+                                   "email":  "E-mail",
+                                   "name_label":  "JmÃ©no pÅ™Ã­jemce (volitelnÃ©)",
+                                   "name":  "JmÃ©no",
+                                   "message_label":  "ZprÃ¡va (volitelnÃ©)",
+                                   "message":  "ZprÃ¡va",
+                                   "max_characters":  "MaximÃ¡lnÃ­ poÄet znakÅ¯: {{ max_chars }}",
+                                   "email_label_optional_for_no_js_behavior":  "E-mail pÅ™Ã­jemce (volitelnÃ©)",
+                                   "send_on":  "RRRR-MM-DD",
+                                   "send_on_label":  "Datum odeslÃ¡nÃ­ (volitelnÃ©)",
+                                   "expanded":  "FormulÃ¡Å™ pro pÅ™Ã­jemce dÃ¡rkovÃ© karty se rozbalil.",
+                                   "collapsed":  "FormulÃ¡Å™ pro pÅ™Ã­jemce dÃ¡rkovÃ© karty se sbalil."
+                               }
+                  }
 }

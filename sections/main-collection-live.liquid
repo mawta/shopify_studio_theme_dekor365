@@ -90,7 +90,7 @@
       {% paginate collection.products by section.settings.products_per_page %}
         {% for product in collection.products %}
           <a href="{{ product.url }}" class="collection-product-card">
-            <img class="collection-product-img" src="{{ product.featured_image | img_url: '400x400', crop: 'center' }}" alt="{{ product.title | escape }}">
+            <img class="collection-product-img" src="{{ product.featured_image | img_url: '400x400', crop: 'center' }}" alt="{{ product.title | escape }}" width="400" height="400">
             <h4 class="collection-product-title">{{ product.title }}</h4>
             <div class="collection-product-price">{{ product.price | money }}</div>
           </a>

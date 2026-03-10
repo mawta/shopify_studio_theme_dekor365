@@ -1,530 +1,537 @@
 {
-  "general": {
-    "password_page": {
-      "login_form_heading": "使用密码进入商店：",
-      "login_password_button": "使用密码进入",
-      "login_form_password_label": "密码",
-      "login_form_password_placeholder": "您的密码",
-      "login_form_error": "密码错误！",
-      "login_form_submit": "输入",
-      "admin_link_html": "您是否为店主？<a href=\"/admin\" class=\"link underlined-link\">在此处登录</a>",
-      "powered_by_shopify_html": "此商店由 {{ shopify }} 提供支持"
-    },
-    "social": {
-      "alt_text": {
-        "share_on_facebook": "在 Facebook 上共享",
-        "share_on_twitter": "在 X 上分享",
-        "share_on_pinterest": "固定在 Pinterest 上"
-      },
-      "links": {
-        "twitter": "X (Twitter)",
-        "facebook": "Facebook",
-        "pinterest": "Pinterest",
-        "instagram": "Instagram",
-        "tumblr": "Tumblr",
-        "snapchat": "Snapchat",
-        "youtube": "YouTube",
-        "vimeo": "Vimeo",
-        "tiktok": "TikTok"
-      }
-    },
-    "continue_shopping": "继续购物",
-    "pagination": {
-      "label": "分页",
-      "page": "第 {{ number }} 页",
-      "next": "下一页",
-      "previous": "上一页"
-    },
-    "search": {
-      "search": "搜索",
-      "reset": "清除搜索词"
-    },
-    "cart": {
-      "view": "查看购物车 ({{ count }})",
-      "item_added": "商品已加入购物车",
-      "view_empty_cart": "查看购物车"
-    },
-    "share": {
-      "copy_to_clipboard": "复制链接",
-      "share_url": "链接",
-      "success_message": "链接已复制到剪贴板",
-      "close": "关闭分享"
-    },
-    "slider": {
-      "of": "/",
-      "next_slide": "向右滑动",
-      "previous_slide": "向左滑动",
-      "name": "滑块"
-    }
-  },
-  "newsletter": {
-    "label": "电子邮件",
-    "success": "感谢您订阅",
-    "button_label": "订阅"
-  },
-  "accessibility": {
-    "skip_to_text": "跳到内容",
-    "close": "关闭",
-    "unit_price_separator": "单价",
-    "vendor": "厂商：",
-    "error": "错误",
-    "refresh_page": "选择某一选项会使整个页面刷新。",
-    "link_messages": {
-      "new_window": "在新窗口中打开。",
-      "external": "打开外部网站。"
-    },
-    "loading": "正在加载…",
-    "skip_to_product_info": "跳至产品信息",
-    "total_reviews": "总评论数",
-    "star_reviews_info": "{{ rating_value }}/{{ rating_max }} 星",
-    "collapsible_content_title": "可折叠内容",
-    "complementary_products": "互补产品"
-  },
-  "blogs": {
-    "article": {
-      "blog": "博客",
-      "read_more_title": "阅读详细内容：{{ title }}",
-      "comments": {
-        "one": "{{ count }} 条评论",
-        "other": "{{ count }} 条评论"
-      },
-      "moderated": "请注意，评论必须在发布之前获得批准。",
-      "comment_form_title": "发表评论",
-      "name": "名称",
-      "email": "电子邮件",
-      "message": "评论",
-      "post": "发布评论",
-      "back_to_blog": "返回博客",
-      "share": "分享此文章",
-      "success": "您的评论已成功发布！谢谢！",
-      "success_moderated": "您的评论已成功发布。由于我们的博客要经过审核，我们会在稍后将其发布。"
-    }
-  },
-  "onboarding": {
-    "product_title": "产品标题示例",
-    "collection_title": "您的产品系列的名称"
-  },
-  "products": {
-    "product": {
-      "add_to_cart": "添加到购物车",
-      "description": "描述",
-      "on_sale": "促销",
-      "product_variants": "产品多属性",
-      "quantity": {
-        "label": "数量",
-        "input_label": "{{ product }} 的数量",
-        "increase": "增加 {{ product }} 的数量",
-        "decrease": "减少 {{ product }} 的数量",
-        "minimum_of": "最小值为 {{ quantity }}",
-        "maximum_of": "最大值为 {{ quantity }}",
-        "multiples_of": "增量为 {{ quantity }}",
-        "in_cart_html": "购物车中 <span class=\"quantity-cart\">{{ quantity }}</span> 件",
-        "note": "查看数量规则",
-        "min_of": "最小值 {{ quantity }}",
-        "max_of": "最大值 {{ quantity }}",
-        "in_cart_aria_label": "数量（购物车中有 {{ quantity }} 件）"
-      },
-      "price": {
-        "from_price_html": "来自 {{ price }}",
-        "regular_price": "常规价格",
-        "sale_price": "促销价",
-        "unit_price": "单价"
-      },
-      "share": "分享此产品",
-      "sold_out": "售罄",
-      "unavailable": "不可用",
-      "vendor": "厂商",
-      "video_exit_message": "{{ title }} 在同一窗口中打开全屏视频。",
-      "xr_button": "在您的空间中查看",
-      "xr_button_label": "在您的空间中查看，在增强现实窗口中加载商品",
-      "pickup_availability": {
-        "view_store_info": "查看商店信息",
-        "check_other_stores": "查看在其他商店的可用情况",
-        "pick_up_available": "提供取货服务",
-        "pick_up_available_at_html": "<span class=\"color-foreground\">{{ location_name }}</span> 提供取货服务",
-        "pick_up_unavailable_at_html": "<span class=\"color-foreground\">{{ location_name }}</span> 目前不提供取货服务",
-        "unavailable": "无法加载取货服务可用情况",
-        "refresh": "刷新"
-      },
-      "media": {
-        "open_media": "在模态窗口中打开媒体文件 {{ index }}",
-        "play_model": "播放 3D 查看器",
-        "play_video": "播放视频",
-        "gallery_viewer": "图库查看器",
-        "load_image": "在图库视图中加载图片 {{ index }}",
-        "load_model": "在图库视图中加载 3D 模型 {{ index }}",
-        "load_video": "在图库视图中播放视频 {{ index }}",
-        "image_available": "图片 {{ index }} 现已在图库视图中可用"
-      },
-      "nested_label": "{{ title }}，适用于 {{ parent_title }}",
-      "view_full_details": "查看完整详细信息",
-      "shipping_policy_html": "结账时计算的<a href=\"{{ link }}\">运费</a>。",
-      "choose_options": "选择选项",
-      "choose_product_options": "选择用于 {{ product_name }} 的选项",
-      "value_unavailable": "{{ option_value }} - 不可用",
-      "variant_sold_out_or_unavailable": "多属性已售罄或不可用",
-      "inventory_in_stock": "现货",
-      "inventory_in_stock_show_count": "{{ quantity }} 件存货",
-      "inventory_low_stock": "低库存",
-      "inventory_low_stock_show_count": "低库存：剩余 {{ quantity }}",
-      "inventory_out_of_stock": "缺货",
-      "inventory_out_of_stock_continue_selling": "现货",
-      "sku": "SKU",
-      "volume_pricing": {
-        "title": "批量定价",
-        "note": "提供批量定价",
-        "minimum": "{{ quantity }}+",
-        "price_range": "{{ minimum }} - {{ maximum }}",
-        "price_at_each_html": "{{ price }}/件"
-      },
-      "taxes_included": "已含税费。",
-      "duties_included": "已含关税。",
-      "duties_and_taxes_included": "已含关税和税费。"
-    },
-    "modal": {
-      "label": "媒体图库"
-    },
-    "facets": {
-      "apply": "应用",
-      "clear": "清除",
-      "clear_all": "全部删除",
-      "from": "从",
-      "filter_and_sort": "筛选和排序",
-      "filter_by_label": "筛选条件：",
-      "filter_button": "筛选",
-      "filters_selected": {
-        "one": "已选择 {{ count }} 个",
-        "other": "已选择 {{ count }} 个"
-      },
-      "max_price": "最高价格为 {{ price }}",
-      "product_count": {
-        "one": "{{ product_count }}/{{ count }} 件产品",
-        "other": "{{ product_count }}/{{ count }} 件产品"
-      },
-      "product_count_simple": {
-        "one": "{{ count }} 件产品",
-        "other": "{{ count }} 件产品"
-      },
-      "reset": "重置",
-      "sort_button": "排序",
-      "sort_by_label": "排序依据：",
-      "to": "到",
-      "clear_filter": "删除筛选条件",
-      "filter_selected_accessibility": "{{ type }}（已选择 {{ count }} 个筛选条件）",
-      "show_more": "显示更多内容",
-      "show_less": "隐藏部分内容",
-      "filter_and_operator_subtitle": "匹配全部"
-    }
-  },
-  "templates": {
-    "search": {
-      "no_results": "未找到“{{ terms }}”的结果。请检查拼写或使用其他词或短语。",
-      "results_with_count": {
-        "one": "{{ count }} 条结果",
-        "other": "{{ count }} 条结果"
-      },
-      "title": "搜索结果",
-      "page": "页面",
-      "products": "产品",
-      "search_for": "搜索“{{ terms }}”",
-      "results_with_count_and_term": {
-        "one": "找到“{{ terms }}”的 {{ count }} 条结果",
-        "other": "找到“{{ terms }}”的 {{ count }} 条结果"
-      },
-      "results_pages_with_count": {
-        "one": "{{ count }} 个页面",
-        "other": "{{ count }} 个页面"
-      },
-      "results_products_with_count": {
-        "one": "{{ count }} 件产品",
-        "other": "{{ count }} 件产品"
-      },
-      "suggestions": "建议",
-      "pages": "页面",
-      "results_suggestions_with_count": {
-        "one": "{{ count }} 个建议",
-        "other": "{{ count }} 个建议"
-      }
-    },
-    "cart": {
-      "cart": "购物车"
-    },
-    "contact": {
-      "form": {
-        "name": "名称",
-        "email": "电子邮件",
-        "phone": "电话号码",
-        "comment": "评论",
-        "send": "发送",
-        "post_success": "感谢您联系我们。我们会尽快回复您。",
-        "error_heading": "请调整以下内容：",
-        "title": "联系表"
-      }
-    },
-    "404": {
-      "title": "找不到页面",
-      "subtext": "404"
-    }
-  },
-  "sections": {
-    "header": {
-      "announcement": "公告",
-      "menu": "菜单",
-      "cart_count": {
-        "one": "{{ count }} 件产品",
-        "other": "{{ count }} 件产品"
-      }
-    },
-    "cart": {
-      "title": "您的购物车",
-      "caption": "购物车商品",
-      "remove_title": "删除 {{ title }}",
-      "note": "订单特殊说明",
-      "checkout": "结账",
-      "empty": "您的购物车为空",
-      "cart_error": "更新购物车时出错。请重试。",
-      "cart_quantity_error_html": "您只能向购物车添加 {{ quantity }} 件此商品。",
-      "headings": {
-        "product": "产品",
-        "price": "价格",
-        "total": "总计",
-        "quantity": "数量",
-        "image": "产品图片"
-      },
-      "update": "更新",
-      "login": {
-        "title": "已有账户？",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">登录</a>以快速结账。"
-      },
-      "estimated_total": "预计总额",
-      "new_estimated_total": "没有预计总额",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "已含关税和税费。结账时计算折扣和<a href=\"{{ link }}\">运费</a>。",
-      "duties_and_taxes_included_shipping_at_checkout_without_policy": "已含关税和税费。结账时计算折扣和运费。",
-      "taxes_included_shipping_at_checkout_with_policy_html": "已含税费。结账时计算折扣和<a href=\"{{ link }}\">运费</a>。",
-      "taxes_included_shipping_at_checkout_without_policy": "已含税费。结账时计算折扣和运费。",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "已含关税。结账时计算税费、折扣和<a href=\"{{ link }}\">运费</a>。",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "已含关税。结账时计算税费、折扣和运费。",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "结账时计算税费、折扣和<a href=\"{{ link }}\">运费</a>。",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "结账时计算税费、折扣和运费。"
-    },
-    "footer": {
-      "payment": "付款方式"
-    },
-    "featured_blog": {
-      "view_all": "查看全部",
-      "onboarding_title": "博客文章",
-      "onboarding_content": "向您的客户提供一份博客文章的摘要"
-    },
-    "featured_collection": {
-      "view_all": "查看全部",
-      "view_all_label": "查看 {{ collection_name }} 产品系列中的所有产品"
-    },
-    "collection_list": {
-      "view_all": "查看全部"
-    },
-    "collection_template": {
-      "title": "收藏",
-      "empty": "未找到产品",
-      "use_fewer_filters_html": "减少使用的筛选条件数量或<a class=\"{{ class }}\" href=\"{{ link }}\">删除所有筛选条件</a>"
-    },
-    "video": {
-      "load_video": "加载视频：{{ description }}"
-    },
-    "slideshow": {
-      "load_slide": "加载幻灯片",
-      "previous_slideshow": "上一张幻灯片",
-      "next_slideshow": "下一张幻灯片",
-      "pause_slideshow": "暂停幻灯片",
-      "play_slideshow": "播放幻灯片",
-      "carousel": "轮播",
-      "slide": "幻灯片"
-    },
-    "page": {
-      "title": "页面标题"
-    },
-    "announcements": {
-      "previous_announcement": "上一个公告",
-      "next_announcement": "下一个公告",
-      "carousel": "轮播",
-      "announcement": "公告",
-      "announcement_bar": "公告栏"
-    },
-    "quick_order_list": {
-      "product_total": "产品小计",
-      "view_cart": "查看购物车",
-      "each": "{{ money }}/件",
-      "product": "产品",
-      "variant": "多属性",
-      "variant_total": "多属性总计",
-      "items_added": {
-        "one": "已添加 {{ quantity }} 件商品",
-        "other": "已添加 {{ quantity }} 件商品"
-      },
-      "items_removed": {
-        "one": "已删除 {{ quantity }} 件商品",
-        "other": "已删除 {{ quantity }} 件商品"
-      },
-      "product_variants": "产品多属性",
-      "total_items": "商品总数",
-      "remove_all_items_confirmation": "删除您购物车中的全部 {{ quantity }} 件商品？",
-      "remove_all": "全部删除",
-      "cancel": "取消",
-      "remove_all_single_item_confirmation": "从购物车中删除 1 件商品？",
-      "min_error": "此商品的最小值为 {{ min }}",
-      "max_error": "此商品的最大值为 {{ max }}",
-      "step_error": "您只能以 {{ step }} 为增量来添加此商品"
-    }
-  },
-  "localization": {
-    "country_label": "国家/地区",
-    "language_label": "语言",
-    "update_language": "更新语言",
-    "update_country": "更新国家/地区",
-    "search": "搜索",
-    "popular_countries_regions": "热门国家/地区",
-    "country_results_count": "找到 {{ count }} 个国家/地区"
-  },
-  "customer": {
-    "account": {
-      "title": "账户",
-      "details": "账户详细信息",
-      "view_addresses": "查看地址",
-      "return": "返回账户详细信息"
-    },
-    "account_fallback": "账户",
-    "activate_account": {
-      "title": "激活账户",
-      "subtext": "创建密码以激活您的账户。",
-      "password": "密码",
-      "password_confirm": "确认密码",
-      "submit": "激活账户",
-      "cancel": "拒绝邀请"
-    },
-    "addresses": {
-      "title": "地址",
-      "default": "默认",
-      "add_new": "添加新地址",
-      "edit_address": "编辑地址",
-      "first_name": "名字",
-      "last_name": "姓氏",
-      "company": "公司",
-      "address1": "地址 1",
-      "address2": "地址 2",
-      "city": "城市",
-      "country": "国家/地区",
-      "province": "省",
-      "zip": "邮政编码",
-      "phone": "电话",
-      "set_default": "设为默认地址",
-      "add": "添加地址",
-      "update": "更新地址",
-      "cancel": "取消",
-      "edit": "“编辑”。",
-      "delete": "删除",
-      "delete_confirm": "确定要删除此地址吗？"
-    },
-    "log_in": "登录",
-    "log_out": "登出",
-    "login_page": {
-      "cancel": "取消",
-      "create_account": "创建账户",
-      "email": "电子邮件",
-      "forgot_password": "忘记了密码？",
-      "guest_continue": "继续",
-      "guest_title": "以访客身份继续",
-      "password": "密码",
-      "title": "登录",
-      "sign_in": "登录",
-      "submit": "提交",
-      "alternate_provider_separator": "或"
-    },
-    "orders": {
-      "title": "订单历史记录",
-      "order_number": "订单",
-      "order_number_link": "订单号 {{ number }}",
-      "date": "日期",
-      "payment_status": "付款状态",
-      "fulfillment_status": "发货状态",
-      "total": "总计",
-      "none": "您尚未创建任何订单。"
-    },
-    "recover_password": {
-      "title": "重置密码",
-      "subtext": "我们将向您发送用于重置密码的电子邮件",
-      "success": "我们已向您发送电子邮件，其中包含更新密码的链接。"
-    },
-    "register": {
-      "title": "创建账户",
-      "first_name": "名字",
-      "last_name": "姓氏",
-      "email": "电子邮件",
-      "password": "密码",
-      "submit": "创建"
-    },
-    "reset_password": {
-      "title": "重置账户密码",
-      "subtext": "输入新密码",
-      "password": "密码",
-      "password_confirm": "确认密码",
-      "submit": "重置密码"
-    },
-    "order": {
-      "title": "订单 {{ name }}",
-      "date_html": "下单日期：{{ date }}",
-      "cancelled_html": "订单取消日期：{{ date }}",
-      "cancelled_reason": "原因：{{ reason }}",
-      "billing_address": "账单地址",
-      "payment_status": "付款状态",
-      "shipping_address": "收货地址",
-      "fulfillment_status": "发货状态",
-      "discount": "折扣",
-      "shipping": "运输",
-      "tax": "税费",
-      "product": "产品",
-      "sku": "SKU",
-      "price": "价格",
-      "quantity": "数量",
-      "total": "总计",
-      "fulfilled_at_html": "发货日期：{{ date }}",
-      "track_shipment": "跟踪货件",
-      "tracking_url": "跟踪链接",
-      "tracking_company": "承运商",
-      "tracking_number": "跟踪编号",
-      "subtotal": "小计",
-      "total_duties": "关税",
-      "total_refunded": "已退款"
-    }
-  },
-  "gift_cards": {
-    "issued": {
-      "title": "您的 {{ shop }} 的礼品卡余额为 {{ value }}！",
-      "subtext": "您的礼品卡",
-      "gift_card_code": "礼品卡代码",
-      "shop_link": "访问在线商店",
-      "add_to_apple_wallet": "添加到 Apple Wallet",
-      "qr_image_alt": "二维码 — 扫描兑换礼品卡",
-      "copy_code": "复制礼品卡代码",
-      "expired": "已过期",
-      "copy_code_success": "已成功复制代码",
-      "how_to_use_gift_card": "在线使用礼品卡代码或在店内使用二维码",
-      "expiration_date": "过期日期：{{ expires_on }}"
-    }
-  },
-  "recipient": {
-    "form": {
-      "checkbox": "我想将此礼品卡发送为礼品",
-      "email_label": "收件人邮箱",
-      "email": "邮箱",
-      "name_label": "收件人姓名（可选）",
-      "name": "姓名",
-      "message_label": "消息（可选）",
-      "message": "消息",
-      "max_characters": "不超过 {{ max_chars }} 个字符",
-      "email_label_optional_for_no_js_behavior": "收件人邮箱（可选）",
-      "send_on": "YYYY-MM-DD",
-      "send_on_label": "发送日期（可选）",
-      "expanded": "礼品卡收件人表单已展开",
-      "collapsed": "礼品卡收件人表单已折叠"
-    }
-  }
+    "general":  {
+                    "password_page":  {
+                                          "login_form_heading":  "ä½¿ç”¨å¯†ç è¿›å…¥å•†åº—ï¼š",
+                                          "login_password_button":  "ä½¿ç”¨å¯†ç è¿›å…¥",
+                                          "login_form_password_label":  "å¯†ç ",
+                                          "login_form_password_placeholder":  "æ‚¨çš„å¯†ç ",
+                                          "login_form_error":  "å¯†ç é”™è¯¯ï¼",
+                                          "login_form_submit":  "è¾“å…¥",
+                                          "admin_link_html":  "æ‚¨æ˜¯å¦ä¸ºåº—ä¸»ï¼Ÿ\u003ca href=\"/admin\" class=\"link underlined-link\"\u003eåœ¨æ­¤å¤„ç™»å½•\u003c/a\u003e",
+                                          "powered_by_shopify_html":  "æ­¤å•†åº—ç”± {{ shopify }} æä¾›æ”¯æŒ"
+                                      },
+                    "social":  {
+                                   "alt_text":  {
+                                                    "share_on_facebook":  "åœ¨ Facebook ä¸Šå…±äº«",
+                                                    "share_on_twitter":  "åœ¨ X ä¸Šåˆ†äº«",
+                                                    "share_on_pinterest":  "å›ºå®šåœ¨ Pinterest ä¸Š"
+                                                },
+                                   "links":  {
+                                                 "twitter":  "X (Twitter)",
+                                                 "facebook":  "Facebook",
+                                                 "pinterest":  "Pinterest",
+                                                 "instagram":  "Instagram",
+                                                 "tumblr":  "Tumblr",
+                                                 "snapchat":  "Snapchat",
+                                                 "youtube":  "YouTube",
+                                                 "vimeo":  "Vimeo",
+                                                 "tiktok":  "TikTok"
+                                             }
+                               },
+                    "continue_shopping":  "ç»§ç»­è´­ç‰©",
+                    "pagination":  {
+                                       "label":  "åˆ†é¡µ",
+                                       "page":  "ç¬¬ {{ number }} é¡µ",
+                                       "next":  "ä¸‹ä¸€é¡µ",
+                                       "previous":  "ä¸Šä¸€é¡µ"
+                                   },
+                    "search":  {
+                                   "search":  "æœç´¢",
+                                   "reset":  "æ¸…é™¤æœç´¢è¯"
+                               },
+                    "cart":  {
+                                 "view":  "æŸ¥çœ‹è´­ç‰©è½¦ ({{ count }})",
+                                 "item_added":  "å•†å“å·²åŠ å…¥è´­ç‰©è½¦",
+                                 "view_empty_cart":  "æŸ¥çœ‹è´­ç‰©è½¦"
+                             },
+                    "share":  {
+                                  "copy_to_clipboard":  "å¤åˆ¶é“¾æŽ¥",
+                                  "share_url":  "é“¾æŽ¥",
+                                  "success_message":  "é“¾æŽ¥å·²å¤åˆ¶åˆ°å‰ªè´´æ¿",
+                                  "close":  "å…³é—­åˆ†äº«"
+                              },
+                    "slider":  {
+                                   "of":  "/",
+                                   "next_slide":  "å‘å³æ»‘åŠ¨",
+                                   "previous_slide":  "å‘å·¦æ»‘åŠ¨",
+                                   "name":  "æ»‘å—"
+                               },
+                    "breadcrumbs":  {
+                                        "home":  "Home"
+                                    }
+                },
+    "newsletter":  {
+                       "label":  "ç”µå­é‚®ä»¶",
+                       "success":  "æ„Ÿè°¢æ‚¨è®¢é˜…",
+                       "button_label":  "è®¢é˜…"
+                   },
+    "accessibility":  {
+                          "skip_to_text":  "è·³åˆ°å†…å®¹",
+                          "close":  "å…³é—­",
+                          "unit_price_separator":  "å•ä»·",
+                          "vendor":  "åŽ‚å•†ï¼š",
+                          "error":  "é”™è¯¯",
+                          "refresh_page":  "é€‰æ‹©æŸä¸€é€‰é¡¹ä¼šä½¿æ•´ä¸ªé¡µé¢åˆ·æ–°ã€‚",
+                          "link_messages":  {
+                                                "new_window":  "åœ¨æ–°çª—å£ä¸­æ‰“å¼€ã€‚",
+                                                "external":  "æ‰“å¼€å¤–éƒ¨ç½‘ç«™ã€‚"
+                                            },
+                          "loading":  "æ­£åœ¨åŠ è½½â€¦",
+                          "skip_to_product_info":  "è·³è‡³äº§å“ä¿¡æ¯",
+                          "total_reviews":  "æ€»è¯„è®ºæ•°",
+                          "star_reviews_info":  "{{ rating_value }}/{{ rating_max }} æ˜Ÿ",
+                          "collapsible_content_title":  "å¯æŠ˜å å†…å®¹",
+                          "complementary_products":  "äº’è¡¥äº§å“"
+                      },
+    "blogs":  {
+                  "article":  {
+                                  "blog":  "åšå®¢",
+                                  "read_more_title":  "é˜…è¯»è¯¦ç»†å†…å®¹ï¼š{{ title }}",
+                                  "comments":  {
+                                                   "one":  "{{ count }} æ¡è¯„è®º",
+                                                   "other":  "{{ count }} æ¡è¯„è®º"
+                                               },
+                                  "moderated":  "è¯·æ³¨æ„ï¼Œè¯„è®ºå¿…é¡»åœ¨å‘å¸ƒä¹‹å‰èŽ·å¾—æ‰¹å‡†ã€‚",
+                                  "comment_form_title":  "å‘è¡¨è¯„è®º",
+                                  "name":  "åç§°",
+                                  "email":  "ç”µå­é‚®ä»¶",
+                                  "message":  "è¯„è®º",
+                                  "post":  "å‘å¸ƒè¯„è®º",
+                                  "back_to_blog":  "è¿”å›žåšå®¢",
+                                  "share":  "åˆ†äº«æ­¤æ–‡ç« ",
+                                  "success":  "æ‚¨çš„è¯„è®ºå·²æˆåŠŸå‘å¸ƒï¼è°¢è°¢ï¼",
+                                  "success_moderated":  "æ‚¨çš„è¯„è®ºå·²æˆåŠŸå‘å¸ƒã€‚ç”±äºŽæˆ‘ä»¬çš„åšå®¢è¦ç»è¿‡å®¡æ ¸ï¼Œæˆ‘ä»¬ä¼šåœ¨ç¨åŽå°†å…¶å‘å¸ƒã€‚"
+                              }
+              },
+    "onboarding":  {
+                       "product_title":  "äº§å“æ ‡é¢˜ç¤ºä¾‹",
+                       "collection_title":  "æ‚¨çš„äº§å“ç³»åˆ—çš„åç§°"
+                   },
+    "products":  {
+                     "product":  {
+                                     "add_to_cart":  "æ·»åŠ åˆ°è´­ç‰©è½¦",
+                                     "description":  "æè¿°",
+                                     "on_sale":  "ä¿ƒé”€",
+                                     "product_variants":  "äº§å“å¤šå±žæ€§",
+                                     "quantity":  {
+                                                      "label":  "æ•°é‡",
+                                                      "input_label":  "{{ product }} çš„æ•°é‡",
+                                                      "increase":  "å¢žåŠ  {{ product }} çš„æ•°é‡",
+                                                      "decrease":  "å‡å°‘ {{ product }} çš„æ•°é‡",
+                                                      "minimum_of":  "æœ€å°å€¼ä¸º {{ quantity }}",
+                                                      "maximum_of":  "æœ€å¤§å€¼ä¸º {{ quantity }}",
+                                                      "multiples_of":  "å¢žé‡ä¸º {{ quantity }}",
+                                                      "in_cart_html":  "è´­ç‰©è½¦ä¸­ \u003cspan class=\"quantity-cart\"\u003e{{ quantity }}\u003c/span\u003e ä»¶",
+                                                      "note":  "æŸ¥çœ‹æ•°é‡è§„åˆ™",
+                                                      "min_of":  "æœ€å°å€¼ {{ quantity }}",
+                                                      "max_of":  "æœ€å¤§å€¼ {{ quantity }}",
+                                                      "in_cart_aria_label":  "æ•°é‡ï¼ˆè´­ç‰©è½¦ä¸­æœ‰ {{ quantity }} ä»¶ï¼‰"
+                                                  },
+                                     "price":  {
+                                                   "from_price_html":  "æ¥è‡ª {{ price }}",
+                                                   "regular_price":  "å¸¸è§„ä»·æ ¼",
+                                                   "sale_price":  "ä¿ƒé”€ä»·",
+                                                   "unit_price":  "å•ä»·"
+                                               },
+                                     "share":  "åˆ†äº«æ­¤äº§å“",
+                                     "sold_out":  "å”®ç½„",
+                                     "unavailable":  "ä¸å¯ç”¨",
+                                     "vendor":  "åŽ‚å•†",
+                                     "video_exit_message":  "{{ title }} åœ¨åŒä¸€çª—å£ä¸­æ‰“å¼€å…¨å±è§†é¢‘ã€‚",
+                                     "xr_button":  "åœ¨æ‚¨çš„ç©ºé—´ä¸­æŸ¥çœ‹",
+                                     "xr_button_label":  "åœ¨æ‚¨çš„ç©ºé—´ä¸­æŸ¥çœ‹ï¼Œåœ¨å¢žå¼ºçŽ°å®žçª—å£ä¸­åŠ è½½å•†å“",
+                                     "pickup_availability":  {
+                                                                 "view_store_info":  "æŸ¥çœ‹å•†åº—ä¿¡æ¯",
+                                                                 "check_other_stores":  "æŸ¥çœ‹åœ¨å…¶ä»–å•†åº—çš„å¯ç”¨æƒ…å†µ",
+                                                                 "pick_up_available":  "æä¾›å–è´§æœåŠ¡",
+                                                                 "pick_up_available_at_html":  "\u003cspan class=\"color-foreground\"\u003e{{ location_name }}\u003c/span\u003e æä¾›å–è´§æœåŠ¡",
+                                                                 "pick_up_unavailable_at_html":  "\u003cspan class=\"color-foreground\"\u003e{{ location_name }}\u003c/span\u003e ç›®å‰ä¸æä¾›å–è´§æœåŠ¡",
+                                                                 "unavailable":  "æ— æ³•åŠ è½½å–è´§æœåŠ¡å¯ç”¨æƒ…å†µ",
+                                                                 "refresh":  "åˆ·æ–°"
+                                                             },
+                                     "media":  {
+                                                   "open_media":  "åœ¨æ¨¡æ€çª—å£ä¸­æ‰“å¼€åª’ä½“æ–‡ä»¶ {{ index }}",
+                                                   "play_model":  "æ’­æ”¾ 3D æŸ¥çœ‹å™¨",
+                                                   "play_video":  "æ’­æ”¾è§†é¢‘",
+                                                   "gallery_viewer":  "å›¾åº“æŸ¥çœ‹å™¨",
+                                                   "load_image":  "åœ¨å›¾åº“è§†å›¾ä¸­åŠ è½½å›¾ç‰‡ {{ index }}",
+                                                   "load_model":  "åœ¨å›¾åº“è§†å›¾ä¸­åŠ è½½ 3D æ¨¡åž‹ {{ index }}",
+                                                   "load_video":  "åœ¨å›¾åº“è§†å›¾ä¸­æ’­æ”¾è§†é¢‘ {{ index }}",
+                                                   "image_available":  "å›¾ç‰‡ {{ index }} çŽ°å·²åœ¨å›¾åº“è§†å›¾ä¸­å¯ç”¨"
+                                               },
+                                     "nested_label":  "{{ title }}ï¼Œé€‚ç”¨äºŽ {{ parent_title }}",
+                                     "view_full_details":  "æŸ¥çœ‹å®Œæ•´è¯¦ç»†ä¿¡æ¯",
+                                     "shipping_policy_html":  "ç»“è´¦æ—¶è®¡ç®—çš„\u003ca href=\"{{ link }}\"\u003eè¿è´¹\u003c/a\u003eã€‚",
+                                     "choose_options":  "é€‰æ‹©é€‰é¡¹",
+                                     "choose_product_options":  "é€‰æ‹©ç”¨äºŽ {{ product_name }} çš„é€‰é¡¹",
+                                     "value_unavailable":  "{{ option_value }} - ä¸å¯ç”¨",
+                                     "variant_sold_out_or_unavailable":  "å¤šå±žæ€§å·²å”®ç½„æˆ–ä¸å¯ç”¨",
+                                     "inventory_in_stock":  "çŽ°è´§",
+                                     "inventory_in_stock_show_count":  "{{ quantity }} ä»¶å­˜è´§",
+                                     "inventory_low_stock":  "ä½Žåº“å­˜",
+                                     "inventory_low_stock_show_count":  "ä½Žåº“å­˜ï¼šå‰©ä½™ {{ quantity }}",
+                                     "inventory_out_of_stock":  "ç¼ºè´§",
+                                     "inventory_out_of_stock_continue_selling":  "çŽ°è´§",
+                                     "sku":  "SKU",
+                                     "volume_pricing":  {
+                                                            "title":  "æ‰¹é‡å®šä»·",
+                                                            "note":  "æä¾›æ‰¹é‡å®šä»·",
+                                                            "minimum":  "{{ quantity }}+",
+                                                            "price_range":  "{{ minimum }} - {{ maximum }}",
+                                                            "price_at_each_html":  "{{ price }}/ä»¶"
+                                                        },
+                                     "taxes_included":  "å·²å«ç¨Žè´¹ã€‚",
+                                     "duties_included":  "å·²å«å…³ç¨Žã€‚",
+                                     "duties_and_taxes_included":  "å·²å«å…³ç¨Žå’Œç¨Žè´¹ã€‚",
+                                     "product_types":  "Product type",
+                                     "tags":  "Tags",
+                                     "products_tagged":  "Products tagged {{ tag }}"
+                                 },
+                     "modal":  {
+                                   "label":  "åª’ä½“å›¾åº“"
+                               },
+                     "facets":  {
+                                    "apply":  "åº”ç”¨",
+                                    "clear":  "æ¸…é™¤",
+                                    "clear_all":  "å…¨éƒ¨åˆ é™¤",
+                                    "from":  "ä»Ž",
+                                    "filter_and_sort":  "ç­›é€‰å’ŒæŽ’åº",
+                                    "filter_by_label":  "ç­›é€‰æ¡ä»¶ï¼š",
+                                    "filter_button":  "ç­›é€‰",
+                                    "filters_selected":  {
+                                                             "one":  "å·²é€‰æ‹© {{ count }} ä¸ª",
+                                                             "other":  "å·²é€‰æ‹© {{ count }} ä¸ª"
+                                                         },
+                                    "max_price":  "æœ€é«˜ä»·æ ¼ä¸º {{ price }}",
+                                    "product_count":  {
+                                                          "one":  "{{ product_count }}/{{ count }} ä»¶äº§å“",
+                                                          "other":  "{{ product_count }}/{{ count }} ä»¶äº§å“"
+                                                      },
+                                    "product_count_simple":  {
+                                                                 "one":  "{{ count }} ä»¶äº§å“",
+                                                                 "other":  "{{ count }} ä»¶äº§å“"
+                                                             },
+                                    "reset":  "é‡ç½®",
+                                    "sort_button":  "æŽ’åº",
+                                    "sort_by_label":  "æŽ’åºä¾æ®ï¼š",
+                                    "to":  "åˆ°",
+                                    "clear_filter":  "åˆ é™¤ç­›é€‰æ¡ä»¶",
+                                    "filter_selected_accessibility":  "{{ type }}ï¼ˆå·²é€‰æ‹© {{ count }} ä¸ªç­›é€‰æ¡ä»¶ï¼‰",
+                                    "show_more":  "æ˜¾ç¤ºæ›´å¤šå†…å®¹",
+                                    "show_less":  "éšè—éƒ¨åˆ†å†…å®¹",
+                                    "filter_and_operator_subtitle":  "åŒ¹é…å…¨éƒ¨"
+                                }
+                 },
+    "templates":  {
+                      "search":  {
+                                     "no_results":  "æœªæ‰¾åˆ°â€œ{{ terms }}â€çš„ç»“æžœã€‚è¯·æ£€æŸ¥æ‹¼å†™æˆ–ä½¿ç”¨å…¶ä»–è¯æˆ–çŸ­è¯­ã€‚",
+                                     "results_with_count":  {
+                                                                "one":  "{{ count }} æ¡ç»“æžœ",
+                                                                "other":  "{{ count }} æ¡ç»“æžœ"
+                                                            },
+                                     "title":  "æœç´¢ç»“æžœ",
+                                     "page":  "é¡µé¢",
+                                     "products":  "äº§å“",
+                                     "search_for":  "æœç´¢â€œ{{ terms }}â€",
+                                     "results_with_count_and_term":  {
+                                                                         "one":  "æ‰¾åˆ°â€œ{{ terms }}â€çš„ {{ count }} æ¡ç»“æžœ",
+                                                                         "other":  "æ‰¾åˆ°â€œ{{ terms }}â€çš„ {{ count }} æ¡ç»“æžœ"
+                                                                     },
+                                     "results_pages_with_count":  {
+                                                                      "one":  "{{ count }} ä¸ªé¡µé¢",
+                                                                      "other":  "{{ count }} ä¸ªé¡µé¢"
+                                                                  },
+                                     "results_products_with_count":  {
+                                                                         "one":  "{{ count }} ä»¶äº§å“",
+                                                                         "other":  "{{ count }} ä»¶äº§å“"
+                                                                     },
+                                     "suggestions":  "å»ºè®®",
+                                     "pages":  "é¡µé¢",
+                                     "results_suggestions_with_count":  {
+                                                                            "one":  "{{ count }} ä¸ªå»ºè®®",
+                                                                            "other":  "{{ count }} ä¸ªå»ºè®®"
+                                                                        }
+                                 },
+                      "cart":  {
+                                   "cart":  "è´­ç‰©è½¦"
+                               },
+                      "contact":  {
+                                      "form":  {
+                                                   "name":  "åç§°",
+                                                   "email":  "ç”µå­é‚®ä»¶",
+                                                   "phone":  "ç”µè¯å·ç ",
+                                                   "comment":  "è¯„è®º",
+                                                   "send":  "å‘é€",
+                                                   "post_success":  "æ„Ÿè°¢æ‚¨è”ç³»æˆ‘ä»¬ã€‚æˆ‘ä»¬ä¼šå°½å¿«å›žå¤æ‚¨ã€‚",
+                                                   "error_heading":  "è¯·è°ƒæ•´ä»¥ä¸‹å†…å®¹ï¼š",
+                                                   "title":  "è”ç³»è¡¨"
+                                               }
+                                  },
+                      "404":  {
+                                  "title":  "æ‰¾ä¸åˆ°é¡µé¢",
+                                  "subtext":  "404"
+                              }
+                  },
+    "sections":  {
+                     "header":  {
+                                    "announcement":  "å…¬å‘Š",
+                                    "menu":  "èœå•",
+                                    "cart_count":  {
+                                                       "one":  "{{ count }} ä»¶äº§å“",
+                                                       "other":  "{{ count }} ä»¶äº§å“"
+                                                   }
+                                },
+                     "cart":  {
+                                  "title":  "æ‚¨çš„è´­ç‰©è½¦",
+                                  "caption":  "è´­ç‰©è½¦å•†å“",
+                                  "remove_title":  "åˆ é™¤ {{ title }}",
+                                  "note":  "è®¢å•ç‰¹æ®Šè¯´æ˜Ž",
+                                  "checkout":  "ç»“è´¦",
+                                  "empty":  "æ‚¨çš„è´­ç‰©è½¦ä¸ºç©º",
+                                  "cart_error":  "æ›´æ–°è´­ç‰©è½¦æ—¶å‡ºé”™ã€‚è¯·é‡è¯•ã€‚",
+                                  "cart_quantity_error_html":  "æ‚¨åªèƒ½å‘è´­ç‰©è½¦æ·»åŠ  {{ quantity }} ä»¶æ­¤å•†å“ã€‚",
+                                  "headings":  {
+                                                   "product":  "äº§å“",
+                                                   "price":  "ä»·æ ¼",
+                                                   "total":  "æ€»è®¡",
+                                                   "quantity":  "æ•°é‡",
+                                                   "image":  "äº§å“å›¾ç‰‡"
+                                               },
+                                  "update":  "æ›´æ–°",
+                                  "login":  {
+                                                "title":  "å·²æœ‰è´¦æˆ·ï¼Ÿ",
+                                                "paragraph_html":  "\u003ca href=\"{{ link }}\" class=\"link underlined-link\"\u003eç™»å½•\u003c/a\u003eä»¥å¿«é€Ÿç»“è´¦ã€‚"
+                                            },
+                                  "estimated_total":  "é¢„è®¡æ€»é¢",
+                                  "new_estimated_total":  "æ²¡æœ‰é¢„è®¡æ€»é¢",
+                                  "duties_and_taxes_included_shipping_at_checkout_with_policy_html":  "å·²å«å…³ç¨Žå’Œç¨Žè´¹ã€‚ç»“è´¦æ—¶è®¡ç®—æŠ˜æ‰£å’Œ\u003ca href=\"{{ link }}\"\u003eè¿è´¹\u003c/a\u003eã€‚",
+                                  "duties_and_taxes_included_shipping_at_checkout_without_policy":  "å·²å«å…³ç¨Žå’Œç¨Žè´¹ã€‚ç»“è´¦æ—¶è®¡ç®—æŠ˜æ‰£å’Œè¿è´¹ã€‚",
+                                  "taxes_included_shipping_at_checkout_with_policy_html":  "å·²å«ç¨Žè´¹ã€‚ç»“è´¦æ—¶è®¡ç®—æŠ˜æ‰£å’Œ\u003ca href=\"{{ link }}\"\u003eè¿è´¹\u003c/a\u003eã€‚",
+                                  "taxes_included_shipping_at_checkout_without_policy":  "å·²å«ç¨Žè´¹ã€‚ç»“è´¦æ—¶è®¡ç®—æŠ˜æ‰£å’Œè¿è´¹ã€‚",
+                                  "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html":  "å·²å«å…³ç¨Žã€‚ç»“è´¦æ—¶è®¡ç®—ç¨Žè´¹ã€æŠ˜æ‰£å’Œ\u003ca href=\"{{ link }}\"\u003eè¿è´¹\u003c/a\u003eã€‚",
+                                  "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy":  "å·²å«å…³ç¨Žã€‚ç»“è´¦æ—¶è®¡ç®—ç¨Žè´¹ã€æŠ˜æ‰£å’Œè¿è´¹ã€‚",
+                                  "taxes_at_checkout_shipping_at_checkout_with_policy_html":  "ç»“è´¦æ—¶è®¡ç®—ç¨Žè´¹ã€æŠ˜æ‰£å’Œ\u003ca href=\"{{ link }}\"\u003eè¿è´¹\u003c/a\u003eã€‚",
+                                  "taxes_at_checkout_shipping_at_checkout_without_policy":  "ç»“è´¦æ—¶è®¡ç®—ç¨Žè´¹ã€æŠ˜æ‰£å’Œè¿è´¹ã€‚"
+                              },
+                     "footer":  {
+                                    "payment":  "ä»˜æ¬¾æ–¹å¼"
+                                },
+                     "featured_blog":  {
+                                           "view_all":  "æŸ¥çœ‹å…¨éƒ¨",
+                                           "onboarding_title":  "åšå®¢æ–‡ç« ",
+                                           "onboarding_content":  "å‘æ‚¨çš„å®¢æˆ·æä¾›ä¸€ä»½åšå®¢æ–‡ç« çš„æ‘˜è¦"
+                                       },
+                     "featured_collection":  {
+                                                 "view_all":  "æŸ¥çœ‹å…¨éƒ¨",
+                                                 "view_all_label":  "æŸ¥çœ‹ {{ collection_name }} äº§å“ç³»åˆ—ä¸­çš„æ‰€æœ‰äº§å“"
+                                             },
+                     "collection_list":  {
+                                             "view_all":  "æŸ¥çœ‹å…¨éƒ¨"
+                                         },
+                     "collection_template":  {
+                                                 "title":  "æ”¶è—",
+                                                 "empty":  "æœªæ‰¾åˆ°äº§å“",
+                                                 "use_fewer_filters_html":  "å‡å°‘ä½¿ç”¨çš„ç­›é€‰æ¡ä»¶æ•°é‡æˆ–\u003ca class=\"{{ class }}\" href=\"{{ link }}\"\u003eåˆ é™¤æ‰€æœ‰ç­›é€‰æ¡ä»¶\u003c/a\u003e"
+                                             },
+                     "video":  {
+                                   "load_video":  "åŠ è½½è§†é¢‘ï¼š{{ description }}"
+                               },
+                     "slideshow":  {
+                                       "load_slide":  "åŠ è½½å¹»ç¯ç‰‡",
+                                       "previous_slideshow":  "ä¸Šä¸€å¼ å¹»ç¯ç‰‡",
+                                       "next_slideshow":  "ä¸‹ä¸€å¼ å¹»ç¯ç‰‡",
+                                       "pause_slideshow":  "æš‚åœå¹»ç¯ç‰‡",
+                                       "play_slideshow":  "æ’­æ”¾å¹»ç¯ç‰‡",
+                                       "carousel":  "è½®æ’­",
+                                       "slide":  "å¹»ç¯ç‰‡"
+                                   },
+                     "page":  {
+                                  "title":  "é¡µé¢æ ‡é¢˜"
+                              },
+                     "announcements":  {
+                                           "previous_announcement":  "ä¸Šä¸€ä¸ªå…¬å‘Š",
+                                           "next_announcement":  "ä¸‹ä¸€ä¸ªå…¬å‘Š",
+                                           "carousel":  "è½®æ’­",
+                                           "announcement":  "å…¬å‘Š",
+                                           "announcement_bar":  "å…¬å‘Šæ "
+                                       },
+                     "quick_order_list":  {
+                                              "product_total":  "äº§å“å°è®¡",
+                                              "view_cart":  "æŸ¥çœ‹è´­ç‰©è½¦",
+                                              "each":  "{{ money }}/ä»¶",
+                                              "product":  "äº§å“",
+                                              "variant":  "å¤šå±žæ€§",
+                                              "variant_total":  "å¤šå±žæ€§æ€»è®¡",
+                                              "items_added":  {
+                                                                  "one":  "å·²æ·»åŠ  {{ quantity }} ä»¶å•†å“",
+                                                                  "other":  "å·²æ·»åŠ  {{ quantity }} ä»¶å•†å“"
+                                                              },
+                                              "items_removed":  {
+                                                                    "one":  "å·²åˆ é™¤ {{ quantity }} ä»¶å•†å“",
+                                                                    "other":  "å·²åˆ é™¤ {{ quantity }} ä»¶å•†å“"
+                                                                },
+                                              "product_variants":  "äº§å“å¤šå±žæ€§",
+                                              "total_items":  "å•†å“æ€»æ•°",
+                                              "remove_all_items_confirmation":  "åˆ é™¤æ‚¨è´­ç‰©è½¦ä¸­çš„å…¨éƒ¨ {{ quantity }} ä»¶å•†å“ï¼Ÿ",
+                                              "remove_all":  "å…¨éƒ¨åˆ é™¤",
+                                              "cancel":  "å–æ¶ˆ",
+                                              "remove_all_single_item_confirmation":  "ä»Žè´­ç‰©è½¦ä¸­åˆ é™¤ 1 ä»¶å•†å“ï¼Ÿ",
+                                              "min_error":  "æ­¤å•†å“çš„æœ€å°å€¼ä¸º {{ min }}",
+                                              "max_error":  "æ­¤å•†å“çš„æœ€å¤§å€¼ä¸º {{ max }}",
+                                              "step_error":  "æ‚¨åªèƒ½ä»¥ {{ step }} ä¸ºå¢žé‡æ¥æ·»åŠ æ­¤å•†å“"
+                                          }
+                 },
+    "localization":  {
+                         "country_label":  "å›½å®¶/åœ°åŒº",
+                         "language_label":  "è¯­è¨€",
+                         "update_language":  "æ›´æ–°è¯­è¨€",
+                         "update_country":  "æ›´æ–°å›½å®¶/åœ°åŒº",
+                         "search":  "æœç´¢",
+                         "popular_countries_regions":  "çƒ­é—¨å›½å®¶/åœ°åŒº",
+                         "country_results_count":  "æ‰¾åˆ° {{ count }} ä¸ªå›½å®¶/åœ°åŒº"
+                     },
+    "customer":  {
+                     "account":  {
+                                     "title":  "è´¦æˆ·",
+                                     "details":  "è´¦æˆ·è¯¦ç»†ä¿¡æ¯",
+                                     "view_addresses":  "æŸ¥çœ‹åœ°å€",
+                                     "return":  "è¿”å›žè´¦æˆ·è¯¦ç»†ä¿¡æ¯",
+                                     "action_orders":  "View order"
+                                 },
+                     "account_fallback":  "è´¦æˆ·",
+                     "activate_account":  {
+                                              "title":  "æ¿€æ´»è´¦æˆ·",
+                                              "subtext":  "åˆ›å»ºå¯†ç ä»¥æ¿€æ´»æ‚¨çš„è´¦æˆ·ã€‚",
+                                              "password":  "å¯†ç ",
+                                              "password_confirm":  "ç¡®è®¤å¯†ç ",
+                                              "submit":  "æ¿€æ´»è´¦æˆ·",
+                                              "cancel":  "æ‹’ç»é‚€è¯·"
+                                          },
+                     "addresses":  {
+                                       "title":  "åœ°å€",
+                                       "default":  "é»˜è®¤",
+                                       "add_new":  "æ·»åŠ æ–°åœ°å€",
+                                       "edit_address":  "ç¼–è¾‘åœ°å€",
+                                       "first_name":  "åå­—",
+                                       "last_name":  "å§“æ°",
+                                       "company":  "å…¬å¸",
+                                       "address1":  "åœ°å€ 1",
+                                       "address2":  "åœ°å€ 2",
+                                       "city":  "åŸŽå¸‚",
+                                       "country":  "å›½å®¶/åœ°åŒº",
+                                       "province":  "çœ",
+                                       "zip":  "é‚®æ”¿ç¼–ç ",
+                                       "phone":  "ç”µè¯",
+                                       "set_default":  "è®¾ä¸ºé»˜è®¤åœ°å€",
+                                       "add":  "æ·»åŠ åœ°å€",
+                                       "update":  "æ›´æ–°åœ°å€",
+                                       "cancel":  "å–æ¶ˆ",
+                                       "edit":  "â€œç¼–è¾‘â€ã€‚",
+                                       "delete":  "åˆ é™¤",
+                                       "delete_confirm":  "ç¡®å®šè¦åˆ é™¤æ­¤åœ°å€å—ï¼Ÿ"
+                                   },
+                     "log_in":  "ç™»å½•",
+                     "log_out":  "ç™»å‡º",
+                     "login_page":  {
+                                        "cancel":  "å–æ¶ˆ",
+                                        "create_account":  "åˆ›å»ºè´¦æˆ·",
+                                        "email":  "ç”µå­é‚®ä»¶",
+                                        "forgot_password":  "å¿˜è®°äº†å¯†ç ï¼Ÿ",
+                                        "guest_continue":  "ç»§ç»­",
+                                        "guest_title":  "ä»¥è®¿å®¢èº«ä»½ç»§ç»­",
+                                        "password":  "å¯†ç ",
+                                        "title":  "ç™»å½•",
+                                        "sign_in":  "ç™»å½•",
+                                        "submit":  "æäº¤",
+                                        "alternate_provider_separator":  "æˆ–"
+                                    },
+                     "orders":  {
+                                    "title":  "è®¢å•åŽ†å²è®°å½•",
+                                    "order_number":  "è®¢å•",
+                                    "order_number_link":  "è®¢å•å· {{ number }}",
+                                    "date":  "æ—¥æœŸ",
+                                    "payment_status":  "ä»˜æ¬¾çŠ¶æ€",
+                                    "fulfillment_status":  "å‘è´§çŠ¶æ€",
+                                    "total":  "æ€»è®¡",
+                                    "none":  "æ‚¨å°šæœªåˆ›å»ºä»»ä½•è®¢å•ã€‚"
+                                },
+                     "recover_password":  {
+                                              "title":  "é‡ç½®å¯†ç ",
+                                              "subtext":  "æˆ‘ä»¬å°†å‘æ‚¨å‘é€ç”¨äºŽé‡ç½®å¯†ç çš„ç”µå­é‚®ä»¶",
+                                              "success":  "æˆ‘ä»¬å·²å‘æ‚¨å‘é€ç”µå­é‚®ä»¶ï¼Œå…¶ä¸­åŒ…å«æ›´æ–°å¯†ç çš„é“¾æŽ¥ã€‚"
+                                          },
+                     "register":  {
+                                      "title":  "åˆ›å»ºè´¦æˆ·",
+                                      "first_name":  "åå­—",
+                                      "last_name":  "å§“æ°",
+                                      "email":  "ç”µå­é‚®ä»¶",
+                                      "password":  "å¯†ç ",
+                                      "submit":  "åˆ›å»º"
+                                  },
+                     "reset_password":  {
+                                            "title":  "é‡ç½®è´¦æˆ·å¯†ç ",
+                                            "subtext":  "è¾“å…¥æ–°å¯†ç ",
+                                            "password":  "å¯†ç ",
+                                            "password_confirm":  "ç¡®è®¤å¯†ç ",
+                                            "submit":  "é‡ç½®å¯†ç "
+                                        },
+                     "order":  {
+                                   "title":  "è®¢å• {{ name }}",
+                                   "date_html":  "ä¸‹å•æ—¥æœŸï¼š{{ date }}",
+                                   "cancelled_html":  "è®¢å•å–æ¶ˆæ—¥æœŸï¼š{{ date }}",
+                                   "cancelled_reason":  "åŽŸå› ï¼š{{ reason }}",
+                                   "billing_address":  "è´¦å•åœ°å€",
+                                   "payment_status":  "ä»˜æ¬¾çŠ¶æ€",
+                                   "shipping_address":  "æ”¶è´§åœ°å€",
+                                   "fulfillment_status":  "å‘è´§çŠ¶æ€",
+                                   "discount":  "æŠ˜æ‰£",
+                                   "shipping":  "è¿è¾“",
+                                   "tax":  "ç¨Žè´¹",
+                                   "product":  "äº§å“",
+                                   "sku":  "SKU",
+                                   "price":  "ä»·æ ¼",
+                                   "quantity":  "æ•°é‡",
+                                   "total":  "æ€»è®¡",
+                                   "fulfilled_at_html":  "å‘è´§æ—¥æœŸï¼š{{ date }}",
+                                   "track_shipment":  "è·Ÿè¸ªè´§ä»¶",
+                                   "tracking_url":  "è·Ÿè¸ªé“¾æŽ¥",
+                                   "tracking_company":  "æ‰¿è¿å•†",
+                                   "tracking_number":  "è·Ÿè¸ªç¼–å·",
+                                   "subtotal":  "å°è®¡",
+                                   "total_duties":  "å…³ç¨Ž",
+                                   "total_refunded":  "å·²é€€æ¬¾"
+                               }
+                 },
+    "gift_cards":  {
+                       "issued":  {
+                                      "title":  "æ‚¨çš„ {{ shop }} çš„ç¤¼å“å¡ä½™é¢ä¸º {{ value }}ï¼",
+                                      "subtext":  "æ‚¨çš„ç¤¼å“å¡",
+                                      "gift_card_code":  "ç¤¼å“å¡ä»£ç ",
+                                      "shop_link":  "è®¿é—®åœ¨çº¿å•†åº—",
+                                      "add_to_apple_wallet":  "æ·»åŠ åˆ° Apple Wallet",
+                                      "qr_image_alt":  "äºŒç»´ç  â€” æ‰«æå…‘æ¢ç¤¼å“å¡",
+                                      "copy_code":  "å¤åˆ¶ç¤¼å“å¡ä»£ç ",
+                                      "expired":  "å·²è¿‡æœŸ",
+                                      "copy_code_success":  "å·²æˆåŠŸå¤åˆ¶ä»£ç ",
+                                      "how_to_use_gift_card":  "åœ¨çº¿ä½¿ç”¨ç¤¼å“å¡ä»£ç æˆ–åœ¨åº—å†…ä½¿ç”¨äºŒç»´ç ",
+                                      "expiration_date":  "è¿‡æœŸæ—¥æœŸï¼š{{ expires_on }}"
+                                  }
+                   },
+    "recipient":  {
+                      "form":  {
+                                   "checkbox":  "æˆ‘æƒ³å°†æ­¤ç¤¼å“å¡å‘é€ä¸ºç¤¼å“",
+                                   "email_label":  "æ”¶ä»¶äººé‚®ç®±",
+                                   "email":  "é‚®ç®±",
+                                   "name_label":  "æ”¶ä»¶äººå§“åï¼ˆå¯é€‰ï¼‰",
+                                   "name":  "å§“å",
+                                   "message_label":  "æ¶ˆæ¯ï¼ˆå¯é€‰ï¼‰",
+                                   "message":  "æ¶ˆæ¯",
+                                   "max_characters":  "ä¸è¶…è¿‡ {{ max_chars }} ä¸ªå­—ç¬¦",
+                                   "email_label_optional_for_no_js_behavior":  "æ”¶ä»¶äººé‚®ç®±ï¼ˆå¯é€‰ï¼‰",
+                                   "send_on":  "YYYY-MM-DD",
+                                   "send_on_label":  "å‘é€æ—¥æœŸï¼ˆå¯é€‰ï¼‰",
+                                   "expanded":  "ç¤¼å“å¡æ”¶ä»¶äººè¡¨å•å·²å±•å¼€",
+                                   "collapsed":  "ç¤¼å“å¡æ”¶ä»¶äººè¡¨å•å·²æŠ˜å "
+                               }
+                  }
 }

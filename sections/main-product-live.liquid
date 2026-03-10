@@ -139,7 +139,7 @@
     <div class="product-live-media">
       <div class="pl-main-image">
         {%- if product.featured_image -%}
-          <img src="{{ product.featured_image | img_url: '1000x' }}" alt="{{ product.title | escape }}" id="MainProductImage">
+          <img src="{{ product.featured_image | img_url: '1000x' }}" alt="{{ product.title | escape }}" id="MainProductImage" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}">
         {%- else -%}
           {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
@@ -147,7 +147,7 @@
       <div class="pl-thumbs">
         {%- for img in product.images -%}
           <div class="pl-thumb-item">
-            <img src="{{ img | img_url: '200x' }}" alt="{{ product.title | escape }}">
+            <img src="{{ img | img_url: '200x' }}" alt="{{ product.title | escape }}" width="{{ img.width }}" height="{{ img.height }}">
           </div>
         {%- endfor -%}
       </div>

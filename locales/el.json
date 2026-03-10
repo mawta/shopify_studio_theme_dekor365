@@ -1,530 +1,537 @@
 {
-  "general": {
-    "password_page": {
-      "login_form_heading": "Είσοδος στο κατάστημα με τη χρήση κωδικού πρόσβασης:",
-      "login_password_button": "Είσοδος με τη χρήση κωδικού πρόσβασης",
-      "login_form_password_label": "Κωδικός πρόσβασης",
-      "login_form_password_placeholder": "Ο κωδικός σας πρόσβασης",
-      "login_form_error": "Λανθασμένος κωδικός πρόσβασης!",
-      "login_form_submit": "Είσοδος",
-      "admin_link_html": "Είστε ο ιδιοκτήτης του καταστήματος; <a href=\"/admin\" class=\"link underlined-link\">Συνδεθείτε εδώ</a>",
-      "powered_by_shopify_html": "Αυτό το κατάστημα θα υποστηρίζεται από το {{ shopify }}"
-    },
-    "social": {
-      "alt_text": {
-        "share_on_facebook": "Κοινοποίηση στο Facebook",
-        "share_on_twitter": "Κοινοποίηση στο X",
-        "share_on_pinterest": "Καρφίτσωμα στο Pinterest"
-      },
-      "links": {
-        "twitter": "X (Twitter)",
-        "facebook": "Facebook",
-        "pinterest": "Pinterest",
-        "instagram": "Instagram",
-        "tumblr": "Tumblr",
-        "snapchat": "Snapchat",
-        "youtube": "YouTube",
-        "vimeo": "Vimeo",
-        "tiktok": "TikTok"
-      }
-    },
-    "continue_shopping": "Συνέχιση αγορών",
-    "pagination": {
-      "label": "Σελιδοποίηση",
-      "page": "Σελίδα {{ number }}",
-      "next": "Επόμενη σελίδα",
-      "previous": "Προηγούμενη σελίδα"
-    },
-    "search": {
-      "search": "Αναζήτηση",
-      "reset": "Διαγραφή όρου αναζήτησης"
-    },
-    "cart": {
-      "view": "Προβολή καλαθιού ({{ count }})",
-      "item_added": "Το στοιχείο προστέθηκε στο καλάθι σας",
-      "view_empty_cart": "Προβολή καλαθιού"
-    },
-    "share": {
-      "copy_to_clipboard": "Αντιγραφή συνδέσμου",
-      "share_url": "Σύνδεσμος",
-      "success_message": "Ο σύνδεσμος αντιγράφηκε στο πρόχειρο",
-      "close": "Κλείσιμο κοινοποίησης"
-    },
-    "slider": {
-      "of": "από",
-      "next_slide": "Σύρετε δεξιά",
-      "previous_slide": "Σύρετε αριστερά",
-      "name": "Ρυθμιστικό"
-    }
-  },
-  "newsletter": {
-    "label": "Email",
-    "success": "Ευχαριστούμε για την εγγραφή",
-    "button_label": "Εγγραφή"
-  },
-  "accessibility": {
-    "skip_to_text": "Απευθείας μετάβαση στο περιεχόμενο",
-    "close": "Κλείσιμο",
-    "unit_price_separator": "ανά",
-    "vendor": "Προμηθευτής:",
-    "error": "Σφάλμα",
-    "refresh_page": "Ο ορισμός μιας επιλογής έχει ως αποτέλεσμα την πλήρη ανανέωση της σελίδας.",
-    "link_messages": {
-      "new_window": "Ανοίγει σε νέο παράθυρο.",
-      "external": "Ανοίγει εξωτερικό ιστότοπο."
-    },
-    "loading": "Φόρτωση...",
-    "skip_to_product_info": "Μετάβαση στις πληροφορίες προϊόντος",
-    "total_reviews": "σύνολο κριτικών",
-    "star_reviews_info": "{{ rating_value }} από {{ rating_max }} αστέρια",
-    "collapsible_content_title": "Περιεχόμενο με δυνατότητα σύμπτυξης",
-    "complementary_products": "Συμπληρωματικά προϊόντα"
-  },
-  "blogs": {
-    "article": {
-      "blog": "Ιστολόγιο",
-      "read_more_title": "Διαβάστε περισσότερα: {{ title }}",
-      "comments": {
-        "one": "{{ count }} σχόλιο",
-        "other": "{{ count }} σχόλια"
-      },
-      "moderated": "Έχετε υπόψη ότι τα σχόλια χρειάζεται να λάβουν έγκριση προτού δημοσιευτούν.",
-      "comment_form_title": "Υποβάλετε ένα σχόλιο",
-      "name": "Όνομα",
-      "email": "Email",
-      "message": "Σχόλιο",
-      "post": "Ανάρτηση σχολίου",
-      "back_to_blog": "Επιστροφή στο ιστολόγιο",
-      "share": "Κοινοποίηση αυτού του άρθρου",
-      "success": "Το σχόλιό σας αναρτήθηκε επιτυχώς! Ευχαριστούμε!",
-      "success_moderated": "Το σχόλιό σας αναρτήθηκε επιτυχώς. Θα το δημοσιεύσουμε σε λίγο γιατί το ιστολόγιό μας είναι εποπτευόμενο."
-    }
-  },
-  "onboarding": {
-    "product_title": "Παράδειγμα τίτλου προϊόντος",
-    "collection_title": "Το όνομα της συλλογής σας"
-  },
-  "products": {
-    "product": {
-      "add_to_cart": "Προσθήκη στο καλάθι",
-      "description": "Περιγραφή",
-      "on_sale": "Έκπτωση",
-      "product_variants": "Παραλλαγές προϊόντος",
-      "quantity": {
-        "label": "Ποσότητα",
-        "input_label": "Ποσότητα για {{ product }}",
-        "increase": "Αύξηση ποσότητας για {{ product }}",
-        "decrease": "Μείωση ποσότητας για {{ product }}",
-        "minimum_of": "Ελάχιστο όριο {{ quantity }}",
-        "maximum_of": "Μέγιστο όριο {{ quantity }}",
-        "multiples_of": "Δόσεις {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> στο καλάθι",
-        "note": "Προβολή κανόνων ποσότητας",
-        "min_of": "Ελάχ. {{ quantity }}",
-        "max_of": "Μέγ. {{ quantity }}",
-        "in_cart_aria_label": "Ποσότητα ({{ quantity }} στο καλάθι)"
-      },
-      "price": {
-        "from_price_html": "Από {{ price }}",
-        "regular_price": "Κανονική τιμή",
-        "sale_price": "Τιμή έκπτωσης",
-        "unit_price": "Τιμή μονάδας"
-      },
-      "share": "Κοινοποιήστε αυτό το προϊόν",
-      "sold_out": "Εξαντλήθηκε",
-      "unavailable": "Μη διαθέσιμο",
-      "vendor": "Προμηθευτής",
-      "video_exit_message": "Το {{ title }} ανοίγει βίντεο σε πλήρη οθόνη στο ίδιο παράθυρο.",
-      "xr_button": "Προβολή στον χώρο σας",
-      "xr_button_label": "Η επιλογή \"Προβολή στον χώρο σας\", φορτώνει το αντικείμενο στο παράθυρο επαυξημένης πραγματικότητας",
-      "pickup_availability": {
-        "view_store_info": "Προβολή πληροφοριών καταστήματος",
-        "check_other_stores": "Έλεγχος διαθεσιμότητας σε άλλα καταστήματα",
-        "pick_up_available": "Υπάρχει δυνατότητα παραλαβής",
-        "pick_up_available_at_html": "Υπάρχει δυνατότητα παραλαβής από <span class=\"color-foreground\">{{ location_name }}</span>",
-        "pick_up_unavailable_at_html": "Δεν υπάρχει δυνατότητα παραλαβής από <span class=\"color-foreground\">{{ location_name }}</span>",
-        "unavailable": "Δεν ήταν δυνατή η φόρτωση της διαθεσιμότητας παραλαβής",
-        "refresh": "Ανανέωση"
-      },
-      "media": {
-        "open_media": "Άνοιγμα μέσου {{ index }} στο βοηθητικό παράθυρο",
-        "play_model": "Έναρξη εφαρμογής προβολής 3D",
-        "play_video": "Αναπαραγωγή βίντεο",
-        "gallery_viewer": "Εργαλείο προβολής συλλογής",
-        "load_image": "Φόρτωση εικόνας {{ index }} στην προβολή συλλογής",
-        "load_model": "Φόρτωση μοντέλου 3D {{ index }} στην προβολή συλλογής",
-        "load_video": "Αναπαραγωγή βίντεο {{ index }} στην προβολή συλλογής",
-        "image_available": "Η εικόνα {{ index }} είναι τώρα διαθέσιμη στην προβολή συλλογής"
-      },
-      "nested_label": "{{ title }} για {{ parent_title }}",
-      "view_full_details": "Προβολή όλων των λεπτομερειών",
-      "shipping_policy_html": "Τα <a href=\"{{ link }}\">έξοδα αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
-      "choose_options": "Ορίστε επιλογές",
-      "choose_product_options": "Ορίστε επιλογές για {{ product_name }}",
-      "value_unavailable": "{{ option_value }} - Μη διαθέσιμο",
-      "variant_sold_out_or_unavailable": "Η παραλλαγή εξαντλήθηκε ή δεν είναι διαθέσιμη",
-      "inventory_in_stock": "Σε απόθεμα",
-      "inventory_in_stock_show_count": "{{ quantity }} σε απόθεμα",
-      "inventory_low_stock": "Χαμηλό απόθεμα",
-      "inventory_low_stock_show_count": "Χαμηλό απόθεμα: Απομένουν {{ quantity }}",
-      "inventory_out_of_stock": "Χωρίς απόθεμα",
-      "inventory_out_of_stock_continue_selling": "Σε απόθεμα",
-      "sku": "SKU",
-      "volume_pricing": {
-        "title": "Τιμολόγηση βάσει ποσότητας",
-        "note": "Διατίθεται τιμολόγηση βάσει ποσότητας",
-        "minimum": "{{ quantity }}+",
-        "price_range": "{{ minimum }} - {{ maximum }}",
-        "price_at_each_html": "στα {{ price }}/τμχ"
-      },
-      "taxes_included": "Οι φόροι συμπεριλαμβάνονται.",
-      "duties_included": "Οι δασμοί συμπεριλαμβάνονται.",
-      "duties_and_taxes_included": "Οι δασμοί και οι φόροι συμπεριλαμβάνονται."
-    },
-    "modal": {
-      "label": "Συλλογή μέσων"
-    },
-    "facets": {
-      "apply": "Εφαρμογή",
-      "clear": "Διαγραφή",
-      "clear_all": "Κατάργηση όλων",
-      "from": "Από",
-      "filter_and_sort": "Φιλτράρισμα και ταξινόμηση",
-      "filter_by_label": "Φιλτράρισμα:",
-      "filter_button": "Φιλτράρισμα",
-      "filters_selected": {
-        "one": "Επιλέχθηκε {{ count }}",
-        "other": "Επιλέχθηκαν {{ count }}"
-      },
-      "max_price": "Η υψηλότερη τιμή είναι {{ price }}",
-      "product_count": {
-        "one": "{{ product_count }} από {{ count }} προϊόν",
-        "other": "{{ product_count }} από {{ count }} προϊόντα"
-      },
-      "product_count_simple": {
-        "one": "{{ count }} προϊόν",
-        "other": "{{ count }} προϊόντα"
-      },
-      "reset": "Επαναφορά",
-      "sort_button": "Ταξινόμηση",
-      "sort_by_label": "Ταξινόμηση κατά:",
-      "to": "Έως",
-      "clear_filter": "Κατάργηση φίλτρου",
-      "filter_selected_accessibility": "{{ type }} (επιλέχθηκαν {{ count }} φίλτρα)",
-      "show_more": "Εμφάνιση περισσότερων",
-      "show_less": "Εμφάνιση λιγότερων",
-      "filter_and_operator_subtitle": "Αντιστοιχεί με όλα"
-    }
-  },
-  "templates": {
-    "search": {
-      "no_results": "Δεν βρέθηκαν αποτελέσματα για «{{ terms }}». Ελέγξτε την ορθογραφία ή χρησιμοποιήστε άλλη λέξη ή φράση.",
-      "results_with_count": {
-        "one": "{{ count }} αποτέλεσμα",
-        "other": "{{ count }} αποτελέσματα"
-      },
-      "title": "Αποτελέσματα αναζήτησης",
-      "page": "Σελίδα",
-      "products": "Προϊόντα",
-      "search_for": "Αναζήτηση για «{{ terms }}»",
-      "results_with_count_and_term": {
-        "one": "Βρέθηκε {{ count }} αποτέλεσμα για «{{ terms }}»",
-        "other": "Βρέθηκαν {{ count }} αποτελέσματα για «{{ terms }}»"
-      },
-      "results_pages_with_count": {
-        "one": "{{ count }} σελίδα",
-        "other": "{{ count }} σελίδες"
-      },
-      "results_products_with_count": {
-        "one": "{{ count }} προϊόν",
-        "other": "{{ count }} προϊόντα"
-      },
-      "suggestions": "Προτάσεις",
-      "pages": "Σελίδες",
-      "results_suggestions_with_count": {
-        "one": "{{ count }} πρόταση",
-        "other": "{{ count }} προτάσεις"
-      }
-    },
-    "cart": {
-      "cart": "Καλάθι"
-    },
-    "contact": {
-      "form": {
-        "name": "Όνομα",
-        "email": "Email",
-        "phone": "Αριθμός τηλεφώνου",
-        "comment": "Σχόλιο",
-        "send": "Αποστολή",
-        "post_success": "Ευχαριστούμε που επικοινωνήσατε μαζί μας. Θα σας απαντήσουμε το συντομότερο δυνατόν.",
-        "error_heading": "Προσαρμόστε τα παρακάτω:",
-        "title": "Φόρμα επικοινωνίας"
-      }
-    },
-    "404": {
-      "title": "Η σελίδα δεν βρέθηκε",
-      "subtext": "404"
-    }
-  },
-  "sections": {
-    "header": {
-      "announcement": "Ανακοίνωση",
-      "menu": "Μενού",
-      "cart_count": {
-        "one": "{{ count }} στοιχείο",
-        "other": "{{ count }} στοιχεία"
-      }
-    },
-    "cart": {
-      "title": "Το καλάθι σας",
-      "caption": "Στοιχεία στο καλάθι",
-      "remove_title": "Κατάργηση {{ title }}",
-      "note": "Ειδικές οδηγίες παραγγελίας",
-      "checkout": "Ολοκλήρωση αγοράς",
-      "empty": "Το καλάθι σας είναι κενό",
-      "cart_error": "Παρουσιάστηκε σφάλμα κατά την ενημέρωση του καλαθιού. Δοκιμάστε ξανά.",
-      "cart_quantity_error_html": "Μπορείτε να προσθέσετε μόνο {{ quantity }} από αυτό το προϊόν στο καλάθι σας.",
-      "headings": {
-        "product": "Προϊόν",
-        "price": "Τιμή",
-        "total": "Σύνολο",
-        "quantity": "Ποσότητα",
-        "image": "Εικόνα προϊόντος"
-      },
-      "update": "Ενημέρωση",
-      "login": {
-        "title": "Έχετε λογαριασμό;",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Συνδεθείτε</a> για ταχύτερη ολοκλήρωση των αγορών σας."
-      },
-      "estimated_total": "Εκτιμώμενο σύνολο",
-      "new_estimated_total": "Νέο εκτιμώμενο σύνολο",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Οι δασμοί και οι φόροι συμπεριλαμβάνονται. Οι εκπτώσεις και τα έξοδα <a href=\"{{ link }}\">αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
-      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Οι δασμοί και οι φόροι συμπεριλαμβάνονται. Οι εκπτώσεις και τα έξοδα αποστολής υπολογίζονται κατά την ολοκλήρωση της αγοράς",
-      "taxes_included_shipping_at_checkout_with_policy_html": "Οι φόροι συμπεριλαμβάνονται. Οι εκπτώσεις και τα έξοδα <a href=\"{{ link }}\">αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
-      "taxes_included_shipping_at_checkout_without_policy": "Οι φόροι συμπεριλαμβάνονται. Οι εκπτώσεις και τα έξοδα αποστολής υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Οι δασμοί συμπεριλαμβάνονται. Οι φόροι, οι εκπτώσεις και τα έξοδα <a href=\"{{ link }}\">αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Οι δασμοί συμπεριλαμβάνονται. Οι φόροι, οι εκπτώσεις και τα έξοδα αποστολής υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Οι φόροι, οι εκπτώσεις και τα έξοδα <a href=\"{{ link }}\">αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Οι φόροι, οι εκπτώσεις και τα έξοδα αποστολής υπολογίζονται κατά την ολοκλήρωση της αγοράς."
-    },
-    "footer": {
-      "payment": "Μέθοδοι πληρωμής"
-    },
-    "featured_blog": {
-      "view_all": "Προβολή όλων",
-      "onboarding_title": "Ανάρτηση ιστολογίου",
-      "onboarding_content": "Δώστε στους πελάτες σας μια σύνοψη της ανάρτησης ιστολογίου"
-    },
-    "featured_collection": {
-      "view_all": "Προβολή όλων",
-      "view_all_label": "Προβολή όλων των προϊόντων στη συλλογή {{ collection_name }}"
-    },
-    "collection_list": {
-      "view_all": "Προβολή όλων"
-    },
-    "collection_template": {
-      "title": "Συλλογή",
-      "empty": "Δεν βρέθηκαν προϊόντα",
-      "use_fewer_filters_html": "Χρησιμοποιήστε λιγότερα φίλτρα ή <a class=\"{{ class }}\" href=\"{{ link }}\">καταργήστε τα όλα</a>"
-    },
-    "video": {
-      "load_video": "Φόρτωση βίντεο: {{ description }}"
-    },
-    "slideshow": {
-      "load_slide": "Φόρτωση διαφάνειας",
-      "previous_slideshow": "Προηγούμενη διαφάνεια",
-      "next_slideshow": "Επόμενη διαφάνεια",
-      "pause_slideshow": "Παύση παρουσίασης",
-      "play_slideshow": "Αναπαραγωγή παρουσίασης",
-      "carousel": "Καρουζέλ",
-      "slide": "Διαφάνεια"
-    },
-    "page": {
-      "title": "Τίτλος σελίδας"
-    },
-    "announcements": {
-      "previous_announcement": "Προηγούμενη ανακοίνωση",
-      "next_announcement": "Επόμενη ανακοίνωση",
-      "carousel": "Καρουζέλ",
-      "announcement": "Ανακοίνωση",
-      "announcement_bar": "Γραμμή ανακοινώσεων"
-    },
-    "quick_order_list": {
-      "product_total": "Υποσύνολο προϊόντων",
-      "view_cart": "Προβολή καλαθιού",
-      "each": "{{ money }}/έκαστο",
-      "product": "Προϊόν",
-      "variant": "Παραλλαγή",
-      "variant_total": "Σύνολο παραλλαγών",
-      "items_added": {
-        "one": "Προστέθηκε {{ quantity }} προϊόν",
-        "other": "Προστέθηκαν {{ quantity }} προϊόντα"
-      },
-      "items_removed": {
-        "one": "Καταργήθηκε {{ quantity }} προϊόν",
-        "other": "Καταργήθηκαν {{ quantity }} προϊόντα"
-      },
-      "product_variants": "Παραλλαγές προϊόντος",
-      "total_items": "Σύνολο προϊόντων",
-      "remove_all_items_confirmation": "Να καταργηθούν και τα {{ quantity }} προϊόντα από το καλάθι σας;",
-      "remove_all": "Κατάργηση όλων",
-      "cancel": "Ακύρωση",
-      "remove_all_single_item_confirmation": "Να καταργηθεί 1 προϊόν από το καλάθι σας;",
-      "min_error": "Αυτό το προϊόν έχει ελάχιστο όριο {{ min }}",
-      "max_error": "Αυτό το προϊόν έχει μέγιστο όριο {{ max }}",
-      "step_error": "Μπορείτε να προσθέσετε αυτό το προϊόν μόνο κατά βήματα των {{ step }}"
-    }
-  },
-  "localization": {
-    "country_label": "Χώρα/περιοχή",
-    "language_label": "Γλώσσα",
-    "update_language": "Ενημέρωση γλώσσας",
-    "update_country": "Ενημερώστε τη χώρα/περιοχή",
-    "search": "Αναζήτηση",
-    "popular_countries_regions": "Δημοφιλείς χώρες/περιοχές",
-    "country_results_count": "Βρέθηκαν {{ count }} χώρες/περιοχές"
-  },
-  "customer": {
-    "account": {
-      "title": "Λογαριασμός",
-      "details": "Στοιχεία λογαριασμού",
-      "view_addresses": "Προβολή διευθύνσεων",
-      "return": "Επιστροφή στα στοιχεία λογαριασμού"
-    },
-    "account_fallback": "Λογαριασμός",
-    "activate_account": {
-      "title": "Ενεργοποίηση λογαριασμού",
-      "subtext": "Δημιουργήστε τον κωδικό πρόσβασης για να ενεργοποιήσετε τον λογαριασμό σας.",
-      "password": "Κωδικός πρόσβασης",
-      "password_confirm": "Επιβεβαίωση κωδικού πρόσβασης",
-      "submit": "Ενεργοποίηση λογαριασμού",
-      "cancel": "Απόρριψη πρόσκλησης"
-    },
-    "addresses": {
-      "title": "Διευθύνσεις",
-      "default": "Προεπιλογή",
-      "add_new": "Προσθήκη νέας διεύθυνσης",
-      "edit_address": "Επεξεργασία διεύθυνσης",
-      "first_name": "Όνομα",
-      "last_name": "Επίθετο",
-      "company": "Εταιρεία",
-      "address1": "Διεύθυνση 1",
-      "address2": "Διεύθυνση 2",
-      "city": "Πόλη",
-      "country": "Χώρα/περιοχή",
-      "province": "Επαρχία",
-      "zip": "Ταχυδρομικός κώδικας",
-      "phone": "Τηλέφωνο",
-      "set_default": "Ορισμός ως προεπιλεγμένης διεύθυνσης",
-      "add": "Προσθήκη διεύθυνσης",
-      "update": "Ενημέρωση διεύθυνσης",
-      "cancel": "Ακύρωση",
-      "edit": "Επεξεργασία",
-      "delete": "Διαγραφή",
-      "delete_confirm": "Είστε σίγουροι ότι θέλετε να διαγράψετε αυτήν τη διεύθυνση;"
-    },
-    "log_in": "Σύνδεση",
-    "log_out": "Αποσύνδεση",
-    "login_page": {
-      "cancel": "Ακύρωση",
-      "create_account": "Δημιουργία λογαριασμού",
-      "email": "Email",
-      "forgot_password": "Ξεχάσατε τον κωδικό πρόσβασης;",
-      "guest_continue": "Συνέχεια",
-      "guest_title": "Συνέχεια ως επισκέπτης",
-      "password": "Κωδικός πρόσβασης",
-      "title": "Σύνδεση",
-      "sign_in": "Σύνδεση",
-      "submit": "Υποβολή",
-      "alternate_provider_separator": "ή"
-    },
-    "orders": {
-      "title": "Ιστορικό παραγγελιών",
-      "order_number": "Παραγγελία",
-      "order_number_link": "Αριθμός παραγγελίας {{ number }}",
-      "date": "Ημερομηνία",
-      "payment_status": "Κατάσταση πληρωμής",
-      "fulfillment_status": "Κατάσταση ολοκλήρωσης",
-      "total": "Σύνολο",
-      "none": "Δεν έχετε κάνει κάποια παραγγελία ακόμη."
-    },
-    "recover_password": {
-      "title": "Επαναφορά του κωδικού σας πρόσβασης",
-      "subtext": "Θα σας στείλουμε ένα email για την επαναφορά του κωδικού πρόσβασης",
-      "success": "Σας στείλαμε ένα email το οποίο περιέχει έναν σύνδεσμο για την ενημέρωση του κωδικού πρόσβασης."
-    },
-    "register": {
-      "title": "Δημιουργία λογαριασμού",
-      "first_name": "Όνομα",
-      "last_name": "Επίθετο",
-      "email": "Email",
-      "password": "Κωδικός πρόσβασης",
-      "submit": "Δημιουργία"
-    },
-    "reset_password": {
-      "title": "Επαναφορά κωδικού πρόσβασης λογαριασμού",
-      "subtext": "Εισαγάγετε νέο κωδικό πρόσβασης",
-      "password": "Κωδικός πρόσβασης",
-      "password_confirm": "Επιβεβαίωση κωδικού πρόσβασης",
-      "submit": "Επαναφορά κωδικού πρόσβασης"
-    },
-    "order": {
-      "title": "Παραγγελία {{ name }}",
-      "date_html": "Πραγματοποιήθηκε στις {{ date }}",
-      "cancelled_html": "Η παραγγελία ακυρώθηκε στις {{ date }}",
-      "cancelled_reason": "Αιτία: {{ reason }}",
-      "billing_address": "Διεύθυνση χρέωσης",
-      "payment_status": "Κατάσταση πληρωμής",
-      "shipping_address": "Διεύθυνση αποστολής",
-      "fulfillment_status": "Κατάσταση ολοκλήρωσης",
-      "discount": "Έκπτωση",
-      "shipping": "Έξοδα αποστολής",
-      "tax": "Φόρος",
-      "product": "Προϊόν",
-      "sku": "SKU",
-      "price": "Τιμή",
-      "quantity": "Ποσότητα",
-      "total": "Σύνολο",
-      "fulfilled_at_html": "Ολοκληρώθηκε στις {{ date }}",
-      "track_shipment": "Παρακολούθηση αποστολής",
-      "tracking_url": "Σύνδεσμος παρακολούθησης",
-      "tracking_company": "Εταιρεία ταχυμεταφοράς",
-      "tracking_number": "Αριθμός παρακολούθησης",
-      "subtotal": "Υποσύνολο",
-      "total_duties": "Δασμοί",
-      "total_refunded": "Τα χρήματα επιστράφηκαν"
-    }
-  },
-  "gift_cards": {
-    "issued": {
-      "title": "Αυτό είναι το υπόλοιπο της δωροκάρτας σας ύψους {{ value }} για το {{ shop }}!",
-      "subtext": "Η δωροκάρτα σας",
-      "gift_card_code": "Κωδικός δωροκάρτας",
-      "shop_link": "Επισκεφτείτε το διαδικτυακό κατάστημα",
-      "add_to_apple_wallet": "Προσθήκη στο Apple Wallet",
-      "qr_image_alt": "Κωδικός QR — σαρώστε για να εξαργυρώσετε τη δωροκάρτα",
-      "copy_code": "Αντιγραφή κωδικού δωροκάρτας",
-      "expired": "Έληξε",
-      "copy_code_success": "Η αντιγραφή του κωδικού ήταν επιτυχής",
-      "how_to_use_gift_card": "Χρησιμοποιήστε τον κωδικό της δωροκάρτας στο διαδίκτυο ή τον κωδικό QR στο κατάστημα",
-      "expiration_date": "Λήγει στις {{ expires_on }}"
-    }
-  },
-  "recipient": {
-    "form": {
-      "checkbox": "Θέλω να το στείλω ως δώρο",
-      "email_label": "Email παραλήπτη",
-      "email": "Email",
-      "name_label": "Όνομα παραλήπτη (προαιρετικά)",
-      "name": "Όνομα",
-      "message_label": "Μήνυμα (προαιρετικά)",
-      "message": "Μήνυμα",
-      "max_characters": "Έως {{ max_chars }} χαρακτήρες",
-      "email_label_optional_for_no_js_behavior": "Email παραλήπτη (προαιρετικά)",
-      "send_on": "ΕΕΕΕ-ΜΜ-ΗΗ",
-      "send_on_label": "Ημερομηνία αποστολής (προαιρετικά)",
-      "expanded": "Η φόρμα παραλήπτη δωροκάρτας αναπτύχθηκε",
-      "collapsed": "Η φόρμα παραλήπτη δωροκάρτας συμπτύχθηκε"
-    }
-  }
+    "general":  {
+                    "password_page":  {
+                                          "login_form_heading":  "Î•Î¯ÏƒÎ¿Î´Î¿Ï‚ ÏƒÏ„Î¿ ÎºÎ±Ï„Î¬ÏƒÏ„Î·Î¼Î± Î¼Îµ Ï„Î· Ï‡ÏÎ®ÏƒÎ· ÎºÏ‰Î´Î¹ÎºÎ¿Ï Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚:",
+                                          "login_password_button":  "Î•Î¯ÏƒÎ¿Î´Î¿Ï‚ Î¼Îµ Ï„Î· Ï‡ÏÎ®ÏƒÎ· ÎºÏ‰Î´Î¹ÎºÎ¿Ï Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚",
+                                          "login_form_password_label":  "ÎšÏ‰Î´Î¹ÎºÏŒÏ‚ Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚",
+                                          "login_form_password_placeholder":  "ÎŸ ÎºÏ‰Î´Î¹ÎºÏŒÏ‚ ÏƒÎ±Ï‚ Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚",
+                                          "login_form_error":  "Î›Î±Î½Î¸Î±ÏƒÎ¼Î­Î½Î¿Ï‚ ÎºÏ‰Î´Î¹ÎºÏŒÏ‚ Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚!",
+                                          "login_form_submit":  "Î•Î¯ÏƒÎ¿Î´Î¿Ï‚",
+                                          "admin_link_html":  "Î•Î¯ÏƒÏ„Îµ Î¿ Î¹Î´Î¹Î¿ÎºÏ„Î®Ï„Î·Ï‚ Ï„Î¿Ï… ÎºÎ±Ï„Î±ÏƒÏ„Î®Î¼Î±Ï„Î¿Ï‚; \u003ca href=\"/admin\" class=\"link underlined-link\"\u003eÎ£Ï…Î½Î´ÎµÎ¸ÎµÎ¯Ï„Îµ ÎµÎ´ÏŽ\u003c/a\u003e",
+                                          "powered_by_shopify_html":  "Î‘Ï…Ï„ÏŒ Ï„Î¿ ÎºÎ±Ï„Î¬ÏƒÏ„Î·Î¼Î± Î¸Î± Ï…Ï€Î¿ÏƒÏ„Î·ÏÎ¯Î¶ÎµÏ„Î±Î¹ Î±Ï€ÏŒ Ï„Î¿ {{ shopify }}"
+                                      },
+                    "social":  {
+                                   "alt_text":  {
+                                                    "share_on_facebook":  "ÎšÎ¿Î¹Î½Î¿Ï€Î¿Î¯Î·ÏƒÎ· ÏƒÏ„Î¿ Facebook",
+                                                    "share_on_twitter":  "ÎšÎ¿Î¹Î½Î¿Ï€Î¿Î¯Î·ÏƒÎ· ÏƒÏ„Î¿ X",
+                                                    "share_on_pinterest":  "ÎšÎ±ÏÏ†Î¯Ï„ÏƒÏ‰Î¼Î± ÏƒÏ„Î¿ Pinterest"
+                                                },
+                                   "links":  {
+                                                 "twitter":  "X (Twitter)",
+                                                 "facebook":  "Facebook",
+                                                 "pinterest":  "Pinterest",
+                                                 "instagram":  "Instagram",
+                                                 "tumblr":  "Tumblr",
+                                                 "snapchat":  "Snapchat",
+                                                 "youtube":  "YouTube",
+                                                 "vimeo":  "Vimeo",
+                                                 "tiktok":  "TikTok"
+                                             }
+                               },
+                    "continue_shopping":  "Î£Ï…Î½Î­Ï‡Î¹ÏƒÎ· Î±Î³Î¿ÏÏŽÎ½",
+                    "pagination":  {
+                                       "label":  "Î£ÎµÎ»Î¹Î´Î¿Ï€Î¿Î¯Î·ÏƒÎ·",
+                                       "page":  "Î£ÎµÎ»Î¯Î´Î± {{ number }}",
+                                       "next":  "Î•Ï€ÏŒÎ¼ÎµÎ½Î· ÏƒÎµÎ»Î¯Î´Î±",
+                                       "previous":  "Î ÏÎ¿Î·Î³Î¿ÏÎ¼ÎµÎ½Î· ÏƒÎµÎ»Î¯Î´Î±"
+                                   },
+                    "search":  {
+                                   "search":  "Î‘Î½Î±Î¶Î®Ï„Î·ÏƒÎ·",
+                                   "reset":  "Î”Î¹Î±Î³ÏÎ±Ï†Î® ÏŒÏÎ¿Ï… Î±Î½Î±Î¶Î®Ï„Î·ÏƒÎ·Ï‚"
+                               },
+                    "cart":  {
+                                 "view":  "Î ÏÎ¿Î²Î¿Î»Î® ÎºÎ±Î»Î±Î¸Î¹Î¿Ï ({{ count }})",
+                                 "item_added":  "Î¤Î¿ ÏƒÏ„Î¿Î¹Ï‡ÎµÎ¯Î¿ Ï€ÏÎ¿ÏƒÏ„Î­Î¸Î·ÎºÎµ ÏƒÏ„Î¿ ÎºÎ±Î»Î¬Î¸Î¹ ÏƒÎ±Ï‚",
+                                 "view_empty_cart":  "Î ÏÎ¿Î²Î¿Î»Î® ÎºÎ±Î»Î±Î¸Î¹Î¿Ï"
+                             },
+                    "share":  {
+                                  "copy_to_clipboard":  "Î‘Î½Ï„Î¹Î³ÏÎ±Ï†Î® ÏƒÏ…Î½Î´Î­ÏƒÎ¼Î¿Ï…",
+                                  "share_url":  "Î£ÏÎ½Î´ÎµÏƒÎ¼Î¿Ï‚",
+                                  "success_message":  "ÎŸ ÏƒÏÎ½Î´ÎµÏƒÎ¼Î¿Ï‚ Î±Î½Ï„Î¹Î³ÏÎ¬Ï†Î·ÎºÎµ ÏƒÏ„Î¿ Ï€ÏÏŒÏ‡ÎµÎ¹ÏÎ¿",
+                                  "close":  "ÎšÎ»ÎµÎ¯ÏƒÎ¹Î¼Î¿ ÎºÎ¿Î¹Î½Î¿Ï€Î¿Î¯Î·ÏƒÎ·Ï‚"
+                              },
+                    "slider":  {
+                                   "of":  "Î±Ï€ÏŒ",
+                                   "next_slide":  "Î£ÏÏÎµÏ„Îµ Î´ÎµÎ¾Î¹Î¬",
+                                   "previous_slide":  "Î£ÏÏÎµÏ„Îµ Î±ÏÎ¹ÏƒÏ„ÎµÏÎ¬",
+                                   "name":  "Î¡Ï…Î¸Î¼Î¹ÏƒÏ„Î¹ÎºÏŒ"
+                               },
+                    "breadcrumbs":  {
+                                        "home":  "Home"
+                                    }
+                },
+    "newsletter":  {
+                       "label":  "Email",
+                       "success":  "Î•Ï…Ï‡Î±ÏÎ¹ÏƒÏ„Î¿ÏÎ¼Îµ Î³Î¹Î± Ï„Î·Î½ ÎµÎ³Î³ÏÎ±Ï†Î®",
+                       "button_label":  "Î•Î³Î³ÏÎ±Ï†Î®"
+                   },
+    "accessibility":  {
+                          "skip_to_text":  "Î‘Ï€ÎµÏ…Î¸ÎµÎ¯Î±Ï‚ Î¼ÎµÏ„Î¬Î²Î±ÏƒÎ· ÏƒÏ„Î¿ Ï€ÎµÏÎ¹ÎµÏ‡ÏŒÎ¼ÎµÎ½Î¿",
+                          "close":  "ÎšÎ»ÎµÎ¯ÏƒÎ¹Î¼Î¿",
+                          "unit_price_separator":  "Î±Î½Î¬",
+                          "vendor":  "Î ÏÎ¿Î¼Î·Î¸ÎµÏ…Ï„Î®Ï‚:",
+                          "error":  "Î£Ï†Î¬Î»Î¼Î±",
+                          "refresh_page":  "ÎŸ Î¿ÏÎ¹ÏƒÎ¼ÏŒÏ‚ Î¼Î¹Î±Ï‚ ÎµÏ€Î¹Î»Î¿Î³Î®Ï‚ Î­Ï‡ÎµÎ¹ Ï‰Ï‚ Î±Ï€Î¿Ï„Î­Î»ÎµÏƒÎ¼Î± Ï„Î·Î½ Ï€Î»Î®ÏÎ· Î±Î½Î±Î½Î­Ï‰ÏƒÎ· Ï„Î·Ï‚ ÏƒÎµÎ»Î¯Î´Î±Ï‚.",
+                          "link_messages":  {
+                                                "new_window":  "Î‘Î½Î¿Î¯Î³ÎµÎ¹ ÏƒÎµ Î½Î­Î¿ Ï€Î±ÏÎ¬Î¸Ï…ÏÎ¿.",
+                                                "external":  "Î‘Î½Î¿Î¯Î³ÎµÎ¹ ÎµÎ¾Ï‰Ï„ÎµÏÎ¹ÎºÏŒ Î¹ÏƒÏ„ÏŒÏ„Î¿Ï€Î¿."
+                                            },
+                          "loading":  "Î¦ÏŒÏÏ„Ï‰ÏƒÎ·...",
+                          "skip_to_product_info":  "ÎœÎµÏ„Î¬Î²Î±ÏƒÎ· ÏƒÏ„Î¹Ï‚ Ï€Î»Î·ÏÎ¿Ï†Î¿ÏÎ¯ÎµÏ‚ Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î¿Ï‚",
+                          "total_reviews":  "ÏƒÏÎ½Î¿Î»Î¿ ÎºÏÎ¹Ï„Î¹ÎºÏŽÎ½",
+                          "star_reviews_info":  "{{ rating_value }} Î±Ï€ÏŒ {{ rating_max }} Î±ÏƒÏ„Î­ÏÎ¹Î±",
+                          "collapsible_content_title":  "Î ÎµÏÎ¹ÎµÏ‡ÏŒÎ¼ÎµÎ½Î¿ Î¼Îµ Î´Ï…Î½Î±Ï„ÏŒÏ„Î·Ï„Î± ÏƒÏÎ¼Ï€Ï„Ï…Î¾Î·Ï‚",
+                          "complementary_products":  "Î£Ï…Î¼Ï€Î»Î·ÏÏ‰Î¼Î±Ï„Î¹ÎºÎ¬ Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î±"
+                      },
+    "blogs":  {
+                  "article":  {
+                                  "blog":  "Î™ÏƒÏ„Î¿Î»ÏŒÎ³Î¹Î¿",
+                                  "read_more_title":  "Î”Î¹Î±Î²Î¬ÏƒÏ„Îµ Ï€ÎµÏÎ¹ÏƒÏƒÏŒÏ„ÎµÏÎ±: {{ title }}",
+                                  "comments":  {
+                                                   "one":  "{{ count }} ÏƒÏ‡ÏŒÎ»Î¹Î¿",
+                                                   "other":  "{{ count }} ÏƒÏ‡ÏŒÎ»Î¹Î±"
+                                               },
+                                  "moderated":  "ÎˆÏ‡ÎµÏ„Îµ Ï…Ï€ÏŒÏˆÎ· ÏŒÏ„Î¹ Ï„Î± ÏƒÏ‡ÏŒÎ»Î¹Î± Ï‡ÏÎµÎ¹Î¬Î¶ÎµÏ„Î±Î¹ Î½Î± Î»Î¬Î²Î¿Ï…Î½ Î­Î³ÎºÏÎ¹ÏƒÎ· Ï€ÏÎ¿Ï„Î¿Ï Î´Î·Î¼Î¿ÏƒÎ¹ÎµÏ…Ï„Î¿ÏÎ½.",
+                                  "comment_form_title":  "Î¥Ï€Î¿Î²Î¬Î»ÎµÏ„Îµ Î­Î½Î± ÏƒÏ‡ÏŒÎ»Î¹Î¿",
+                                  "name":  "ÎŒÎ½Î¿Î¼Î±",
+                                  "email":  "Email",
+                                  "message":  "Î£Ï‡ÏŒÎ»Î¹Î¿",
+                                  "post":  "Î‘Î½Î¬ÏÏ„Î·ÏƒÎ· ÏƒÏ‡Î¿Î»Î¯Î¿Ï…",
+                                  "back_to_blog":  "Î•Ï€Î¹ÏƒÏ„ÏÎ¿Ï†Î® ÏƒÏ„Î¿ Î¹ÏƒÏ„Î¿Î»ÏŒÎ³Î¹Î¿",
+                                  "share":  "ÎšÎ¿Î¹Î½Î¿Ï€Î¿Î¯Î·ÏƒÎ· Î±Ï…Ï„Î¿Ï Ï„Î¿Ï… Î¬ÏÎ¸ÏÎ¿Ï…",
+                                  "success":  "Î¤Î¿ ÏƒÏ‡ÏŒÎ»Î¹ÏŒ ÏƒÎ±Ï‚ Î±Î½Î±ÏÏ„Î®Î¸Î·ÎºÎµ ÎµÏ€Î¹Ï„Ï…Ï‡ÏŽÏ‚! Î•Ï…Ï‡Î±ÏÎ¹ÏƒÏ„Î¿ÏÎ¼Îµ!",
+                                  "success_moderated":  "Î¤Î¿ ÏƒÏ‡ÏŒÎ»Î¹ÏŒ ÏƒÎ±Ï‚ Î±Î½Î±ÏÏ„Î®Î¸Î·ÎºÎµ ÎµÏ€Î¹Ï„Ï…Ï‡ÏŽÏ‚. Î˜Î± Ï„Î¿ Î´Î·Î¼Î¿ÏƒÎ¹ÎµÏÏƒÎ¿Ï…Î¼Îµ ÏƒÎµ Î»Î¯Î³Î¿ Î³Î¹Î±Ï„Î¯ Ï„Î¿ Î¹ÏƒÏ„Î¿Î»ÏŒÎ³Î¹ÏŒ Î¼Î±Ï‚ ÎµÎ¯Î½Î±Î¹ ÎµÏ€Î¿Ï€Ï„ÎµÏ…ÏŒÎ¼ÎµÎ½Î¿."
+                              }
+              },
+    "onboarding":  {
+                       "product_title":  "Î Î±ÏÎ¬Î´ÎµÎ¹Î³Î¼Î± Ï„Î¯Ï„Î»Î¿Ï… Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î¿Ï‚",
+                       "collection_title":  "Î¤Î¿ ÏŒÎ½Î¿Î¼Î± Ï„Î·Ï‚ ÏƒÏ…Î»Î»Î¿Î³Î®Ï‚ ÏƒÎ±Ï‚"
+                   },
+    "products":  {
+                     "product":  {
+                                     "add_to_cart":  "Î ÏÎ¿ÏƒÎ¸Î®ÎºÎ· ÏƒÏ„Î¿ ÎºÎ±Î»Î¬Î¸Î¹",
+                                     "description":  "Î ÎµÏÎ¹Î³ÏÎ±Ï†Î®",
+                                     "on_sale":  "ÎˆÎºÏ€Ï„Ï‰ÏƒÎ·",
+                                     "product_variants":  "Î Î±ÏÎ±Î»Î»Î±Î³Î­Ï‚ Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î¿Ï‚",
+                                     "quantity":  {
+                                                      "label":  "Î Î¿ÏƒÏŒÏ„Î·Ï„Î±",
+                                                      "input_label":  "Î Î¿ÏƒÏŒÏ„Î·Ï„Î± Î³Î¹Î± {{ product }}",
+                                                      "increase":  "Î‘ÏÎ¾Î·ÏƒÎ· Ï€Î¿ÏƒÏŒÏ„Î·Ï„Î±Ï‚ Î³Î¹Î± {{ product }}",
+                                                      "decrease":  "ÎœÎµÎ¯Ï‰ÏƒÎ· Ï€Î¿ÏƒÏŒÏ„Î·Ï„Î±Ï‚ Î³Î¹Î± {{ product }}",
+                                                      "minimum_of":  "Î•Î»Î¬Ï‡Î¹ÏƒÏ„Î¿ ÏŒÏÎ¹Î¿ {{ quantity }}",
+                                                      "maximum_of":  "ÎœÎ­Î³Î¹ÏƒÏ„Î¿ ÏŒÏÎ¹Î¿ {{ quantity }}",
+                                                      "multiples_of":  "Î”ÏŒÏƒÎµÎ¹Ï‚ {{ quantity }}",
+                                                      "in_cart_html":  "\u003cspan class=\"quantity-cart\"\u003e{{ quantity }}\u003c/span\u003e ÏƒÏ„Î¿ ÎºÎ±Î»Î¬Î¸Î¹",
+                                                      "note":  "Î ÏÎ¿Î²Î¿Î»Î® ÎºÎ±Î½ÏŒÎ½Ï‰Î½ Ï€Î¿ÏƒÏŒÏ„Î·Ï„Î±Ï‚",
+                                                      "min_of":  "Î•Î»Î¬Ï‡. {{ quantity }}",
+                                                      "max_of":  "ÎœÎ­Î³. {{ quantity }}",
+                                                      "in_cart_aria_label":  "Î Î¿ÏƒÏŒÏ„Î·Ï„Î± ({{ quantity }} ÏƒÏ„Î¿ ÎºÎ±Î»Î¬Î¸Î¹)"
+                                                  },
+                                     "price":  {
+                                                   "from_price_html":  "Î‘Ï€ÏŒ {{ price }}",
+                                                   "regular_price":  "ÎšÎ±Î½Î¿Î½Î¹ÎºÎ® Ï„Î¹Î¼Î®",
+                                                   "sale_price":  "Î¤Î¹Î¼Î® Î­ÎºÏ€Ï„Ï‰ÏƒÎ·Ï‚",
+                                                   "unit_price":  "Î¤Î¹Î¼Î® Î¼Î¿Î½Î¬Î´Î±Ï‚"
+                                               },
+                                     "share":  "ÎšÎ¿Î¹Î½Î¿Ï€Î¿Î¹Î®ÏƒÏ„Îµ Î±Ï…Ï„ÏŒ Ï„Î¿ Ï€ÏÎ¿ÏŠÏŒÎ½",
+                                     "sold_out":  "Î•Î¾Î±Î½Ï„Î»Î®Î¸Î·ÎºÎµ",
+                                     "unavailable":  "ÎœÎ· Î´Î¹Î±Î¸Î­ÏƒÎ¹Î¼Î¿",
+                                     "vendor":  "Î ÏÎ¿Î¼Î·Î¸ÎµÏ…Ï„Î®Ï‚",
+                                     "video_exit_message":  "Î¤Î¿ {{ title }} Î±Î½Î¿Î¯Î³ÎµÎ¹ Î²Î¯Î½Ï„ÎµÎ¿ ÏƒÎµ Ï€Î»Î®ÏÎ· Î¿Î¸ÏŒÎ½Î· ÏƒÏ„Î¿ Î¯Î´Î¹Î¿ Ï€Î±ÏÎ¬Î¸Ï…ÏÎ¿.",
+                                     "xr_button":  "Î ÏÎ¿Î²Î¿Î»Î® ÏƒÏ„Î¿Î½ Ï‡ÏŽÏÎ¿ ÏƒÎ±Ï‚",
+                                     "xr_button_label":  "Î— ÎµÏ€Î¹Î»Î¿Î³Î® \"Î ÏÎ¿Î²Î¿Î»Î® ÏƒÏ„Î¿Î½ Ï‡ÏŽÏÎ¿ ÏƒÎ±Ï‚\", Ï†Î¿ÏÏ„ÏŽÎ½ÎµÎ¹ Ï„Î¿ Î±Î½Ï„Î¹ÎºÎµÎ¯Î¼ÎµÎ½Î¿ ÏƒÏ„Î¿ Ï€Î±ÏÎ¬Î¸Ï…ÏÎ¿ ÎµÏ€Î±Ï…Î¾Î·Î¼Î­Î½Î·Ï‚ Ï€ÏÎ±Î³Î¼Î±Ï„Î¹ÎºÏŒÏ„Î·Ï„Î±Ï‚",
+                                     "pickup_availability":  {
+                                                                 "view_store_info":  "Î ÏÎ¿Î²Î¿Î»Î® Ï€Î»Î·ÏÎ¿Ï†Î¿ÏÎ¹ÏŽÎ½ ÎºÎ±Ï„Î±ÏƒÏ„Î®Î¼Î±Ï„Î¿Ï‚",
+                                                                 "check_other_stores":  "ÎˆÎ»ÎµÎ³Ï‡Î¿Ï‚ Î´Î¹Î±Î¸ÎµÏƒÎ¹Î¼ÏŒÏ„Î·Ï„Î±Ï‚ ÏƒÎµ Î¬Î»Î»Î± ÎºÎ±Ï„Î±ÏƒÏ„Î®Î¼Î±Ï„Î±",
+                                                                 "pick_up_available":  "Î¥Ï€Î¬ÏÏ‡ÎµÎ¹ Î´Ï…Î½Î±Ï„ÏŒÏ„Î·Ï„Î± Ï€Î±ÏÎ±Î»Î±Î²Î®Ï‚",
+                                                                 "pick_up_available_at_html":  "Î¥Ï€Î¬ÏÏ‡ÎµÎ¹ Î´Ï…Î½Î±Ï„ÏŒÏ„Î·Ï„Î± Ï€Î±ÏÎ±Î»Î±Î²Î®Ï‚ Î±Ï€ÏŒ \u003cspan class=\"color-foreground\"\u003e{{ location_name }}\u003c/span\u003e",
+                                                                 "pick_up_unavailable_at_html":  "Î”ÎµÎ½ Ï…Ï€Î¬ÏÏ‡ÎµÎ¹ Î´Ï…Î½Î±Ï„ÏŒÏ„Î·Ï„Î± Ï€Î±ÏÎ±Î»Î±Î²Î®Ï‚ Î±Ï€ÏŒ \u003cspan class=\"color-foreground\"\u003e{{ location_name }}\u003c/span\u003e",
+                                                                 "unavailable":  "Î”ÎµÎ½ Î®Ï„Î±Î½ Î´Ï…Î½Î±Ï„Î® Î· Ï†ÏŒÏÏ„Ï‰ÏƒÎ· Ï„Î·Ï‚ Î´Î¹Î±Î¸ÎµÏƒÎ¹Î¼ÏŒÏ„Î·Ï„Î±Ï‚ Ï€Î±ÏÎ±Î»Î±Î²Î®Ï‚",
+                                                                 "refresh":  "Î‘Î½Î±Î½Î­Ï‰ÏƒÎ·"
+                                                             },
+                                     "media":  {
+                                                   "open_media":  "Î†Î½Î¿Î¹Î³Î¼Î± Î¼Î­ÏƒÎ¿Ï… {{ index }} ÏƒÏ„Î¿ Î²Î¿Î·Î¸Î·Ï„Î¹ÎºÏŒ Ï€Î±ÏÎ¬Î¸Ï…ÏÎ¿",
+                                                   "play_model":  "ÎˆÎ½Î±ÏÎ¾Î· ÎµÏ†Î±ÏÎ¼Î¿Î³Î®Ï‚ Ï€ÏÎ¿Î²Î¿Î»Î®Ï‚ 3D",
+                                                   "play_video":  "Î‘Î½Î±Ï€Î±ÏÎ±Î³Ï‰Î³Î® Î²Î¯Î½Ï„ÎµÎ¿",
+                                                   "gallery_viewer":  "Î•ÏÎ³Î±Î»ÎµÎ¯Î¿ Ï€ÏÎ¿Î²Î¿Î»Î®Ï‚ ÏƒÏ…Î»Î»Î¿Î³Î®Ï‚",
+                                                   "load_image":  "Î¦ÏŒÏÏ„Ï‰ÏƒÎ· ÎµÎ¹ÎºÏŒÎ½Î±Ï‚ {{ index }} ÏƒÏ„Î·Î½ Ï€ÏÎ¿Î²Î¿Î»Î® ÏƒÏ…Î»Î»Î¿Î³Î®Ï‚",
+                                                   "load_model":  "Î¦ÏŒÏÏ„Ï‰ÏƒÎ· Î¼Î¿Î½Ï„Î­Î»Î¿Ï… 3D {{ index }} ÏƒÏ„Î·Î½ Ï€ÏÎ¿Î²Î¿Î»Î® ÏƒÏ…Î»Î»Î¿Î³Î®Ï‚",
+                                                   "load_video":  "Î‘Î½Î±Ï€Î±ÏÎ±Î³Ï‰Î³Î® Î²Î¯Î½Ï„ÎµÎ¿ {{ index }} ÏƒÏ„Î·Î½ Ï€ÏÎ¿Î²Î¿Î»Î® ÏƒÏ…Î»Î»Î¿Î³Î®Ï‚",
+                                                   "image_available":  "Î— ÎµÎ¹ÎºÏŒÎ½Î± {{ index }} ÎµÎ¯Î½Î±Î¹ Ï„ÏŽÏÎ± Î´Î¹Î±Î¸Î­ÏƒÎ¹Î¼Î· ÏƒÏ„Î·Î½ Ï€ÏÎ¿Î²Î¿Î»Î® ÏƒÏ…Î»Î»Î¿Î³Î®Ï‚"
+                                               },
+                                     "nested_label":  "{{ title }} Î³Î¹Î± {{ parent_title }}",
+                                     "view_full_details":  "Î ÏÎ¿Î²Î¿Î»Î® ÏŒÎ»Ï‰Î½ Ï„Ï‰Î½ Î»ÎµÏ€Ï„Î¿Î¼ÎµÏÎµÎ¹ÏŽÎ½",
+                                     "shipping_policy_html":  "Î¤Î± \u003ca href=\"{{ link }}\"\u003eÎ­Î¾Î¿Î´Î± Î±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚\u003c/a\u003e Ï…Ï€Î¿Î»Î¿Î³Î¯Î¶Î¿Î½Ï„Î±Î¹ ÎºÎ±Ï„Î¬ Ï„Î·Î½ Î¿Î»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ· Ï„Î·Ï‚ Î±Î³Î¿ÏÎ¬Ï‚.",
+                                     "choose_options":  "ÎŸÏÎ¯ÏƒÏ„Îµ ÎµÏ€Î¹Î»Î¿Î³Î­Ï‚",
+                                     "choose_product_options":  "ÎŸÏÎ¯ÏƒÏ„Îµ ÎµÏ€Î¹Î»Î¿Î³Î­Ï‚ Î³Î¹Î± {{ product_name }}",
+                                     "value_unavailable":  "{{ option_value }} - ÎœÎ· Î´Î¹Î±Î¸Î­ÏƒÎ¹Î¼Î¿",
+                                     "variant_sold_out_or_unavailable":  "Î— Ï€Î±ÏÎ±Î»Î»Î±Î³Î® ÎµÎ¾Î±Î½Ï„Î»Î®Î¸Î·ÎºÎµ Î® Î´ÎµÎ½ ÎµÎ¯Î½Î±Î¹ Î´Î¹Î±Î¸Î­ÏƒÎ¹Î¼Î·",
+                                     "inventory_in_stock":  "Î£Îµ Î±Ï€ÏŒÎ¸ÎµÎ¼Î±",
+                                     "inventory_in_stock_show_count":  "{{ quantity }} ÏƒÎµ Î±Ï€ÏŒÎ¸ÎµÎ¼Î±",
+                                     "inventory_low_stock":  "Î§Î±Î¼Î·Î»ÏŒ Î±Ï€ÏŒÎ¸ÎµÎ¼Î±",
+                                     "inventory_low_stock_show_count":  "Î§Î±Î¼Î·Î»ÏŒ Î±Ï€ÏŒÎ¸ÎµÎ¼Î±: Î‘Ï€Î¿Î¼Î­Î½Î¿Ï…Î½ {{ quantity }}",
+                                     "inventory_out_of_stock":  "Î§Ï‰ÏÎ¯Ï‚ Î±Ï€ÏŒÎ¸ÎµÎ¼Î±",
+                                     "inventory_out_of_stock_continue_selling":  "Î£Îµ Î±Ï€ÏŒÎ¸ÎµÎ¼Î±",
+                                     "sku":  "SKU",
+                                     "volume_pricing":  {
+                                                            "title":  "Î¤Î¹Î¼Î¿Î»ÏŒÎ³Î·ÏƒÎ· Î²Î¬ÏƒÎµÎ¹ Ï€Î¿ÏƒÏŒÏ„Î·Ï„Î±Ï‚",
+                                                            "note":  "Î”Î¹Î±Ï„Î¯Î¸ÎµÏ„Î±Î¹ Ï„Î¹Î¼Î¿Î»ÏŒÎ³Î·ÏƒÎ· Î²Î¬ÏƒÎµÎ¹ Ï€Î¿ÏƒÏŒÏ„Î·Ï„Î±Ï‚",
+                                                            "minimum":  "{{ quantity }}+",
+                                                            "price_range":  "{{ minimum }} - {{ maximum }}",
+                                                            "price_at_each_html":  "ÏƒÏ„Î± {{ price }}/Ï„Î¼Ï‡"
+                                                        },
+                                     "taxes_included":  "ÎŸÎ¹ Ï†ÏŒÏÎ¿Î¹ ÏƒÏ…Î¼Ï€ÎµÏÎ¹Î»Î±Î¼Î²Î¬Î½Î¿Î½Ï„Î±Î¹.",
+                                     "duties_included":  "ÎŸÎ¹ Î´Î±ÏƒÎ¼Î¿Î¯ ÏƒÏ…Î¼Ï€ÎµÏÎ¹Î»Î±Î¼Î²Î¬Î½Î¿Î½Ï„Î±Î¹.",
+                                     "duties_and_taxes_included":  "ÎŸÎ¹ Î´Î±ÏƒÎ¼Î¿Î¯ ÎºÎ±Î¹ Î¿Î¹ Ï†ÏŒÏÎ¿Î¹ ÏƒÏ…Î¼Ï€ÎµÏÎ¹Î»Î±Î¼Î²Î¬Î½Î¿Î½Ï„Î±Î¹.",
+                                     "product_types":  "Product type",
+                                     "tags":  "Tags",
+                                     "products_tagged":  "Products tagged {{ tag }}"
+                                 },
+                     "modal":  {
+                                   "label":  "Î£Ï…Î»Î»Î¿Î³Î® Î¼Î­ÏƒÏ‰Î½"
+                               },
+                     "facets":  {
+                                    "apply":  "Î•Ï†Î±ÏÎ¼Î¿Î³Î®",
+                                    "clear":  "Î”Î¹Î±Î³ÏÎ±Ï†Î®",
+                                    "clear_all":  "ÎšÎ±Ï„Î¬ÏÎ³Î·ÏƒÎ· ÏŒÎ»Ï‰Î½",
+                                    "from":  "Î‘Ï€ÏŒ",
+                                    "filter_and_sort":  "Î¦Î¹Î»Ï„ÏÎ¬ÏÎ¹ÏƒÎ¼Î± ÎºÎ±Î¹ Ï„Î±Î¾Î¹Î½ÏŒÎ¼Î·ÏƒÎ·",
+                                    "filter_by_label":  "Î¦Î¹Î»Ï„ÏÎ¬ÏÎ¹ÏƒÎ¼Î±:",
+                                    "filter_button":  "Î¦Î¹Î»Ï„ÏÎ¬ÏÎ¹ÏƒÎ¼Î±",
+                                    "filters_selected":  {
+                                                             "one":  "Î•Ï€Î¹Î»Î­Ï‡Î¸Î·ÎºÎµ {{ count }}",
+                                                             "other":  "Î•Ï€Î¹Î»Î­Ï‡Î¸Î·ÎºÎ±Î½ {{ count }}"
+                                                         },
+                                    "max_price":  "Î— Ï…ÏˆÎ·Î»ÏŒÏ„ÎµÏÎ· Ï„Î¹Î¼Î® ÎµÎ¯Î½Î±Î¹ {{ price }}",
+                                    "product_count":  {
+                                                          "one":  "{{ product_count }} Î±Ï€ÏŒ {{ count }} Ï€ÏÎ¿ÏŠÏŒÎ½",
+                                                          "other":  "{{ product_count }} Î±Ï€ÏŒ {{ count }} Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î±"
+                                                      },
+                                    "product_count_simple":  {
+                                                                 "one":  "{{ count }} Ï€ÏÎ¿ÏŠÏŒÎ½",
+                                                                 "other":  "{{ count }} Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î±"
+                                                             },
+                                    "reset":  "Î•Ï€Î±Î½Î±Ï†Î¿ÏÎ¬",
+                                    "sort_button":  "Î¤Î±Î¾Î¹Î½ÏŒÎ¼Î·ÏƒÎ·",
+                                    "sort_by_label":  "Î¤Î±Î¾Î¹Î½ÏŒÎ¼Î·ÏƒÎ· ÎºÎ±Ï„Î¬:",
+                                    "to":  "ÎˆÏ‰Ï‚",
+                                    "clear_filter":  "ÎšÎ±Ï„Î¬ÏÎ³Î·ÏƒÎ· Ï†Î¯Î»Ï„ÏÎ¿Ï…",
+                                    "filter_selected_accessibility":  "{{ type }} (ÎµÏ€Î¹Î»Î­Ï‡Î¸Î·ÎºÎ±Î½ {{ count }} Ï†Î¯Î»Ï„ÏÎ±)",
+                                    "show_more":  "Î•Î¼Ï†Î¬Î½Î¹ÏƒÎ· Ï€ÎµÏÎ¹ÏƒÏƒÏŒÏ„ÎµÏÏ‰Î½",
+                                    "show_less":  "Î•Î¼Ï†Î¬Î½Î¹ÏƒÎ· Î»Î¹Î³ÏŒÏ„ÎµÏÏ‰Î½",
+                                    "filter_and_operator_subtitle":  "Î‘Î½Ï„Î¹ÏƒÏ„Î¿Î¹Ï‡ÎµÎ¯ Î¼Îµ ÏŒÎ»Î±"
+                                }
+                 },
+    "templates":  {
+                      "search":  {
+                                     "no_results":  "Î”ÎµÎ½ Î²ÏÎ­Î¸Î·ÎºÎ±Î½ Î±Ï€Î¿Ï„ÎµÎ»Î­ÏƒÎ¼Î±Ï„Î± Î³Î¹Î± Â«{{ terms }}Â». Î•Î»Î­Î³Î¾Ï„Îµ Ï„Î·Î½ Î¿ÏÎ¸Î¿Î³ÏÎ±Ï†Î¯Î± Î® Ï‡ÏÎ·ÏƒÎ¹Î¼Î¿Ï€Î¿Î¹Î®ÏƒÏ„Îµ Î¬Î»Î»Î· Î»Î­Î¾Î· Î® Ï†ÏÎ¬ÏƒÎ·.",
+                                     "results_with_count":  {
+                                                                "one":  "{{ count }} Î±Ï€Î¿Ï„Î­Î»ÎµÏƒÎ¼Î±",
+                                                                "other":  "{{ count }} Î±Ï€Î¿Ï„ÎµÎ»Î­ÏƒÎ¼Î±Ï„Î±"
+                                                            },
+                                     "title":  "Î‘Ï€Î¿Ï„ÎµÎ»Î­ÏƒÎ¼Î±Ï„Î± Î±Î½Î±Î¶Î®Ï„Î·ÏƒÎ·Ï‚",
+                                     "page":  "Î£ÎµÎ»Î¯Î´Î±",
+                                     "products":  "Î ÏÎ¿ÏŠÏŒÎ½Ï„Î±",
+                                     "search_for":  "Î‘Î½Î±Î¶Î®Ï„Î·ÏƒÎ· Î³Î¹Î± Â«{{ terms }}Â»",
+                                     "results_with_count_and_term":  {
+                                                                         "one":  "Î’ÏÎ­Î¸Î·ÎºÎµ {{ count }} Î±Ï€Î¿Ï„Î­Î»ÎµÏƒÎ¼Î± Î³Î¹Î± Â«{{ terms }}Â»",
+                                                                         "other":  "Î’ÏÎ­Î¸Î·ÎºÎ±Î½ {{ count }} Î±Ï€Î¿Ï„ÎµÎ»Î­ÏƒÎ¼Î±Ï„Î± Î³Î¹Î± Â«{{ terms }}Â»"
+                                                                     },
+                                     "results_pages_with_count":  {
+                                                                      "one":  "{{ count }} ÏƒÎµÎ»Î¯Î´Î±",
+                                                                      "other":  "{{ count }} ÏƒÎµÎ»Î¯Î´ÎµÏ‚"
+                                                                  },
+                                     "results_products_with_count":  {
+                                                                         "one":  "{{ count }} Ï€ÏÎ¿ÏŠÏŒÎ½",
+                                                                         "other":  "{{ count }} Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î±"
+                                                                     },
+                                     "suggestions":  "Î ÏÎ¿Ï„Î¬ÏƒÎµÎ¹Ï‚",
+                                     "pages":  "Î£ÎµÎ»Î¯Î´ÎµÏ‚",
+                                     "results_suggestions_with_count":  {
+                                                                            "one":  "{{ count }} Ï€ÏÏŒÏ„Î±ÏƒÎ·",
+                                                                            "other":  "{{ count }} Ï€ÏÎ¿Ï„Î¬ÏƒÎµÎ¹Ï‚"
+                                                                        }
+                                 },
+                      "cart":  {
+                                   "cart":  "ÎšÎ±Î»Î¬Î¸Î¹"
+                               },
+                      "contact":  {
+                                      "form":  {
+                                                   "name":  "ÎŒÎ½Î¿Î¼Î±",
+                                                   "email":  "Email",
+                                                   "phone":  "Î‘ÏÎ¹Î¸Î¼ÏŒÏ‚ Ï„Î·Î»ÎµÏ†ÏŽÎ½Î¿Ï…",
+                                                   "comment":  "Î£Ï‡ÏŒÎ»Î¹Î¿",
+                                                   "send":  "Î‘Ï€Î¿ÏƒÏ„Î¿Î»Î®",
+                                                   "post_success":  "Î•Ï…Ï‡Î±ÏÎ¹ÏƒÏ„Î¿ÏÎ¼Îµ Ï€Î¿Ï… ÎµÏ€Î¹ÎºÎ¿Î¹Î½Ï‰Î½Î®ÏƒÎ±Ï„Îµ Î¼Î±Î¶Î¯ Î¼Î±Ï‚. Î˜Î± ÏƒÎ±Ï‚ Î±Ï€Î±Î½Ï„Î®ÏƒÎ¿Ï…Î¼Îµ Ï„Î¿ ÏƒÏ…Î½Ï„Î¿Î¼ÏŒÏ„ÎµÏÎ¿ Î´Ï…Î½Î±Ï„ÏŒÎ½.",
+                                                   "error_heading":  "Î ÏÎ¿ÏƒÎ±ÏÎ¼ÏŒÏƒÏ„Îµ Ï„Î± Ï€Î±ÏÎ±ÎºÎ¬Ï„Ï‰:",
+                                                   "title":  "Î¦ÏŒÏÎ¼Î± ÎµÏ€Î¹ÎºÎ¿Î¹Î½Ï‰Î½Î¯Î±Ï‚"
+                                               }
+                                  },
+                      "404":  {
+                                  "title":  "Î— ÏƒÎµÎ»Î¯Î´Î± Î´ÎµÎ½ Î²ÏÎ­Î¸Î·ÎºÎµ",
+                                  "subtext":  "404"
+                              }
+                  },
+    "sections":  {
+                     "header":  {
+                                    "announcement":  "Î‘Î½Î±ÎºÎ¿Î¯Î½Ï‰ÏƒÎ·",
+                                    "menu":  "ÎœÎµÎ½Î¿Ï",
+                                    "cart_count":  {
+                                                       "one":  "{{ count }} ÏƒÏ„Î¿Î¹Ï‡ÎµÎ¯Î¿",
+                                                       "other":  "{{ count }} ÏƒÏ„Î¿Î¹Ï‡ÎµÎ¯Î±"
+                                                   }
+                                },
+                     "cart":  {
+                                  "title":  "Î¤Î¿ ÎºÎ±Î»Î¬Î¸Î¹ ÏƒÎ±Ï‚",
+                                  "caption":  "Î£Ï„Î¿Î¹Ï‡ÎµÎ¯Î± ÏƒÏ„Î¿ ÎºÎ±Î»Î¬Î¸Î¹",
+                                  "remove_title":  "ÎšÎ±Ï„Î¬ÏÎ³Î·ÏƒÎ· {{ title }}",
+                                  "note":  "Î•Î¹Î´Î¹ÎºÎ­Ï‚ Î¿Î´Î·Î³Î¯ÎµÏ‚ Ï€Î±ÏÎ±Î³Î³ÎµÎ»Î¯Î±Ï‚",
+                                  "checkout":  "ÎŸÎ»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ· Î±Î³Î¿ÏÎ¬Ï‚",
+                                  "empty":  "Î¤Î¿ ÎºÎ±Î»Î¬Î¸Î¹ ÏƒÎ±Ï‚ ÎµÎ¯Î½Î±Î¹ ÎºÎµÎ½ÏŒ",
+                                  "cart_error":  "Î Î±ÏÎ¿Ï…ÏƒÎ¹Î¬ÏƒÏ„Î·ÎºÎµ ÏƒÏ†Î¬Î»Î¼Î± ÎºÎ±Ï„Î¬ Ï„Î·Î½ ÎµÎ½Î·Î¼Î­ÏÏ‰ÏƒÎ· Ï„Î¿Ï… ÎºÎ±Î»Î±Î¸Î¹Î¿Ï. Î”Î¿ÎºÎ¹Î¼Î¬ÏƒÏ„Îµ Î¾Î±Î½Î¬.",
+                                  "cart_quantity_error_html":  "ÎœÏ€Î¿ÏÎµÎ¯Ï„Îµ Î½Î± Ï€ÏÎ¿ÏƒÎ¸Î­ÏƒÎµÏ„Îµ Î¼ÏŒÎ½Î¿ {{ quantity }} Î±Ï€ÏŒ Î±Ï…Ï„ÏŒ Ï„Î¿ Ï€ÏÎ¿ÏŠÏŒÎ½ ÏƒÏ„Î¿ ÎºÎ±Î»Î¬Î¸Î¹ ÏƒÎ±Ï‚.",
+                                  "headings":  {
+                                                   "product":  "Î ÏÎ¿ÏŠÏŒÎ½",
+                                                   "price":  "Î¤Î¹Î¼Î®",
+                                                   "total":  "Î£ÏÎ½Î¿Î»Î¿",
+                                                   "quantity":  "Î Î¿ÏƒÏŒÏ„Î·Ï„Î±",
+                                                   "image":  "Î•Î¹ÎºÏŒÎ½Î± Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î¿Ï‚"
+                                               },
+                                  "update":  "Î•Î½Î·Î¼Î­ÏÏ‰ÏƒÎ·",
+                                  "login":  {
+                                                "title":  "ÎˆÏ‡ÎµÏ„Îµ Î»Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼ÏŒ;",
+                                                "paragraph_html":  "\u003ca href=\"{{ link }}\" class=\"link underlined-link\"\u003eÎ£Ï…Î½Î´ÎµÎ¸ÎµÎ¯Ï„Îµ\u003c/a\u003e Î³Î¹Î± Ï„Î±Ï‡ÏÏ„ÎµÏÎ· Î¿Î»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ· Ï„Ï‰Î½ Î±Î³Î¿ÏÏŽÎ½ ÏƒÎ±Ï‚."
+                                            },
+                                  "estimated_total":  "Î•ÎºÏ„Î¹Î¼ÏŽÎ¼ÎµÎ½Î¿ ÏƒÏÎ½Î¿Î»Î¿",
+                                  "new_estimated_total":  "ÎÎ­Î¿ ÎµÎºÏ„Î¹Î¼ÏŽÎ¼ÎµÎ½Î¿ ÏƒÏÎ½Î¿Î»Î¿",
+                                  "duties_and_taxes_included_shipping_at_checkout_with_policy_html":  "ÎŸÎ¹ Î´Î±ÏƒÎ¼Î¿Î¯ ÎºÎ±Î¹ Î¿Î¹ Ï†ÏŒÏÎ¿Î¹ ÏƒÏ…Î¼Ï€ÎµÏÎ¹Î»Î±Î¼Î²Î¬Î½Î¿Î½Ï„Î±Î¹. ÎŸÎ¹ ÎµÎºÏ€Ï„ÏŽÏƒÎµÎ¹Ï‚ ÎºÎ±Î¹ Ï„Î± Î­Î¾Î¿Î´Î± \u003ca href=\"{{ link }}\"\u003eÎ±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚\u003c/a\u003e Ï…Ï€Î¿Î»Î¿Î³Î¯Î¶Î¿Î½Ï„Î±Î¹ ÎºÎ±Ï„Î¬ Ï„Î·Î½ Î¿Î»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ· Ï„Î·Ï‚ Î±Î³Î¿ÏÎ¬Ï‚.",
+                                  "duties_and_taxes_included_shipping_at_checkout_without_policy":  "ÎŸÎ¹ Î´Î±ÏƒÎ¼Î¿Î¯ ÎºÎ±Î¹ Î¿Î¹ Ï†ÏŒÏÎ¿Î¹ ÏƒÏ…Î¼Ï€ÎµÏÎ¹Î»Î±Î¼Î²Î¬Î½Î¿Î½Ï„Î±Î¹. ÎŸÎ¹ ÎµÎºÏ€Ï„ÏŽÏƒÎµÎ¹Ï‚ ÎºÎ±Î¹ Ï„Î± Î­Î¾Î¿Î´Î± Î±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚ Ï…Ï€Î¿Î»Î¿Î³Î¯Î¶Î¿Î½Ï„Î±Î¹ ÎºÎ±Ï„Î¬ Ï„Î·Î½ Î¿Î»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ· Ï„Î·Ï‚ Î±Î³Î¿ÏÎ¬Ï‚",
+                                  "taxes_included_shipping_at_checkout_with_policy_html":  "ÎŸÎ¹ Ï†ÏŒÏÎ¿Î¹ ÏƒÏ…Î¼Ï€ÎµÏÎ¹Î»Î±Î¼Î²Î¬Î½Î¿Î½Ï„Î±Î¹. ÎŸÎ¹ ÎµÎºÏ€Ï„ÏŽÏƒÎµÎ¹Ï‚ ÎºÎ±Î¹ Ï„Î± Î­Î¾Î¿Î´Î± \u003ca href=\"{{ link }}\"\u003eÎ±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚\u003c/a\u003e Ï…Ï€Î¿Î»Î¿Î³Î¯Î¶Î¿Î½Ï„Î±Î¹ ÎºÎ±Ï„Î¬ Ï„Î·Î½ Î¿Î»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ· Ï„Î·Ï‚ Î±Î³Î¿ÏÎ¬Ï‚.",
+                                  "taxes_included_shipping_at_checkout_without_policy":  "ÎŸÎ¹ Ï†ÏŒÏÎ¿Î¹ ÏƒÏ…Î¼Ï€ÎµÏÎ¹Î»Î±Î¼Î²Î¬Î½Î¿Î½Ï„Î±Î¹. ÎŸÎ¹ ÎµÎºÏ€Ï„ÏŽÏƒÎµÎ¹Ï‚ ÎºÎ±Î¹ Ï„Î± Î­Î¾Î¿Î´Î± Î±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚ Ï…Ï€Î¿Î»Î¿Î³Î¯Î¶Î¿Î½Ï„Î±Î¹ ÎºÎ±Ï„Î¬ Ï„Î·Î½ Î¿Î»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ· Ï„Î·Ï‚ Î±Î³Î¿ÏÎ¬Ï‚.",
+                                  "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html":  "ÎŸÎ¹ Î´Î±ÏƒÎ¼Î¿Î¯ ÏƒÏ…Î¼Ï€ÎµÏÎ¹Î»Î±Î¼Î²Î¬Î½Î¿Î½Ï„Î±Î¹. ÎŸÎ¹ Ï†ÏŒÏÎ¿Î¹, Î¿Î¹ ÎµÎºÏ€Ï„ÏŽÏƒÎµÎ¹Ï‚ ÎºÎ±Î¹ Ï„Î± Î­Î¾Î¿Î´Î± \u003ca href=\"{{ link }}\"\u003eÎ±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚\u003c/a\u003e Ï…Ï€Î¿Î»Î¿Î³Î¯Î¶Î¿Î½Ï„Î±Î¹ ÎºÎ±Ï„Î¬ Ï„Î·Î½ Î¿Î»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ· Ï„Î·Ï‚ Î±Î³Î¿ÏÎ¬Ï‚.",
+                                  "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy":  "ÎŸÎ¹ Î´Î±ÏƒÎ¼Î¿Î¯ ÏƒÏ…Î¼Ï€ÎµÏÎ¹Î»Î±Î¼Î²Î¬Î½Î¿Î½Ï„Î±Î¹. ÎŸÎ¹ Ï†ÏŒÏÎ¿Î¹, Î¿Î¹ ÎµÎºÏ€Ï„ÏŽÏƒÎµÎ¹Ï‚ ÎºÎ±Î¹ Ï„Î± Î­Î¾Î¿Î´Î± Î±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚ Ï…Ï€Î¿Î»Î¿Î³Î¯Î¶Î¿Î½Ï„Î±Î¹ ÎºÎ±Ï„Î¬ Ï„Î·Î½ Î¿Î»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ· Ï„Î·Ï‚ Î±Î³Î¿ÏÎ¬Ï‚.",
+                                  "taxes_at_checkout_shipping_at_checkout_with_policy_html":  "ÎŸÎ¹ Ï†ÏŒÏÎ¿Î¹, Î¿Î¹ ÎµÎºÏ€Ï„ÏŽÏƒÎµÎ¹Ï‚ ÎºÎ±Î¹ Ï„Î± Î­Î¾Î¿Î´Î± \u003ca href=\"{{ link }}\"\u003eÎ±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚\u003c/a\u003e Ï…Ï€Î¿Î»Î¿Î³Î¯Î¶Î¿Î½Ï„Î±Î¹ ÎºÎ±Ï„Î¬ Ï„Î·Î½ Î¿Î»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ· Ï„Î·Ï‚ Î±Î³Î¿ÏÎ¬Ï‚.",
+                                  "taxes_at_checkout_shipping_at_checkout_without_policy":  "ÎŸÎ¹ Ï†ÏŒÏÎ¿Î¹, Î¿Î¹ ÎµÎºÏ€Ï„ÏŽÏƒÎµÎ¹Ï‚ ÎºÎ±Î¹ Ï„Î± Î­Î¾Î¿Î´Î± Î±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚ Ï…Ï€Î¿Î»Î¿Î³Î¯Î¶Î¿Î½Ï„Î±Î¹ ÎºÎ±Ï„Î¬ Ï„Î·Î½ Î¿Î»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ· Ï„Î·Ï‚ Î±Î³Î¿ÏÎ¬Ï‚."
+                              },
+                     "footer":  {
+                                    "payment":  "ÎœÎ­Î¸Î¿Î´Î¿Î¹ Ï€Î»Î·ÏÏ‰Î¼Î®Ï‚"
+                                },
+                     "featured_blog":  {
+                                           "view_all":  "Î ÏÎ¿Î²Î¿Î»Î® ÏŒÎ»Ï‰Î½",
+                                           "onboarding_title":  "Î‘Î½Î¬ÏÏ„Î·ÏƒÎ· Î¹ÏƒÏ„Î¿Î»Î¿Î³Î¯Î¿Ï…",
+                                           "onboarding_content":  "Î”ÏŽÏƒÏ„Îµ ÏƒÏ„Î¿Ï…Ï‚ Ï€ÎµÎ»Î¬Ï„ÎµÏ‚ ÏƒÎ±Ï‚ Î¼Î¹Î± ÏƒÏÎ½Î¿ÏˆÎ· Ï„Î·Ï‚ Î±Î½Î¬ÏÏ„Î·ÏƒÎ·Ï‚ Î¹ÏƒÏ„Î¿Î»Î¿Î³Î¯Î¿Ï…"
+                                       },
+                     "featured_collection":  {
+                                                 "view_all":  "Î ÏÎ¿Î²Î¿Î»Î® ÏŒÎ»Ï‰Î½",
+                                                 "view_all_label":  "Î ÏÎ¿Î²Î¿Î»Î® ÏŒÎ»Ï‰Î½ Ï„Ï‰Î½ Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Ï‰Î½ ÏƒÏ„Î· ÏƒÏ…Î»Î»Î¿Î³Î® {{ collection_name }}"
+                                             },
+                     "collection_list":  {
+                                             "view_all":  "Î ÏÎ¿Î²Î¿Î»Î® ÏŒÎ»Ï‰Î½"
+                                         },
+                     "collection_template":  {
+                                                 "title":  "Î£Ï…Î»Î»Î¿Î³Î®",
+                                                 "empty":  "Î”ÎµÎ½ Î²ÏÎ­Î¸Î·ÎºÎ±Î½ Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î±",
+                                                 "use_fewer_filters_html":  "Î§ÏÎ·ÏƒÎ¹Î¼Î¿Ï€Î¿Î¹Î®ÏƒÏ„Îµ Î»Î¹Î³ÏŒÏ„ÎµÏÎ± Ï†Î¯Î»Ï„ÏÎ± Î® \u003ca class=\"{{ class }}\" href=\"{{ link }}\"\u003eÎºÎ±Ï„Î±ÏÎ³Î®ÏƒÏ„Îµ Ï„Î± ÏŒÎ»Î±\u003c/a\u003e"
+                                             },
+                     "video":  {
+                                   "load_video":  "Î¦ÏŒÏÏ„Ï‰ÏƒÎ· Î²Î¯Î½Ï„ÎµÎ¿: {{ description }}"
+                               },
+                     "slideshow":  {
+                                       "load_slide":  "Î¦ÏŒÏÏ„Ï‰ÏƒÎ· Î´Î¹Î±Ï†Î¬Î½ÎµÎ¹Î±Ï‚",
+                                       "previous_slideshow":  "Î ÏÎ¿Î·Î³Î¿ÏÎ¼ÎµÎ½Î· Î´Î¹Î±Ï†Î¬Î½ÎµÎ¹Î±",
+                                       "next_slideshow":  "Î•Ï€ÏŒÎ¼ÎµÎ½Î· Î´Î¹Î±Ï†Î¬Î½ÎµÎ¹Î±",
+                                       "pause_slideshow":  "Î Î±ÏÏƒÎ· Ï€Î±ÏÎ¿Ï…ÏƒÎ¯Î±ÏƒÎ·Ï‚",
+                                       "play_slideshow":  "Î‘Î½Î±Ï€Î±ÏÎ±Î³Ï‰Î³Î® Ï€Î±ÏÎ¿Ï…ÏƒÎ¯Î±ÏƒÎ·Ï‚",
+                                       "carousel":  "ÎšÎ±ÏÎ¿Ï…Î¶Î­Î»",
+                                       "slide":  "Î”Î¹Î±Ï†Î¬Î½ÎµÎ¹Î±"
+                                   },
+                     "page":  {
+                                  "title":  "Î¤Î¯Ï„Î»Î¿Ï‚ ÏƒÎµÎ»Î¯Î´Î±Ï‚"
+                              },
+                     "announcements":  {
+                                           "previous_announcement":  "Î ÏÎ¿Î·Î³Î¿ÏÎ¼ÎµÎ½Î· Î±Î½Î±ÎºÎ¿Î¯Î½Ï‰ÏƒÎ·",
+                                           "next_announcement":  "Î•Ï€ÏŒÎ¼ÎµÎ½Î· Î±Î½Î±ÎºÎ¿Î¯Î½Ï‰ÏƒÎ·",
+                                           "carousel":  "ÎšÎ±ÏÎ¿Ï…Î¶Î­Î»",
+                                           "announcement":  "Î‘Î½Î±ÎºÎ¿Î¯Î½Ï‰ÏƒÎ·",
+                                           "announcement_bar":  "Î“ÏÎ±Î¼Î¼Î® Î±Î½Î±ÎºÎ¿Î¹Î½ÏŽÏƒÎµÏ‰Î½"
+                                       },
+                     "quick_order_list":  {
+                                              "product_total":  "Î¥Ï€Î¿ÏƒÏÎ½Î¿Î»Î¿ Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Ï‰Î½",
+                                              "view_cart":  "Î ÏÎ¿Î²Î¿Î»Î® ÎºÎ±Î»Î±Î¸Î¹Î¿Ï",
+                                              "each":  "{{ money }}/Î­ÎºÎ±ÏƒÏ„Î¿",
+                                              "product":  "Î ÏÎ¿ÏŠÏŒÎ½",
+                                              "variant":  "Î Î±ÏÎ±Î»Î»Î±Î³Î®",
+                                              "variant_total":  "Î£ÏÎ½Î¿Î»Î¿ Ï€Î±ÏÎ±Î»Î»Î±Î³ÏŽÎ½",
+                                              "items_added":  {
+                                                                  "one":  "Î ÏÎ¿ÏƒÏ„Î­Î¸Î·ÎºÎµ {{ quantity }} Ï€ÏÎ¿ÏŠÏŒÎ½",
+                                                                  "other":  "Î ÏÎ¿ÏƒÏ„Î­Î¸Î·ÎºÎ±Î½ {{ quantity }} Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î±"
+                                                              },
+                                              "items_removed":  {
+                                                                    "one":  "ÎšÎ±Ï„Î±ÏÎ³Î®Î¸Î·ÎºÎµ {{ quantity }} Ï€ÏÎ¿ÏŠÏŒÎ½",
+                                                                    "other":  "ÎšÎ±Ï„Î±ÏÎ³Î®Î¸Î·ÎºÎ±Î½ {{ quantity }} Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î±"
+                                                                },
+                                              "product_variants":  "Î Î±ÏÎ±Î»Î»Î±Î³Î­Ï‚ Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î¿Ï‚",
+                                              "total_items":  "Î£ÏÎ½Î¿Î»Î¿ Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Ï‰Î½",
+                                              "remove_all_items_confirmation":  "ÎÎ± ÎºÎ±Ï„Î±ÏÎ³Î·Î¸Î¿ÏÎ½ ÎºÎ±Î¹ Ï„Î± {{ quantity }} Ï€ÏÎ¿ÏŠÏŒÎ½Ï„Î± Î±Ï€ÏŒ Ï„Î¿ ÎºÎ±Î»Î¬Î¸Î¹ ÏƒÎ±Ï‚;",
+                                              "remove_all":  "ÎšÎ±Ï„Î¬ÏÎ³Î·ÏƒÎ· ÏŒÎ»Ï‰Î½",
+                                              "cancel":  "Î‘ÎºÏÏÏ‰ÏƒÎ·",
+                                              "remove_all_single_item_confirmation":  "ÎÎ± ÎºÎ±Ï„Î±ÏÎ³Î·Î¸ÎµÎ¯ 1 Ï€ÏÎ¿ÏŠÏŒÎ½ Î±Ï€ÏŒ Ï„Î¿ ÎºÎ±Î»Î¬Î¸Î¹ ÏƒÎ±Ï‚;",
+                                              "min_error":  "Î‘Ï…Ï„ÏŒ Ï„Î¿ Ï€ÏÎ¿ÏŠÏŒÎ½ Î­Ï‡ÎµÎ¹ ÎµÎ»Î¬Ï‡Î¹ÏƒÏ„Î¿ ÏŒÏÎ¹Î¿ {{ min }}",
+                                              "max_error":  "Î‘Ï…Ï„ÏŒ Ï„Î¿ Ï€ÏÎ¿ÏŠÏŒÎ½ Î­Ï‡ÎµÎ¹ Î¼Î­Î³Î¹ÏƒÏ„Î¿ ÏŒÏÎ¹Î¿ {{ max }}",
+                                              "step_error":  "ÎœÏ€Î¿ÏÎµÎ¯Ï„Îµ Î½Î± Ï€ÏÎ¿ÏƒÎ¸Î­ÏƒÎµÏ„Îµ Î±Ï…Ï„ÏŒ Ï„Î¿ Ï€ÏÎ¿ÏŠÏŒÎ½ Î¼ÏŒÎ½Î¿ ÎºÎ±Ï„Î¬ Î²Î®Î¼Î±Ï„Î± Ï„Ï‰Î½ {{ step }}"
+                                          }
+                 },
+    "localization":  {
+                         "country_label":  "Î§ÏŽÏÎ±/Ï€ÎµÏÎ¹Î¿Ï‡Î®",
+                         "language_label":  "Î“Î»ÏŽÏƒÏƒÎ±",
+                         "update_language":  "Î•Î½Î·Î¼Î­ÏÏ‰ÏƒÎ· Î³Î»ÏŽÏƒÏƒÎ±Ï‚",
+                         "update_country":  "Î•Î½Î·Î¼ÎµÏÏŽÏƒÏ„Îµ Ï„Î· Ï‡ÏŽÏÎ±/Ï€ÎµÏÎ¹Î¿Ï‡Î®",
+                         "search":  "Î‘Î½Î±Î¶Î®Ï„Î·ÏƒÎ·",
+                         "popular_countries_regions":  "Î”Î·Î¼Î¿Ï†Î¹Î»ÎµÎ¯Ï‚ Ï‡ÏŽÏÎµÏ‚/Ï€ÎµÏÎ¹Î¿Ï‡Î­Ï‚",
+                         "country_results_count":  "Î’ÏÎ­Î¸Î·ÎºÎ±Î½ {{ count }} Ï‡ÏŽÏÎµÏ‚/Ï€ÎµÏÎ¹Î¿Ï‡Î­Ï‚"
+                     },
+    "customer":  {
+                     "account":  {
+                                     "title":  "Î›Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼ÏŒÏ‚",
+                                     "details":  "Î£Ï„Î¿Î¹Ï‡ÎµÎ¯Î± Î»Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï",
+                                     "view_addresses":  "Î ÏÎ¿Î²Î¿Î»Î® Î´Î¹ÎµÏ…Î¸ÏÎ½ÏƒÎµÏ‰Î½",
+                                     "return":  "Î•Ï€Î¹ÏƒÏ„ÏÎ¿Ï†Î® ÏƒÏ„Î± ÏƒÏ„Î¿Î¹Ï‡ÎµÎ¯Î± Î»Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï",
+                                     "action_orders":  "View order"
+                                 },
+                     "account_fallback":  "Î›Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼ÏŒÏ‚",
+                     "activate_account":  {
+                                              "title":  "Î•Î½ÎµÏÎ³Î¿Ï€Î¿Î¯Î·ÏƒÎ· Î»Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï",
+                                              "subtext":  "Î”Î·Î¼Î¹Î¿Ï…ÏÎ³Î®ÏƒÏ„Îµ Ï„Î¿Î½ ÎºÏ‰Î´Î¹ÎºÏŒ Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚ Î³Î¹Î± Î½Î± ÎµÎ½ÎµÏÎ³Î¿Ï€Î¿Î¹Î®ÏƒÎµÏ„Îµ Ï„Î¿Î½ Î»Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼ÏŒ ÏƒÎ±Ï‚.",
+                                              "password":  "ÎšÏ‰Î´Î¹ÎºÏŒÏ‚ Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚",
+                                              "password_confirm":  "Î•Ï€Î¹Î²ÎµÎ²Î±Î¯Ï‰ÏƒÎ· ÎºÏ‰Î´Î¹ÎºÎ¿Ï Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚",
+                                              "submit":  "Î•Î½ÎµÏÎ³Î¿Ï€Î¿Î¯Î·ÏƒÎ· Î»Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï",
+                                              "cancel":  "Î‘Ï€ÏŒÏÏÎ¹ÏˆÎ· Ï€ÏÏŒÏƒÎºÎ»Î·ÏƒÎ·Ï‚"
+                                          },
+                     "addresses":  {
+                                       "title":  "Î”Î¹ÎµÏ…Î¸ÏÎ½ÏƒÎµÎ¹Ï‚",
+                                       "default":  "Î ÏÎ¿ÎµÏ€Î¹Î»Î¿Î³Î®",
+                                       "add_new":  "Î ÏÎ¿ÏƒÎ¸Î®ÎºÎ· Î½Î­Î±Ï‚ Î´Î¹ÎµÏÎ¸Ï…Î½ÏƒÎ·Ï‚",
+                                       "edit_address":  "Î•Ï€ÎµÎ¾ÎµÏÎ³Î±ÏƒÎ¯Î± Î´Î¹ÎµÏÎ¸Ï…Î½ÏƒÎ·Ï‚",
+                                       "first_name":  "ÎŒÎ½Î¿Î¼Î±",
+                                       "last_name":  "Î•Ï€Î¯Î¸ÎµÏ„Î¿",
+                                       "company":  "Î•Ï„Î±Î¹ÏÎµÎ¯Î±",
+                                       "address1":  "Î”Î¹ÎµÏÎ¸Ï…Î½ÏƒÎ· 1",
+                                       "address2":  "Î”Î¹ÎµÏÎ¸Ï…Î½ÏƒÎ· 2",
+                                       "city":  "Î ÏŒÎ»Î·",
+                                       "country":  "Î§ÏŽÏÎ±/Ï€ÎµÏÎ¹Î¿Ï‡Î®",
+                                       "province":  "Î•Ï€Î±ÏÏ‡Î¯Î±",
+                                       "zip":  "Î¤Î±Ï‡Ï…Î´ÏÎ¿Î¼Î¹ÎºÏŒÏ‚ ÎºÏŽÎ´Î¹ÎºÎ±Ï‚",
+                                       "phone":  "Î¤Î·Î»Î­Ï†Ï‰Î½Î¿",
+                                       "set_default":  "ÎŸÏÎ¹ÏƒÎ¼ÏŒÏ‚ Ï‰Ï‚ Ï€ÏÎ¿ÎµÏ€Î¹Î»ÎµÎ³Î¼Î­Î½Î·Ï‚ Î´Î¹ÎµÏÎ¸Ï…Î½ÏƒÎ·Ï‚",
+                                       "add":  "Î ÏÎ¿ÏƒÎ¸Î®ÎºÎ· Î´Î¹ÎµÏÎ¸Ï…Î½ÏƒÎ·Ï‚",
+                                       "update":  "Î•Î½Î·Î¼Î­ÏÏ‰ÏƒÎ· Î´Î¹ÎµÏÎ¸Ï…Î½ÏƒÎ·Ï‚",
+                                       "cancel":  "Î‘ÎºÏÏÏ‰ÏƒÎ·",
+                                       "edit":  "Î•Ï€ÎµÎ¾ÎµÏÎ³Î±ÏƒÎ¯Î±",
+                                       "delete":  "Î”Î¹Î±Î³ÏÎ±Ï†Î®",
+                                       "delete_confirm":  "Î•Î¯ÏƒÏ„Îµ ÏƒÎ¯Î³Î¿Ï…ÏÎ¿Î¹ ÏŒÏ„Î¹ Î¸Î­Î»ÎµÏ„Îµ Î½Î± Î´Î¹Î±Î³ÏÎ¬ÏˆÎµÏ„Îµ Î±Ï…Ï„Î®Î½ Ï„Î· Î´Î¹ÎµÏÎ¸Ï…Î½ÏƒÎ·;"
+                                   },
+                     "log_in":  "Î£ÏÎ½Î´ÎµÏƒÎ·",
+                     "log_out":  "Î‘Ï€Î¿ÏƒÏÎ½Î´ÎµÏƒÎ·",
+                     "login_page":  {
+                                        "cancel":  "Î‘ÎºÏÏÏ‰ÏƒÎ·",
+                                        "create_account":  "Î”Î·Î¼Î¹Î¿Ï…ÏÎ³Î¯Î± Î»Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï",
+                                        "email":  "Email",
+                                        "forgot_password":  "ÎžÎµÏ‡Î¬ÏƒÎ±Ï„Îµ Ï„Î¿Î½ ÎºÏ‰Î´Î¹ÎºÏŒ Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚;",
+                                        "guest_continue":  "Î£Ï…Î½Î­Ï‡ÎµÎ¹Î±",
+                                        "guest_title":  "Î£Ï…Î½Î­Ï‡ÎµÎ¹Î± Ï‰Ï‚ ÎµÏ€Î¹ÏƒÎºÎ­Ï€Ï„Î·Ï‚",
+                                        "password":  "ÎšÏ‰Î´Î¹ÎºÏŒÏ‚ Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚",
+                                        "title":  "Î£ÏÎ½Î´ÎµÏƒÎ·",
+                                        "sign_in":  "Î£ÏÎ½Î´ÎµÏƒÎ·",
+                                        "submit":  "Î¥Ï€Î¿Î²Î¿Î»Î®",
+                                        "alternate_provider_separator":  "Î®"
+                                    },
+                     "orders":  {
+                                    "title":  "Î™ÏƒÏ„Î¿ÏÎ¹ÎºÏŒ Ï€Î±ÏÎ±Î³Î³ÎµÎ»Î¹ÏŽÎ½",
+                                    "order_number":  "Î Î±ÏÎ±Î³Î³ÎµÎ»Î¯Î±",
+                                    "order_number_link":  "Î‘ÏÎ¹Î¸Î¼ÏŒÏ‚ Ï€Î±ÏÎ±Î³Î³ÎµÎ»Î¯Î±Ï‚ {{ number }}",
+                                    "date":  "Î—Î¼ÎµÏÎ¿Î¼Î·Î½Î¯Î±",
+                                    "payment_status":  "ÎšÎ±Ï„Î¬ÏƒÏ„Î±ÏƒÎ· Ï€Î»Î·ÏÏ‰Î¼Î®Ï‚",
+                                    "fulfillment_status":  "ÎšÎ±Ï„Î¬ÏƒÏ„Î±ÏƒÎ· Î¿Î»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ·Ï‚",
+                                    "total":  "Î£ÏÎ½Î¿Î»Î¿",
+                                    "none":  "Î”ÎµÎ½ Î­Ï‡ÎµÏ„Îµ ÎºÎ¬Î½ÎµÎ¹ ÎºÎ¬Ï€Î¿Î¹Î± Ï€Î±ÏÎ±Î³Î³ÎµÎ»Î¯Î± Î±ÎºÏŒÎ¼Î·."
+                                },
+                     "recover_password":  {
+                                              "title":  "Î•Ï€Î±Î½Î±Ï†Î¿ÏÎ¬ Ï„Î¿Ï… ÎºÏ‰Î´Î¹ÎºÎ¿Ï ÏƒÎ±Ï‚ Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚",
+                                              "subtext":  "Î˜Î± ÏƒÎ±Ï‚ ÏƒÏ„ÎµÎ¯Î»Î¿Ï…Î¼Îµ Î­Î½Î± email Î³Î¹Î± Ï„Î·Î½ ÎµÏ€Î±Î½Î±Ï†Î¿ÏÎ¬ Ï„Î¿Ï… ÎºÏ‰Î´Î¹ÎºÎ¿Ï Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚",
+                                              "success":  "Î£Î±Ï‚ ÏƒÏ„ÎµÎ¯Î»Î±Î¼Îµ Î­Î½Î± email Ï„Î¿ Î¿Ï€Î¿Î¯Î¿ Ï€ÎµÏÎ¹Î­Ï‡ÎµÎ¹ Î­Î½Î±Î½ ÏƒÏÎ½Î´ÎµÏƒÎ¼Î¿ Î³Î¹Î± Ï„Î·Î½ ÎµÎ½Î·Î¼Î­ÏÏ‰ÏƒÎ· Ï„Î¿Ï… ÎºÏ‰Î´Î¹ÎºÎ¿Ï Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚."
+                                          },
+                     "register":  {
+                                      "title":  "Î”Î·Î¼Î¹Î¿Ï…ÏÎ³Î¯Î± Î»Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï",
+                                      "first_name":  "ÎŒÎ½Î¿Î¼Î±",
+                                      "last_name":  "Î•Ï€Î¯Î¸ÎµÏ„Î¿",
+                                      "email":  "Email",
+                                      "password":  "ÎšÏ‰Î´Î¹ÎºÏŒÏ‚ Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚",
+                                      "submit":  "Î”Î·Î¼Î¹Î¿Ï…ÏÎ³Î¯Î±"
+                                  },
+                     "reset_password":  {
+                                            "title":  "Î•Ï€Î±Î½Î±Ï†Î¿ÏÎ¬ ÎºÏ‰Î´Î¹ÎºÎ¿Ï Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚ Î»Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï",
+                                            "subtext":  "Î•Î¹ÏƒÎ±Î³Î¬Î³ÎµÏ„Îµ Î½Î­Î¿ ÎºÏ‰Î´Î¹ÎºÏŒ Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚",
+                                            "password":  "ÎšÏ‰Î´Î¹ÎºÏŒÏ‚ Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚",
+                                            "password_confirm":  "Î•Ï€Î¹Î²ÎµÎ²Î±Î¯Ï‰ÏƒÎ· ÎºÏ‰Î´Î¹ÎºÎ¿Ï Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚",
+                                            "submit":  "Î•Ï€Î±Î½Î±Ï†Î¿ÏÎ¬ ÎºÏ‰Î´Î¹ÎºÎ¿Ï Ï€ÏÏŒÏƒÎ²Î±ÏƒÎ·Ï‚"
+                                        },
+                     "order":  {
+                                   "title":  "Î Î±ÏÎ±Î³Î³ÎµÎ»Î¯Î± {{ name }}",
+                                   "date_html":  "Î ÏÎ±Î³Î¼Î±Ï„Î¿Ï€Î¿Î¹Î®Î¸Î·ÎºÎµ ÏƒÏ„Î¹Ï‚ {{ date }}",
+                                   "cancelled_html":  "Î— Ï€Î±ÏÎ±Î³Î³ÎµÎ»Î¯Î± Î±ÎºÏ…ÏÏŽÎ¸Î·ÎºÎµ ÏƒÏ„Î¹Ï‚ {{ date }}",
+                                   "cancelled_reason":  "Î‘Î¹Ï„Î¯Î±: {{ reason }}",
+                                   "billing_address":  "Î”Î¹ÎµÏÎ¸Ï…Î½ÏƒÎ· Ï‡ÏÎ­Ï‰ÏƒÎ·Ï‚",
+                                   "payment_status":  "ÎšÎ±Ï„Î¬ÏƒÏ„Î±ÏƒÎ· Ï€Î»Î·ÏÏ‰Î¼Î®Ï‚",
+                                   "shipping_address":  "Î”Î¹ÎµÏÎ¸Ï…Î½ÏƒÎ· Î±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚",
+                                   "fulfillment_status":  "ÎšÎ±Ï„Î¬ÏƒÏ„Î±ÏƒÎ· Î¿Î»Î¿ÎºÎ»Î®ÏÏ‰ÏƒÎ·Ï‚",
+                                   "discount":  "ÎˆÎºÏ€Ï„Ï‰ÏƒÎ·",
+                                   "shipping":  "ÎˆÎ¾Î¿Î´Î± Î±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚",
+                                   "tax":  "Î¦ÏŒÏÎ¿Ï‚",
+                                   "product":  "Î ÏÎ¿ÏŠÏŒÎ½",
+                                   "sku":  "SKU",
+                                   "price":  "Î¤Î¹Î¼Î®",
+                                   "quantity":  "Î Î¿ÏƒÏŒÏ„Î·Ï„Î±",
+                                   "total":  "Î£ÏÎ½Î¿Î»Î¿",
+                                   "fulfilled_at_html":  "ÎŸÎ»Î¿ÎºÎ»Î·ÏÏŽÎ¸Î·ÎºÎµ ÏƒÏ„Î¹Ï‚ {{ date }}",
+                                   "track_shipment":  "Î Î±ÏÎ±ÎºÎ¿Î»Î¿ÏÎ¸Î·ÏƒÎ· Î±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚",
+                                   "tracking_url":  "Î£ÏÎ½Î´ÎµÏƒÎ¼Î¿Ï‚ Ï€Î±ÏÎ±ÎºÎ¿Î»Î¿ÏÎ¸Î·ÏƒÎ·Ï‚",
+                                   "tracking_company":  "Î•Ï„Î±Î¹ÏÎµÎ¯Î± Ï„Î±Ï‡Ï…Î¼ÎµÏ„Î±Ï†Î¿ÏÎ¬Ï‚",
+                                   "tracking_number":  "Î‘ÏÎ¹Î¸Î¼ÏŒÏ‚ Ï€Î±ÏÎ±ÎºÎ¿Î»Î¿ÏÎ¸Î·ÏƒÎ·Ï‚",
+                                   "subtotal":  "Î¥Ï€Î¿ÏƒÏÎ½Î¿Î»Î¿",
+                                   "total_duties":  "Î”Î±ÏƒÎ¼Î¿Î¯",
+                                   "total_refunded":  "Î¤Î± Ï‡ÏÎ®Î¼Î±Ï„Î± ÎµÏ€Î¹ÏƒÏ„ÏÎ¬Ï†Î·ÎºÎ±Î½"
+                               }
+                 },
+    "gift_cards":  {
+                       "issued":  {
+                                      "title":  "Î‘Ï…Ï„ÏŒ ÎµÎ¯Î½Î±Î¹ Ï„Î¿ Ï…Ï€ÏŒÎ»Î¿Î¹Ï€Î¿ Ï„Î·Ï‚ Î´Ï‰ÏÎ¿ÎºÎ¬ÏÏ„Î±Ï‚ ÏƒÎ±Ï‚ ÏÏˆÎ¿Ï…Ï‚ {{ value }} Î³Î¹Î± Ï„Î¿ {{ shop }}!",
+                                      "subtext":  "Î— Î´Ï‰ÏÎ¿ÎºÎ¬ÏÏ„Î± ÏƒÎ±Ï‚",
+                                      "gift_card_code":  "ÎšÏ‰Î´Î¹ÎºÏŒÏ‚ Î´Ï‰ÏÎ¿ÎºÎ¬ÏÏ„Î±Ï‚",
+                                      "shop_link":  "Î•Ï€Î¹ÏƒÎºÎµÏ†Ï„ÎµÎ¯Ï„Îµ Ï„Î¿ Î´Î¹Î±Î´Î¹ÎºÏ„Ï…Î±ÎºÏŒ ÎºÎ±Ï„Î¬ÏƒÏ„Î·Î¼Î±",
+                                      "add_to_apple_wallet":  "Î ÏÎ¿ÏƒÎ¸Î®ÎºÎ· ÏƒÏ„Î¿ Apple Wallet",
+                                      "qr_image_alt":  "ÎšÏ‰Î´Î¹ÎºÏŒÏ‚ QR â€” ÏƒÎ±ÏÏŽÏƒÏ„Îµ Î³Î¹Î± Î½Î± ÎµÎ¾Î±ÏÎ³Ï…ÏÏŽÏƒÎµÏ„Îµ Ï„Î· Î´Ï‰ÏÎ¿ÎºÎ¬ÏÏ„Î±",
+                                      "copy_code":  "Î‘Î½Ï„Î¹Î³ÏÎ±Ï†Î® ÎºÏ‰Î´Î¹ÎºÎ¿Ï Î´Ï‰ÏÎ¿ÎºÎ¬ÏÏ„Î±Ï‚",
+                                      "expired":  "ÎˆÎ»Î·Î¾Îµ",
+                                      "copy_code_success":  "Î— Î±Î½Ï„Î¹Î³ÏÎ±Ï†Î® Ï„Î¿Ï… ÎºÏ‰Î´Î¹ÎºÎ¿Ï Î®Ï„Î±Î½ ÎµÏ€Î¹Ï„Ï…Ï‡Î®Ï‚",
+                                      "how_to_use_gift_card":  "Î§ÏÎ·ÏƒÎ¹Î¼Î¿Ï€Î¿Î¹Î®ÏƒÏ„Îµ Ï„Î¿Î½ ÎºÏ‰Î´Î¹ÎºÏŒ Ï„Î·Ï‚ Î´Ï‰ÏÎ¿ÎºÎ¬ÏÏ„Î±Ï‚ ÏƒÏ„Î¿ Î´Î¹Î±Î´Î¯ÎºÏ„Ï…Î¿ Î® Ï„Î¿Î½ ÎºÏ‰Î´Î¹ÎºÏŒ QR ÏƒÏ„Î¿ ÎºÎ±Ï„Î¬ÏƒÏ„Î·Î¼Î±",
+                                      "expiration_date":  "Î›Î®Î³ÎµÎ¹ ÏƒÏ„Î¹Ï‚ {{ expires_on }}"
+                                  }
+                   },
+    "recipient":  {
+                      "form":  {
+                                   "checkbox":  "Î˜Î­Î»Ï‰ Î½Î± Ï„Î¿ ÏƒÏ„ÎµÎ¯Î»Ï‰ Ï‰Ï‚ Î´ÏŽÏÎ¿",
+                                   "email_label":  "Email Ï€Î±ÏÎ±Î»Î®Ï€Ï„Î·",
+                                   "email":  "Email",
+                                   "name_label":  "ÎŒÎ½Î¿Î¼Î± Ï€Î±ÏÎ±Î»Î®Ï€Ï„Î· (Ï€ÏÎ¿Î±Î¹ÏÎµÏ„Î¹ÎºÎ¬)",
+                                   "name":  "ÎŒÎ½Î¿Î¼Î±",
+                                   "message_label":  "ÎœÎ®Î½Ï…Î¼Î± (Ï€ÏÎ¿Î±Î¹ÏÎµÏ„Î¹ÎºÎ¬)",
+                                   "message":  "ÎœÎ®Î½Ï…Î¼Î±",
+                                   "max_characters":  "ÎˆÏ‰Ï‚ {{ max_chars }} Ï‡Î±ÏÎ±ÎºÏ„Î®ÏÎµÏ‚",
+                                   "email_label_optional_for_no_js_behavior":  "Email Ï€Î±ÏÎ±Î»Î®Ï€Ï„Î· (Ï€ÏÎ¿Î±Î¹ÏÎµÏ„Î¹ÎºÎ¬)",
+                                   "send_on":  "Î•Î•Î•Î•-ÎœÎœ-Î—Î—",
+                                   "send_on_label":  "Î—Î¼ÎµÏÎ¿Î¼Î·Î½Î¯Î± Î±Ï€Î¿ÏƒÏ„Î¿Î»Î®Ï‚ (Ï€ÏÎ¿Î±Î¹ÏÎµÏ„Î¹ÎºÎ¬)",
+                                   "expanded":  "Î— Ï†ÏŒÏÎ¼Î± Ï€Î±ÏÎ±Î»Î®Ï€Ï„Î· Î´Ï‰ÏÎ¿ÎºÎ¬ÏÏ„Î±Ï‚ Î±Î½Î±Ï€Ï„ÏÏ‡Î¸Î·ÎºÎµ",
+                                   "collapsed":  "Î— Ï†ÏŒÏÎ¼Î± Ï€Î±ÏÎ±Î»Î®Ï€Ï„Î· Î´Ï‰ÏÎ¿ÎºÎ¬ÏÏ„Î±Ï‚ ÏƒÏ…Î¼Ï€Ï„ÏÏ‡Î¸Î·ÎºÎµ"
+                               }
+                  }
 }

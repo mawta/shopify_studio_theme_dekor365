@@ -1,530 +1,537 @@
 {
-  "general": {
-    "password_page": {
-      "login_form_heading": "Влизане в магазина с парола:",
-      "login_password_button": "Влизане с парола",
-      "login_form_password_label": "Парола",
-      "login_form_password_placeholder": "Вашата парола",
-      "login_form_error": "Неправилна парола.",
-      "login_form_submit": "Въведете",
-      "admin_link_html": "Вие ли сте собственикът на магазина? <a href=\"/admin\" class=\"link underlined-link\">Влезте тук</a>",
-      "powered_by_shopify_html": "Този магазин ще се поддържа от {{ shopify }}"
-    },
-    "social": {
-      "alt_text": {
-        "share_on_facebook": "Споделяне чрез Facebook",
-        "share_on_twitter": "Споделяне в X",
-        "share_on_pinterest": "Отбелязване в Pinterest"
-      },
-      "links": {
-        "twitter": "X (Twitter)",
-        "facebook": "Facebook",
-        "pinterest": "Pinterest",
-        "instagram": "Instagram",
-        "tumblr": "Tumblr",
-        "snapchat": "Snapchat",
-        "youtube": "YouTube",
-        "vimeo": "Vimeo",
-        "tiktok": "TikTok"
-      }
-    },
-    "continue_shopping": "Продължете да пазарувате",
-    "pagination": {
-      "label": "Страниране",
-      "page": "Страница {{ number }}",
-      "next": "Следваща страница",
-      "previous": "Предишна страница"
-    },
-    "search": {
-      "search": "Търсене",
-      "reset": "Изчисти думата за търсене"
-    },
-    "cart": {
-      "view": "Покажи количката ({{ count }})",
-      "item_added": "Артикулът е добавен в количката",
-      "view_empty_cart": "Покажи количката"
-    },
-    "share": {
-      "copy_to_clipboard": "Копиране на връзката",
-      "share_url": "Връзка",
-      "success_message": "Връзката е копирана в клипборда",
-      "close": "Затваряне на споделянето"
-    },
-    "slider": {
-      "of": "от",
-      "next_slide": "Плъзгане надясно",
-      "previous_slide": "Плъзгане наляво",
-      "name": "Плъзгач"
-    }
-  },
-  "newsletter": {
-    "label": "Имейл",
-    "success": "Благодарим, че се абонирахте",
-    "button_label": "Абониране"
-  },
-  "accessibility": {
-    "skip_to_text": "Преминаване към съдържанието",
-    "close": "Затваряне",
-    "unit_price_separator": "за",
-    "vendor": "Доставчик:",
-    "error": "Грешка",
-    "refresh_page": "При задаване на избор се опреснява цялата страница.",
-    "link_messages": {
-      "new_window": "Отваря се в нов прозорец.",
-      "external": "Отваря външен уебсайт."
-    },
-    "loading": "Зареждане...",
-    "skip_to_product_info": "Прескочи към информацията за продукта",
-    "total_reviews": "общ брой мнения",
-    "star_reviews_info": "{{ rating_value }} от {{ rating_max }} звезди",
-    "collapsible_content_title": "Съдържание, което може да се свива",
-    "complementary_products": "Допълващи продукти"
-  },
-  "blogs": {
-    "article": {
-      "blog": "Блог",
-      "read_more_title": "Прочетете още: {{ title }}",
-      "comments": {
-        "one": "{{ count }} коментар",
-        "other": "{{ count }} коментара"
-      },
-      "moderated": "Имайте предвид, че коментарите трябва да бъдат одобрени, преди да се публикуват.",
-      "comment_form_title": "Оставяне на коментар",
-      "name": "Име",
-      "email": "Имейл",
-      "message": "Коментар",
-      "post": "Публикуване на коментар",
-      "back_to_blog": "Назад към блога",
-      "share": "Споделяне на тази статия",
-      "success": "Коментарът ви е публикуван успешно. Благодарим.",
-      "success_moderated": "Коментарът ви е изпратен успешно. Ще бъде публикуван след малко, тъй като блогът има модератор."
-    }
-  },
-  "onboarding": {
-    "collection_title": "Име на вашата колекция",
-    "product_title": "Примерно название на продукт"
-  },
-  "products": {
-    "product": {
-      "add_to_cart": "Добавяне към количката",
-      "description": "Описание",
-      "on_sale": "Разпродажба",
-      "quantity": {
-        "label": "Количество",
-        "input_label": "Количество за {{ product }}",
-        "increase": "Увеличаване на количеството за {{ product }}",
-        "decrease": "Намаляване на количеството за {{ product }}",
-        "minimum_of": "Минимум: {{ quantity }}",
-        "maximum_of": "Максимум: {{ quantity }}",
-        "multiples_of": "Стъпки от {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> в количката",
-        "note": "Преглед на правилата за количества",
-        "min_of": "Мин. {{ quantity }}",
-        "max_of": "Макс. {{ quantity }}",
-        "in_cart_aria_label": "Количество ({{ quantity }} в количката)"
-      },
-      "price": {
-        "from_price_html": "От {{ price }}",
-        "regular_price": "Обичайна цена",
-        "sale_price": "Цена при разпродажба",
-        "unit_price": "Единична цена"
-      },
-      "share": "Споделяне на този продукт",
-      "unavailable": "Неналично",
-      "vendor": "Доставчик",
-      "video_exit_message": "{{ title }} отваря видео на цял екран в същия прозорец.",
-      "xr_button": "Преглед във вашето пространство",
-      "xr_button_label": "При „Преглед във вашето пространство“ елементът се зарежда в прозорец с обогатена реалност.",
-      "sold_out": "Изчерпано",
-      "pickup_availability": {
-        "view_store_info": "Вижте информация за магазина",
-        "check_other_stores": "Проверка за наличност в други магазини",
-        "pick_up_available": "Възможност за взимане",
-        "pick_up_available_at_html": "Възможност за взимане от <span class=\"color-foreground\">{{ location_name }}</span>",
-        "pick_up_unavailable_at_html": "В момента няма възможност за взимане от <span class=\"color-foreground\">{{ location_name }}</span>",
-        "unavailable": "Не може да се зареди възможността за взимане",
-        "refresh": "Обнови"
-      },
-      "media": {
-        "open_media": "Отваряне на мултимедия {{ index }} в модален елемент",
-        "play_model": "Възпроизвеждане с 3D Viewer",
-        "play_video": "Възпроизвеждане на видеоклип",
-        "gallery_viewer": "Визуализатор на галерията",
-        "load_image": "Зареждане на изображение {{ index }} във визуализатора на галерията",
-        "load_model": "Зареждане на 3D модел {{ index }} във визуализатора на галерията",
-        "load_video": "Пускане на видео {{ index }} във визуализатора на галерията",
-        "image_available": "Изображение {{ index }} вече е налично във визуализатора на галерията"
-      },
-      "nested_label": "{{ title }} за {{ parent_title }}",
-      "view_full_details": "Покажи пълните подробности",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Доставката</a> се изчислява при плащане.",
-      "choose_options": "Изберете опции",
-      "choose_product_options": "Изберете опции за {{ product_name }}",
-      "value_unavailable": "{{ option_value }} – неналично",
-      "variant_sold_out_or_unavailable": "Вариантът е изчерпан или неналичен.",
-      "inventory_in_stock": "В наличност",
-      "inventory_in_stock_show_count": "{{ quantity }} в наличност",
-      "inventory_low_stock": "Ниски наличности",
-      "inventory_low_stock_show_count": "Ниски наличности: остават {{ quantity }}",
-      "inventory_out_of_stock": "Изчерпано количество",
-      "inventory_out_of_stock_continue_selling": "В наличност",
-      "sku": "SKU",
-      "volume_pricing": {
-        "title": "Цени на едро",
-        "note": "Има възможност за цени на едро",
-        "minimum": "{{ quantity }}+",
-        "price_range": "{{ minimum }} – {{ maximum }}",
-        "price_at_each_html": "при {{ price }}/бр."
-      },
-      "product_variants": "Варианти на продукта",
-      "taxes_included": "С включени данъци.",
-      "duties_included": "С включено мито.",
-      "duties_and_taxes_included": "С включено мито и данъци."
-    },
-    "modal": {
-      "label": "Мултимедийна галерия"
-    },
-    "facets": {
-      "apply": "Приложи",
-      "clear": "Изчисти",
-      "clear_all": "Премахване на всички",
-      "from": "От",
-      "filter_and_sort": "Филтриране и сортиране",
-      "filter_by_label": "Филтър:",
-      "filter_button": "Филтър",
-      "filters_selected": {
-        "one": "Избрани: {{ count }}",
-        "other": "Избрани: {{ count }}"
-      },
-      "max_price": "Най-високата цена е {{ price }}",
-      "product_count": {
-        "one": "{{ product_count }} от {{ count }} продукт",
-        "other": "{{ product_count }} от {{ count }} продукта"
-      },
-      "product_count_simple": {
-        "one": "{{ count }} продукт",
-        "other": "{{ count }} продукта"
-      },
-      "reset": "Нулиране",
-      "sort_button": "Сортиране",
-      "sort_by_label": "Сортиране по:",
-      "to": "Към",
-      "clear_filter": "Премахване на филтъра",
-      "filter_selected_accessibility": "{{ type }} ({{ count }} избрани филтъра)",
-      "show_more": "Покажи повече",
-      "show_less": "Покажи по-малко",
-      "filter_and_operator_subtitle": "Изрявняване за всички"
-    }
-  },
-  "templates": {
-    "search": {
-      "no_results": "Няма резултати за „{{ terms }}“. Проверете начина на изписване или използвайте различна дума или фраза.",
-      "results_with_count": {
-        "one": "{{ count }} резултат",
-        "other": "{{ count }} резултата"
-      },
-      "title": "Резултати от търсенето",
-      "page": "Страница",
-      "products": "Продукти",
-      "search_for": "Търсене на „{{ terms }}“",
-      "results_with_count_and_term": {
-        "one": "Открит е {{ count }} резултат за „{{ terms }}“",
-        "other": "Открити са {{ count }} резултата за „{{ terms }}“"
-      },
-      "results_pages_with_count": {
-        "one": "{{ count }} страница",
-        "other": "{{ count }} страници"
-      },
-      "results_suggestions_with_count": {
-        "one": "{{ count }} предложениe",
-        "other": "{{ count }} предложения"
-      },
-      "results_products_with_count": {
-        "one": "{{ count }} продукт",
-        "other": "{{ count }} продукта"
-      },
-      "suggestions": "Предложения",
-      "pages": "Страници"
-    },
-    "cart": {
-      "cart": "Количка"
-    },
-    "contact": {
-      "form": {
-        "name": "Име",
-        "email": "Имейл",
-        "comment": "Коментар",
-        "send": "Изпрати",
-        "post_success": "Благодарим, че се свързахте с нас. Ще се свържем с вас възможно най-скоро.",
-        "error_heading": "Коригирайте следното:",
-        "phone": "Телефонен номер",
-        "title": "Формуляр за контакт"
-      }
-    },
-    "404": {
-      "title": "Страницата не е открита",
-      "subtext": "404"
-    }
-  },
-  "sections": {
-    "header": {
-      "announcement": "Известие",
-      "menu": "Меню",
-      "cart_count": {
-        "one": "{{ count }} артикул",
-        "other": "{{ count }} артикула"
-      }
-    },
-    "cart": {
-      "title": "Вашата количка",
-      "caption": "Артикули в количката",
-      "remove_title": "Премахване на {{ title }}",
-      "checkout": "Преминаване към плащане",
-      "empty": "Количката ви е празна.",
-      "cart_error": "При актуализирането на количката ви възникна грешка. Опитайте отново.",
-      "cart_quantity_error_html": "Можете да добавите само {{ quantity }} броя от този артикул в количката си.",
-      "headings": {
-        "product": "Продукт",
-        "price": "Цена",
-        "total": "Обща сума",
-        "quantity": "Количество",
-        "image": "Изображение на продукта"
-      },
-      "update": "Актуализиране",
-      "note": "Специални инструкции за поръчката",
-      "login": {
-        "title": "Имате профил?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Влезте</a> за по-бързо преминаване към плащане."
-      },
-      "estimated_total": "Очаквана обща сума",
-      "new_estimated_total": "Нова очаквана обща сума",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "С включено мито и данъци. Отстъпките и <a href=\"{{ link }}\">доставката</a> се изчисляват при плащане.",
-      "duties_and_taxes_included_shipping_at_checkout_without_policy": "С включено мито и данъци. Отстъпките и доставката се изчисляват при плащане.",
-      "taxes_included_shipping_at_checkout_with_policy_html": "С включени данъци. Отстъпките и <a href=\"{{ link }}\">доставката</a> се изчисляват при плащане.",
-      "taxes_included_shipping_at_checkout_without_policy": "С включени данъци. Отстъпките и доставката се изчисляват при плащане.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "С включено мито. Данъците, отстъпките и <a href=\"{{ link }}\">доставката</a> се изчисляват при плащане.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "С включено мито. Данъците, отстъпките и доставката се изчисляват при плащане.",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Данъците, отстъпките и <a href=\"{{ link }}\">доставката</a> се изчисляват при плащане.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Данъците, отстъпките и доставката се изчисляват при плащане."
-    },
-    "footer": {
-      "payment": "Начини на плащане"
-    },
-    "featured_blog": {
-      "view_all": "Покажи всички",
-      "onboarding_title": "Публикация в блог",
-      "onboarding_content": "Обобщете накратко блог публикацията"
-    },
-    "featured_collection": {
-      "view_all": "Покажи всички",
-      "view_all_label": "Покажи всички продукти в колекция {{ collection_name }}"
-    },
-    "collection_list": {
-      "view_all": "Покажи всички"
-    },
-    "collection_template": {
-      "title": "Колекция",
-      "empty": "Не са открити продукти",
-      "use_fewer_filters_html": "Използвайте по-малко филтри или <a class=\"{{ class }}\" href=\"{{ link }}\">премахнете всички</a>"
-    },
-    "video": {
-      "load_video": "Зареждане на видео: {{ description }}"
-    },
-    "slideshow": {
-      "load_slide": "Зареждане на слайд",
-      "previous_slideshow": "Предишен слайд",
-      "next_slideshow": "Следващ слайд",
-      "pause_slideshow": "Пауза на слайдшоуто",
-      "play_slideshow": "Възпроизвеждане на слайдшоу",
-      "carousel": "Въртележка",
-      "slide": "Слайд"
-    },
-    "page": {
-      "title": "Заглавие на страница"
-    },
-    "announcements": {
-      "previous_announcement": "Предишно известие",
-      "next_announcement": "Следващо известие",
-      "carousel": "Въртележка",
-      "announcement": "Известие",
-      "announcement_bar": "Лента с известия"
-    },
-    "quick_order_list": {
-      "product_total": "Междинна сума за продукти",
-      "view_cart": "Покажи количката",
-      "each": "{{ money }}/бр.",
-      "product": "Продукт",
-      "variant": "Вариант",
-      "variant_total": "Обща сума за варианта",
-      "items_added": {
-        "one": "{{ quantity }} артикул е добавен",
-        "other": "{{ quantity }} артикула са добавени"
-      },
-      "items_removed": {
-        "one": "{{ quantity }} артикул е премахнат",
-        "other": "{{ quantity }} артикула са премахнати"
-      },
-      "product_variants": "Варианти на продукта",
-      "total_items": "Общо артикули",
-      "remove_all_items_confirmation": "Премахване на всички {{ quantity }} артикула от количката?",
-      "remove_all": "Премахване на всички",
-      "cancel": "Отказ",
-      "remove_all_single_item_confirmation": "Премахване на 1 артикул от количката?",
-      "min_error": "За този артикул има минимум от {{ min }}",
-      "max_error": "За този артикул има максимум от {{ max }}",
-      "step_error": "Можете да добавяте този артикул само на групи от {{ step }}"
-    }
-  },
-  "localization": {
-    "country_label": "Държава/регион",
-    "language_label": "Език",
-    "update_language": "Актуализиране на езика",
-    "update_country": "Актуализиране на държава/регион",
-    "search": "Търсене",
-    "popular_countries_regions": "Популярни страни/региони",
-    "country_results_count": "Открити са {{ count }} страни/региона"
-  },
-  "customer": {
-    "account_fallback": "Профил",
-    "activate_account": {
-      "subtext": "Създайте парола, за да активирате профила си.",
-      "password": "Парола",
-      "title": "Активиране на профил",
-      "password_confirm": "Потвърждаване на паролата",
-      "submit": "Активиране на профил",
-      "cancel": "Отхвърляне на поканата"
-    },
-    "addresses": {
-      "default": "По подразбиране",
-      "edit_address": "Редактиране на адрес",
-      "company": "Фирма",
-      "address1": "Адрес 1",
-      "address2": "Адрес 2",
-      "city": "Град",
-      "country": "Държава/регион",
-      "province": "Провинция",
-      "phone": "Телефон",
-      "set_default": "Задаване като адрес по подразбиране",
-      "cancel": "Отказ",
-      "edit": "Редактиране",
-      "delete": "Изтриване",
-      "delete_confirm": "Наистина ли искате да изтриете този адрес?",
-      "title": "Адреси",
-      "add_new": "Добавяне на нов адрес",
-      "first_name": "Собствено име",
-      "last_name": "Фамилно име",
-      "zip": "Пощенски код",
-      "add": "Добавяне на адрес",
-      "update": "Актуализиране на адрес"
-    },
-    "log_in": "Влизане",
-    "log_out": "Излизане",
-    "login_page": {
-      "cancel": "Отказ",
-      "email": "Имейл",
-      "forgot_password": "Забравена парола?",
-      "guest_continue": "Напред",
-      "guest_title": "Продължаване като гост",
-      "password": "Парола",
-      "title": "Влизане",
-      "sign_in": "Влизане",
-      "submit": "Изпрати",
-      "create_account": "Създаване на профил",
-      "alternate_provider_separator": "или"
-    },
-    "orders": {
-      "order_number": "Поръчка",
-      "order_number_link": "Номер на поръчка: {{ number }}",
-      "date": "Дата",
-      "total": "Обща сума",
-      "none": "Все още не сте поръчвали.",
-      "title": "Хронология на поръчките",
-      "payment_status": "Статус на плащане",
-      "fulfillment_status": "Статус на изпълнение"
-    },
-    "recover_password": {
-      "title": "Подновяване на паролата",
-      "subtext": "Ще ви изпратим имейл, за да подновите паролата си",
-      "success": "Изпратихме ви имейл с връзка, чрез която да актуализирате паролата си."
-    },
-    "register": {
-      "email": "Имейл",
-      "password": "Парола",
-      "submit": "Създаване",
-      "title": "Създаване на профил",
-      "first_name": "Собствено име",
-      "last_name": "Фамилно име"
-    },
-    "reset_password": {
-      "title": "Подновяване на паролата за профила",
-      "subtext": "Въведете нова парола",
-      "password": "Парола",
-      "password_confirm": "Потвърждаване на паролата",
-      "submit": "Подновяване на паролата"
-    },
-    "account": {
-      "title": "Профил",
-      "details": "Информация за профила",
-      "view_addresses": "Покажи адресите",
-      "return": "Назад към информацията за профила"
-    },
-    "order": {
-      "title": "Поръчка {{ name }}",
-      "date_html": "Направена на {{ date }}",
-      "cancelled_html": "Поръчката е анулирана на {{ date }}",
-      "cancelled_reason": "Причина: {{ reason }}",
-      "billing_address": "Адрес за фактуриране",
-      "payment_status": "Статус на плащане",
-      "shipping_address": "Адрес за доставка",
-      "fulfillment_status": "Статус на изпълнение",
-      "discount": "Отстъпка",
-      "shipping": "Доставка",
-      "tax": "Данъци",
-      "product": "Продукт",
-      "sku": "SKU",
-      "price": "Цена",
-      "quantity": "Количество",
-      "total": "Обща сума",
-      "fulfilled_at_html": "Изпълнена на: {{ date }}",
-      "track_shipment": "Проследяване на пратката",
-      "tracking_url": "Връзка за проследяване",
-      "tracking_company": "Превозвач",
-      "tracking_number": "Номер за проследяване",
-      "subtotal": "Междинна сума",
-      "total_duties": "Мито",
-      "total_refunded": "Възстановени"
-    }
-  },
-  "gift_cards": {
-    "issued": {
-      "title": "Това е остатъкът от вашия ваучер за подарък на стойност {{ value }} за {{ shop }}!",
-      "gift_card_code": "Код на ваучер за подарък",
-      "shop_link": "Посетете магазина онлайн",
-      "add_to_apple_wallet": "Добавяне към Apple Wallet",
-      "qr_image_alt": "QR код – сканирайте го, за да използвате ваучера за подарък",
-      "copy_code": "Копиране на кода на ваучер за подарък",
-      "expired": "Изтекъл",
-      "copy_code_success": "Кодът е копиран успешно",
-      "subtext": "Вашият ваучер за подарък",
-      "how_to_use_gift_card": "Използвайте ваучера за подарък онлайн или QR код в магазина",
-      "expiration_date": "Изтича на {{ expires_on }}"
-    }
-  },
-  "recipient": {
-    "form": {
-      "checkbox": "Искам да изпратя като подарък",
-      "email_label": "Имейл на получателя",
-      "email": "Имейл",
-      "name_label": "Име на получателя (незадължително)",
-      "name": "Име",
-      "message_label": "Съобщение (незадължително)",
-      "message": "Съобщение",
-      "max_characters": "Макс. {{ max_chars }} знака",
-      "email_label_optional_for_no_js_behavior": "Имейл на получателя (незадължително)",
-      "send_on": "ГГГГ-ММ-ДД",
-      "send_on_label": "Изпращане на (незадължително)",
-      "expanded": "Формулярът за получател на ваучер за подарък е разгънат",
-      "collapsed": "Формулярът за получател на ваучер за подарък е свит"
-    }
-  }
+    "general":  {
+                    "password_page":  {
+                                          "login_form_heading":  "Ð’Ð»Ð¸Ð·Ð°Ð½Ðµ Ð² Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð° Ñ Ð¿Ð°Ñ€Ð¾Ð»Ð°:",
+                                          "login_password_button":  "Ð’Ð»Ð¸Ð·Ð°Ð½Ðµ Ñ Ð¿Ð°Ñ€Ð¾Ð»Ð°",
+                                          "login_form_password_label":  "ÐŸÐ°Ñ€Ð¾Ð»Ð°",
+                                          "login_form_password_placeholder":  "Ð’Ð°ÑˆÐ°Ñ‚Ð° Ð¿Ð°Ñ€Ð¾Ð»Ð°",
+                                          "login_form_error":  "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»Ð½Ð° Ð¿Ð°Ñ€Ð¾Ð»Ð°.",
+                                          "login_form_submit":  "Ð’ÑŠÐ²ÐµÐ´ÐµÑ‚Ðµ",
+                                          "admin_link_html":  "Ð’Ð¸Ðµ Ð»Ð¸ ÑÑ‚Ðµ ÑÐ¾Ð±ÑÑ‚Ð²ÐµÐ½Ð¸ÐºÑŠÑ‚ Ð½Ð° Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°? \u003ca href=\"/admin\" class=\"link underlined-link\"\u003eÐ’Ð»ÐµÐ·Ñ‚Ðµ Ñ‚ÑƒÐº\u003c/a\u003e",
+                                          "powered_by_shopify_html":  "Ð¢Ð¾Ð·Ð¸ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½ Ñ‰Ðµ ÑÐµ Ð¿Ð¾Ð´Ð´ÑŠÑ€Ð¶Ð° Ð¾Ñ‚ {{ shopify }}"
+                                      },
+                    "social":  {
+                                   "alt_text":  {
+                                                    "share_on_facebook":  "Ð¡Ð¿Ð¾Ð´ÐµÐ»ÑÐ½Ðµ Ñ‡Ñ€ÐµÐ· Facebook",
+                                                    "share_on_twitter":  "Ð¡Ð¿Ð¾Ð´ÐµÐ»ÑÐ½Ðµ Ð² X",
+                                                    "share_on_pinterest":  "ÐžÑ‚Ð±ÐµÐ»ÑÐ·Ð²Ð°Ð½Ðµ Ð² Pinterest"
+                                                },
+                                   "links":  {
+                                                 "twitter":  "X (Twitter)",
+                                                 "facebook":  "Facebook",
+                                                 "pinterest":  "Pinterest",
+                                                 "instagram":  "Instagram",
+                                                 "tumblr":  "Tumblr",
+                                                 "snapchat":  "Snapchat",
+                                                 "youtube":  "YouTube",
+                                                 "vimeo":  "Vimeo",
+                                                 "tiktok":  "TikTok"
+                                             }
+                               },
+                    "continue_shopping":  "ÐŸÑ€Ð¾Ð´ÑŠÐ»Ð¶ÐµÑ‚Ðµ Ð´Ð° Ð¿Ð°Ð·Ð°Ñ€ÑƒÐ²Ð°Ñ‚Ðµ",
+                    "pagination":  {
+                                       "label":  "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ€Ð°Ð½Ðµ",
+                                       "page":  "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° {{ number }}",
+                                       "next":  "Ð¡Ð»ÐµÐ´Ð²Ð°Ñ‰Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°",
+                                       "previous":  "ÐŸÑ€ÐµÐ´Ð¸ÑˆÐ½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°"
+                                   },
+                    "search":  {
+                                   "search":  "Ð¢ÑŠÑ€ÑÐµÐ½Ðµ",
+                                   "reset":  "Ð˜Ð·Ñ‡Ð¸ÑÑ‚Ð¸ Ð´ÑƒÐ¼Ð°Ñ‚Ð° Ð·Ð° Ñ‚ÑŠÑ€ÑÐµÐ½Ðµ"
+                               },
+                    "cart":  {
+                                 "view":  "ÐŸÐ¾ÐºÐ°Ð¶Ð¸ ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð° ({{ count }})",
+                                 "item_added":  "ÐÑ€Ñ‚Ð¸ÐºÑƒÐ»ÑŠÑ‚ Ðµ Ð´Ð¾Ð±Ð°Ð²ÐµÐ½ Ð² ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð°",
+                                 "view_empty_cart":  "ÐŸÐ¾ÐºÐ°Ð¶Ð¸ ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð°"
+                             },
+                    "share":  {
+                                  "copy_to_clipboard":  "ÐšÐ¾Ð¿Ð¸Ñ€Ð°Ð½Ðµ Ð½Ð° Ð²Ñ€ÑŠÐ·ÐºÐ°Ñ‚Ð°",
+                                  "share_url":  "Ð’Ñ€ÑŠÐ·ÐºÐ°",
+                                  "success_message":  "Ð’Ñ€ÑŠÐ·ÐºÐ°Ñ‚Ð° Ðµ ÐºÐ¾Ð¿Ð¸Ñ€Ð°Ð½Ð° Ð² ÐºÐ»Ð¸Ð¿Ð±Ð¾Ñ€Ð´Ð°",
+                                  "close":  "Ð—Ð°Ñ‚Ð²Ð°Ñ€ÑÐ½Ðµ Ð½Ð° ÑÐ¿Ð¾Ð´ÐµÐ»ÑÐ½ÐµÑ‚Ð¾"
+                              },
+                    "slider":  {
+                                   "of":  "Ð¾Ñ‚",
+                                   "next_slide":  "ÐŸÐ»ÑŠÐ·Ð³Ð°Ð½Ðµ Ð½Ð°Ð´ÑÑÐ½Ð¾",
+                                   "previous_slide":  "ÐŸÐ»ÑŠÐ·Ð³Ð°Ð½Ðµ Ð½Ð°Ð»ÑÐ²Ð¾",
+                                   "name":  "ÐŸÐ»ÑŠÐ·Ð³Ð°Ñ‡"
+                               },
+                    "breadcrumbs":  {
+                                        "home":  "Home"
+                                    }
+                },
+    "newsletter":  {
+                       "label":  "Ð˜Ð¼ÐµÐ¹Ð»",
+                       "success":  "Ð‘Ð»Ð°Ð³Ð¾Ð´Ð°Ñ€Ð¸Ð¼, Ñ‡Ðµ ÑÐµ Ð°Ð±Ð¾Ð½Ð¸Ñ€Ð°Ñ…Ñ‚Ðµ",
+                       "button_label":  "ÐÐ±Ð¾Ð½Ð¸Ñ€Ð°Ð½Ðµ"
+                   },
+    "accessibility":  {
+                          "skip_to_text":  "ÐŸÑ€ÐµÐ¼Ð¸Ð½Ð°Ð²Ð°Ð½Ðµ ÐºÑŠÐ¼ ÑÑŠÐ´ÑŠÑ€Ð¶Ð°Ð½Ð¸ÐµÑ‚Ð¾",
+                          "close":  "Ð—Ð°Ñ‚Ð²Ð°Ñ€ÑÐ½Ðµ",
+                          "unit_price_separator":  "Ð·Ð°",
+                          "vendor":  "Ð”Ð¾ÑÑ‚Ð°Ð²Ñ‡Ð¸Ðº:",
+                          "error":  "Ð“Ñ€ÐµÑˆÐºÐ°",
+                          "refresh_page":  "ÐŸÑ€Ð¸ Ð·Ð°Ð´Ð°Ð²Ð°Ð½Ðµ Ð½Ð° Ð¸Ð·Ð±Ð¾Ñ€ ÑÐµ Ð¾Ð¿Ñ€ÐµÑÐ½ÑÐ²Ð° Ñ†ÑÐ»Ð°Ñ‚Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°.",
+                          "link_messages":  {
+                                                "new_window":  "ÐžÑ‚Ð²Ð°Ñ€Ñ ÑÐµ Ð² Ð½Ð¾Ð² Ð¿Ñ€Ð¾Ð·Ð¾Ñ€ÐµÑ†.",
+                                                "external":  "ÐžÑ‚Ð²Ð°Ñ€Ñ Ð²ÑŠÐ½ÑˆÐµÐ½ ÑƒÐµÐ±ÑÐ°Ð¹Ñ‚."
+                                            },
+                          "loading":  "Ð—Ð°Ñ€ÐµÐ¶Ð´Ð°Ð½Ðµ...",
+                          "skip_to_product_info":  "ÐŸÑ€ÐµÑÐºÐ¾Ñ‡Ð¸ ÐºÑŠÐ¼ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑÑ‚Ð° Ð·Ð° Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð°",
+                          "total_reviews":  "Ð¾Ð±Ñ‰ Ð±Ñ€Ð¾Ð¹ Ð¼Ð½ÐµÐ½Ð¸Ñ",
+                          "star_reviews_info":  "{{ rating_value }} Ð¾Ñ‚ {{ rating_max }} Ð·Ð²ÐµÐ·Ð´Ð¸",
+                          "collapsible_content_title":  "Ð¡ÑŠÐ´ÑŠÑ€Ð¶Ð°Ð½Ð¸Ðµ, ÐºÐ¾ÐµÑ‚Ð¾ Ð¼Ð¾Ð¶Ðµ Ð´Ð° ÑÐµ ÑÐ²Ð¸Ð²Ð°",
+                          "complementary_products":  "Ð”Ð¾Ð¿ÑŠÐ»Ð²Ð°Ñ‰Ð¸ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¸"
+                      },
+    "blogs":  {
+                  "article":  {
+                                  "blog":  "Ð‘Ð»Ð¾Ð³",
+                                  "read_more_title":  "ÐŸÑ€Ð¾Ñ‡ÐµÑ‚ÐµÑ‚Ðµ Ð¾Ñ‰Ðµ: {{ title }}",
+                                  "comments":  {
+                                                   "one":  "{{ count }} ÐºÐ¾Ð¼ÐµÐ½Ñ‚Ð°Ñ€",
+                                                   "other":  "{{ count }} ÐºÐ¾Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð°"
+                                               },
+                                  "moderated":  "Ð˜Ð¼Ð°Ð¹Ñ‚Ðµ Ð¿Ñ€ÐµÐ´Ð²Ð¸Ð´, Ñ‡Ðµ ÐºÐ¾Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ñ‚Ðµ Ñ‚Ñ€ÑÐ±Ð²Ð° Ð´Ð° Ð±ÑŠÐ´Ð°Ñ‚ Ð¾Ð´Ð¾Ð±Ñ€ÐµÐ½Ð¸, Ð¿Ñ€ÐµÐ´Ð¸ Ð´Ð° ÑÐµ Ð¿ÑƒÐ±Ð»Ð¸ÐºÑƒÐ²Ð°Ñ‚.",
+                                  "comment_form_title":  "ÐžÑÑ‚Ð°Ð²ÑÐ½Ðµ Ð½Ð° ÐºÐ¾Ð¼ÐµÐ½Ñ‚Ð°Ñ€",
+                                  "name":  "Ð˜Ð¼Ðµ",
+                                  "email":  "Ð˜Ð¼ÐµÐ¹Ð»",
+                                  "message":  "ÐšÐ¾Ð¼ÐµÐ½Ñ‚Ð°Ñ€",
+                                  "post":  "ÐŸÑƒÐ±Ð»Ð¸ÐºÑƒÐ²Ð°Ð½Ðµ Ð½Ð° ÐºÐ¾Ð¼ÐµÐ½Ñ‚Ð°Ñ€",
+                                  "back_to_blog":  "ÐÐ°Ð·Ð°Ð´ ÐºÑŠÐ¼ Ð±Ð»Ð¾Ð³Ð°",
+                                  "share":  "Ð¡Ð¿Ð¾Ð´ÐµÐ»ÑÐ½Ðµ Ð½Ð° Ñ‚Ð°Ð·Ð¸ ÑÑ‚Ð°Ñ‚Ð¸Ñ",
+                                  "success":  "ÐšÐ¾Ð¼ÐµÐ½Ñ‚Ð°Ñ€ÑŠÑ‚ Ð²Ð¸ Ðµ Ð¿ÑƒÐ±Ð»Ð¸ÐºÑƒÐ²Ð°Ð½ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾. Ð‘Ð»Ð°Ð³Ð¾Ð´Ð°Ñ€Ð¸Ð¼.",
+                                  "success_moderated":  "ÐšÐ¾Ð¼ÐµÐ½Ñ‚Ð°Ñ€ÑŠÑ‚ Ð²Ð¸ Ðµ Ð¸Ð·Ð¿Ñ€Ð°Ñ‚ÐµÐ½ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾. Ð©Ðµ Ð±ÑŠÐ´Ðµ Ð¿ÑƒÐ±Ð»Ð¸ÐºÑƒÐ²Ð°Ð½ ÑÐ»ÐµÐ´ Ð¼Ð°Ð»ÐºÐ¾, Ñ‚ÑŠÐ¹ ÐºÐ°Ñ‚Ð¾ Ð±Ð»Ð¾Ð³ÑŠÑ‚ Ð¸Ð¼Ð° Ð¼Ð¾Ð´ÐµÑ€Ð°Ñ‚Ð¾Ñ€."
+                              }
+              },
+    "onboarding":  {
+                       "collection_title":  "Ð˜Ð¼Ðµ Ð½Ð° Ð²Ð°ÑˆÐ°Ñ‚Ð° ÐºÐ¾Ð»ÐµÐºÑ†Ð¸Ñ",
+                       "product_title":  "ÐŸÑ€Ð¸Ð¼ÐµÑ€Ð½Ð¾ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð½Ð° Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚"
+                   },
+    "products":  {
+                     "product":  {
+                                     "add_to_cart":  "Ð”Ð¾Ð±Ð°Ð²ÑÐ½Ðµ ÐºÑŠÐ¼ ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð°",
+                                     "description":  "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ",
+                                     "on_sale":  "Ð Ð°Ð·Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ð±Ð°",
+                                     "quantity":  {
+                                                      "label":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾",
+                                                      "input_label":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð·Ð° {{ product }}",
+                                                      "increase":  "Ð£Ð²ÐµÐ»Ð¸Ñ‡Ð°Ð²Ð°Ð½Ðµ Ð½Ð° ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾Ñ‚Ð¾ Ð·Ð° {{ product }}",
+                                                      "decrease":  "ÐÐ°Ð¼Ð°Ð»ÑÐ²Ð°Ð½Ðµ Ð½Ð° ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾Ñ‚Ð¾ Ð·Ð° {{ product }}",
+                                                      "minimum_of":  "ÐœÐ¸Ð½Ð¸Ð¼ÑƒÐ¼: {{ quantity }}",
+                                                      "maximum_of":  "ÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼: {{ quantity }}",
+                                                      "multiples_of":  "Ð¡Ñ‚ÑŠÐ¿ÐºÐ¸ Ð¾Ñ‚ {{ quantity }}",
+                                                      "in_cart_html":  "\u003cspan class=\"quantity-cart\"\u003e{{ quantity }}\u003c/span\u003e Ð² ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð°",
+                                                      "note":  "ÐŸÑ€ÐµÐ³Ð»ÐµÐ´ Ð½Ð° Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð°Ñ‚Ð° Ð·Ð° ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð°",
+                                                      "min_of":  "ÐœÐ¸Ð½. {{ quantity }}",
+                                                      "max_of":  "ÐœÐ°ÐºÑ. {{ quantity }}",
+                                                      "in_cart_aria_label":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ({{ quantity }} Ð² ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð°)"
+                                                  },
+                                     "price":  {
+                                                   "from_price_html":  "ÐžÑ‚ {{ price }}",
+                                                   "regular_price":  "ÐžÐ±Ð¸Ñ‡Ð°Ð¹Ð½Ð° Ñ†ÐµÐ½Ð°",
+                                                   "sale_price":  "Ð¦ÐµÐ½Ð° Ð¿Ñ€Ð¸ Ñ€Ð°Ð·Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ð±Ð°",
+                                                   "unit_price":  "Ð•Ð´Ð¸Ð½Ð¸Ñ‡Ð½Ð° Ñ†ÐµÐ½Ð°"
+                                               },
+                                     "share":  "Ð¡Ð¿Ð¾Ð´ÐµÐ»ÑÐ½Ðµ Ð½Ð° Ñ‚Ð¾Ð·Ð¸ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚",
+                                     "unavailable":  "ÐÐµÐ½Ð°Ð»Ð¸Ñ‡Ð½Ð¾",
+                                     "vendor":  "Ð”Ð¾ÑÑ‚Ð°Ð²Ñ‡Ð¸Ðº",
+                                     "video_exit_message":  "{{ title }} Ð¾Ñ‚Ð²Ð°Ñ€Ñ Ð²Ð¸Ð´ÐµÐ¾ Ð½Ð° Ñ†ÑÐ» ÐµÐºÑ€Ð°Ð½ Ð² ÑÑŠÑ‰Ð¸Ñ Ð¿Ñ€Ð¾Ð·Ð¾Ñ€ÐµÑ†.",
+                                     "xr_button":  "ÐŸÑ€ÐµÐ³Ð»ÐµÐ´ Ð²ÑŠÐ² Ð²Ð°ÑˆÐµÑ‚Ð¾ Ð¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÑÑ‚Ð²Ð¾",
+                                     "xr_button_label":  "ÐŸÑ€Ð¸ â€žÐŸÑ€ÐµÐ³Ð»ÐµÐ´ Ð²ÑŠÐ² Ð²Ð°ÑˆÐµÑ‚Ð¾ Ð¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÑÑ‚Ð²Ð¾â€œ ÐµÐ»ÐµÐ¼ÐµÐ½Ñ‚ÑŠÑ‚ ÑÐµ Ð·Ð°Ñ€ÐµÐ¶Ð´Ð° Ð² Ð¿Ñ€Ð¾Ð·Ð¾Ñ€ÐµÑ† Ñ Ð¾Ð±Ð¾Ð³Ð°Ñ‚ÐµÐ½Ð° Ñ€ÐµÐ°Ð»Ð½Ð¾ÑÑ‚.",
+                                     "sold_out":  "Ð˜Ð·Ñ‡ÐµÑ€Ð¿Ð°Ð½Ð¾",
+                                     "pickup_availability":  {
+                                                                 "view_store_info":  "Ð’Ð¸Ð¶Ñ‚Ðµ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð·Ð° Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°",
+                                                                 "check_other_stores":  "ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð·Ð° Ð½Ð°Ð»Ð¸Ñ‡Ð½Ð¾ÑÑ‚ Ð² Ð´Ñ€ÑƒÐ³Ð¸ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð¸",
+                                                                 "pick_up_available":  "Ð’ÑŠÐ·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ Ð·Ð° Ð²Ð·Ð¸Ð¼Ð°Ð½Ðµ",
+                                                                 "pick_up_available_at_html":  "Ð’ÑŠÐ·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ Ð·Ð° Ð²Ð·Ð¸Ð¼Ð°Ð½Ðµ Ð¾Ñ‚ \u003cspan class=\"color-foreground\"\u003e{{ location_name }}\u003c/span\u003e",
+                                                                 "pick_up_unavailable_at_html":  "Ð’ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚Ð° Ð½ÑÐ¼Ð° Ð²ÑŠÐ·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ Ð·Ð° Ð²Ð·Ð¸Ð¼Ð°Ð½Ðµ Ð¾Ñ‚ \u003cspan class=\"color-foreground\"\u003e{{ location_name }}\u003c/span\u003e",
+                                                                 "unavailable":  "ÐÐµ Ð¼Ð¾Ð¶Ðµ Ð´Ð° ÑÐµ Ð·Ð°Ñ€ÐµÐ´Ð¸ Ð²ÑŠÐ·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ñ‚Ð° Ð·Ð° Ð²Ð·Ð¸Ð¼Ð°Ð½Ðµ",
+                                                                 "refresh":  "ÐžÐ±Ð½Ð¾Ð²Ð¸"
+                                                             },
+                                     "media":  {
+                                                   "open_media":  "ÐžÑ‚Ð²Ð°Ñ€ÑÐ½Ðµ Ð½Ð° Ð¼ÑƒÐ»Ñ‚Ð¸Ð¼ÐµÐ´Ð¸Ñ {{ index }} Ð² Ð¼Ð¾Ð´Ð°Ð»ÐµÐ½ ÐµÐ»ÐµÐ¼ÐµÐ½Ñ‚",
+                                                   "play_model":  "Ð’ÑŠÐ·Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ¶Ð´Ð°Ð½Ðµ Ñ 3D Viewer",
+                                                   "play_video":  "Ð’ÑŠÐ·Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ¶Ð´Ð°Ð½Ðµ Ð½Ð° Ð²Ð¸Ð´ÐµÐ¾ÐºÐ»Ð¸Ð¿",
+                                                   "gallery_viewer":  "Ð’Ð¸Ð·ÑƒÐ°Ð»Ð¸Ð·Ð°Ñ‚Ð¾Ñ€ Ð½Ð° Ð³Ð°Ð»ÐµÑ€Ð¸ÑÑ‚Ð°",
+                                                   "load_image":  "Ð—Ð°Ñ€ÐµÐ¶Ð´Ð°Ð½Ðµ Ð½Ð° Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ {{ index }} Ð²ÑŠÐ² Ð²Ð¸Ð·ÑƒÐ°Ð»Ð¸Ð·Ð°Ñ‚Ð¾Ñ€Ð° Ð½Ð° Ð³Ð°Ð»ÐµÑ€Ð¸ÑÑ‚Ð°",
+                                                   "load_model":  "Ð—Ð°Ñ€ÐµÐ¶Ð´Ð°Ð½Ðµ Ð½Ð° 3D Ð¼Ð¾Ð´ÐµÐ» {{ index }} Ð²ÑŠÐ² Ð²Ð¸Ð·ÑƒÐ°Ð»Ð¸Ð·Ð°Ñ‚Ð¾Ñ€Ð° Ð½Ð° Ð³Ð°Ð»ÐµÑ€Ð¸ÑÑ‚Ð°",
+                                                   "load_video":  "ÐŸÑƒÑÐºÐ°Ð½Ðµ Ð½Ð° Ð²Ð¸Ð´ÐµÐ¾ {{ index }} Ð²ÑŠÐ² Ð²Ð¸Ð·ÑƒÐ°Ð»Ð¸Ð·Ð°Ñ‚Ð¾Ñ€Ð° Ð½Ð° Ð³Ð°Ð»ÐµÑ€Ð¸ÑÑ‚Ð°",
+                                                   "image_available":  "Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ {{ index }} Ð²ÐµÑ‡Ðµ Ðµ Ð½Ð°Ð»Ð¸Ñ‡Ð½Ð¾ Ð²ÑŠÐ² Ð²Ð¸Ð·ÑƒÐ°Ð»Ð¸Ð·Ð°Ñ‚Ð¾Ñ€Ð° Ð½Ð° Ð³Ð°Ð»ÐµÑ€Ð¸ÑÑ‚Ð°"
+                                               },
+                                     "nested_label":  "{{ title }} Ð·Ð° {{ parent_title }}",
+                                     "view_full_details":  "ÐŸÐ¾ÐºÐ°Ð¶Ð¸ Ð¿ÑŠÐ»Ð½Ð¸Ñ‚Ðµ Ð¿Ð¾Ð´Ñ€Ð¾Ð±Ð½Ð¾ÑÑ‚Ð¸",
+                                     "shipping_policy_html":  "\u003ca href=\"{{ link }}\"\u003eÐ”Ð¾ÑÑ‚Ð°Ð²ÐºÐ°Ñ‚Ð°\u003c/a\u003e ÑÐµ Ð¸Ð·Ñ‡Ð¸ÑÐ»ÑÐ²Ð° Ð¿Ñ€Ð¸ Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ.",
+                                     "choose_options":  "Ð˜Ð·Ð±ÐµÑ€ÐµÑ‚Ðµ Ð¾Ð¿Ñ†Ð¸Ð¸",
+                                     "choose_product_options":  "Ð˜Ð·Ð±ÐµÑ€ÐµÑ‚Ðµ Ð¾Ð¿Ñ†Ð¸Ð¸ Ð·Ð° {{ product_name }}",
+                                     "value_unavailable":  "{{ option_value }} â€“ Ð½ÐµÐ½Ð°Ð»Ð¸Ñ‡Ð½Ð¾",
+                                     "variant_sold_out_or_unavailable":  "Ð’Ð°Ñ€Ð¸Ð°Ð½Ñ‚ÑŠÑ‚ Ðµ Ð¸Ð·Ñ‡ÐµÑ€Ð¿Ð°Ð½ Ð¸Ð»Ð¸ Ð½ÐµÐ½Ð°Ð»Ð¸Ñ‡ÐµÐ½.",
+                                     "inventory_in_stock":  "Ð’ Ð½Ð°Ð»Ð¸Ñ‡Ð½Ð¾ÑÑ‚",
+                                     "inventory_in_stock_show_count":  "{{ quantity }} Ð² Ð½Ð°Ð»Ð¸Ñ‡Ð½Ð¾ÑÑ‚",
+                                     "inventory_low_stock":  "ÐÐ¸ÑÐºÐ¸ Ð½Ð°Ð»Ð¸Ñ‡Ð½Ð¾ÑÑ‚Ð¸",
+                                     "inventory_low_stock_show_count":  "ÐÐ¸ÑÐºÐ¸ Ð½Ð°Ð»Ð¸Ñ‡Ð½Ð¾ÑÑ‚Ð¸: Ð¾ÑÑ‚Ð°Ð²Ð°Ñ‚ {{ quantity }}",
+                                     "inventory_out_of_stock":  "Ð˜Ð·Ñ‡ÐµÑ€Ð¿Ð°Ð½Ð¾ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾",
+                                     "inventory_out_of_stock_continue_selling":  "Ð’ Ð½Ð°Ð»Ð¸Ñ‡Ð½Ð¾ÑÑ‚",
+                                     "sku":  "SKU",
+                                     "volume_pricing":  {
+                                                            "title":  "Ð¦ÐµÐ½Ð¸ Ð½Ð° ÐµÐ´Ñ€Ð¾",
+                                                            "note":  "Ð˜Ð¼Ð° Ð²ÑŠÐ·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ Ð·Ð° Ñ†ÐµÐ½Ð¸ Ð½Ð° ÐµÐ´Ñ€Ð¾",
+                                                            "minimum":  "{{ quantity }}+",
+                                                            "price_range":  "{{ minimum }} â€“ {{ maximum }}",
+                                                            "price_at_each_html":  "Ð¿Ñ€Ð¸ {{ price }}/Ð±Ñ€."
+                                                        },
+                                     "product_variants":  "Ð’Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ð¸ Ð½Ð° Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð°",
+                                     "taxes_included":  "Ð¡ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸ Ð´Ð°Ð½ÑŠÑ†Ð¸.",
+                                     "duties_included":  "Ð¡ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾ Ð¼Ð¸Ñ‚Ð¾.",
+                                     "duties_and_taxes_included":  "Ð¡ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾ Ð¼Ð¸Ñ‚Ð¾ Ð¸ Ð´Ð°Ð½ÑŠÑ†Ð¸.",
+                                     "product_types":  "Product type",
+                                     "tags":  "Tags",
+                                     "products_tagged":  "Products tagged {{ tag }}"
+                                 },
+                     "modal":  {
+                                   "label":  "ÐœÑƒÐ»Ñ‚Ð¸Ð¼ÐµÐ´Ð¸Ð¹Ð½Ð° Ð³Ð°Ð»ÐµÑ€Ð¸Ñ"
+                               },
+                     "facets":  {
+                                    "apply":  "ÐŸÑ€Ð¸Ð»Ð¾Ð¶Ð¸",
+                                    "clear":  "Ð˜Ð·Ñ‡Ð¸ÑÑ‚Ð¸",
+                                    "clear_all":  "ÐŸÑ€ÐµÐ¼Ð°Ñ…Ð²Ð°Ð½Ðµ Ð½Ð° Ð²ÑÐ¸Ñ‡ÐºÐ¸",
+                                    "from":  "ÐžÑ‚",
+                                    "filter_and_sort":  "Ð¤Ð¸Ð»Ñ‚Ñ€Ð¸Ñ€Ð°Ð½Ðµ Ð¸ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð°Ð½Ðµ",
+                                    "filter_by_label":  "Ð¤Ð¸Ð»Ñ‚ÑŠÑ€:",
+                                    "filter_button":  "Ð¤Ð¸Ð»Ñ‚ÑŠÑ€",
+                                    "filters_selected":  {
+                                                             "one":  "Ð˜Ð·Ð±Ñ€Ð°Ð½Ð¸: {{ count }}",
+                                                             "other":  "Ð˜Ð·Ð±Ñ€Ð°Ð½Ð¸: {{ count }}"
+                                                         },
+                                    "max_price":  "ÐÐ°Ð¹-Ð²Ð¸ÑÐ¾ÐºÐ°Ñ‚Ð° Ñ†ÐµÐ½Ð° Ðµ {{ price }}",
+                                    "product_count":  {
+                                                          "one":  "{{ product_count }} Ð¾Ñ‚ {{ count }} Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚",
+                                                          "other":  "{{ product_count }} Ð¾Ñ‚ {{ count }} Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð°"
+                                                      },
+                                    "product_count_simple":  {
+                                                                 "one":  "{{ count }} Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚",
+                                                                 "other":  "{{ count }} Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð°"
+                                                             },
+                                    "reset":  "ÐÑƒÐ»Ð¸Ñ€Ð°Ð½Ðµ",
+                                    "sort_button":  "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð°Ð½Ðµ",
+                                    "sort_by_label":  "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð°Ð½Ðµ Ð¿Ð¾:",
+                                    "to":  "ÐšÑŠÐ¼",
+                                    "clear_filter":  "ÐŸÑ€ÐµÐ¼Ð°Ñ…Ð²Ð°Ð½Ðµ Ð½Ð° Ñ„Ð¸Ð»Ñ‚ÑŠÑ€Ð°",
+                                    "filter_selected_accessibility":  "{{ type }} ({{ count }} Ð¸Ð·Ð±Ñ€Ð°Ð½Ð¸ Ñ„Ð¸Ð»Ñ‚ÑŠÑ€Ð°)",
+                                    "show_more":  "ÐŸÐ¾ÐºÐ°Ð¶Ð¸ Ð¿Ð¾Ð²ÐµÑ‡Ðµ",
+                                    "show_less":  "ÐŸÐ¾ÐºÐ°Ð¶Ð¸ Ð¿Ð¾-Ð¼Ð°Ð»ÐºÐ¾",
+                                    "filter_and_operator_subtitle":  "Ð˜Ð·Ñ€ÑÐ²Ð½ÑÐ²Ð°Ð½Ðµ Ð·Ð° Ð²ÑÐ¸Ñ‡ÐºÐ¸"
+                                }
+                 },
+    "templates":  {
+                      "search":  {
+                                     "no_results":  "ÐÑÐ¼Ð° Ñ€ÐµÐ·ÑƒÐ»Ñ‚Ð°Ñ‚Ð¸ Ð·Ð° â€ž{{ terms }}â€œ. ÐŸÑ€Ð¾Ð²ÐµÑ€ÐµÑ‚Ðµ Ð½Ð°Ñ‡Ð¸Ð½Ð° Ð½Ð° Ð¸Ð·Ð¿Ð¸ÑÐ²Ð°Ð½Ðµ Ð¸Ð»Ð¸ Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¹Ñ‚Ðµ Ñ€Ð°Ð·Ð»Ð¸Ñ‡Ð½Ð° Ð´ÑƒÐ¼Ð° Ð¸Ð»Ð¸ Ñ„Ñ€Ð°Ð·Ð°.",
+                                     "results_with_count":  {
+                                                                "one":  "{{ count }} Ñ€ÐµÐ·ÑƒÐ»Ñ‚Ð°Ñ‚",
+                                                                "other":  "{{ count }} Ñ€ÐµÐ·ÑƒÐ»Ñ‚Ð°Ñ‚Ð°"
+                                                            },
+                                     "title":  "Ð ÐµÐ·ÑƒÐ»Ñ‚Ð°Ñ‚Ð¸ Ð¾Ñ‚ Ñ‚ÑŠÑ€ÑÐµÐ½ÐµÑ‚Ð¾",
+                                     "page":  "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°",
+                                     "products":  "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ‚Ð¸",
+                                     "search_for":  "Ð¢ÑŠÑ€ÑÐµÐ½Ðµ Ð½Ð° â€ž{{ terms }}â€œ",
+                                     "results_with_count_and_term":  {
+                                                                         "one":  "ÐžÑ‚ÐºÑ€Ð¸Ñ‚ Ðµ {{ count }} Ñ€ÐµÐ·ÑƒÐ»Ñ‚Ð°Ñ‚ Ð·Ð° â€ž{{ terms }}â€œ",
+                                                                         "other":  "ÐžÑ‚ÐºÑ€Ð¸Ñ‚Ð¸ ÑÐ° {{ count }} Ñ€ÐµÐ·ÑƒÐ»Ñ‚Ð°Ñ‚Ð° Ð·Ð° â€ž{{ terms }}â€œ"
+                                                                     },
+                                     "results_pages_with_count":  {
+                                                                      "one":  "{{ count }} ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°",
+                                                                      "other":  "{{ count }} ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð¸"
+                                                                  },
+                                     "results_suggestions_with_count":  {
+                                                                            "one":  "{{ count }} Ð¿Ñ€ÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð¸e",
+                                                                            "other":  "{{ count }} Ð¿Ñ€ÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ"
+                                                                        },
+                                     "results_products_with_count":  {
+                                                                         "one":  "{{ count }} Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚",
+                                                                         "other":  "{{ count }} Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð°"
+                                                                     },
+                                     "suggestions":  "ÐŸÑ€ÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ",
+                                     "pages":  "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð¸"
+                                 },
+                      "cart":  {
+                                   "cart":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐºÐ°"
+                               },
+                      "contact":  {
+                                      "form":  {
+                                                   "name":  "Ð˜Ð¼Ðµ",
+                                                   "email":  "Ð˜Ð¼ÐµÐ¹Ð»",
+                                                   "comment":  "ÐšÐ¾Ð¼ÐµÐ½Ñ‚Ð°Ñ€",
+                                                   "send":  "Ð˜Ð·Ð¿Ñ€Ð°Ñ‚Ð¸",
+                                                   "post_success":  "Ð‘Ð»Ð°Ð³Ð¾Ð´Ð°Ñ€Ð¸Ð¼, Ñ‡Ðµ ÑÐµ ÑÐ²ÑŠÑ€Ð·Ð°Ñ…Ñ‚Ðµ Ñ Ð½Ð°Ñ. Ð©Ðµ ÑÐµ ÑÐ²ÑŠÑ€Ð¶ÐµÐ¼ Ñ Ð²Ð°Ñ Ð²ÑŠÐ·Ð¼Ð¾Ð¶Ð½Ð¾ Ð½Ð°Ð¹-ÑÐºÐ¾Ñ€Ð¾.",
+                                                   "error_heading":  "ÐšÐ¾Ñ€Ð¸Ð³Ð¸Ñ€Ð°Ð¹Ñ‚Ðµ ÑÐ»ÐµÐ´Ð½Ð¾Ñ‚Ð¾:",
+                                                   "phone":  "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½ÐµÐ½ Ð½Ð¾Ð¼ÐµÑ€",
+                                                   "title":  "Ð¤Ð¾Ñ€Ð¼ÑƒÐ»ÑÑ€ Ð·Ð° ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚"
+                                               }
+                                  },
+                      "404":  {
+                                  "title":  "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°Ñ‚Ð° Ð½Ðµ Ðµ Ð¾Ñ‚ÐºÑ€Ð¸Ñ‚Ð°",
+                                  "subtext":  "404"
+                              }
+                  },
+    "sections":  {
+                     "header":  {
+                                    "announcement":  "Ð˜Ð·Ð²ÐµÑÑ‚Ð¸Ðµ",
+                                    "menu":  "ÐœÐµÐ½ÑŽ",
+                                    "cart_count":  {
+                                                       "one":  "{{ count }} Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ»",
+                                                       "other":  "{{ count }} Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ»Ð°"
+                                                   }
+                                },
+                     "cart":  {
+                                  "title":  "Ð’Ð°ÑˆÐ°Ñ‚Ð° ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°",
+                                  "caption":  "ÐÑ€Ñ‚Ð¸ÐºÑƒÐ»Ð¸ Ð² ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð°",
+                                  "remove_title":  "ÐŸÑ€ÐµÐ¼Ð°Ñ…Ð²Ð°Ð½Ðµ Ð½Ð° {{ title }}",
+                                  "checkout":  "ÐŸÑ€ÐµÐ¼Ð¸Ð½Ð°Ð²Ð°Ð½Ðµ ÐºÑŠÐ¼ Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ",
+                                  "empty":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð° Ð²Ð¸ Ðµ Ð¿Ñ€Ð°Ð·Ð½Ð°.",
+                                  "cart_error":  "ÐŸÑ€Ð¸ Ð°ÐºÑ‚ÑƒÐ°Ð»Ð¸Ð·Ð¸Ñ€Ð°Ð½ÐµÑ‚Ð¾ Ð½Ð° ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð° Ð²Ð¸ Ð²ÑŠÐ·Ð½Ð¸ÐºÐ½Ð° Ð³Ñ€ÐµÑˆÐºÐ°. ÐžÐ¿Ð¸Ñ‚Ð°Ð¹Ñ‚Ðµ Ð¾Ñ‚Ð½Ð¾Ð²Ð¾.",
+                                  "cart_quantity_error_html":  "ÐœÐ¾Ð¶ÐµÑ‚Ðµ Ð´Ð° Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚Ðµ ÑÐ°Ð¼Ð¾ {{ quantity }} Ð±Ñ€Ð¾Ñ Ð¾Ñ‚ Ñ‚Ð¾Ð·Ð¸ Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ» Ð² ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð° ÑÐ¸.",
+                                  "headings":  {
+                                                   "product":  "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ‚",
+                                                   "price":  "Ð¦ÐµÐ½Ð°",
+                                                   "total":  "ÐžÐ±Ñ‰Ð° ÑÑƒÐ¼Ð°",
+                                                   "quantity":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾",
+                                                   "image":  "Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð½Ð° Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð°"
+                                               },
+                                  "update":  "ÐÐºÑ‚ÑƒÐ°Ð»Ð¸Ð·Ð¸Ñ€Ð°Ð½Ðµ",
+                                  "note":  "Ð¡Ð¿ÐµÑ†Ð¸Ð°Ð»Ð½Ð¸ Ð¸Ð½ÑÑ‚Ñ€ÑƒÐºÑ†Ð¸Ð¸ Ð·Ð° Ð¿Ð¾Ñ€ÑŠÑ‡ÐºÐ°Ñ‚Ð°",
+                                  "login":  {
+                                                "title":  "Ð˜Ð¼Ð°Ñ‚Ðµ Ð¿Ñ€Ð¾Ñ„Ð¸Ð»?",
+                                                "paragraph_html":  "\u003ca href=\"{{ link }}\" class=\"link underlined-link\"\u003eÐ’Ð»ÐµÐ·Ñ‚Ðµ\u003c/a\u003e Ð·Ð° Ð¿Ð¾-Ð±ÑŠÑ€Ð·Ð¾ Ð¿Ñ€ÐµÐ¼Ð¸Ð½Ð°Ð²Ð°Ð½Ðµ ÐºÑŠÐ¼ Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ."
+                                            },
+                                  "estimated_total":  "ÐžÑ‡Ð°ÐºÐ²Ð°Ð½Ð° Ð¾Ð±Ñ‰Ð° ÑÑƒÐ¼Ð°",
+                                  "new_estimated_total":  "ÐÐ¾Ð²Ð° Ð¾Ñ‡Ð°ÐºÐ²Ð°Ð½Ð° Ð¾Ð±Ñ‰Ð° ÑÑƒÐ¼Ð°",
+                                  "duties_and_taxes_included_shipping_at_checkout_with_policy_html":  "Ð¡ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾ Ð¼Ð¸Ñ‚Ð¾ Ð¸ Ð´Ð°Ð½ÑŠÑ†Ð¸. ÐžÑ‚ÑÑ‚ÑŠÐ¿ÐºÐ¸Ñ‚Ðµ Ð¸ \u003ca href=\"{{ link }}\"\u003eÐ´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°Ñ‚Ð°\u003c/a\u003e ÑÐµ Ð¸Ð·Ñ‡Ð¸ÑÐ»ÑÐ²Ð°Ñ‚ Ð¿Ñ€Ð¸ Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ.",
+                                  "duties_and_taxes_included_shipping_at_checkout_without_policy":  "Ð¡ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾ Ð¼Ð¸Ñ‚Ð¾ Ð¸ Ð´Ð°Ð½ÑŠÑ†Ð¸. ÐžÑ‚ÑÑ‚ÑŠÐ¿ÐºÐ¸Ñ‚Ðµ Ð¸ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°Ñ‚Ð° ÑÐµ Ð¸Ð·Ñ‡Ð¸ÑÐ»ÑÐ²Ð°Ñ‚ Ð¿Ñ€Ð¸ Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ.",
+                                  "taxes_included_shipping_at_checkout_with_policy_html":  "Ð¡ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸ Ð´Ð°Ð½ÑŠÑ†Ð¸. ÐžÑ‚ÑÑ‚ÑŠÐ¿ÐºÐ¸Ñ‚Ðµ Ð¸ \u003ca href=\"{{ link }}\"\u003eÐ´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°Ñ‚Ð°\u003c/a\u003e ÑÐµ Ð¸Ð·Ñ‡Ð¸ÑÐ»ÑÐ²Ð°Ñ‚ Ð¿Ñ€Ð¸ Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ.",
+                                  "taxes_included_shipping_at_checkout_without_policy":  "Ð¡ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸ Ð´Ð°Ð½ÑŠÑ†Ð¸. ÐžÑ‚ÑÑ‚ÑŠÐ¿ÐºÐ¸Ñ‚Ðµ Ð¸ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°Ñ‚Ð° ÑÐµ Ð¸Ð·Ñ‡Ð¸ÑÐ»ÑÐ²Ð°Ñ‚ Ð¿Ñ€Ð¸ Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ.",
+                                  "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html":  "Ð¡ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾ Ð¼Ð¸Ñ‚Ð¾. Ð”Ð°Ð½ÑŠÑ†Ð¸Ñ‚Ðµ, Ð¾Ñ‚ÑÑ‚ÑŠÐ¿ÐºÐ¸Ñ‚Ðµ Ð¸ \u003ca href=\"{{ link }}\"\u003eÐ´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°Ñ‚Ð°\u003c/a\u003e ÑÐµ Ð¸Ð·Ñ‡Ð¸ÑÐ»ÑÐ²Ð°Ñ‚ Ð¿Ñ€Ð¸ Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ.",
+                                  "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy":  "Ð¡ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾ Ð¼Ð¸Ñ‚Ð¾. Ð”Ð°Ð½ÑŠÑ†Ð¸Ñ‚Ðµ, Ð¾Ñ‚ÑÑ‚ÑŠÐ¿ÐºÐ¸Ñ‚Ðµ Ð¸ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°Ñ‚Ð° ÑÐµ Ð¸Ð·Ñ‡Ð¸ÑÐ»ÑÐ²Ð°Ñ‚ Ð¿Ñ€Ð¸ Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ.",
+                                  "taxes_at_checkout_shipping_at_checkout_with_policy_html":  "Ð”Ð°Ð½ÑŠÑ†Ð¸Ñ‚Ðµ, Ð¾Ñ‚ÑÑ‚ÑŠÐ¿ÐºÐ¸Ñ‚Ðµ Ð¸ \u003ca href=\"{{ link }}\"\u003eÐ´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°Ñ‚Ð°\u003c/a\u003e ÑÐµ Ð¸Ð·Ñ‡Ð¸ÑÐ»ÑÐ²Ð°Ñ‚ Ð¿Ñ€Ð¸ Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ.",
+                                  "taxes_at_checkout_shipping_at_checkout_without_policy":  "Ð”Ð°Ð½ÑŠÑ†Ð¸Ñ‚Ðµ, Ð¾Ñ‚ÑÑ‚ÑŠÐ¿ÐºÐ¸Ñ‚Ðµ Ð¸ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°Ñ‚Ð° ÑÐµ Ð¸Ð·Ñ‡Ð¸ÑÐ»ÑÐ²Ð°Ñ‚ Ð¿Ñ€Ð¸ Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ."
+                              },
+                     "footer":  {
+                                    "payment":  "ÐÐ°Ñ‡Ð¸Ð½Ð¸ Ð½Ð° Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ"
+                                },
+                     "featured_blog":  {
+                                           "view_all":  "ÐŸÐ¾ÐºÐ°Ð¶Ð¸ Ð²ÑÐ¸Ñ‡ÐºÐ¸",
+                                           "onboarding_title":  "ÐŸÑƒÐ±Ð»Ð¸ÐºÐ°Ñ†Ð¸Ñ Ð² Ð±Ð»Ð¾Ð³",
+                                           "onboarding_content":  "ÐžÐ±Ð¾Ð±Ñ‰ÐµÑ‚Ðµ Ð½Ð°ÐºÑ€Ð°Ñ‚ÐºÐ¾ Ð±Ð»Ð¾Ð³ Ð¿ÑƒÐ±Ð»Ð¸ÐºÐ°Ñ†Ð¸ÑÑ‚Ð°"
+                                       },
+                     "featured_collection":  {
+                                                 "view_all":  "ÐŸÐ¾ÐºÐ°Ð¶Ð¸ Ð²ÑÐ¸Ñ‡ÐºÐ¸",
+                                                 "view_all_label":  "ÐŸÐ¾ÐºÐ°Ð¶Ð¸ Ð²ÑÐ¸Ñ‡ÐºÐ¸ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¸ Ð² ÐºÐ¾Ð»ÐµÐºÑ†Ð¸Ñ {{ collection_name }}"
+                                             },
+                     "collection_list":  {
+                                             "view_all":  "ÐŸÐ¾ÐºÐ°Ð¶Ð¸ Ð²ÑÐ¸Ñ‡ÐºÐ¸"
+                                         },
+                     "collection_template":  {
+                                                 "title":  "ÐšÐ¾Ð»ÐµÐºÑ†Ð¸Ñ",
+                                                 "empty":  "ÐÐµ ÑÐ° Ð¾Ñ‚ÐºÑ€Ð¸Ñ‚Ð¸ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¸",
+                                                 "use_fewer_filters_html":  "Ð˜Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¹Ñ‚Ðµ Ð¿Ð¾-Ð¼Ð°Ð»ÐºÐ¾ Ñ„Ð¸Ð»Ñ‚Ñ€Ð¸ Ð¸Ð»Ð¸ \u003ca class=\"{{ class }}\" href=\"{{ link }}\"\u003eÐ¿Ñ€ÐµÐ¼Ð°Ñ…Ð½ÐµÑ‚Ðµ Ð²ÑÐ¸Ñ‡ÐºÐ¸\u003c/a\u003e"
+                                             },
+                     "video":  {
+                                   "load_video":  "Ð—Ð°Ñ€ÐµÐ¶Ð´Ð°Ð½Ðµ Ð½Ð° Ð²Ð¸Ð´ÐµÐ¾: {{ description }}"
+                               },
+                     "slideshow":  {
+                                       "load_slide":  "Ð—Ð°Ñ€ÐµÐ¶Ð´Ð°Ð½Ðµ Ð½Ð° ÑÐ»Ð°Ð¹Ð´",
+                                       "previous_slideshow":  "ÐŸÑ€ÐµÐ´Ð¸ÑˆÐµÐ½ ÑÐ»Ð°Ð¹Ð´",
+                                       "next_slideshow":  "Ð¡Ð»ÐµÐ´Ð²Ð°Ñ‰ ÑÐ»Ð°Ð¹Ð´",
+                                       "pause_slideshow":  "ÐŸÐ°ÑƒÐ·Ð° Ð½Ð° ÑÐ»Ð°Ð¹Ð´ÑˆÐ¾ÑƒÑ‚Ð¾",
+                                       "play_slideshow":  "Ð’ÑŠÐ·Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ¶Ð´Ð°Ð½Ðµ Ð½Ð° ÑÐ»Ð°Ð¹Ð´ÑˆÐ¾Ñƒ",
+                                       "carousel":  "Ð’ÑŠÑ€Ñ‚ÐµÐ»ÐµÐ¶ÐºÐ°",
+                                       "slide":  "Ð¡Ð»Ð°Ð¹Ð´"
+                                   },
+                     "page":  {
+                                  "title":  "Ð—Ð°Ð³Ð»Ð°Ð²Ð¸Ðµ Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°"
+                              },
+                     "announcements":  {
+                                           "previous_announcement":  "ÐŸÑ€ÐµÐ´Ð¸ÑˆÐ½Ð¾ Ð¸Ð·Ð²ÐµÑÑ‚Ð¸Ðµ",
+                                           "next_announcement":  "Ð¡Ð»ÐµÐ´Ð²Ð°Ñ‰Ð¾ Ð¸Ð·Ð²ÐµÑÑ‚Ð¸Ðµ",
+                                           "carousel":  "Ð’ÑŠÑ€Ñ‚ÐµÐ»ÐµÐ¶ÐºÐ°",
+                                           "announcement":  "Ð˜Ð·Ð²ÐµÑÑ‚Ð¸Ðµ",
+                                           "announcement_bar":  "Ð›ÐµÐ½Ñ‚Ð° Ñ Ð¸Ð·Ð²ÐµÑÑ‚Ð¸Ñ"
+                                       },
+                     "quick_order_list":  {
+                                              "product_total":  "ÐœÐµÐ¶Ð´Ð¸Ð½Ð½Ð° ÑÑƒÐ¼Ð° Ð·Ð° Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¸",
+                                              "view_cart":  "ÐŸÐ¾ÐºÐ°Ð¶Ð¸ ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð°",
+                                              "each":  "{{ money }}/Ð±Ñ€.",
+                                              "product":  "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ‚",
+                                              "variant":  "Ð’Ð°Ñ€Ð¸Ð°Ð½Ñ‚",
+                                              "variant_total":  "ÐžÐ±Ñ‰Ð° ÑÑƒÐ¼Ð° Ð·Ð° Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ð°",
+                                              "items_added":  {
+                                                                  "one":  "{{ quantity }} Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ» Ðµ Ð´Ð¾Ð±Ð°Ð²ÐµÐ½",
+                                                                  "other":  "{{ quantity }} Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ»Ð° ÑÐ° Ð´Ð¾Ð±Ð°Ð²ÐµÐ½Ð¸"
+                                                              },
+                                              "items_removed":  {
+                                                                    "one":  "{{ quantity }} Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ» Ðµ Ð¿Ñ€ÐµÐ¼Ð°Ñ…Ð½Ð°Ñ‚",
+                                                                    "other":  "{{ quantity }} Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ»Ð° ÑÐ° Ð¿Ñ€ÐµÐ¼Ð°Ñ…Ð½Ð°Ñ‚Ð¸"
+                                                                },
+                                              "product_variants":  "Ð’Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ð¸ Ð½Ð° Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð°",
+                                              "total_items":  "ÐžÐ±Ñ‰Ð¾ Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ»Ð¸",
+                                              "remove_all_items_confirmation":  "ÐŸÑ€ÐµÐ¼Ð°Ñ…Ð²Ð°Ð½Ðµ Ð½Ð° Ð²ÑÐ¸Ñ‡ÐºÐ¸ {{ quantity }} Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ»Ð° Ð¾Ñ‚ ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð°?",
+                                              "remove_all":  "ÐŸÑ€ÐµÐ¼Ð°Ñ…Ð²Ð°Ð½Ðµ Ð½Ð° Ð²ÑÐ¸Ñ‡ÐºÐ¸",
+                                              "cancel":  "ÐžÑ‚ÐºÐ°Ð·",
+                                              "remove_all_single_item_confirmation":  "ÐŸÑ€ÐµÐ¼Ð°Ñ…Ð²Ð°Ð½Ðµ Ð½Ð° 1 Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ» Ð¾Ñ‚ ÐºÐ¾Ð»Ð¸Ñ‡ÐºÐ°Ñ‚Ð°?",
+                                              "min_error":  "Ð—Ð° Ñ‚Ð¾Ð·Ð¸ Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ» Ð¸Ð¼Ð° Ð¼Ð¸Ð½Ð¸Ð¼ÑƒÐ¼ Ð¾Ñ‚ {{ min }}",
+                                              "max_error":  "Ð—Ð° Ñ‚Ð¾Ð·Ð¸ Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ» Ð¸Ð¼Ð° Ð¼Ð°ÐºÑÐ¸Ð¼ÑƒÐ¼ Ð¾Ñ‚ {{ max }}",
+                                              "step_error":  "ÐœÐ¾Ð¶ÐµÑ‚Ðµ Ð´Ð° Ð´Ð¾Ð±Ð°Ð²ÑÑ‚Ðµ Ñ‚Ð¾Ð·Ð¸ Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ» ÑÐ°Ð¼Ð¾ Ð½Ð° Ð³Ñ€ÑƒÐ¿Ð¸ Ð¾Ñ‚ {{ step }}"
+                                          }
+                 },
+    "localization":  {
+                         "country_label":  "Ð”ÑŠÑ€Ð¶Ð°Ð²Ð°/Ñ€ÐµÐ³Ð¸Ð¾Ð½",
+                         "language_label":  "Ð•Ð·Ð¸Ðº",
+                         "update_language":  "ÐÐºÑ‚ÑƒÐ°Ð»Ð¸Ð·Ð¸Ñ€Ð°Ð½Ðµ Ð½Ð° ÐµÐ·Ð¸ÐºÐ°",
+                         "update_country":  "ÐÐºÑ‚ÑƒÐ°Ð»Ð¸Ð·Ð¸Ñ€Ð°Ð½Ðµ Ð½Ð° Ð´ÑŠÑ€Ð¶Ð°Ð²Ð°/Ñ€ÐµÐ³Ð¸Ð¾Ð½",
+                         "search":  "Ð¢ÑŠÑ€ÑÐµÐ½Ðµ",
+                         "popular_countries_regions":  "ÐŸÐ¾Ð¿ÑƒÐ»ÑÑ€Ð½Ð¸ ÑÑ‚Ñ€Ð°Ð½Ð¸/Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð¸",
+                         "country_results_count":  "ÐžÑ‚ÐºÑ€Ð¸Ñ‚Ð¸ ÑÐ° {{ count }} ÑÑ‚Ñ€Ð°Ð½Ð¸/Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð°"
+                     },
+    "customer":  {
+                     "account_fallback":  "ÐŸÑ€Ð¾Ñ„Ð¸Ð»",
+                     "activate_account":  {
+                                              "subtext":  "Ð¡ÑŠÐ·Ð´Ð°Ð¹Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»Ð°, Ð·Ð° Ð´Ð° Ð°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð°Ñ‚Ðµ Ð¿Ñ€Ð¾Ñ„Ð¸Ð»Ð° ÑÐ¸.",
+                                              "password":  "ÐŸÐ°Ñ€Ð¾Ð»Ð°",
+                                              "title":  "ÐÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð°Ð½Ðµ Ð½Ð° Ð¿Ñ€Ð¾Ñ„Ð¸Ð»",
+                                              "password_confirm":  "ÐŸÐ¾Ñ‚Ð²ÑŠÑ€Ð¶Ð´Ð°Ð²Ð°Ð½Ðµ Ð½Ð° Ð¿Ð°Ñ€Ð¾Ð»Ð°Ñ‚Ð°",
+                                              "submit":  "ÐÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð°Ð½Ðµ Ð½Ð° Ð¿Ñ€Ð¾Ñ„Ð¸Ð»",
+                                              "cancel":  "ÐžÑ‚Ñ…Ð²ÑŠÑ€Ð»ÑÐ½Ðµ Ð½Ð° Ð¿Ð¾ÐºÐ°Ð½Ð°Ñ‚Ð°"
+                                          },
+                     "addresses":  {
+                                       "default":  "ÐŸÐ¾ Ð¿Ð¾Ð´Ñ€Ð°Ð·Ð±Ð¸Ñ€Ð°Ð½Ðµ",
+                                       "edit_address":  "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð°Ð½Ðµ Ð½Ð° Ð°Ð´Ñ€ÐµÑ",
+                                       "company":  "Ð¤Ð¸Ñ€Ð¼Ð°",
+                                       "address1":  "ÐÐ´Ñ€ÐµÑ 1",
+                                       "address2":  "ÐÐ´Ñ€ÐµÑ 2",
+                                       "city":  "Ð“Ñ€Ð°Ð´",
+                                       "country":  "Ð”ÑŠÑ€Ð¶Ð°Ð²Ð°/Ñ€ÐµÐ³Ð¸Ð¾Ð½",
+                                       "province":  "ÐŸÑ€Ð¾Ð²Ð¸Ð½Ñ†Ð¸Ñ",
+                                       "phone":  "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½",
+                                       "set_default":  "Ð—Ð°Ð´Ð°Ð²Ð°Ð½Ðµ ÐºÐ°Ñ‚Ð¾ Ð°Ð´Ñ€ÐµÑ Ð¿Ð¾ Ð¿Ð¾Ð´Ñ€Ð°Ð·Ð±Ð¸Ñ€Ð°Ð½Ðµ",
+                                       "cancel":  "ÐžÑ‚ÐºÐ°Ð·",
+                                       "edit":  "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð°Ð½Ðµ",
+                                       "delete":  "Ð˜Ð·Ñ‚Ñ€Ð¸Ð²Ð°Ð½Ðµ",
+                                       "delete_confirm":  "ÐÐ°Ð¸ÑÑ‚Ð¸Ð½Ð° Ð»Ð¸ Ð¸ÑÐºÐ°Ñ‚Ðµ Ð´Ð° Ð¸Ð·Ñ‚Ñ€Ð¸ÐµÑ‚Ðµ Ñ‚Ð¾Ð·Ð¸ Ð°Ð´Ñ€ÐµÑ?",
+                                       "title":  "ÐÐ´Ñ€ÐµÑÐ¸",
+                                       "add_new":  "Ð”Ð¾Ð±Ð°Ð²ÑÐ½Ðµ Ð½Ð° Ð½Ð¾Ð² Ð°Ð´Ñ€ÐµÑ",
+                                       "first_name":  "Ð¡Ð¾Ð±ÑÑ‚Ð²ÐµÐ½Ð¾ Ð¸Ð¼Ðµ",
+                                       "last_name":  "Ð¤Ð°Ð¼Ð¸Ð»Ð½Ð¾ Ð¸Ð¼Ðµ",
+                                       "zip":  "ÐŸÐ¾Ñ‰ÐµÐ½ÑÐºÐ¸ ÐºÐ¾Ð´",
+                                       "add":  "Ð”Ð¾Ð±Ð°Ð²ÑÐ½Ðµ Ð½Ð° Ð°Ð´Ñ€ÐµÑ",
+                                       "update":  "ÐÐºÑ‚ÑƒÐ°Ð»Ð¸Ð·Ð¸Ñ€Ð°Ð½Ðµ Ð½Ð° Ð°Ð´Ñ€ÐµÑ"
+                                   },
+                     "log_in":  "Ð’Ð»Ð¸Ð·Ð°Ð½Ðµ",
+                     "log_out":  "Ð˜Ð·Ð»Ð¸Ð·Ð°Ð½Ðµ",
+                     "login_page":  {
+                                        "cancel":  "ÐžÑ‚ÐºÐ°Ð·",
+                                        "email":  "Ð˜Ð¼ÐµÐ¹Ð»",
+                                        "forgot_password":  "Ð—Ð°Ð±Ñ€Ð°Ð²ÐµÐ½Ð° Ð¿Ð°Ñ€Ð¾Ð»Ð°?",
+                                        "guest_continue":  "ÐÐ°Ð¿Ñ€ÐµÐ´",
+                                        "guest_title":  "ÐŸÑ€Ð¾Ð´ÑŠÐ»Ð¶Ð°Ð²Ð°Ð½Ðµ ÐºÐ°Ñ‚Ð¾ Ð³Ð¾ÑÑ‚",
+                                        "password":  "ÐŸÐ°Ñ€Ð¾Ð»Ð°",
+                                        "title":  "Ð’Ð»Ð¸Ð·Ð°Ð½Ðµ",
+                                        "sign_in":  "Ð’Ð»Ð¸Ð·Ð°Ð½Ðµ",
+                                        "submit":  "Ð˜Ð·Ð¿Ñ€Ð°Ñ‚Ð¸",
+                                        "create_account":  "Ð¡ÑŠÐ·Ð´Ð°Ð²Ð°Ð½Ðµ Ð½Ð° Ð¿Ñ€Ð¾Ñ„Ð¸Ð»",
+                                        "alternate_provider_separator":  "Ð¸Ð»Ð¸"
+                                    },
+                     "orders":  {
+                                    "order_number":  "ÐŸÐ¾Ñ€ÑŠÑ‡ÐºÐ°",
+                                    "order_number_link":  "ÐÐ¾Ð¼ÐµÑ€ Ð½Ð° Ð¿Ð¾Ñ€ÑŠÑ‡ÐºÐ°: {{ number }}",
+                                    "date":  "Ð”Ð°Ñ‚Ð°",
+                                    "total":  "ÐžÐ±Ñ‰Ð° ÑÑƒÐ¼Ð°",
+                                    "none":  "Ð’ÑÐµ Ð¾Ñ‰Ðµ Ð½Ðµ ÑÑ‚Ðµ Ð¿Ð¾Ñ€ÑŠÑ‡Ð²Ð°Ð»Ð¸.",
+                                    "title":  "Ð¥Ñ€Ð¾Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ Ð½Ð° Ð¿Ð¾Ñ€ÑŠÑ‡ÐºÐ¸Ñ‚Ðµ",
+                                    "payment_status":  "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð½Ð° Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ",
+                                    "fulfillment_status":  "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð½Ð° Ð¸Ð·Ð¿ÑŠÐ»Ð½ÐµÐ½Ð¸Ðµ"
+                                },
+                     "recover_password":  {
+                                              "title":  "ÐŸÐ¾Ð´Ð½Ð¾Ð²ÑÐ²Ð°Ð½Ðµ Ð½Ð° Ð¿Ð°Ñ€Ð¾Ð»Ð°Ñ‚Ð°",
+                                              "subtext":  "Ð©Ðµ Ð²Ð¸ Ð¸Ð·Ð¿Ñ€Ð°Ñ‚Ð¸Ð¼ Ð¸Ð¼ÐµÐ¹Ð», Ð·Ð° Ð´Ð° Ð¿Ð¾Ð´Ð½Ð¾Ð²Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»Ð°Ñ‚Ð° ÑÐ¸",
+                                              "success":  "Ð˜Ð·Ð¿Ñ€Ð°Ñ‚Ð¸Ñ…Ð¼Ðµ Ð²Ð¸ Ð¸Ð¼ÐµÐ¹Ð» Ñ Ð²Ñ€ÑŠÐ·ÐºÐ°, Ñ‡Ñ€ÐµÐ· ÐºÐ¾ÑÑ‚Ð¾ Ð´Ð° Ð°ÐºÑ‚ÑƒÐ°Ð»Ð¸Ð·Ð¸Ñ€Ð°Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»Ð°Ñ‚Ð° ÑÐ¸."
+                                          },
+                     "register":  {
+                                      "email":  "Ð˜Ð¼ÐµÐ¹Ð»",
+                                      "password":  "ÐŸÐ°Ñ€Ð¾Ð»Ð°",
+                                      "submit":  "Ð¡ÑŠÐ·Ð´Ð°Ð²Ð°Ð½Ðµ",
+                                      "title":  "Ð¡ÑŠÐ·Ð´Ð°Ð²Ð°Ð½Ðµ Ð½Ð° Ð¿Ñ€Ð¾Ñ„Ð¸Ð»",
+                                      "first_name":  "Ð¡Ð¾Ð±ÑÑ‚Ð²ÐµÐ½Ð¾ Ð¸Ð¼Ðµ",
+                                      "last_name":  "Ð¤Ð°Ð¼Ð¸Ð»Ð½Ð¾ Ð¸Ð¼Ðµ"
+                                  },
+                     "reset_password":  {
+                                            "title":  "ÐŸÐ¾Ð´Ð½Ð¾Ð²ÑÐ²Ð°Ð½Ðµ Ð½Ð° Ð¿Ð°Ñ€Ð¾Ð»Ð°Ñ‚Ð° Ð·Ð° Ð¿Ñ€Ð¾Ñ„Ð¸Ð»Ð°",
+                                            "subtext":  "Ð’ÑŠÐ²ÐµÐ´ÐµÑ‚Ðµ Ð½Ð¾Ð²Ð° Ð¿Ð°Ñ€Ð¾Ð»Ð°",
+                                            "password":  "ÐŸÐ°Ñ€Ð¾Ð»Ð°",
+                                            "password_confirm":  "ÐŸÐ¾Ñ‚Ð²ÑŠÑ€Ð¶Ð´Ð°Ð²Ð°Ð½Ðµ Ð½Ð° Ð¿Ð°Ñ€Ð¾Ð»Ð°Ñ‚Ð°",
+                                            "submit":  "ÐŸÐ¾Ð´Ð½Ð¾Ð²ÑÐ²Ð°Ð½Ðµ Ð½Ð° Ð¿Ð°Ñ€Ð¾Ð»Ð°Ñ‚Ð°"
+                                        },
+                     "account":  {
+                                     "title":  "ÐŸÑ€Ð¾Ñ„Ð¸Ð»",
+                                     "details":  "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð·Ð° Ð¿Ñ€Ð¾Ñ„Ð¸Ð»Ð°",
+                                     "view_addresses":  "ÐŸÐ¾ÐºÐ°Ð¶Ð¸ Ð°Ð´Ñ€ÐµÑÐ¸Ñ‚Ðµ",
+                                     "return":  "ÐÐ°Ð·Ð°Ð´ ÐºÑŠÐ¼ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑÑ‚Ð° Ð·Ð° Ð¿Ñ€Ð¾Ñ„Ð¸Ð»Ð°",
+                                     "action_orders":  "View order"
+                                 },
+                     "order":  {
+                                   "title":  "ÐŸÐ¾Ñ€ÑŠÑ‡ÐºÐ° {{ name }}",
+                                   "date_html":  "ÐÐ°Ð¿Ñ€Ð°Ð²ÐµÐ½Ð° Ð½Ð° {{ date }}",
+                                   "cancelled_html":  "ÐŸÐ¾Ñ€ÑŠÑ‡ÐºÐ°Ñ‚Ð° Ðµ Ð°Ð½ÑƒÐ»Ð¸Ñ€Ð°Ð½Ð° Ð½Ð° {{ date }}",
+                                   "cancelled_reason":  "ÐŸÑ€Ð¸Ñ‡Ð¸Ð½Ð°: {{ reason }}",
+                                   "billing_address":  "ÐÐ´Ñ€ÐµÑ Ð·Ð° Ñ„Ð°ÐºÑ‚ÑƒÑ€Ð¸Ñ€Ð°Ð½Ðµ",
+                                   "payment_status":  "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð½Ð° Ð¿Ð»Ð°Ñ‰Ð°Ð½Ðµ",
+                                   "shipping_address":  "ÐÐ´Ñ€ÐµÑ Ð·Ð° Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°",
+                                   "fulfillment_status":  "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð½Ð° Ð¸Ð·Ð¿ÑŠÐ»Ð½ÐµÐ½Ð¸Ðµ",
+                                   "discount":  "ÐžÑ‚ÑÑ‚ÑŠÐ¿ÐºÐ°",
+                                   "shipping":  "Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ°",
+                                   "tax":  "Ð”Ð°Ð½ÑŠÑ†Ð¸",
+                                   "product":  "ÐŸÑ€Ð¾Ð´ÑƒÐºÑ‚",
+                                   "sku":  "SKU",
+                                   "price":  "Ð¦ÐµÐ½Ð°",
+                                   "quantity":  "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾",
+                                   "total":  "ÐžÐ±Ñ‰Ð° ÑÑƒÐ¼Ð°",
+                                   "fulfilled_at_html":  "Ð˜Ð·Ð¿ÑŠÐ»Ð½ÐµÐ½Ð° Ð½Ð°: {{ date }}",
+                                   "track_shipment":  "ÐŸÑ€Ð¾ÑÐ»ÐµÐ´ÑÐ²Ð°Ð½Ðµ Ð½Ð° Ð¿Ñ€Ð°Ñ‚ÐºÐ°Ñ‚Ð°",
+                                   "tracking_url":  "Ð’Ñ€ÑŠÐ·ÐºÐ° Ð·Ð° Ð¿Ñ€Ð¾ÑÐ»ÐµÐ´ÑÐ²Ð°Ð½Ðµ",
+                                   "tracking_company":  "ÐŸÑ€ÐµÐ²Ð¾Ð·Ð²Ð°Ñ‡",
+                                   "tracking_number":  "ÐÐ¾Ð¼ÐµÑ€ Ð·Ð° Ð¿Ñ€Ð¾ÑÐ»ÐµÐ´ÑÐ²Ð°Ð½Ðµ",
+                                   "subtotal":  "ÐœÐµÐ¶Ð´Ð¸Ð½Ð½Ð° ÑÑƒÐ¼Ð°",
+                                   "total_duties":  "ÐœÐ¸Ñ‚Ð¾",
+                                   "total_refunded":  "Ð’ÑŠÐ·ÑÑ‚Ð°Ð½Ð¾Ð²ÐµÐ½Ð¸"
+                               }
+                 },
+    "gift_cards":  {
+                       "issued":  {
+                                      "title":  "Ð¢Ð¾Ð²Ð° Ðµ Ð¾ÑÑ‚Ð°Ñ‚ÑŠÐºÑŠÑ‚ Ð¾Ñ‚ Ð²Ð°ÑˆÐ¸Ñ Ð²Ð°ÑƒÑ‡ÐµÑ€ Ð·Ð° Ð¿Ð¾Ð´Ð°Ñ€ÑŠÐº Ð½Ð° ÑÑ‚Ð¾Ð¹Ð½Ð¾ÑÑ‚ {{ value }} Ð·Ð° {{ shop }}!",
+                                      "gift_card_code":  "ÐšÐ¾Ð´ Ð½Ð° Ð²Ð°ÑƒÑ‡ÐµÑ€ Ð·Ð° Ð¿Ð¾Ð´Ð°Ñ€ÑŠÐº",
+                                      "shop_link":  "ÐŸÐ¾ÑÐµÑ‚ÐµÑ‚Ðµ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð° Ð¾Ð½Ð»Ð°Ð¹Ð½",
+                                      "add_to_apple_wallet":  "Ð”Ð¾Ð±Ð°Ð²ÑÐ½Ðµ ÐºÑŠÐ¼ Apple Wallet",
+                                      "qr_image_alt":  "QR ÐºÐ¾Ð´ â€“ ÑÐºÐ°Ð½Ð¸Ñ€Ð°Ð¹Ñ‚Ðµ Ð³Ð¾, Ð·Ð° Ð´Ð° Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ñ‚Ðµ Ð²Ð°ÑƒÑ‡ÐµÑ€Ð° Ð·Ð° Ð¿Ð¾Ð´Ð°Ñ€ÑŠÐº",
+                                      "copy_code":  "ÐšÐ¾Ð¿Ð¸Ñ€Ð°Ð½Ðµ Ð½Ð° ÐºÐ¾Ð´Ð° Ð½Ð° Ð²Ð°ÑƒÑ‡ÐµÑ€ Ð·Ð° Ð¿Ð¾Ð´Ð°Ñ€ÑŠÐº",
+                                      "expired":  "Ð˜Ð·Ñ‚ÐµÐºÑŠÐ»",
+                                      "copy_code_success":  "ÐšÐ¾Ð´ÑŠÑ‚ Ðµ ÐºÐ¾Ð¿Ð¸Ñ€Ð°Ð½ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾",
+                                      "subtext":  "Ð’Ð°ÑˆÐ¸ÑÑ‚ Ð²Ð°ÑƒÑ‡ÐµÑ€ Ð·Ð° Ð¿Ð¾Ð´Ð°Ñ€ÑŠÐº",
+                                      "how_to_use_gift_card":  "Ð˜Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¹Ñ‚Ðµ Ð²Ð°ÑƒÑ‡ÐµÑ€Ð° Ð·Ð° Ð¿Ð¾Ð´Ð°Ñ€ÑŠÐº Ð¾Ð½Ð»Ð°Ð¹Ð½ Ð¸Ð»Ð¸ QR ÐºÐ¾Ð´ Ð² Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°",
+                                      "expiration_date":  "Ð˜Ð·Ñ‚Ð¸Ñ‡Ð° Ð½Ð° {{ expires_on }}"
+                                  }
+                   },
+    "recipient":  {
+                      "form":  {
+                                   "checkbox":  "Ð˜ÑÐºÐ°Ð¼ Ð´Ð° Ð¸Ð·Ð¿Ñ€Ð°Ñ‚Ñ ÐºÐ°Ñ‚Ð¾ Ð¿Ð¾Ð´Ð°Ñ€ÑŠÐº",
+                                   "email_label":  "Ð˜Ð¼ÐµÐ¹Ð» Ð½Ð° Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»Ñ",
+                                   "email":  "Ð˜Ð¼ÐµÐ¹Ð»",
+                                   "name_label":  "Ð˜Ð¼Ðµ Ð½Ð° Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»Ñ (Ð½ÐµÐ·Ð°Ð´ÑŠÐ»Ð¶Ð¸Ñ‚ÐµÐ»Ð½Ð¾)",
+                                   "name":  "Ð˜Ð¼Ðµ",
+                                   "message_label":  "Ð¡ÑŠÐ¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ (Ð½ÐµÐ·Ð°Ð´ÑŠÐ»Ð¶Ð¸Ñ‚ÐµÐ»Ð½Ð¾)",
+                                   "message":  "Ð¡ÑŠÐ¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ",
+                                   "max_characters":  "ÐœÐ°ÐºÑ. {{ max_chars }} Ð·Ð½Ð°ÐºÐ°",
+                                   "email_label_optional_for_no_js_behavior":  "Ð˜Ð¼ÐµÐ¹Ð» Ð½Ð° Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»Ñ (Ð½ÐµÐ·Ð°Ð´ÑŠÐ»Ð¶Ð¸Ñ‚ÐµÐ»Ð½Ð¾)",
+                                   "send_on":  "Ð“Ð“Ð“Ð“-ÐœÐœ-Ð”Ð”",
+                                   "send_on_label":  "Ð˜Ð·Ð¿Ñ€Ð°Ñ‰Ð°Ð½Ðµ Ð½Ð° (Ð½ÐµÐ·Ð°Ð´ÑŠÐ»Ð¶Ð¸Ñ‚ÐµÐ»Ð½Ð¾)",
+                                   "expanded":  "Ð¤Ð¾Ñ€Ð¼ÑƒÐ»ÑÑ€ÑŠÑ‚ Ð·Ð° Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ» Ð½Ð° Ð²Ð°ÑƒÑ‡ÐµÑ€ Ð·Ð° Ð¿Ð¾Ð´Ð°Ñ€ÑŠÐº Ðµ Ñ€Ð°Ð·Ð³ÑŠÐ½Ð°Ñ‚",
+                                   "collapsed":  "Ð¤Ð¾Ñ€Ð¼ÑƒÐ»ÑÑ€ÑŠÑ‚ Ð·Ð° Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ» Ð½Ð° Ð²Ð°ÑƒÑ‡ÐµÑ€ Ð·Ð° Ð¿Ð¾Ð´Ð°Ñ€ÑŠÐº Ðµ ÑÐ²Ð¸Ñ‚"
+                               }
+                  }
 }

@@ -107,9 +107,9 @@
       <div class="footer-col footer-col-info">
         <h3 class="footer-col-title">About Us</h3>
         {%- if settings.logo != blank -%}
-          <img src="{{ settings.logo | image_url: width: 200 }}" alt="{{ shop.name }}" style="max-height: 40px; margin-bottom: 15px;">
+          <img src="{{ settings.logo | image_url: width: 200 }}" alt="{{ shop.name }}" width="{{ settings.logo.width }}" height="{{ settings.logo.height }}" style="max-height: 40px; margin-bottom: 15px;">
         {%- else -%}
-          <img src="https://cdn.shopify.com/s/files/1/0617/6325/6561/files/d5_fcfc668b-b8fe-4eeb-b684-2ca9991ca9fd_225x.png" alt="Dekor365" style="max-height: 40px; margin-bottom: 15px;">
+          <img src="https://cdn.shopify.com/s/files/1/0617/6325/6561/files/d5_fcfc668b-b8fe-4eeb-b684-2ca9991ca9fd_225x.png" alt="Dekor365" width="225" height="40" style="max-height: 40px; margin-bottom: 15px;">
         {%- endif -%}
         <p><strong>Email:</strong> support@365dekor.com</p>
         <p><strong>Business Hours:</strong> Monday - Friday, 9am - 5pm EST</p>
@@ -179,7 +179,7 @@
         <img src="https://cdn.shopify.com/s/assets/payment_icons/discover-cc9808e50193c7496e7a5245eb86d5e06f02e2476c0fe70f2c40016707d35461.svg" alt="Discover" width="38" height="24">
         <img src="https://cdn.shopify.com/s/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270cb0d220522204cb428ce0a192c5949eea385ce120.svg" alt="PayPal" width="38" height="24">
         <!-- DMCA Badge -->
-        <img src="https://images.dmca.com/Badges/_dmca_premi_badge_4.png?ID=b5514f7b-6d8b-4b14-8b6l-20c2b2a609d7" alt="DMCA.com Protection Status" style="margin-left:10px;">
+        <img src="https://images.dmca.com/Badges/_dmca_premi_badge_4.png?ID=b5514f7b-6d8b-4b14-8b6l-20c2b2a609d7" alt="DMCA.com Protection Status" width="135" height="30" style="margin-left:10px;">
       </div>
       <div class="footer-copyright">
         © 365dekor All Rights Reserved.

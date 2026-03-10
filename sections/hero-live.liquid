@@ -80,7 +80,7 @@
 
 <div class="hero-live">
   {%- if section.settings.image != blank -%}
-    <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.title | escape }}" class="hero-live-bg">
+    <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.title | escape }}" class="hero-live-bg" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}">
   {%- else -%}
     {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg hero-live-bg' }}
   {%- endif -%}
