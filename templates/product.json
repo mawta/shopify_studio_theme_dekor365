@@ -23,7 +23,43 @@
         "media_size": "large",
         "media_position": "left",
         "mobile_thumbnails": "show"
-      }
+      },
+      "blocks": {
+        "description": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "content": "<p>{{ product.description }}</p>"
+          }
+        },
+        "faqs": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "FAQs",
+            "content": "<p>Frequently asked questions will be displayed here.</p>"
+          }
+        },
+        "return_refund": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Return & Refund",
+            "content": "<p>Return and refund policy information.</p>"
+          }
+        },
+        "shipping_info": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping Information",
+            "content": "<p>Shipping details and timelines.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "faqs",
+        "return_refund",
+        "shipping_info"
+      ]
     }
   },
   "order": [
