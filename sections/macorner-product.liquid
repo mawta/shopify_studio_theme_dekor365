@@ -89,7 +89,14 @@
             </div>
             <a href="#reviews" class="mac-review-link">11 reviews</a>
           </div>
-          <div class="mac-bought-past-month">6K+ bought in past month</div>
+          <div
+            class="mac-bought-past-month"
+            data-product-id="{{ product.id }}"
+            data-min-count="497"
+            data-max-count="10000"
+          >
+            6K+ bought in past month
+          </div>
 
           <!-- Price -->
           <div class="mac-price-wrapper" id="price-{{ section.id }}">
@@ -222,13 +229,82 @@
           </div>
 
           <script>
-            // Simple logic to randomize between 2-8 people
-            document.addEventListener("DOMContentLoaded", () => {
-              const numSpan = document.querySelector('.random-cart-number');
+            const initializeMacornerSocialProof = () => {
+              const sectionRoot = document.getElementById('MainProduct-{{ section.id }}');
+              if (!sectionRoot) return;
+
+              const numSpan = sectionRoot.querySelector('.random-cart-number');
               if(numSpan) {
                 numSpan.innerText = Math.floor(Math.random() * 7) + 2;
               }
-            });
+
+              const boughtEl = sectionRoot.querySelector('.mac-bought-past-month');
+              if (!boughtEl) return;
+
+              const productId = boughtEl.dataset.productId;
+              const minCount = Number.parseInt(boughtEl.dataset.minCount || '497', 10);
+              const maxCount = Number.parseInt(boughtEl.dataset.maxCount || '10000', 10);
+              const storageKey = `dekor365-bought-past-month-${productId}`;
+
+              const getCookie = (name) => {
+                const cookieString = `; ${document.cookie}`;
+                const parts = cookieString.split(`; ${name}=`);
+                if (parts.length !== 2) return null;
+                return parts.pop().split(';').shift();
+              };
+
+              const setCookie = (name, value, days) => {
+                const expiresAt = new Date(Date.now() + days * 24 * 60 * 60 * 1000).toUTCString();
+                document.cookie = `${name}=${value}; expires=${expiresAt}; path=/; SameSite=Lax`;
+              };
+
+              const normalizeStoredValue = (value) => {
+                const parsed = Number.parseInt(value || '', 10);
+                if (Number.isNaN(parsed) || parsed < minCount || parsed > maxCount) return null;
+                return parsed;
+              };
+
+              const formatBoughtCount = (count) => {
+                if (count >= 1000) {
+                  const shortValue = (count / 1000).toFixed(count >= 10000 ? 0 : 1).replace(/\.0$/, '');
+                  return `${shortValue}K+`;
+                }
+
+                return `${count}+`;
+              };
+
+              let boughtCount = null;
+
+              try {
+                boughtCount = normalizeStoredValue(window.localStorage.getItem(storageKey));
+              } catch (error) {
+                boughtCount = null;
+              }
+
+              if (!boughtCount) {
+                boughtCount = normalizeStoredValue(getCookie(storageKey));
+              }
+
+              if (!boughtCount) {
+                boughtCount = Math.floor(Math.random() * (maxCount - minCount + 1)) + minCount;
+              }
+
+              boughtEl.textContent = `${formatBoughtCount(boughtCount)} bought in past month`;
+
+              try {
+                window.localStorage.setItem(storageKey, String(boughtCount));
+              } catch (error) {
+                // Fall back to cookie only when localStorage is unavailable.
+              }
+
+              setCookie(storageKey, String(boughtCount), 30);
+            };
+
+            if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', initializeMacornerSocialProof, { once: true });
+            } else {
+              initializeMacornerSocialProof();
+            }
           </script>
 
           <script>
