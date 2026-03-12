@@ -23,6 +23,14 @@
   line-height: 1.6;
   margin-bottom: 10px;
 }
+.footer-brand-logo {
+  display: block;
+  width: auto;
+  max-width: min(18rem, 100%);
+  height: auto;
+  max-height: 4rem;
+  margin-bottom: 15px;
+}
 .footer-dekor-menu {
   list-style: none;
   padding: 0;
@@ -90,12 +98,57 @@
 }
 
 @media (max-width: 750px) {
+  .footer-dekor {
+    padding: 44px 0 18px;
+  }
   .footer-dekor-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 28px;
     text-align: center;
   }
+  .footer-col-title {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+  .footer-brand-logo {
+    max-width: 132px;
+    max-height: 30px;
+    margin: 0 auto 12px;
+  }
+  .footer-col-info p {
+    font-size: 12px;
+    line-height: 1.55;
+    margin-bottom: 8px;
+  }
+  .footer-dekor-menu li {
+    margin-bottom: 8px;
+  }
+  .footer-dekor-menu a {
+    font-size: 12px;
+    line-height: 1.45;
+  }
   .footer-socials {
+    gap: 12px;
+    margin-top: 16px;
     justify-content: center;
+  }
+  .footer-socials a {
+    width: 34px;
+    height: 34px;
+  }
+  .footer-dekor-bottom {
+    gap: 12px;
+    padding-top: 16px;
+  }
+  .footer-copyright {
+    font-size: 12px;
+  }
+  .footer-badges {
+    gap: 8px;
+  }
+  .footer-badges img {
+    height: 22px;
   }
 }
 </style>
@@ -107,9 +160,21 @@
       <div class="footer-col footer-col-info">
         <h3 class="footer-col-title">About Us</h3>
         {%- if settings.logo != blank -%}
-          <img src="{{ settings.logo | image_url: width: 200 }}" alt="{{ shop.name }}" width="{{ settings.logo.width }}" height="{{ settings.logo.height }}" style="max-height: 40px; margin-bottom: 15px;">
+          <img
+            src="{{ settings.logo | image_url: width: 240 }}"
+            alt="{{ shop.name }}"
+            width="240"
+            height="{{ 240 | divided_by: settings.logo.aspect_ratio | round }}"
+            class="footer-brand-logo"
+          >
         {%- else -%}
-          <img src="https://cdn.shopify.com/s/files/1/0617/6325/6561/files/d5_fcfc668b-b8fe-4eeb-b684-2ca9991ca9fd_225x.png" alt="Dekor365" width="225" height="40" style="max-height: 40px; margin-bottom: 15px;">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0617/6325/6561/files/d5_fcfc668b-b8fe-4eeb-b684-2ca9991ca9fd_225x.png"
+            alt="Dekor365"
+            width="225"
+            height="45"
+            class="footer-brand-logo"
+          >
         {%- endif -%}
         <p><strong>Email:</strong> support@365dekor.com</p>
         <p><strong>Business Hours:</strong> Monday - Friday, 9am - 5pm EST</p>

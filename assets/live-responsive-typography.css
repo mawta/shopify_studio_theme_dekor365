@@ -1,0 +1,190 @@
+@media screen and (max-width: 749px) {
+  .slideshow .banner__heading {
+    font-size: 28px !important;
+    line-height: 1.15 !important;
+  }
+
+  .slideshow .banner__text,
+  .slideshow .banner__text p {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+  }
+
+  #MainContent .slideshow .banner__buttons .button {
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+  }
+
+  .multicolumn .title {
+    font-size: 22px !important;
+    line-height: 1.25 !important;
+  }
+
+  .multicolumn-card__info h3 {
+    font-size: 14px !important;
+    line-height: 1.35 !important;
+  }
+
+  .multicolumn-card__info .rte,
+  .multicolumn-card__info p {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+  }
+
+  .mac-product-title {
+    font-size: 28px !important;
+    line-height: 1.15 !important;
+  }
+
+  .mac-review-link,
+  .mac-bought-past-month,
+  .mac-delivery-block,
+  .mac-form-group label,
+  .mac-select,
+  .mac-input,
+  fieldset.product-form__input legend,
+  .product-form__input .form__label,
+  .product-info-macorner .product-form__input input[type='radio'] + label {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+
+  .mac-help-text {
+    font-size: 11px !important;
+    line-height: 1.45 !important;
+  }
+
+  .mac-price-regular {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+  }
+
+  .mac-price-compare {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+
+  .mac-price-save-badge {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+  }
+
+  .mac-pers-title,
+  .product__accordion .accordion__title {
+    font-size: 15px !important;
+    line-height: 1.35 !important;
+  }
+
+  .product__accordion .accordion__content,
+  .product__accordion .accordion__content p,
+  .product__accordion .accordion__content li {
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+  }
+
+  .product-info-macorner .mac-btn-preview {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+  }
+
+  .product-info-macorner .mac-btn-add {
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+  }
+
+  .mac-cart-watching {
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .slideshow .banner__heading {
+    font-size: 38px !important;
+    line-height: 1.15 !important;
+  }
+
+  .slideshow .banner__text,
+  .slideshow .banner__text p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+
+  #MainContent .slideshow .banner__buttons .button {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+  }
+
+  .multicolumn .title {
+    font-size: 26px !important;
+    line-height: 1.25 !important;
+  }
+
+  .multicolumn-card__info h3 {
+    font-size: 14px !important;
+    line-height: 1.35 !important;
+  }
+
+  .multicolumn-card__info .rte,
+  .multicolumn-card__info p {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+  }
+
+  .mac-product-title {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+
+  .mac-review-link,
+  .mac-bought-past-month,
+  .mac-delivery-block,
+  .mac-form-group label,
+  .mac-select,
+  .mac-input,
+  fieldset.product-form__input legend,
+  .product-form__input .form__label,
+  .product-info-macorner .product-form__input input[type='radio'] + label {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+
+  .mac-price-regular {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+  }
+
+  .mac-price-compare {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+
+  .mac-price-save-badge {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+  }
+
+  .mac-pers-title,
+  .product__accordion .accordion__title {
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+  }
+
+  .product__accordion .accordion__content,
+  .product__accordion .accordion__content p,
+  .product__accordion .accordion__content li {
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+  }
+
+  .product-info-macorner .mac-btn-preview,
+  .product-info-macorner .mac-btn-add {
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+  }
+
+  .mac-cart-watching {
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+  }
+}
