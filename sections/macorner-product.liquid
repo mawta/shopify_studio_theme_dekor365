@@ -229,14 +229,16 @@
           </div>
 
           <script>
-            // Simple logic to randomize between 2-8 people
-            document.addEventListener("DOMContentLoaded", () => {
-              const numSpan = document.querySelector('.random-cart-number');
+            const initializeMacornerSocialProof = () => {
+              const sectionRoot = document.getElementById('MainProduct-{{ section.id }}');
+              if (!sectionRoot) return;
+
+              const numSpan = sectionRoot.querySelector('.random-cart-number');
               if(numSpan) {
                 numSpan.innerText = Math.floor(Math.random() * 7) + 2;
               }
 
-              const boughtEl = document.querySelector('.mac-bought-past-month');
+              const boughtEl = sectionRoot.querySelector('.mac-bought-past-month');
               if (!boughtEl) return;
 
               const productId = boughtEl.dataset.productId;
@@ -296,7 +298,13 @@
               }
 
               setCookie(storageKey, String(boughtCount), 30);
-            });
+            };
+
+            if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', initializeMacornerSocialProof, { once: true });
+            } else {
+              initializeMacornerSocialProof();
+            }
           </script>
 
           <script>
