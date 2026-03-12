@@ -17,6 +17,14 @@
     "macorner_product_tjDUmp": {
       "type": "macorner-product",
       "blocks": {
+        "shipping_rule_shirt": {
+          "type": "shipping_rule",
+          "settings": {
+            "product_tag": "shirt",
+            "min_days": 5,
+            "max_days": 8
+          }
+        },
         "collapsible_tab_jhXCGj": {
           "type": "collapsible_tab",
           "settings": {
@@ -27,10 +35,13 @@
         }
       },
       "block_order": [
+        "shipping_rule_shirt",
         "collapsible_tab_jhXCGj"
       ],
       "name": "Macorner Clean Product",
       "settings": {
+        "default_shipping_min_days": 5,
+        "default_shipping_max_days": 8,
         "picker_type": "button",
         "gallery_layout": "thumbnail_slider",
         "media_size": "large",
