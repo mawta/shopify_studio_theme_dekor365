@@ -6,6 +6,53 @@
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
 
+{%- liquid
+  assign seconds_per_day = 86400
+  assign shipping_min_days = section.settings.default_shipping_min_days
+  assign shipping_max_days = section.settings.default_shipping_max_days
+  assign matched_shipping_tag = blank
+
+  for shipping_block in section.blocks
+    if shipping_block.type == 'shipping_rule'
+      assign rule_tag = shipping_block.settings.product_tag | strip | downcase
+
+      if rule_tag != blank
+        for product_tag in product.tags
+          assign normalized_product_tag = product_tag | strip | downcase
+          if normalized_product_tag == rule_tag
+            assign shipping_min_days = shipping_block.settings.min_days
+            assign shipping_max_days = shipping_block.settings.max_days
+            assign matched_shipping_tag = product_tag
+            break
+          endif
+        endfor
+      endif
+    endif
+
+    if matched_shipping_tag != blank
+      break
+    endif
+  endfor
+
+  if shipping_max_days < shipping_min_days
+    assign shipping_max_days = shipping_min_days
+  endif
+
+  assign now_timestamp = 'now' | date: '%s'
+  assign delivery_min_timestamp = shipping_min_days | times: seconds_per_day | plus: now_timestamp
+  assign delivery_max_timestamp = shipping_max_days | times: seconds_per_day | plus: now_timestamp
+  assign delivery_min_month = delivery_min_timestamp | date: '%B'
+  assign delivery_max_month = delivery_max_timestamp | date: '%B'
+  assign delivery_min_day = delivery_min_timestamp | date: '%-d'
+  assign delivery_max_day = delivery_max_timestamp | date: '%-d'
+
+  if delivery_min_month == delivery_max_month
+    assign delivery_window = delivery_min_month | append: ' ' | append: delivery_min_day | append: '-' | append: delivery_max_day
+  else
+    assign delivery_window = delivery_min_month | append: ' ' | append: delivery_min_day | append: ' - ' | append: delivery_max_month | append: ' ' | append: delivery_max_day
+  endif
+-%}
+
 <div class="mac-container">
   <section
     id="MainProduct-{{ section.id }}"
@@ -57,12 +104,26 @@
           <!-- Delivery -->
           <div class="mac-delivery-block">
              <div class="mac-deliver-item">
-               <span class="mac-flag">🇺🇸</span>
-               <span>Deliver to <a href="#">United States</a></span>
+               <span
+                 class="mac-flag mac-country-flag"
+                 data-fallback-country-iso="{{ localization.country.iso_code | escape }}"
+                 aria-hidden="true"
+               >
+                 {{ localization.country | image_url: width: 20 | image_tag }}
+               </span>
+               <span>
+                 Deliver to
+                 <span
+                   class="mac-country-name"
+                   data-fallback-country-name="{{ localization.country.name | escape }}"
+                 >
+                   {{ localization.country.name }}
+                 </span>
+               </span>
              </div>
              <div class="mac-deliver-item">
                <span class="mac-truck">🚚</span>
-               <span>Get it by: <strong>March 17-23</strong></span>
+               <span>Get it by: <strong>{{ delivery_window }}</strong></span>
              </div>
           </div>
 
@@ -170,6 +231,78 @@
             });
           </script>
 
+          <script>
+            (() => {
+              const sectionRoot = document.getElementById('MainProduct-{{ section.id }}');
+
+              if (!sectionRoot) return;
+
+              const countryNameEl = sectionRoot.querySelector('.mac-country-name');
+              const countryFlagEl = sectionRoot.querySelector('.mac-country-flag');
+
+              if (!countryNameEl || !countryFlagEl) return;
+
+              const flagFromIso = (isoCode) => {
+                if (!isoCode || isoCode.length !== 2) return '';
+
+                return String.fromCodePoint(
+                  ...isoCode
+                    .toUpperCase()
+                    .split('')
+                    .map((char) => 127397 + char.charCodeAt(0))
+                );
+              };
+
+              const resolveCountryName = (isoCode) => {
+                try {
+                  if (typeof Intl !== 'undefined' && typeof Intl.DisplayNames === 'function') {
+                    const displayNames = new Intl.DisplayNames(
+                      [document.documentElement.lang || 'en'],
+                      { type: 'region' }
+                    );
+                    return displayNames.of(isoCode);
+                  }
+                } catch (error) {
+                  return null;
+                }
+
+                return null;
+              };
+
+              const updateCountryDisplay = (regionCode) => {
+                const isoCode = (regionCode || '').slice(0, 2).toUpperCase();
+                if (!isoCode) return;
+
+                const countryName = resolveCountryName(isoCode);
+                if (countryName) {
+                  countryNameEl.textContent = countryName;
+                }
+
+                const flag = flagFromIso(isoCode);
+                if (flag) {
+                  countryFlagEl.textContent = flag;
+                }
+              };
+
+              const loadCustomerPrivacyRegion = () => {
+                if (!(window.Shopify && typeof window.Shopify.loadFeatures === 'function')) return;
+
+                window.Shopify.loadFeatures(
+                  [{ name: 'consent-tracking-api', version: '0.1' }],
+                  (error) => {
+                    if (error || !(window.Shopify.customerPrivacy && window.Shopify.customerPrivacy.getRegion)) {
+                      return;
+                    }
+
+                    updateCountryDisplay(window.Shopify.customerPrivacy.getRegion());
+                  }
+                );
+              };
+
+              loadCustomerPrivacyRegion();
+            })();
+          </script>
+
         </product-info>
       </div>
     </div>
@@ -180,6 +313,32 @@
 {
   "name": "Macorner Clean Product",
   "settings": [
+    {
+      "type": "header",
+      "content": "Delivery estimate"
+    },
+    {
+      "type": "paragraph",
+      "content": "Set the default shipping window here, then add Shipping rule blocks below for product-tag-specific delivery ranges. The first matching tag wins."
+    },
+    {
+      "type": "range",
+      "id": "default_shipping_min_days",
+      "min": 1,
+      "max": 30,
+      "step": 1,
+      "default": 5,
+      "label": "Default minimum shipping days"
+    },
+    {
+      "type": "range",
+      "id": "default_shipping_max_days",
+      "min": 1,
+      "max": 30,
+      "step": 1,
+      "default": 8,
+      "label": "Default maximum shipping days"
+    },
     {
       "type": "select",
       "id": "picker_type",
@@ -270,6 +429,36 @@
     }
   ],
   "blocks": [
+    {
+      "type": "shipping_rule",
+      "name": "Shipping rule",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_tag",
+          "label": "Product tag",
+          "info": "Exact product tag to match, for example: shirt"
+        },
+        {
+          "type": "range",
+          "id": "min_days",
+          "min": 1,
+          "max": 30,
+          "step": 1,
+          "default": 5,
+          "label": "Minimum shipping days"
+        },
+        {
+          "type": "range",
+          "id": "max_days",
+          "min": 1,
+          "max": 30,
+          "step": 1,
+          "default": 8,
+          "label": "Maximum shipping days"
+        }
+      ]
+    },
     {
       "type": "collapsible_tab",
       "name": "Collapsible row",
