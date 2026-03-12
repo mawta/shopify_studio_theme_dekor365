@@ -301,8 +301,10 @@
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
       }
-    </script>    <!-- Dekor365 Custom Global Styles -->
+    </script>
+    <!-- Dekor365 Custom Global Styles -->
     {{ 'custom-layout.css' | asset_url | stylesheet_tag }}
+    {{ 'live-responsive-typography.css' | asset_url | stylesheet_tag }}
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
