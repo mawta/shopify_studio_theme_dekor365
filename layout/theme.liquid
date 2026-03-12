@@ -305,7 +305,6 @@
     <!-- Dekor365 Custom Global Styles -->
     {{ 'custom-layout.css' | asset_url | stylesheet_tag }}
     {{ 'live-responsive-typography.css' | asset_url | stylesheet_tag }}
-    <script src="{{ 'product-delivery-runtime.js' | asset_url }}" defer="defer"></script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
